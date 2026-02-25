@@ -1,9 +1,9 @@
 {
     "meta": {
-        "generated_at": "2026-02-25T05:11:56.441594",
+        "generated_at": "2026-02-25T05:17:09.058125",
         "article_count": 45,
-        "avg_risk_score": 32.7,
-        "max_risk_score": 74.4,
+        "avg_risk_score": 33.3,
+        "max_risk_score": 69.4,
         "analyzer_version": "1.0"
     },
     "articles": [
@@ -227,7 +227,7 @@
             "title": "Saudi Arabia’s Delicate Balancing Act",
             "sentiment_polarity": -0.369,
             "sentiment_method": "vader",
-            "risk_score": 74.4,
+            "risk_score": 69.4,
             "risk_level": "HIGH",
             "key_phrases": [
                 "riyadh",
@@ -237,7 +237,7 @@
                 "complex geopolitical challenge"
             ],
             "military_hits": 5,
-            "diplomatic_hits": 0,
+            "diplomatic_hits": 1,
             "source_name": "ARABNEWS",
             "date": "2026-02-23"
         },
@@ -245,7 +245,7 @@
             "title": "Israel Approves Operational Plans for Multi-Front Defense",
             "sentiment_polarity": 0.248,
             "sentiment_method": "vader",
-            "risk_score": 15.0,
+            "risk_score": 18.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "jerusalem",
@@ -254,7 +254,7 @@
                 "security cabinet",
                 "operational plans"
             ],
-            "military_hits": 0,
+            "military_hits": 1,
             "diplomatic_hits": 0,
             "source_name": "TIMESOFISRAEL",
             "date": "2026-02-24"
@@ -281,8 +281,8 @@
             "title": "Russia Slams US Strike Threats, Warns Against Interference",
             "sentiment_polarity": -0.937,
             "sentiment_method": "vader",
-            "risk_score": 44.7,
-            "risk_level": "MEDIUM",
+            "risk_score": 51.7,
+            "risk_level": "HIGH",
             "key_phrases": [
                 "ministry",
                 "stern warning",
@@ -290,7 +290,7 @@
                 "irans",
                 "internal affairs"
             ],
-            "military_hits": 1,
+            "military_hits": 2,
             "diplomatic_hits": 1,
             "source_name": "TASS",
             "date": "2026-01-13"
@@ -353,7 +353,7 @@
             "title": "US and Iran Slide Towards Conflict as Hopes for Peace Fade",
             "sentiment_polarity": -0.527,
             "sentiment_method": "vader",
-            "risk_score": 38.5,
+            "risk_score": 46.5,
             "risk_level": "MEDIUM",
             "key_phrases": [
                 "dubai",
@@ -362,7 +362,7 @@
                 "iran",
                 "military conflict"
             ],
-            "military_hits": 1,
+            "military_hits": 2,
             "diplomatic_hits": 0,
             "source_name": "REUTERS",
             "date": "2026-02-20"
@@ -388,7 +388,7 @@
             "title": "Russia Warns Against US Escalation in Persian Gulf",
             "sentiment_polarity": 0.572,
             "sentiment_method": "vader",
-            "risk_score": 19.6,
+            "risk_score": 17.6,
             "risk_level": "LOW",
             "key_phrases": [
                 "moscow",
@@ -398,7 +398,7 @@
                 "iran"
             ],
             "military_hits": 2,
-            "diplomatic_hits": 0,
+            "diplomatic_hits": 1,
             "source_name": "TASS",
             "date": "2026-02-19"
         },
@@ -424,7 +424,7 @@
             "title": "Trump: Iran will face 'bad things' without nuclear deal",
             "sentiment_polarity": -0.162,
             "sentiment_method": "vader",
-            "risk_score": 31.2,
+            "risk_score": 38.2,
             "risk_level": "MEDIUM",
             "key_phrases": [
                 "donald trump",
@@ -433,7 +433,7 @@
                 "nuclear framework",
                 "white house"
             ],
-            "military_hits": 1,
+            "military_hits": 2,
             "diplomatic_hits": 0,
             "source_name": "APNEWS",
             "date": "2026-02-20"
@@ -496,7 +496,7 @@
             "title": "Bin Farhan: Saudi Arabia will not be a launchpad for strikes",
             "sentiment_polarity": 0.281,
             "sentiment_method": "vader",
-            "risk_score": 22.4,
+            "risk_score": 17.4,
             "risk_level": "LOW",
             "key_phrases": [
                 "faisal",
@@ -506,7 +506,7 @@
                 "economic interests"
             ],
             "military_hits": 1,
-            "diplomatic_hits": 0,
+            "diplomatic_hits": 1,
             "source_name": "ARABNEWS",
             "date": "2026-02-22"
         },
@@ -550,8 +550,8 @@
             "title": "Khamenei: Nuclear enrichment is a non-negotiable right",
             "sentiment_polarity": 0.379,
             "sentiment_method": "vader",
-            "risk_score": 12.4,
-            "risk_level": "LOW",
+            "risk_score": 26.4,
+            "risk_level": "MEDIUM",
             "key_phrases": [
                 "supreme leader",
                 "ayatollah ali khamenei",
@@ -559,7 +559,7 @@
                 "peaceful purposes",
                 "inalienable right"
             ],
-            "military_hits": 0,
+            "military_hits": 2,
             "diplomatic_hits": 0,
             "source_name": "NYTIMES",
             "date": "2026-02-23"
