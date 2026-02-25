@@ -1,16 +1,16 @@
 {
     "meta": {
-        "generated_at": "2026-02-25T06:02:16.755510",
-        "article_count": 45,
-        "avg_risk_score": 27.9,
+        "generated_at": "2026-02-25T06:51:42.752808",
+        "article_count": 60,
+        "avg_risk_score": 25.8,
         "max_risk_score": 74.0,
         "analyzer_version": "1.0"
     },
     "trend": {
         "status": "DOWN",
-        "current": 27.9,
-        "previous": 35.3,
-        "global_avg": 35.5
+        "current": 25.8,
+        "previous": 34.3,
+        "global_avg": 33.3
     },
     "articles": [
         {
@@ -84,6 +84,42 @@
             "diplomatic_hits": 0,
             "source_name": "BBC",
             "date": "2026-02-18"
+        },
+        {
+            "title": "Germany and France Criticize US \"Lack of Diplomatic Flexibility\"",
+            "sentiment_polarity": -0.742,
+            "sentiment_method": "vader",
+            "risk_score": 36.8,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "berlin/paris",
+                "feb",
+                "european core",
+                "e3",
+                "washingtons"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 4,
+            "source_name": "GEOPOLITICAL-MONITOR",
+            "date": "2026-02-24"
+        },
+        {
+            "title": "Israel Finalizes Multi-Layer Defense Shield Activation",
+            "sentiment_polarity": 0.315,
+            "sentiment_method": "vader",
+            "risk_score": 13.7,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "security alert",
+                "feb",
+                "idf",
+                "full activation",
+                "nations multi-tier air defense network"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "GEOPOLITICAL-MONITOR",
+            "date": "2026-02-25"
         },
         {
             "title": "Iraq Struggles to Maintain Neutrality Amid US-Iran Crossfire",
@@ -212,6 +248,24 @@
             "date": "2026-02-12"
         },
         {
+            "title": "Oman Issues Emergency Mediation Proposal to Geneva Delegates",
+            "sentiment_polarity": -0.539,
+            "sentiment_method": "vader",
+            "risk_score": 36.8,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "diplomatic update",
+                "feb",
+                "omani",
+                "last-minute mediation framework",
+                "head delegates"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 1,
+            "source_name": "GEOPOLITICAL-MONITOR",
+            "date": "2026-02-25"
+        },
+        {
             "title": "U.S. Military in the Middle East: Numbers Behind Trump’s Threats Against Iran",
             "sentiment_polarity": -0.751,
             "sentiment_method": "vader",
@@ -282,6 +336,24 @@
             "diplomatic_hits": 2,
             "source_name": "SCMP",
             "date": "2026-02-20"
+        },
+        {
+            "title": "Russian Transport Planes Spotted in Tehran; Reports of Advanced S-500 Transit",
+            "sentiment_polarity": 0.128,
+            "sentiment_method": "vader",
+            "risk_score": 17.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "tehran",
+                "feb",
+                "satellite",
+                "data show",
+                "russian il-76"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "GEOPOLITICAL-MONITOR",
+            "date": "2026-02-25"
         },
         {
             "title": "Russia Slams US Strike Threats, Warns Against Interference",
@@ -409,6 +481,24 @@
             "date": "2026-02-19"
         },
         {
+            "title": "China-Iran Naval Drills to Include \"Advanced Electronic Warfare\" Testing",
+            "sentiment_polarity": -0.297,
+            "sentiment_method": "vader",
+            "risk_score": 48.9,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "beijing",
+                "feb",
+                "xinhua",
+                "peoples liberation",
+                "pla"
+            ],
+            "military_hits": 4,
+            "diplomatic_hits": 0,
+            "source_name": "GEOPOLITICAL-MONITOR",
+            "date": "2026-02-24"
+        },
+        {
             "title": "Houthi Threats to Red Sea Shipping Intensify",
             "sentiment_polarity": -0.918,
             "sentiment_method": "vader",
@@ -445,6 +535,42 @@
             "date": "2026-02-20"
         },
         {
+            "title": "Iran Foreign Minister: Nuclear deal within reach if diplomacy prioritized",
+            "sentiment_polarity": 0.714,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "geneva",
+                "feb",
+                "irans",
+                "foreign minister",
+                "abbas araghchi"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 4,
+            "source_name": "ALJAZEERA",
+            "date": "2026-02-25"
+        },
+        {
+            "title": "US State Department Issues \"Level 4: Do Not Travel\" for Entire Region",
+            "sentiment_polarity": 0.226,
+            "sentiment_method": "vader",
+            "risk_score": 23.5,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "official advisory",
+                "feb",
+                "u.s.",
+                "travel advisories",
+                "iraq"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "GEOPOLITICAL-MONITOR",
+            "date": "2026-02-24"
+        },
+        {
             "title": "Putin: Russian Mediterranean fleet on high alert",
             "sentiment_polarity": -0.557,
             "sentiment_method": "vader",
@@ -463,6 +589,42 @@
             "date": "2026-02-19"
         },
         {
+            "title": "Trump rebukes reports of Military General concerns over Iran strikes",
+            "sentiment_polarity": -0.612,
+            "sentiment_method": "vader",
+            "risk_score": 36.2,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "washington",
+                "feb",
+                "donald trump",
+                "top military advisor",
+                "dan caine"
+            ],
+            "military_hits": 3,
+            "diplomatic_hits": 1,
+            "source_name": "ALJAZEERA",
+            "date": "2026-02-24"
+        },
+        {
+            "title": "Guterres: Persian Gulf is at a \"Breaking Point,\" Urges Maximum Restraint",
+            "sentiment_polarity": -0.826,
+            "sentiment_method": "vader",
+            "risk_score": 40.5,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "united nations",
+                "feb",
+                "antonio guterres",
+                "general assembly",
+                "somber warning"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "GEOPOLITICAL-MONITOR",
+            "date": "2026-02-25"
+        },
+        {
             "title": "Lavrov: Russia will provide technical support to Iran if attacked",
             "sentiment_polarity": 0.82,
             "sentiment_method": "vader",
@@ -479,6 +641,24 @@
             "diplomatic_hits": 0,
             "source_name": "TASS",
             "date": "2026-02-18"
+        },
+        {
+            "title": "US Orders Partial Evacuation of Embassy in Baghdad",
+            "sentiment_polarity": 0.557,
+            "sentiment_method": "vader",
+            "risk_score": 15.9,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "washington/baghdad",
+                "feb",
+                "reuters",
+                "u.s.",
+                "state department"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "GEOPOLITICAL-MONITOR",
+            "date": "2026-02-23"
         },
         {
             "title": "U.S., Iran near nuclear pact as war threat looms",
@@ -551,6 +731,24 @@
             "diplomatic_hits": 1,
             "source_name": "POLITICO",
             "date": "2026-02-21"
+        },
+        {
+            "title": "IRGC Announces \"Great Prophet 21\" Naval Drills",
+            "sentiment_polarity": 0.852,
+            "sentiment_method": "vader",
+            "risk_score": 20.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "military update",
+                "feb",
+                "islamic",
+                "revolutionary guard corps",
+                "irgc"
+            ],
+            "military_hits": 4,
+            "diplomatic_hits": 0,
+            "source_name": "GEOPOLITICAL-MONITOR",
+            "date": "2026-02-24"
         },
         {
             "title": "Khamenei: Nuclear enrichment is a non-negotiable right",
@@ -679,6 +877,24 @@
             "date": "2026-02-23"
         },
         {
+            "title": "US Strategic Command: Nuclear Triad on \"Constant Readiness\"",
+            "sentiment_polarity": 0.631,
+            "sentiment_method": "vader",
+            "risk_score": 35.4,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "official statement",
+                "feb",
+                "strategic command",
+                "rare public confirmation",
+                "nuclear triad —"
+            ],
+            "military_hits": 5,
+            "diplomatic_hits": 1,
+            "source_name": "GEOPOLITICAL-MONITOR",
+            "date": "2026-02-25"
+        },
+        {
             "title": "Hakan Fidan: Turkey warns of regional collapse if war breaks out",
             "sentiment_polarity": -0.681,
             "sentiment_method": "vader",
@@ -695,6 +911,24 @@
             "diplomatic_hits": 1,
             "source_name": "AA",
             "date": "2026-02-23"
+        },
+        {
+            "title": "Iraqi Prime Minister: Iraq Will Not Be a Proxy Battlefield for US or Iran",
+            "sentiment_polarity": -0.824,
+            "sentiment_method": "vader",
+            "risk_score": 34.5,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "baghdad",
+                "feb",
+                "prime",
+                "mohammed shia",
+                "firm refusal"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 1,
+            "source_name": "GEOPOLITICAL-MONITOR",
+            "date": "2026-02-25"
         },
         {
             "title": "Lloyd Austin: U.S. forces are combat-ready for Middle East escalation",
@@ -733,6 +967,24 @@
             "date": "2026-02-22"
         },
         {
+            "title": "US Mission in Lebanon Authorized for Voluntary Departure",
+            "sentiment_polarity": 0.221,
+            "sentiment_method": "vader",
+            "risk_score": 15.6,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "beirut",
+                "feb",
+                "news reports",
+                "u.s.",
+                "beirut"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "GEOPOLITICAL-MONITOR",
+            "date": "2026-02-24"
+        },
+        {
             "title": "Iran Update, January 30, 2026 | ISW",
             "sentiment_polarity": -0.36,
             "sentiment_method": "vader",
@@ -748,6 +1000,24 @@
             "diplomatic_hits": 1,
             "source_name": "UNDERSTANDINGWAR",
             "date": "2026-01-30"
+        },
+        {
+            "title": "UK Foreign Office Withdraws Staff from Gulf Embassies",
+            "sentiment_polarity": -0.392,
+            "sentiment_method": "vader",
+            "risk_score": 27.8,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "london",
+                "feb",
+                "washington",
+                "uk",
+                "foreign office"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "GEOPOLITICAL-MONITOR",
+            "date": "2026-02-25"
         },
         {
             "title": "Lebanon’s Hezbollah on Full Alert as War Clouds Gather",
