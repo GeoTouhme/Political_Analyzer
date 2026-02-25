@@ -1,17 +1,17 @@
 {
     "meta": {
-        "generated_at": "2026-02-25T10:54:46.980812",
-        "article_count": 69,
-        "avg_risk_score": 23.5,
+        "generated_at": "2026-02-25T10:58:12.431692",
+        "article_count": 68,
+        "avg_risk_score": 23.7,
         "max_risk_score": 74.0,
-        "strategic_outlook": "Despite the prevalence of high-tension headlines regarding U.S. force posture and Iranian strategic deliberations, the aggregate risk environment remains stable, indicating that diplomatic buffers are effectively containing localized friction points. The downward trend suggests that recent military signaling—including naval maneuvers and readiness alerts—functions primarily as political leverage rather than a prelude to imminent kinetic conflict. As the current dataset lacks definitive evidence establishing a direct causal chain between specific U.S. deployments and opposing military exercises, no confirmed reactive linkage detected.",
+        "strategic_outlook": "Despite elevated rhetoric and strategic military positioning, the current aggregate risk metrics indicate that diplomatic buffers are effectively insulating the region from imminent kinetic escalation. The prevailing downward trend suggests that mediation channels are successfully decoupling political posturing from operational realities, thereby maintaining relative stability. No confirmed reactive linkage detected between recent naval maneuvers and specific threat indicators.",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
         "status": "DOWN",
-        "current": 23.5,
+        "current": 23.7,
         "previous": 34.3,
-        "global_avg": 31.8
+        "global_avg": 31.9
     },
     "articles": [
         {
@@ -675,24 +675,6 @@
                 "somber warning"
             ],
             "military_hits": 1,
-            "diplomatic_hits": 0,
-            "source_name": "GEOPOLITICAL-MONITOR",
-            "date": "2026-02-25"
-        },
-        {
-            "title": "إيران تتفاوض مع الصين لشراء صواريخ CM-302 المضادة للحاملات",
-            "sentiment_polarity": 0.0,
-            "sentiment_method": "vader",
-            "risk_score": 20.0,
-            "risk_level": "LOW",
-            "key_phrases": [
-                "كشفت مصادر مطلعة لرويترز والجزيرة عن مفاوضات سرية في مراحل متقدمة بين طهران وبكين لشراء صواريخ كروز من طراز",
-                "cm-302",
-                "تتميز هذه الصواريخ بقدرات عالية على المناورة وسرعة تفوق سرعة الصوت، وهي مصممة خصيصاً لاستهداف وإغراق حاملات الطائرات والقطع البحرية الكبيرة",
-                "يأتي هذا التحرك الإيراني رداً مباشراً على أكبر انتشار عسكري أمريكي في المنطقة منذ عام 2003، حيث تسعى طهران لتعزيز قدرات الردع البحري ومنع الوصول",
-                "a2/ad"
-            ],
-            "military_hits": 0,
             "diplomatic_hits": 0,
             "source_name": "GEOPOLITICAL-MONITOR",
             "date": "2026-02-25"
