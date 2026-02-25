@@ -3,7 +3,7 @@
 An autonomous intelligence monitoring platform designed to track, analyze, and visualize the 2026 US-Iran geopolitical crisis.
 
 ## 🚀 Overview
-PGCM-2026 is an end-to-end OSINT (Open Source Intelligence) pipeline. It functions as a dual-role agent system: a **Collector (VIT)** that harvests raw signals from the global information environment, and an **Analyzer** that applies strategic weighted scoring and NLP to quantify escalation risks.
+PGCM-2026 is an end-to-end OSINT (Open Source Intelligence) pipeline. It functions as a dual-role agent system: a **Collector (VIT)** that harvests raw signals from the global information environment, and an **Analyzer** that applies strategic weighted scoring, temporal correlation, and AI-driven strategic forecasting.
 
 ---
 
@@ -11,42 +11,34 @@ PGCM-2026 is an end-to-end OSINT (Open Source Intelligence) pipeline. It functio
 
 ### 1. Data Collection (VIT Protocol)
 The system follows a strict **Geopolitical Collection Protocol** (`VIT_COLLECTION_PROTOCOL.md`) to ensure high-signal ingestion:
-*   **Targeted Scraping:** Monitors official statements (State Dept, IRGC, UN, E3), military movements (CENTCOM, Russian/Chinese deployments), and regional security alerts.
-*   **Deep Harvesting:** Unlike standard scrapers, PGCM-2026 performs "Full Raw Scraping," entering URLs to extract the complete article body, bypassing snippet limitations.
-*   **Notion Integration:** Raw data is stored in a structured Notion database with metadata including source attribution, regional tags, and precise timestamps.
+*   **Deep Harvesting:** PGCM-2026 performs "Full Raw Scraping," entering URLs to extract the complete article body and injecting it into Notion Page Blocks to preserve context for deep NLP analysis.
+*   **Targeted Scoping:** Monitors military movements (Armadas, S-500 transit), embassy security postures (Evacuations, Travel Bans), and international rhetoric (E3, UN, Russia/China/Afghanistan/Pakistan links).
 
-### 2. NLP & Risk Analysis Engine
-The core logic resides in `analyzer_v2.py`, utilizing a hybrid analytical approach:
-*   **Sentiment Analysis:** Uses **VADER** (specialized for news/social sentiment) and **TextBlob** to detect hawk/dove rhetoric.
-*   **Strategic Weighting (v3.0):** Matches text against a 6-layer dictionary:
-    *   🔴 **Military:** Troop movements, carrier strikes, nuclear readiness.
-    *   ⚫ **Defiance:** Direct threats, treaty exits, "Red Line" rhetoric.
-    *   ⚪ **Gray Zone:** Diplomatic aggression, sanctions, cyber ops.
-    *   🟠 **Coercive:** Economic pressure, blockades.
-    *   🟣 **Hybrid:** Asymmetric warfare, proxy activation.
-    *   🟢 **Diplomatic:** De-escalation signals (negative weights).
-*   **Temporal Correlation:** A unique "Short-term Memory" logic that identifies clusters of events. For example, a "Security Evacuation" following a "Military Build-up" within 48 hours triggers a **+40% risk multiplier**.
+### 2. NLP & Risk Analysis Engine (Logic v3.0)
+The core engine (`analyzer_v2.py`) uses a multi-layered analytical approach:
+*   **Weighted Risk Scoring:** Matches text against a 6-category strategic dictionary (Military, Defiance, Gray, Coercive, Hybrid, and Diplomatic).
+*   **Temporal Correlation:** Identifies "Escalation Clusters." If a high-risk military event is followed by a security evacuation within a 48-hour window, the system triggers a **+40% risk multiplier**.
+*   **Hybrid Sentiment:** Combines **VADER** and **TextBlob** to assess the hawkish or dovish nature of political rhetoric.
 
-### 3. AI Strategic Outlook
-At the end of each cycle, the system triggers **Google Gemini 3 Pro** to perform a high-level strategic review. It analyzes the top 10 most dangerous events and generates a 3-4 sentence "Command Summary" identifying the primary risk driver and the likely trajectory for the next 72 hours.
+### 3. AI Strategic Outlook (Gemini 3 Pro)
+At the end of each analysis cycle, the system utilizes **Google Gemini 3 Pro** to perform a high-level strategic review. It identifies the primary risk driver and forecasts the likely trajectory for the next 48-72 hours. This analysis is displayed prominently on the dashboard with full model attribution.
 
 ---
 
-## 📊 Dashboard & Visualization
-The analysis results are automatically injected into an interactive, mobile-responsive dashboard (`dashboard.html`):
-*   **Risk Timeline:** A daily average of the conflict's "heat."
-*   **Current Risk & Trend:** Real-time comparison of the latest 24 hours vs. the previous 3 days.
-*   **Source Ledger:** A transparent list of all analyzed articles with their individual risk scores and extracted noun phrases.
-*   **Auto-Deployment:** Every update is automatically committed and pushed to **GitHub Pages** for global access.
+## 📊 Dashboard & UX Features
+The results are visualized in a mobile-first, interactive dashboard:
+*   **Smart Navigation:** Features a scrollable article ledger, a real-time search bar, and risk filters (All / High Risk / Latest).
+*   **Risk Metrics:** Displays Current Risk (latest 24h average), Peak Risk, Trend Indicators (▲/▼), and a historical Risk Timeline.
+*   **Auto-Deployment:** Every analysis cycle automatically pushes updates to **GitHub Pages** for real-time monitoring.
 
 ---
 
 ## 📂 Key Files
-*   `analyzer_v2.py`: The main engine (Scraping, NLP, Analysis, GitHub Sync).
-*   `VIT_COLLECTION_PROTOCOL.md`: The operational directive for the collector.
-*   `strategic_dictionary.txt`: The custom weighted lexicon for geopolitical scoring.
-*   `dashboard.html`: The interactive front-end.
-*   `collection_db.json`: Local cache of raw event data.
+*   `analyzer_v2.py`: The integrated engine (Scraping, NLP, Analysis, AI Forecasting, GitHub Sync).
+*   `VIT_COLLECTION_PROTOCOL.md`: Operational directive for the collection agent.
+*   `strategic_dictionary.txt`: Custom weighted lexicon for geopolitical scoring.
+*   `dashboard.html`: The interactive front-end (mapped to `index.html` for deployment).
+*   `analysis_report_v2.json`: The raw data output for the dashboard.
 
 ---
 
@@ -54,4 +46,4 @@ The analysis results are automatically injected into an interactive, mobile-resp
 View the live monitor here: [https://geotouhme.github.io/Political_Analyzer/](https://geotouhme.github.io/Political_Analyzer/)
 
 **System Status:** `ACTIVE`
-**Last Analysis Sync:** Automated via OpenClaw Runtime.
+**Model Attribution:** Strategic Analysis powered by `google/gemini-3-pro-preview`.
