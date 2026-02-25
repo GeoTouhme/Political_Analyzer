@@ -229,6 +229,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 16px;
             margin-bottom: 24px;
+            margin-top: 16px; /* Space between rows */
         }
 
         /* Card */
@@ -237,10 +238,12 @@
             border: 1px solid var(--border);
             border-radius: 12px;
             padding: 20px;
+            margin-bottom: 8px; /* Extra safety for mobile stacking */
         }
 
         .card.full-width {
             grid-column: span 2;
+            margin-bottom: 32px; /* Increased margin to fix the overlap in mobile/desktop view */
         }
 
         .card h2 {
@@ -383,8 +386,8 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Strategic Analysis Dashboard</h1>
-            <div class="subtitle">Political Pattern Analyzer — U.S. / Iran Conflict Monitor</div>
+            <h1>Persian Gulf Conflict Monitor (PGCM-2026)</h1>
+            <div class="subtitle">Autonomous Geopolitical Intelligence System</div>
             <div class="timestamp" id="timestamp">Loading...</div>
         </div>
 
