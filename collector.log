@@ -1,0 +1,574 @@
+20:14:49 [INFO] ============================================================
+20:14:49 [INFO] VIT News Collector — 2026-02-25 20:14
+20:14:49 [INFO] Date range: 2026-01-01 → 2026-02-25
+20:14:49 [INFO] Mode: DRY-RUN
+20:14:49 [INFO] Queries: 43 | Limit per query: 5
+20:14:49 [INFO] ============================================================
+20:14:49 [INFO] ─── Query: "US Iran conflict" ───
+20:14:51 [INFO]   NewsdataHub → 5 articles
+20:14:54 [INFO]   TheNewsAPI  → 3 articles
+20:14:54 [INFO] [DRY-RUN] Would save: 2026-02-14 | US Iran conflict | Trump To Reportedly Push Iran And Russia-Ukraine Talks In Geneva As Israel Monit
+20:14:54 [INFO]           Event: Diplomatic | Region: Israel | Actors: United States, Iran, Israel, Russia
+20:14:54 [INFO] [DRY-RUN] Would save: 2026-02-06 | US Iran conflict | Iran and US to begin high-stakes talks amid fears of conflict
+20:14:54 [INFO]           Event: Diplomatic | Region: Iran | Actors: United States, Iran
+20:14:54 [INFO] [DRY-RUN] Would save: 2026-02-01 | US Iran conflict | Iran warns of regional war risk as Trump sends 'very big, powerful ships'
+20:14:54 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:14:54 [INFO] [DRY-RUN] Would save: 2026-02-03 | US Iran conflict | US-Iran Nuclear Deal In 2026? Here's What The Crypto Punters Are Betting On Even
+20:14:54 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:14:54 [INFO] [DRY-RUN] Would save: 2026-02-25 | jpost.com | Turkey braces for potential US-Iran conflict
+20:14:54 [INFO]           Event: General/Analytical | Region: Iran | Actors: Iran, Europe/NATO
+20:14:54 [INFO] [DRY-RUN] Would save: 2026-02-05 | jpost.com | Turkey tries preventing US-Iran conflict, Recep Tayyip Erdogan says
+20:14:54 [INFO]           Event: Diplomatic | Region: Iran | Actors: Iran
+20:14:54 [INFO] [DRY-RUN] Would save: 2026-02-09 | theconversation.com | US-Iran talks are not a countdown to conflict
+20:14:54 [INFO]           Event: Diplomatic | Region: Iran | Actors: Iran
+20:14:54 [INFO] ─── Query: "Iran nuclear deal 2026" ───
+20:14:55 [INFO]   NewsdataHub → 5 articles
+20:14:58 [INFO]   TheNewsAPI  → 3 articles
+20:14:58 [INFO] [DRY-RUN] Would save: 2026-02-11 | Iran nuclear deal 2026 | Live: Trump hails ‘very good’ meeting with Netanyahu on Iran, says ‘nothing defi
+20:14:58 [INFO]           Event: Diplomatic | Region: Israel | Actors: United States, Iran, Israel
+20:14:58 [INFO] [DRY-RUN] Would save: 2026-02-20 | Iran nuclear deal 2026 | How advanced is Iran's nuclear program? Here's what we know.
+20:14:58 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:14:58 [INFO] [DRY-RUN] Would save: 2026-02-20 | Iran nuclear deal 2026 | Trump Warns Iran Of 'Really Bad Things' If Tehran Fails To Make Nuclear Deal In 
+20:14:58 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:14:58 [INFO] [DRY-RUN] Would save: 2026-02-02 | rigzone.com | Trump Eyes Iran Nuclear Deal
+20:14:58 [INFO]           Event: Diplomatic | Region: Iran | Actors: United States, Iran
+20:14:58 [INFO] [DRY-RUN] Would save: 2026-02-16 | rt.com | Israel lays down demands for US-Iran nuclear deal
+20:14:58 [INFO]           Event: Diplomatic | Region: Israel | Actors: Iran, Israel
+20:14:58 [INFO] [DRY-RUN] Would save: 2026-02-24 | jpost.com | Iran says nuclear deal within reach ahead of Geneva talks
+20:14:58 [INFO]           Event: Diplomatic | Region: Iran | Actors: Iran
+20:14:58 [INFO] ─── Query: "Iran IRGC military" ───
+20:15:00 [INFO]   NewsdataHub → 5 articles
+20:15:08 [INFO]   TheNewsAPI  → 3 articles
+20:15:08 [INFO] [DRY-RUN] Would save: 2026-01-28 | Iran IRGC military | Would-be assassin of Iranian dissident set for sentencing in Manhattan
+20:15:08 [INFO]           Event: General/Analytical | Region: Iran | Actors: Iran
+20:15:08 [INFO] [DRY-RUN] Would save: 2026-01-28 | Iran IRGC military | UK condemns ‘brutal’ Iranian regime as Donald Trump sends armada to region
+20:15:08 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:15:08 [INFO] [DRY-RUN] Would save: 2026-02-21 | Iran IRGC military | Demonstrators march through London in protest against Iranian regime
+20:15:08 [INFO]           Event: General/Analytical | Region: Iran | Actors: Iran
+20:15:08 [INFO] [DRY-RUN] Would save: 2026-01-30 | Iran IRGC military | Starmer says ‘we need to deal with’ Iran crackdown after Trump’s warnings
+20:15:08 [INFO]           Event: Diplomatic | Region: Iran | Actors: United States, Iran
+20:15:08 [INFO] [DRY-RUN] Would save: 2026-01-30 | Iran IRGC military | Keir Starmer says ‘we need to deal with’ Iran after Trump’s military warnings
+20:15:08 [INFO]           Event: Diplomatic | Region: Iran | Actors: United States, Iran
+20:15:08 [INFO] [DRY-RUN] Would save: 2026-01-03 | en.abna24.com | Trump’s anti-Iran threats stem from desperation: IRGC
+20:15:08 [INFO]           Event: Political Statement | Region: Iran | Actors: United States, Iran
+20:15:08 [INFO] [DRY-RUN] Would save: 2026-02-07 | jpost.com | Cracks emerge inside IRGC after Iran protest massacre
+20:15:08 [INFO]           Event: General/Analytical | Region: Iran | Actors: Iran
+20:15:08 [INFO] [DRY-RUN] Would save: 2026-02-02 | foxnews.com | Iran stages Khamenei photos to mask cracks in IRGC, opposition groups say
+20:15:08 [INFO]           Event: General/Analytical | Region: Iran | Actors: Iran
+20:15:08 [INFO] ─── Query: "Iran sanctions 2026" ───
+20:15:10 [INFO]   NewsdataHub → 5 articles
+20:15:19 [INFO]   TheNewsAPI  → 3 articles
+20:15:19 [INFO] [DRY-RUN] Would save: 2026-02-13 | Iran sanctions 2026 | Binance Reportedly Fired Multiple Compliance Investigators In Potential Iran-Lin
+20:15:19 [INFO]           Event: Sanctions | Region: Iran | Actors: Iran, Europe/NATO
+20:15:19 [INFO] [DRY-RUN] Would save: 2026-02-12 | Iran sanctions 2026 | How U.S. sanctions played into the protests in IRan
+20:15:19 [INFO]           Event: Sanctions | Region: Iran | Actors: Iran
+20:15:19 [INFO] [DRY-RUN] Would save: 2026-02-02 | Iran sanctions 2026 | Iran's President Masoud Pezeshkian Advocates For Revival Of Nuclear Discussions 
+20:15:19 [INFO]           Event: Diplomatic | Region: Iran | Actors: Iran
+20:15:19 [INFO] [DRY-RUN] Would save: 2026-02-17 | Iran sanctions 2026 | U.S.-Iran talks resume under growing shadow of Trump's military threat
+20:15:19 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:15:19 [INFO] [DRY-RUN] Would save: 2026-02-07 | Iran sanctions 2026 | Trump Signals Willingness To Talk With Iran—But Not Back Down—As US Flexes Milit
+20:15:19 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:15:19 [INFO] [DRY-RUN] Would save: 2026-01-15 | thehindu.com | U.S. imposes sanctions on Iran over crackdown on protesters
+20:15:19 [INFO]           Event: Sanctions | Region: Iran | Actors: Iran
+20:15:19 [INFO] [DRY-RUN] Would save: 2026-02-25 | abcnews.go.com | Trump administration hits Iran with new sanctions as nuclear talks near
+20:15:19 [INFO]           Event: Sanctions | Region: Iran | Actors: United States, Iran
+20:15:19 [INFO] [DRY-RUN] Would save: 2026-02-22 | jpost.com | Iran ready for nuclear consessions, relaxing of sanctions
+20:15:19 [INFO]           Event: Sanctions | Region: Iran | Actors: Iran
+20:15:19 [INFO] ─── Query: "Iran missile test" ───
+20:15:21 [INFO]   NewsdataHub → 5 articles
+20:15:24 [INFO]   TheNewsAPI  → 3 articles
+20:15:24 [INFO] [DRY-RUN] Would save: 2026-02-11 | Iran missile test | Iranian Officials Reaffirm Hardline Stance On Missiles
+20:15:24 [INFO]           Event: Diplomatic | Region: Iran | Actors: Iran
+20:15:24 [INFO] [DRY-RUN] Would save: 2026-02-20 | Iran missile test | Iran dangles investment proposals as off-ramp from Trump's gunboat diplomacy
+20:15:24 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:15:24 [INFO] [DRY-RUN] Would save: 2026-02-15 | Iran missile test | Iran Signals Diplomatic Shift: Economic Gains for Nuclear Concessions
+20:15:24 [INFO]           Event: Sanctions | Region: Iran | Actors: Iran
+20:15:24 [INFO] [DRY-RUN] Would save: 2026-02-20 | Iran missile test | Second U.S. carrier nears Iran, as Trump warns of 'bad things' without 'meaningf
+20:15:24 [INFO]           Event: Drill | Region: Iran | Actors: United States, Iran, Russia
+20:15:24 [INFO] [DRY-RUN] Would save: 2026-02-07 | Iran missile test | Trump and Netanyahu to meet for Iran discussions
+20:15:24 [INFO]           Event: Diplomatic | Region: Israel | Actors: United States, Iran, Israel
+20:15:24 [INFO] [DRY-RUN] Would save: 2026-02-24 | foxnews.com | Iran nears China anti-ship supersonic missile deal as US carriers mass in region
+20:15:24 [INFO]           Event: Military | Region: Iran | Actors: Iran, China
+20:15:24 [INFO] [DRY-RUN] Would save: 2026-02-06 | nypost.com | Satellite images show Iran focusing on repairing ballistic missile sites damaged
+20:15:24 [INFO]           Event: Strike | Region: Israel | Actors: Iran, Israel
+20:15:24 [INFO] ─── Query: "Iran nuclear enrichment" ───
+20:15:25 [INFO]   NewsdataHub → 5 articles
+20:15:28 [INFO]   TheNewsAPI  → 3 articles
+20:15:28 [INFO] [DRY-RUN] Would save: 2026-02-20 | Iran nuclear enrichment | Saudi Arabia may have uranium enrichment under proposed deal with U.S., arms con
+20:15:28 [INFO]           Event: Diplomatic | Region: Iran | Actors: United States, Iran, Saudi Arabia
+20:15:28 [INFO] [DRY-RUN] Would save: 2026-02-22 | Iran nuclear enrichment | Foreign minister: Iran has the right to "nuclear energy, including enrichment"
+20:15:28 [INFO]           Event: Diplomatic | Region: Iran | Actors: Iran
+20:15:28 [INFO] [DRY-RUN] Would save: 2026-02-19 | Iran nuclear enrichment | WATCH: President Trump says Iran 'can't have a nuclear weapon'
+20:15:28 [INFO]           Event: Diplomatic | Region: Iran | Actors: United States, Iran
+20:15:28 [INFO] [DRY-RUN] Would save: 2026-02-20 | Iran nuclear enrichment | How Iran might be preparing itself for a potential US strike
+20:15:28 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran, Russia
+20:15:28 [INFO] [DRY-RUN] Would save: 2026-02-09 | rt.com | Iran floats nuclear enrichment compromise
+20:15:28 [INFO]           Event: Sanctions | Region: Iran | Actors: Iran
+20:15:28 [INFO] [DRY-RUN] Would save: 2026-02-11 | shtfplan.com | Iran Offers A Compromise On Nuclear Enrichment
+20:15:28 [INFO]           Event: Sanctions | Region: Iran | Actors: Iran
+20:15:28 [INFO] [DRY-RUN] Would save: 2026-02-21 | jpost.com | Donald Trump considering allowing Iran 'token' nuclear enrichment
+20:15:28 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:15:28 [INFO] ─── Query: "Iran proxy attack" ───
+20:15:29 [INFO]   NewsdataHub → 5 articles
+20:15:33 [INFO]   TheNewsAPI  → 3 articles
+20:15:33 [INFO] [DRY-RUN] Would save: 2026-01-27 | Iran proxy attack | At least 6,126 people killed in Iran's crackdown on nationwide protests, activis
+20:15:33 [INFO]           Event: Strike | Region: Iran | Actors: Iran
+20:15:33 [INFO] [DRY-RUN] Would save: 2026-01-27 | Iran proxy attack | Activists say Iran's crackdown has killed at least 6,159 people, as the country'
+20:15:33 [INFO]           Event: Strike | Region: Iran | Actors: Iran
+20:15:33 [INFO] [DRY-RUN] Would save: 2026-02-19 | Iran proxy attack | Rubio plans to update Netanyahu on US-Iran talks in Israel next week, officials 
+20:15:33 [INFO]           Event: Diplomatic | Region: Israel | Actors: United States, Iran, Israel
+20:15:33 [INFO] [DRY-RUN] Would save: 2026-02-19 | Iran proxy attack | Oil prices surge ahead of possible US attack on Iran
+20:15:33 [INFO]           Event: Strike | Region: Iran | Actors: Iran
+20:15:33 [INFO] [DRY-RUN] Would save: 2026-02-24 | armstrongeconomics.com | Will Iran be Their Proxy War Against USA?
+20:15:33 [INFO]           Event: General/Analytical | Region: Iran | Actors: United States, Iran
+20:15:33 [INFO] [DRY-RUN] Would save: 2026-02-08 | jpost.com | The Iran attack question confusion continues
+20:15:33 [INFO]           Event: Strike | Region: Israel | Actors: United States, Iran, Israel
+20:15:33 [INFO] [DRY-RUN] Would save: 2026-02-24 | nbcnews.com | A new U.S. attack on Iran could risk large-scale retaliation
+20:15:33 [INFO]           Event: Strike | Region: Iran | Actors: Iran
+20:15:33 [INFO] ─── Query: "US military buildup Middle East" ───
+20:15:34 [INFO]   NewsdataHub → 5 articles
+20:15:37 [INFO]   TheNewsAPI  → 3 articles
+20:15:37 [INFO] [DRY-RUN] Would save: 2026-02-20 | US military buildup Middle East | Former U.S. Navy commander talks about the US military buildup near Iran
+20:15:37 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:15:37 [INFO] [DRY-RUN] Would save: 2026-02-02 | US military buildup Middle East | After Trump's threats, Iran's supreme leader warns attack would spark 'regional 
+20:15:37 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:15:37 [INFO] [DRY-RUN] Would save: 2026-02-20 | US military buildup Middle East | Trump tells reporters he's "considering" limited strike on Iran
+20:15:37 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:15:37 [INFO] [DRY-RUN] Would save: 2026-02-13 | US military buildup Middle East | Another U.S. aircraft carrier expected to head to Middle East, officials say
+20:15:37 [INFO]           Event: Military | Region: Iran | Actors: Iran
+20:15:37 [INFO] [DRY-RUN] Would save: 2026-02-23 | wsws.org | US military buildup in Middle East against Iran largest since 2003
+20:15:37 [INFO]           Event: Military | Region: Iraq | Actors: United States, Iran
+20:15:37 [INFO] [DRY-RUN] Would save: 2026-02-20 | al-monitor.com | US military assets in the Middle East
+20:15:37 [INFO]           Event: Military | Region: Middle East | Actors: United States
+20:15:37 [INFO] ─── Query: "US Navy Middle East deployment" ───
+20:15:39 [INFO]   NewsdataHub → 5 articles
+20:15:42 [INFO]   TheNewsAPI  → 3 articles
+20:15:42 [INFO] [DRY-RUN] Would save: 2026-02-13 | US Navy Middle East deployment | USS Gerald R. Ford aircraft carrier headed from Caribbean to Middle East: Offici
+20:15:42 [INFO]           Event: Strike | Region: Middle East | Actors: Unknown
+20:15:42 [INFO] [DRY-RUN] Would save: 2026-02-19 | US Navy Middle East deployment | US Ramps Up Middle East Air Assets To 2003 Levels Amid Iran Tensions, Trump Brie
+20:15:42 [INFO]           Event: Strike | Region: Iraq | Actors: United States, Iran
+20:15:42 [INFO] [DRY-RUN] Would save: 2026-01-28 | US Navy Middle East deployment | Trump warns Iran to make a nuclear deal, threatening new U.S. attack
+20:15:42 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:15:42 [INFO] [DRY-RUN] Would save: 2026-02-10 | US Navy Middle East deployment | Navy leader wants to move faster and leaner instead of turning to aircraft carri
+20:15:42 [INFO]           Event: Military | Region: Iran | Actors: Iran
+20:15:42 [INFO] [DRY-RUN] Would save: 2026-02-18 | businessinsider.com | The US Navy is pulling more and more warships into its Middle East force buildup
+20:15:42 [INFO]           Event: Military | Region: United States | Actors: United States
+20:15:42 [INFO] [DRY-RUN] Would save: 2026-02-16 | interestingengineering.com | Navy official raises concerns over second US carrier deployment near Iran
+20:15:42 [INFO]           Event: Military | Region: Iran | Actors: Iran
+20:15:42 [INFO] [DRY-RUN] Would save: 2026-02-17 | indiatoday.intoday.in | US sends F-22s, F-35s, F-16s in major 50-jet deployment to Middle East
+20:15:42 [INFO]           Event: Strike | Region: Iran | Actors: Iran
+20:15:42 [INFO] ─── Query: "US carrier strike group Gulf" ───
+20:15:43 [INFO]   NewsdataHub → 5 articles
+20:15:46 [INFO]   TheNewsAPI  → 3 articles
+20:15:46 [INFO] [DRY-RUN] Would save: 2026-02-14 | US carrier strike group Gulf | UK deploys warships to Arctic as Starmer says Europe must be 'ready to fight'
+20:15:46 [INFO]           Event: Strike | Region: Europe | Actors: United States, Russia, Europe/NATO
+20:15:46 [INFO] [DRY-RUN] Would save: 2026-02-04 | US carrier strike group Gulf | Trump Says Iran's Supreme Leader Should Be 'Very Worried' As Odds Of US Strike O
+20:15:46 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:15:46 [INFO] [DRY-RUN] Would save: 2026-02-14 | US carrier strike group Gulf | Britain will deploy warships to the Arctic
+20:15:46 [INFO]           Event: Strike | Region: Middle East | Actors: Unknown
+20:15:46 [INFO] [DRY-RUN] Would save: 2026-01-24 | legalinsurrection.com | Iranian Regime Threatens “All-Out” War as U.S. Carrier Strike Group Nears Persia
+20:15:46 [INFO]           Event: Strike | Region: Iran | Actors: Iran
+20:15:46 [INFO] [DRY-RUN] Would save: 2026-02-13 | jpost.com | US sends largest aircraft carrier to Persian Gulf
+20:15:46 [INFO]           Event: Military | Region: Gulf States | Actors: Unknown
+20:15:46 [INFO] [DRY-RUN] Would save: 2026-01-26 | al-monitor.com | USS Abraham Lincoln carrier strike group reaches Middle Eastern waters
+20:15:46 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:15:46 [INFO] ─── Query: "US Navy carrier Iran" ───
+20:15:48 [INFO]   NewsdataHub → 5 articles
+20:15:51 [INFO]   TheNewsAPI  → 3 articles
+20:15:51 [INFO] [DRY-RUN] Would save: 2026-02-18 | US Navy carrier Iran | How the US military is assembling within striking distance of Iran
+20:15:51 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:15:51 [INFO] [DRY-RUN] Would save: 2026-02-11 | US Navy carrier Iran | Iran commemorates 1979 revolution as nation is roiled by anger over crackdown
+20:15:51 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:15:51 [INFO] [DRY-RUN] Would save: 2026-02-03 | dailycaller.com | Navy Shoots Down Iranian Aircraft Approaching US Carrier, Officials Say
+20:15:51 [INFO]           Event: Military | Region: Iran | Actors: Iran
+20:15:51 [INFO] [DRY-RUN] Would save: 2026-02-03 | businessinsider.com | An F-35 stealth fighter shot down an Iranian drone flying toward a US Navy aircr
+20:15:51 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:15:51 [INFO] ─── Query: "Pentagon Iran" ───
+20:15:52 [INFO]   NewsdataHub → 5 articles
+20:15:55 [INFO]   TheNewsAPI  → 3 articles
+20:15:55 [INFO] [DRY-RUN] Would save: 2026-02-19 | Pentagon Iran | Trump hasn't made final decision on potential strikes on Iran, sources say
+20:15:55 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:15:55 [INFO] [DRY-RUN] Would save: 2026-02-18 | Pentagon Iran | Former Pentagon official on the latest talks between the US and Iran
+20:15:55 [INFO]           Event: Diplomatic | Region: Iran | Actors: United States, Iran
+20:15:55 [INFO] [DRY-RUN] Would save: 2026-02-18 | Pentagon Iran | Trump has mulled timeline for Iran strikes, but no decision yet
+20:15:55 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:15:55 [INFO] [DRY-RUN] Would save: 2026-02-18 | Pentagon Iran | Trump discusses timeline for potential strikes on Iran
+20:15:55 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:15:55 [INFO] [DRY-RUN] Would save: 2026-01-30 | Pentagon Iran | U.S. sends another warship to Middle East amid Iran tensions
+20:15:55 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:15:55 [INFO] [DRY-RUN] Would save: 2026-02-20 | ynet.co.il | As Trump escalates threats, Pentagon prepares for prolonged Iran conflict
+20:15:55 [INFO]           Event: Political Statement | Region: Iran | Actors: United States, Iran
+20:15:55 [INFO] [DRY-RUN] Would save: 2026-02-14 | khaama.com | Pentagon Plans Multiweek Strikes on Iran; NYT Says Trump Reviewing Commando Depl
+20:15:55 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:15:55 [INFO] [DRY-RUN] Would save: 2026-01-14 | joemygod.com | Pentagon Withdraws Troops From Bases Near Iran
+20:15:55 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran, United Nations
+20:15:55 [INFO] ─── Query: "CENTCOM Iran" ───
+20:15:56 [INFO]   NewsdataHub → 5 articles
+20:15:59 [INFO]   TheNewsAPI  → 3 articles
+20:15:59 [INFO] [DRY-RUN] Would save: 2026-02-03 | CENTCOM Iran | U.S. shoots down Iranian drone that approached aircraft carrier, military says
+20:15:59 [INFO]           Event: Military | Region: Iran | Actors: Iran
+20:15:59 [INFO] [DRY-RUN] Would save: 2026-02-14 | CENTCOM Iran | U.S. military hits 30 ISIS targets in Syria
+20:15:59 [INFO]           Event: Strike | Region: Syria | Actors: United States
+20:15:59 [INFO] [DRY-RUN] Would save: 2026-02-13 | CENTCOM Iran | US military completes transfer of thousands of Islamic State detainees
+20:15:59 [INFO]           Event: General/Analytical | Region: Iraq | Actors: United States
+20:15:59 [INFO] [DRY-RUN] Would save: 2026-02-13 | CENTCOM Iran | U.S. military completes transfer of 5,700 IS detainees from Syria to Iraq
+20:15:59 [INFO]           Event: General/Analytical | Region: Iraq | Actors: United States
+20:15:59 [INFO] [DRY-RUN] Would save: 2026-02-06 | theyeshivaworld.com | CENTCOM Chief Meets Witkoff, Kushner at Iran Talks
+20:15:59 [INFO]           Event: Diplomatic | Region: Iran | Actors: United States, Iran
+20:15:59 [INFO] [DRY-RUN] Would save: 2026-01-22 | jpost.com | How CENTCOM is preparing for US showdown with Iran
+20:15:59 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:15:59 [INFO] [DRY-RUN] Would save: 2026-02-05 | theyeshivaworld.com | CENTCOM Releases New Footage of USS Abraham Lincoln Operating Near Iran
+20:15:59 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:15:59 [INFO] ─── Query: "US Air Force refueling aircraft Middle East" ───
+20:16:01 [INFO]   NewsdataHub → 5 articles
+20:16:04 [INFO]   TheNewsAPI  → 3 articles
+20:16:04 [INFO] [DRY-RUN] Would save: 2026-02-19 | US Air Force refueling aircraft Middle East | Scores of U.S. warplanes head for key bases amid standoff with Iran
+20:16:04 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:16:04 [INFO] [DRY-RUN] Would save: 2026-02-20 | US Air Force refueling aircraft Middle East | Second U.S. carrier nears Middle East, as Trump pressures Iran to make a deal
+20:16:04 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:16:04 [INFO] [DRY-RUN] Would save: 2026-01-26 | US Air Force refueling aircraft Middle East | U.S. aircraft carrier arrives in the Middle East as tensions with Iran remain hi
+20:16:04 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:16:04 [INFO] [DRY-RUN] Would save: 2026-02-14 | US Air Force refueling aircraft Middle East | Trump says Iran regime change would be the 'best thing that could happen'
+20:16:04 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:16:04 [INFO] ─── Query: "US B-52 Middle East" ───
+20:16:06 [INFO]   NewsdataHub → 5 articles
+20:16:08 [INFO]   TheNewsAPI  → 3 articles
+20:16:08 [INFO] [DRY-RUN] Would save: 2026-02-19 | US B-52 Middle East | 2nd US carrier group heads toward Middle East amid Iran tensions
+20:16:08 [INFO]           Event: Military | Region: Iran | Actors: Iran
+20:16:08 [INFO] [DRY-RUN] Would save: 2026-02-17 | US B-52 Middle East | Middle East seemingly moving closer to war as Trump moves warships
+20:16:08 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:16:08 [INFO] [DRY-RUN] Would save: 2026-02-14 | oann.com | U.S. sends world’s largest aircraft carrier to Middle East as Trump mulls Irania
+20:16:08 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:16:08 [INFO] [DRY-RUN] Would save: 2026-01-13 | india.com | Al Udeid Air Base in Qatar shows increased operational activity of US military; 
+20:16:08 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:16:08 [INFO] ─── Query: "Trump Iran statement" ───
+20:16:10 [INFO]   NewsdataHub → 5 articles
+20:16:13 [INFO]   TheNewsAPI  → 3 articles
+20:16:13 [INFO] [DRY-RUN] Would save: 2026-02-01 | Trump Iran statement | Explosion in Iranian port city ahead of Iran's naval drill in the Strait of Horm
+20:16:13 [INFO]           Event: Strike | Region: Iran | Actors: Iran
+20:16:13 [INFO] [DRY-RUN] Would save: 2026-02-03 | Trump Iran statement | U.S. shoots down Iranian drone that 'aggressively' approached an aircraft carrie
+20:16:13 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:16:13 [INFO] [DRY-RUN] Would save: 2026-02-20 | Trump Iran statement | U.S., U.K. to discuss use of British base as Iran balks at Trump's threat
+20:16:13 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:16:13 [INFO] [DRY-RUN] Would save: 2026-01-28 | Trump Iran statement | Trump says 'massive Armada' heading to Iran and warns: 'Time is running out'
+20:16:13 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:16:13 [INFO] [DRY-RUN] Would save: 2026-02-09 | Trump Iran statement | Crackdown on dissent after nationwide protests in Iran widens to ensnare reformi
+20:16:13 [INFO]           Event: Strike | Region: Iran | Actors: Iran
+20:16:13 [INFO] [DRY-RUN] Would save: 2026-01-18 | india.com | Trump makes bold statement against Iran’s supreme leader Khamenei, calls him a ‘
+20:16:13 [INFO]           Event: Political Statement | Region: Iran | Actors: United States, Iran
+20:16:13 [INFO] [DRY-RUN] Would save: 2026-01-17 | dailytimes.com.pk | Khamenei accuses Trump of fueling Iran unrest
+20:16:13 [INFO]           Event: General/Analytical | Region: Iran | Actors: United States, Iran
+20:16:13 [INFO] [DRY-RUN] Would save: 2026-01-28 | israelnationalnews.com | Trump: Massive armada en route to Iran
+20:16:13 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:16:13 [INFO] ─── Query: "Trump Iran threat" ───
+20:16:14 [INFO]   NewsdataHub → 5 articles
+20:16:17 [INFO]   TheNewsAPI  → 3 articles
+20:16:17 [INFO] [DRY-RUN] Would save: 2026-01-14 | redstate.com | Amid Protests, Iran Airs Ominous New Threat Aimed at President Trump
+20:16:17 [INFO]           Event: Political Statement | Region: Iran | Actors: United States, Iran
+20:16:17 [INFO] [DRY-RUN] Would save: 2026-01-15 | inquisitr.com | “The Bullet Won’t Miss”: Iran Airs Assassination Threat Against Donald Trump on 
+20:16:17 [INFO]           Event: Political Statement | Region: Iran | Actors: United States, Iran
+20:16:17 [INFO] [DRY-RUN] Would save: 2026-01-15 | deccanchronicle.com | Iran State TV Airs Threat Against Trump Amid Protest Uprising
+20:16:17 [INFO]           Event: Political Statement | Region: Iran | Actors: United States, Iran
+20:16:17 [INFO] ─── Query: "US administration Iran policy" ───
+20:16:18 [INFO]   NewsdataHub → 5 articles
+20:16:22 [INFO]   TheNewsAPI  → 3 articles
+20:16:22 [INFO] [DRY-RUN] Would save: 2026-02-03 | US administration Iran policy | The U.S. military strategy in Iran feels eerily familiar
+20:16:22 [INFO]           Event: Strike | Region: Iraq | Actors: United States, Iran
+20:16:22 [INFO] [DRY-RUN] Would save: 2026-02-21 | US administration Iran policy | Trump Orders Major Military Buildup Toward Iran While Advisers Push Economic Age
+20:16:22 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran
+20:16:22 [INFO] [DRY-RUN] Would save: 2026-02-07 | US administration Iran policy | Trump turns to US military leaders for diplomatic efforts on Iran and Ukraine
+20:16:22 [INFO]           Event: Diplomatic | Region: Iran | Actors: United States, Iran, Russia
+20:16:22 [INFO] [DRY-RUN] Would save: 2026-02-20 | US administration Iran policy | Who's weighing in as Trump considers military strikes on Iran?
+20:16:22 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:16:22 [INFO] [DRY-RUN] Would save: 2026-01-27 | jpost.com | Donald Trump administration open to Iran deal talks
+20:16:22 [INFO]           Event: Diplomatic | Region: Iran | Actors: United States, Iran
+20:16:22 [INFO] [DRY-RUN] Would save: 2026-01-27 | gatestoneinstitute.org | Why Are We Following Qatar's Foreign Policy on Iran?
+20:16:22 [INFO]           Event: General/Analytical | Region: Syria | Actors: United States, Iran
+20:16:22 [INFO] [DRY-RUN] Would save: 2026-01-30 | wsws.org | Trump administration threatens new war against Iran
+20:16:22 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:16:22 [INFO] ─── Query: "Trump Iran nuclear deal" ───
+20:16:23 [INFO]   NewsdataHub → 5 articles
+20:16:26 [INFO]   TheNewsAPI  → 3 articles
+20:16:26 [INFO] [DRY-RUN] Would save: 2026-02-11 | Trump Iran nuclear deal | Netanyahu is pushing for expanded Iran talks as Trump says Tehran wants a deal
+20:16:26 [INFO]           Event: Diplomatic | Region: Israel | Actors: United States, Iran, Israel
+20:16:26 [INFO] [DRY-RUN] Would save: 2026-02-11 | Trump Iran nuclear deal | Trump ‘insisted’ that US talks with Iran will continue as Netanyahu pushes for t
+20:16:26 [INFO]           Event: Diplomatic | Region: Israel | Actors: United States, Iran, Israel
+20:16:26 [INFO] [DRY-RUN] Would save: 2026-02-13 | spacewar.com | Trump warns Iran of 'very traumatic' outcome if no nuclear deal
+20:16:26 [INFO]           Event: Diplomatic | Region: Iran | Actors: United States, Iran
+20:16:26 [INFO] ─── Query: "EU Europe Iran statement" ───
+20:16:27 [INFO]   NewsdataHub → 5 articles
+20:16:30 [INFO]   TheNewsAPI  → 3 articles
+20:16:30 [INFO] [DRY-RUN] Would save: 2026-02-04 | EU Europe Iran statement | British couple's 10 year Iran prison sentence left them in 'panic', says son
+20:16:30 [INFO]           Event: Political Statement | Region: Iran | Actors: Iran
+20:16:30 [INFO] [DRY-RUN] Would save: 2026-02-01 | EU Europe Iran statement | Iran's supreme leader warns any US attack would spark 'regional war'
+20:16:30 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:16:30 [INFO] [DRY-RUN] Would save: 2026-02-02 | EU Europe Iran statement | Iran summons EU ambassadors in protest at Revolutionary Guard terror listing
+20:16:30 [INFO]           Event: Diplomatic | Region: Iran | Actors: Iran, United Nations, Europe/NATO
+20:16:30 [INFO] [DRY-RUN] Would save: 2026-01-31 | en.abna24.com | Iran Condemns EU Decision to Blacklist IRGC as “Shameful”
+20:16:30 [INFO]           Event: Sanctions | Region: Iran | Actors: Iran, Europe/NATO
+20:16:30 [INFO] [DRY-RUN] Would save: 2026-02-01 | thehindu.com | Iran declares EU armies as 'terrorist groups' in retaliatory move
+20:16:30 [INFO]           Event: General/Analytical | Region: Iran | Actors: Iran, Europe/NATO
+20:16:30 [INFO] [DRY-RUN] Would save: 2026-01-29 | indiatoday.intoday.in | Iran condemns EU's terrorist designation for IRGC as hostile and provocative
+20:16:30 [INFO]           Event: Political Statement | Region: Iran | Actors: Iran, Europe/NATO
+20:16:30 [INFO] ─── Query: "Europe Iran sanctions" ───
+20:16:32 [INFO]   NewsdataHub → 5 articles
+20:16:35 [INFO]   TheNewsAPI  → 3 articles
+20:16:35 [INFO] [DRY-RUN] Would save: 2026-02-01 | azernews.az | From sanctions to strategy: Europe joins Washington in confronting Iran
+20:16:35 [INFO]           Event: Sanctions | Region: Iran | Actors: Iran, Europe/NATO
+20:16:35 [INFO] [DRY-RUN] Would save: 2026-01-19 | azernews.az | Iran links proposed Western sanctions to Israel, draws russian criticism of Merz
+20:16:35 [INFO]           Event: Sanctions | Region: Israel | Actors: Iran, Israel, Russia, Europe/NATO
+20:16:35 [INFO] [DRY-RUN] Would save: 2026-02-03 | jpost.com | Iran networks in Europe deeply entrenched, experts warn
+20:16:35 [INFO]           Event: Diplomatic | Region: Iran | Actors: Iran, Europe/NATO
+20:16:35 [INFO] ─── Query: "UN Secretary General Iran" ───
+20:16:36 [INFO]   NewsdataHub → 5 articles
+20:16:39 [INFO]   TheNewsAPI  → 3 articles
+20:16:39 [INFO] [DRY-RUN] Would save: 2026-02-20 | UN Secretary General Iran | Trump considering initial limited strike against Iran, source says
+20:16:39 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:16:39 [INFO] [DRY-RUN] Would save: 2026-02-19 | UN Secretary General Iran | U.N. nuclear chief warns of 2 major risks if U.S.-Iran deal not reached
+20:16:39 [INFO]           Event: Strike | Region: Iran | Actors: Iran, United Nations
+20:16:39 [INFO] [DRY-RUN] Would save: 2026-01-11 | jpost.com | UN chief shocked by violence against protesters in Iran
+20:16:39 [INFO]           Event: General/Analytical | Region: Iran | Actors: Iran, United Nations
+20:16:39 [INFO] [DRY-RUN] Would save: 2026-02-11 | dailycaller.com | UN Chief Congratulates Iran On Anniversary Of Bloody Islamic Revolution
+20:16:39 [INFO]           Event: Diplomatic | Region: Iran | Actors: Iran, United Nations
+20:16:39 [INFO] [DRY-RUN] Would save: 2026-01-04 | en.abna24.com | Iran urges UN to hold US accountable for General Soleimani assassination
+20:16:39 [INFO]           Event: General/Analytical | Region: Iran | Actors: Iran, United Nations
+20:16:39 [INFO] ─── Query: "UN Iran conflict" ───
+20:16:40 [INFO]   NewsdataHub → 5 articles
+20:16:43 [INFO]   TheNewsAPI  → 3 articles
+20:16:43 [INFO] [DRY-RUN] Would save: 2026-02-19 | UN Iran conflict | Bitcoin, Ethereum Flat, While XRP, Dogecoin Dive Amid US-Iran Tensions: Analyst 
+20:16:43 [INFO]           Event: General/Analytical | Region: Iran | Actors: United States, Iran
+20:16:43 [INFO] [DRY-RUN] Would save: 2026-02-18 | UN Iran conflict | Ondas Stock Climbs On Rising Iran Conflict Fears
+20:16:43 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran, Saudi Arabia
+20:16:43 [INFO] [DRY-RUN] Would save: 2026-01-28 | timesofindia.indiatimes.com | Ummah or Dollars: Pakistan’s high stakes dilemma amid US-Iran conflict
+20:16:43 [INFO]           Event: General/Analytical | Region: Iran | Actors: United States, Iran
+20:16:43 [INFO] [DRY-RUN] Would save: 2026-02-14 | uctoday.com | Trump’s Iran regime change talk comes as US plans for prolonged conflict
+20:16:43 [INFO]           Event: General/Analytical | Region: Iran | Actors: United States, Iran
+20:16:43 [INFO] ─── Query: "Hezbollah military" ───
+20:16:45 [INFO]   NewsdataHub → 5 articles
+20:16:48 [INFO]   TheNewsAPI  → 3 articles
+20:16:48 [INFO] [DRY-RUN] Would save: 2026-02-20 | Hezbollah military | At least 10 killed in Israeli strikes on Lebanon - including 'senior Hezbollah o
+20:16:48 [INFO]           Event: Strike | Region: Lebanon | Actors: Hezbollah, Israel
+20:16:48 [INFO] [DRY-RUN] Would save: 2026-02-09 | Hezbollah military | Israeli forces capture a Hamas ally in south Lebanon as an Israeli drone kills 3
+20:16:48 [INFO]           Event: General/Analytical | Region: Lebanon | Actors: Israel, United Nations
+20:16:48 [INFO] [DRY-RUN] Would save: 2026-02-21 | Hezbollah military | Israeli airstrikes in eastern Lebanon kill 8 Hezbollah members, officials say
+20:16:48 [INFO]           Event: Strike | Region: Lebanon | Actors: Hezbollah, Israel
+20:16:48 [INFO] [DRY-RUN] Would save: 2026-02-25 | jpost.com | Hezbollah on alert amid Syrian military buildup
+20:16:48 [INFO]           Event: Military | Region: Lebanon | Actors: Iran, Hezbollah
+20:16:48 [INFO] [DRY-RUN] Would save: 2026-01-21 | ynet.co.il | IDF strikes in southern Lebanon; Hezbollah terrorist killed, military says
+20:16:48 [INFO]           Event: Strike | Region: Lebanon | Actors: Hezbollah, Israel
+20:16:48 [INFO] [DRY-RUN] Would save: 2026-01-06 | upi.com | Israeli military strikes alleged Hezbollah, Hamas targets in Lebanon
+20:16:48 [INFO]           Event: Strike | Region: Lebanon | Actors: Hezbollah, Israel
+20:16:48 [INFO] ─── Query: "Houthi Red Sea attack" ───
+20:16:49 [INFO]   NewsdataHub → 5 articles
+20:16:53 [INFO]   TheNewsAPI  → 3 articles
+20:16:53 [INFO] [DRY-RUN] Would save: 2026-02-04 | Houthi Red Sea attack | U.S.-Iran talks set for Friday in Oman after drone and tanker incidents
+20:16:53 [INFO]           Event: Diplomatic | Region: Iran | Actors: Iran
+20:16:53 [INFO] [DRY-RUN] Would save: 2026-02-05 | Houthi Red Sea attack | Missile barrages and cyber operations: Iran outlines multi-front war plan agains
+20:16:53 [INFO]           Event: Strike | Region: Lebanon | Actors: Iran, Houthis
+20:16:53 [INFO] [DRY-RUN] Would save: 2026-01-26 | ynet.co.il | Houthis threaten new Red Sea attack as US aircraft carrier heads toward Iran
+20:16:53 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran, Houthis
+20:16:53 [INFO] [DRY-RUN] Would save: 2026-01-28 | middleeastmonitor.com | Houthis threaten escalation in the Red Sea if Iran is targeted
+20:16:53 [INFO]           Event: Political Statement | Region: Iran | Actors: Iran, Houthis, United Nations
+20:16:53 [INFO] [DRY-RUN] Would save: 2026-01-27 | breitbart.com | Houthis Suggest Return to Red Sea Piracy as Iran Stares Down U.S. Fleet
+20:16:53 [INFO]           Event: General/Analytical | Region: Iran | Actors: Iran, Houthis
+20:16:53 [INFO] ─── Query: "Iraqi militia Iran" ───
+20:16:55 [INFO]   NewsdataHub → 5 articles
+20:16:58 [INFO]   TheNewsAPI  → 3 articles
+20:16:58 [INFO] [DRY-RUN] Would save: 2026-01-28 | Iraqi militia Iran | Al-Maliki is defiant after Trump threatens to withdraw U.S. support for Iraq
+20:16:58 [INFO]           Event: Political Statement | Region: Iraq | Actors: United States, Iran
+20:16:58 [INFO] [DRY-RUN] Would save: 2026-01-26 | jpost.com | Pro-Iranian Iraqi militia threatens Israel
+20:16:58 [INFO]           Event: Political Statement | Region: Iraq | Actors: Iran, Iraqi Militias, Israel
+20:16:58 [INFO] [DRY-RUN] Would save: 2026-01-14 | indiatoday.intoday.in | How Khamenei outsourced Iran killings to Arabic-speaking Iraqi militias
+20:16:58 [INFO]           Event: General/Analytical | Region: Iraq | Actors: Iran, Iraqi Militias
+20:16:58 [INFO] [DRY-RUN] Would save: 2026-01-08 | foxnews.com | Iran regime said to unleash Hezbollah and Iraqi militias as uprising spreads
+20:16:58 [INFO]           Event: General/Analytical | Region: Lebanon | Actors: Iran, Hezbollah, Iraqi Militias
+20:16:58 [INFO] ─── Query: "Houthi missile ship" ───
+20:16:59 [INFO]   NewsdataHub → 5 articles
+20:17:03 [INFO]   TheNewsAPI  → 3 articles
+20:17:03 [INFO] [DRY-RUN] Would save: 2026-02-12 | Houthi missile ship | 2 US Navy ships collide in Caribbean, minor injuries reported
+20:17:03 [INFO]           Event: Military | Region: United Nations | Actors: United States, United Nations
+20:17:03 [INFO] [DRY-RUN] Would save: 2026-02-14 | Houthi missile ship | Navy Fires USS Mason Commanding Officer During Strike Drills
+20:17:03 [INFO]           Event: Strike | Region: Middle East | Actors: Unknown
+20:17:03 [INFO] [DRY-RUN] Would save: 2026-01-20 | gcaptain.com | U.S. Targets Ship Captains in Latest Crackdown on Houthi Oil Smuggling Network
+20:17:03 [INFO]           Event: General/Analytical | Region: Red Sea / Yemen | Actors: Houthis
+20:17:03 [INFO] [DRY-RUN] Would save: 2026-01-07 | gcaptain.com | Suez Canal Traffic Stalls at 60% Below Normal Despite 100 Days Without Houthi At
+20:17:03 [INFO]           Event: Strike | Region: Red Sea / Yemen | Actors: Houthis
+20:17:03 [INFO] [DRY-RUN] Would save: 2026-01-20 | middleeastmonitor.com | Houthi naval mines: Yemeni fishermen also pay the price
+20:17:03 [INFO]           Event: General/Analytical | Region: Red Sea / Yemen | Actors: Houthis
+20:17:03 [INFO] ─── Query: "Iran airstrikes Syria Iraq" ───
+20:17:05 [INFO]   NewsdataHub → 5 articles
+20:17:08 [INFO]   TheNewsAPI  → 3 articles
+20:17:08 [INFO] [DRY-RUN] Would save: 2026-01-02 | nypost.com | Trump directed airstrikes in seven countries in 2025
+20:17:08 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:17:08 [INFO] [DRY-RUN] Would save: 2026-02-19 | naturalnews.com | U.S. announces withdrawal of ALL remaining troops from Syria amid rising tension
+20:17:08 [INFO]           Event: Military | Region: Syria | Actors: Iran, United Nations
+20:17:08 [INFO] ─── Query: "Gulf security threat" ───
+20:17:09 [INFO]   NewsdataHub → 5 articles
+20:17:12 [INFO]   TheNewsAPI  → 3 articles
+20:17:12 [INFO] [DRY-RUN] Would save: 2026-02-19 | Gulf security threat | Iran and the U.S. lean into gunboat diplomacy as nuclear talks hang in balance
+20:17:12 [INFO]           Event: Drill | Region: Iran | Actors: Iran, Russia
+20:17:12 [INFO] [DRY-RUN] Would save: 2026-02-17 | gcaptain.com | Warning Shots Off Yemen Underscore Ongoing Gulf of Aden Security Risks
+20:17:12 [INFO]           Event: General/Analytical | Region: Gulf States | Actors: Unknown
+20:17:12 [INFO] ─── Query: "Israel Iran military" ───
+20:17:13 [INFO]   NewsdataHub → 5 articles
+20:17:17 [INFO]   TheNewsAPI  → 3 articles
+20:17:17 [INFO] [DRY-RUN] Would save: 2026-01-27 | Israel Iran military | Top rabbi says Europe must do 'much more' to support revolution in Iran
+20:17:17 [INFO]           Event: General/Analytical | Region: Iran | Actors: Iran, Europe/NATO
+20:17:17 [INFO] [DRY-RUN] Would save: 2026-02-18 | Israel Iran military | Trump Sends Iran Strike Odds Surging, Says Diego Garcia 'May Be Necessary To Era
+20:17:17 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:17:17 [INFO] [DRY-RUN] Would save: 2026-02-01 | jpost.com | Israel: US military action on Iran 'unlikely' this week
+20:17:17 [INFO]           Event: General/Analytical | Region: Israel | Actors: United States, Iran, Israel
+20:17:17 [INFO] [DRY-RUN] Would save: 2026-02-18 | timesofindia.indiatimes.com | US, Israel could launch major military operation against Iran 'very soon': Repor
+20:17:17 [INFO]           Event: General/Analytical | Region: Israel | Actors: Iran, Israel
+20:17:17 [INFO] [DRY-RUN] Would save: 2026-02-03 | jpost.com | IDI poll: Israel split on Iran strike, US military aid
+20:17:17 [INFO]           Event: Strike | Region: Israel | Actors: United States, Iran, Israel
+20:17:17 [INFO] ─── Query: "Israel Iran statement" ───
+20:17:18 [INFO]   NewsdataHub → 5 articles
+20:17:21 [INFO]   TheNewsAPI  → 3 articles
+20:17:21 [INFO] [DRY-RUN] Would save: 2026-01-06 | jpost.com | Could Iran do preemptive strikes on Israel, US?
+20:17:21 [INFO]           Event: Strike | Region: Israel | Actors: Iran, Israel
+20:17:21 [INFO] [DRY-RUN] Would save: 2026-01-20 | dailyalert.org | Report exposes UN silence on Iran while repeatedly targeting Israel
+20:17:21 [INFO]           Event: Strike | Region: Israel | Actors: Iran, Israel, United Nations
+20:17:21 [INFO] [DRY-RUN] Would save: 2026-01-15 | jpost.com | Reza Pahlavi: Free Iran would recognize Israel, combat terrorism
+20:17:21 [INFO]           Event: General/Analytical | Region: Israel | Actors: Iran, Israel
+20:17:21 [INFO] ─── Query: "IDF Iran" ───
+20:17:22 [INFO]   NewsdataHub → 5 articles
+20:17:24 [INFO]   TheNewsAPI  → 3 articles
+20:17:24 [INFO] [DRY-RUN] Would save: 2026-02-03 | IDF Iran | Israel Navy conducts joint exercise with US destroyer amid tensions with Iran
+20:17:24 [INFO]           Event: Drill | Region: Israel | Actors: United States, Iran, Israel
+20:17:24 [INFO] [DRY-RUN] Would save: 2026-02-12 | IDF Iran | IDF's Persian-language account urges Iranian dissidents to contact it
+20:17:24 [INFO]           Event: General/Analytical | Region: Israel | Actors: Iran, Israel
+20:17:24 [INFO] [DRY-RUN] Would save: 2026-01-11 | israelnationalnews.com | IDF preparing for defense against Iran
+20:17:24 [INFO]           Event: General/Analytical | Region: Israel | Actors: Iran, Israel
+20:17:24 [INFO] [DRY-RUN] Would save: 2026-01-28 | ynet.co.il | Former IDF commander says U.S. is running the Iran strategy
+20:17:24 [INFO]           Event: General/Analytical | Region: Israel | Actors: Iran, Israel
+20:17:24 [INFO] [DRY-RUN] Would save: 2026-01-15 | jpost.com | IDF soldier arrested, charged for Iran espionage
+20:17:24 [INFO]           Event: General/Analytical | Region: Israel | Actors: Iran, Israel
+20:17:24 [INFO] ─── Query: "Israel Iran nuclear" ───
+20:17:26 [INFO]   NewsdataHub → 5 articles
+20:17:29 [INFO]   TheNewsAPI  → 3 articles
+20:17:29 [INFO] [DRY-RUN] Would save: 2026-02-07 | dailytimes.com.pk | Iran blasts Israel amid US nuclear talks
+20:17:29 [INFO]           Event: Diplomatic | Region: Israel | Actors: Iran, Israel
+20:17:29 [INFO] [DRY-RUN] Would save: 2026-01-13 | drudgereport.com | Iran Regime Change Could Worsen Nuclear Threat to Israel
+20:17:29 [INFO]           Event: Political Statement | Region: Israel | Actors: Iran, Israel
+20:17:29 [INFO] [DRY-RUN] Would save: 2026-02-10 | israelnationalnews.com | Trump, Iran and Israel: The perils of a narrow nuclear deal
+20:17:29 [INFO]           Event: Diplomatic | Region: Israel | Actors: United States, Iran, Israel
+20:17:29 [INFO] ─── Query: "travel ban Middle East warning" ───
+20:17:31 [INFO]   NewsdataHub → 5 articles
+20:17:34 [INFO]   TheNewsAPI  → 3 articles
+20:17:34 [INFO] [DRY-RUN] Would save: 2026-01-12 | bbc.co.uk | Newspaper headlines: 'Protester death toll soars' and 'EU demands
+20:17:34 [INFO]           Event: General/Analytical | Region: Iran | Actors: United States, Iran, Europe/NATO
+20:17:34 [INFO] ─── Query: "embassy evacuation Lebanon Iraq" ───
+20:17:35 [INFO]   NewsdataHub → 5 articles
+20:17:38 [INFO]   TheNewsAPI  → 3 articles
+20:17:38 [INFO] [DRY-RUN] Would save: 2026-02-23 | embassy evacuation Lebanon Iraq | State Department orders nonessential U.S. diplomats to leave Lebanon as tensions
+20:17:38 [INFO]           Event: Strike | Region: Lebanon | Actors: United States, Iran, Hezbollah
+20:17:38 [INFO] [DRY-RUN] Would save: 2026-02-23 | embassy evacuation Lebanon Iraq | U.S. orders embassy departures from Lebanon as tensions rise in Middle East
+20:17:38 [INFO]           Event: Diplomatic | Region: Lebanon | Actors: Iran
+20:17:38 [INFO] [DRY-RUN] Would save: 2026-02-24 | wsws.org | US begins pulling staff from Beirut embassy amid Iran attack buildup
+20:17:38 [INFO]           Event: Strike | Region: Lebanon | Actors: United States, Iran
+20:17:38 [INFO] [DRY-RUN] Would save: 2026-01-22 | jpost.com | Eliezer Tsafrir, last Mossad chief in Iran, dies at 92
+20:17:38 [INFO]           Event: General/Analytical | Region: Israel | Actors: Iran, Israel
+20:17:38 [INFO] [DRY-RUN] Would save: 2026-02-24 | thegatewaypundit.com | President Trump Contemplates Next Steps with Iran
+20:17:38 [INFO]           Event: General/Analytical | Region: Iran | Actors: United States, Iran
+20:17:38 [INFO] ─── Query: "travel advisory Iran Iraq Lebanon" ───
+20:17:39 [INFO]   NewsdataHub → 5 articles
+20:17:42 [INFO]   TheNewsAPI  → 3 articles
+20:17:42 [INFO] ─── Query: "Iran arms Russia China" ───
+20:17:44 [INFO]   NewsdataHub → 5 articles
+20:17:46 [INFO]   TheNewsAPI  → 3 articles
+20:17:46 [INFO] [DRY-RUN] Would save: 2026-02-09 | Iran arms Russia China | Trump Says China's Xi Jinping To Visit US 'Toward The End' Of This Year
+20:17:46 [INFO]           Event: Diplomatic | Region: Iran | Actors: United States, Iran, Russia, China
+20:17:46 [INFO] [DRY-RUN] Would save: 2026-02-05 | Iran arms Russia China | A half-century of U.S.-Russian arms control ends with the expiration of the New 
+20:17:46 [INFO]           Event: General/Analytical | Region: Middle East | Actors: Russia
+20:17:46 [INFO] [DRY-RUN] Would save: 2026-02-05 | Iran arms Russia China | Trump Says Xi Jinping 'Amazed' By US Progress As Wide-Ranging Call Boosts Soybea
+20:17:46 [INFO]           Event: Political Statement | Region: Iran | Actors: United States, Iran, Russia, China
+20:17:46 [INFO] [DRY-RUN] Would save: 2026-02-18 | dailytimes.com.pk | Kremlin denies secret nuclear tests by Russia, China
+20:17:46 [INFO]           Event: General/Analytical | Region: Middle East | Actors: Russia, China
+20:17:46 [INFO] [DRY-RUN] Would save: 2026-01-09 | jpost.com | How US gave Iran, China, Russia reality check in Venezuela
+20:17:46 [INFO]           Event: Strike | Region: Iran | Actors: Iran, Russia, China
+20:17:46 [INFO] [DRY-RUN] Would save: 2026-02-05 | tass.com | US starts new nuclear arms race to try to outpace Russia — expert
+20:17:46 [INFO]           Event: General/Analytical | Region: Middle East | Actors: Russia, China
+20:17:46 [INFO] ─── Query: "Iran weapons transfer" ───
+20:17:48 [INFO]   NewsdataHub → 5 articles
+20:17:50 [INFO]   TheNewsAPI  → 3 articles
+20:17:50 [INFO] [DRY-RUN] Would save: 2026-01-29 | Iran weapons transfer | UK and allies ensuring Iran does not get nuclear weapons, Starmer says
+20:17:50 [INFO]           Event: Military | Region: Iran | Actors: United States, Iran, China
+20:17:50 [INFO] [DRY-RUN] Would save: 2026-01-16 | upi.com | U.S. sanctions Houthi oil, weapons interests
+20:17:50 [INFO]           Event: Sanctions | Region: Red Sea / Yemen | Actors: United States, Houthis, United Nations
+20:17:50 [INFO] [DRY-RUN] Would save: 2026-02-24 | foxnews.com | Iran’s shadowy chemical weapons program draws scrutiny as reports allege use aga
+20:17:50 [INFO]           Event: General/Analytical | Region: Iran | Actors: Iran
+20:17:50 [INFO] ─── Query: "Iran ballistic missile" ───
+20:17:52 [INFO]   NewsdataHub → 5 articles
+20:17:55 [INFO]   TheNewsAPI  → 3 articles
+20:17:55 [INFO] [DRY-RUN] Would save: 2026-01-29 | Iran ballistic missile | As Trump pressures Iran with "armada," Mideast allies urge him not to strike
+20:17:55 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:17:55 [INFO] [DRY-RUN] Would save: 2026-01-07 | spacewar.com | Netanyahu says Israel won't let Iran restore ballistic missile programme
+20:17:55 [INFO]           Event: General/Analytical | Region: Israel | Actors: Iran, Israel
+20:17:55 [INFO] [DRY-RUN] Would save: 2026-02-11 | abc.net.au | A look at the ballistic missile program Iran refuses to negotiate on
+20:17:55 [INFO]           Event: General/Analytical | Region: Iran | Actors: Iran
+20:17:55 [INFO] [DRY-RUN] Would save: 2026-01-22 | washingtontimes.com | Defense officials project Iran will develop intercontinental ballistic missile f
+20:17:55 [INFO]           Event: General/Analytical | Region: Iran | Actors: United States, Iran
+20:17:55 [INFO] ─── Query: "Pentagon pizza index war signal" ───
+20:17:57 [INFO]   NewsdataHub → 5 articles
+20:18:00 [INFO]   TheNewsAPI  → 1 articles
+20:18:00 [INFO] ─── Query: "de-escalation Iran restraint" ───
+20:18:02 [INFO]   NewsdataHub → 5 articles
+20:18:05 [INFO]   TheNewsAPI  → 3 articles
+20:18:05 [INFO] [DRY-RUN] Would save: 2026-01-21 | app.com.pk | Experts urge de-escalation, regional stability as Iran situation unfolds
+20:18:05 [INFO]           Event: Diplomatic | Region: Iran | Actors: Iran
+20:18:05 [INFO] [DRY-RUN] Would save: 2026-02-02 | rt.com | Why the US hit pause on Iran – and why it doesn’t mean de-escalation
+20:18:05 [INFO]           Event: Diplomatic | Region: Iran | Actors: Iran
+20:18:05 [INFO] [DRY-RUN] Would save: 2026-02-24 | khaama.com | Iran Calls for De-escalation After Pakistan Airstrikes in Eastern Afghanistan
+20:18:05 [INFO]           Event: Strike | Region: Iran | Actors: Iran
+20:18:05 [INFO] ─── Query: "Iran diplomacy talks 2026" ───
+20:18:07 [INFO]   NewsdataHub → 5 articles
+20:18:10 [INFO]   TheNewsAPI  → 3 articles
+20:18:10 [INFO] [DRY-RUN] Would save: 2026-02-15 | Iran diplomacy talks 2026 | Trump told Netanyahu he would support strikes on Iran missiles, sources say
+20:18:10 [INFO]           Event: Strike | Region: Israel | Actors: United States, Iran, Israel
+20:18:10 [INFO] [DRY-RUN] Would save: 2026-02-17 | jpost.com | Geneva talks test US diplomacy with Iran, Russia
+20:18:10 [INFO]           Event: Diplomatic | Region: Iran | Actors: Iran, Russia
+20:18:10 [INFO] [DRY-RUN] Would save: 2026-02-06 | dailytimes.com.pk | US signals diplomacy first as Trump warns Iran of military options
+20:18:10 [INFO]           Event: Diplomatic | Region: Iran | Actors: United States, Iran
+20:18:10 [INFO] [DRY-RUN] Would save: 2026-01-12 | indiatoday.intoday.in | Trump mulls air strike option on Iran but diplomacy remains 1st choice: White Ho
+20:18:10 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:18:10 [INFO] ─── Query: "US Iran emergency meeting" ───
+20:18:11 [INFO]   NewsdataHub → 5 articles
+20:18:14 [INFO]   TheNewsAPI  → 3 articles
+20:18:14 [INFO] [DRY-RUN] Would save: 2026-02-20 | US Iran emergency meeting | Trump says he's considering limited military strike on Iran
+20:18:14 [INFO]           Event: Strike | Region: Iran | Actors: United States, Iran
+20:18:14 [INFO] [DRY-RUN] Would save: 2026-01-30 | US Iran emergency meeting | Protester who scaled 120ft London King’s Cross tower arrested by police
+20:18:14 [INFO]           Event: General/Analytical | Region: Iran | Actors: Iran
+20:18:14 [INFO] [DRY-RUN] Would save: 2026-01-14 | india.com | What might happen if US asks Pakistan to provide airbases to attack Iran? Asim M
+20:18:14 [INFO]           Event: Strike | Region: Iran | Actors: Iran
+20:18:14 [INFO] [DRY-RUN] Would save: 2026-01-16 | manilatimes.net | US warns Iran that 'all options are on the table' in emergency UN meeting
+20:18:14 [INFO]           Event: Diplomatic | Region: Iran | Actors: Iran, United Nations
+20:18:14 [INFO] [DRY-RUN] Would save: 2026-01-16 | koreatimes.co.kr | US warns Iran that 'all options are on table' in emergency UN meeting
+20:18:14 [INFO]           Event: Diplomatic | Region: Iran | Actors: Iran, United Nations
+20:18:14 [INFO] ============================================================
+20:18:14 [INFO] COLLECTION COMPLETE
+20:18:14 [INFO]   Total fetched          : 342
+20:18:14 [INFO]   Relevant (passed gate) : 206
+20:18:14 [INFO]   Saved to Notion        : 206
+20:18:14 [INFO]   Skipped (duplicate)    : 88
+20:18:14 [INFO]   Skipped (irrelevant)   : 48
+20:18:14 [INFO] ============================================================
+20:19:40 [INFO] ============================================================
+20:19:40 [INFO] VIT News Collector — 2026-02-25 20:19
+20:19:40 [INFO] Date range: 2026-01-01 → 2026-02-25
+20:19:40 [INFO] Mode: LIVE (writing to Notion)
+20:19:40 [INFO] Queries: 43 | Limit per query: 10
+20:19:40 [INFO] ============================================================
+20:19:42 [WARNING] Could not query Notion for deduplication: {"object":"error","status":404,"code":"object_not_found","message":"Could not find database with ID: a9327cf7-8083-433e-aa7e-bca30160ffb6. Make sure the relevant pages and databases are shared with yo
+20:19:42 [INFO] Loaded 0 existing titles from Notion for deduplication.
+20:19:42 [INFO] ─── Query: "US Iran conflict" ───
+20:19:44 [INFO]   NewsdataHub → 10 articles
+20:19:52 [INFO]   TheNewsAPI  → 9 articles
+20:19:55 [WARNING] Notion write failed (attempt 1/3): 404 — {"object":"error","status":404,"code":"object_not_found","message":"Could not find database with ID: a9327cf7-8083-433e-aa7e-bca30160ffb6. Make sure the relevant pages and databases are shared with yo
+20:19:55 [INFO] Retrying in 2.0s...
+20:19:58 [WARNING] Notion write failed (attempt 2/3): 404 — {"object":"error","status":404,"code":"object_not_found","message":"Could not find database with ID: a9327cf7-8083-433e-aa7e-bca30160ffb6. Make sure the relevant pages and databases are shared with yo
+20:19:58 [INFO] Retrying in 4.0s...
+20:20:04 [WARNING] Notion write failed (attempt 3/3): 404 — {"object":"error","status":404,"code":"object_not_found","message":"Could not find database with ID: a9327cf7-8083-433e-aa7e-bca30160ffb6. Make sure the relevant pages and databases are shared with yo
+20:20:04 [ERROR] ❌ Failed to save after 3 attempts: Trump To Reportedly Push Iran And Russia-Ukraine Talks In Geneva As Israel Monit
+20:20:05 [WARNING] Notion write failed (attempt 1/3): 404 — {"object":"error","status":404,"code":"object_not_found","message":"Could not find database with ID: a9327cf7-8083-433e-aa7e-bca30160ffb6. Make sure the relevant pages and databases are shared with yo
+20:20:05 [INFO] Retrying in 2.0s...
