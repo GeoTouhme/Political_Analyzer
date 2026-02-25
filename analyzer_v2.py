@@ -46,27 +46,152 @@ if not NOTION_TOKEN:
 
 # --- Strategic Dictionary (Risk Scoring) ------------------------------------
 
+# v2.0 - Expanded Dictionary including Military, Defiance, Diplomatic, Gray, Coercive, and Hybrid terms.
+
 MILITARY_TERMS: dict[str, list[str]] = {
     "critical": [
         "decapitation", "regime change", "invasion", "existential",
         "pre-emptive", "nuclear breakout", "massive retaliation",
+        "obliterate", "total war", "first strike", "annihilation",
+        "nuclear option", "mutually assured destruction", "carpet bombing",
+        "scorched earth", "ethnic cleansing", "genocide", "weapons of mass destruction",
+        "chemical weapons", "biological weapons", "casus belli"
     ],
     "high": [
         "strike", "carrier", "armada", "missile", "buildup",
-        "offensive doctrine", "punitive", "escalation",
+        "offensive doctrine", "punitive", "escalation", "bombardment",
+        "war footing", "brinkmanship", "arms race", "proliferation",
+        "troop surge", "mobilization", "aerial campaign", "naval blockade",
+        "siege", "shelling", "incursion", "ground offensive", "surgical strike",
+        "deterrence", "compellence", "gunboat diplomacy", "show of force",
+        "escalation dominance"
     ],
     "medium": [
         "deployment", "assets", "patrol", "exercise", "maneuver", "posture",
+        "readiness", "fortification", "troop movement", "reinforcement",
+        "military expansion", "defense buildup", "surveillance", "reconnaissance",
+        "military drill", "forward deployment", "no-fly zone", "buffer zone",
+        "rules of engagement"
     ],
 }
 
+DEFIANCE_TERMS: dict[str, list[str]] = {
+    "critical": [
+        "not bound", "not be bound", "red line", "will not tolerate", "non-negotiable",
+        "freedom of action", "right to defend", "reserve the right", "will not comply",
+        "refuse to comply", "no longer bound", "no longer obligated", "reject the authority",
+        "reject the jurisdiction", "null and void", "not honor", "not abide by",
+        "renounce", "act of war", "declaration of war", "acts of aggression"
+    ],
+    "high": [
+        "reject", "refuse", "unacceptable", "defy", "no concessions",
+        "regret", "miscalculation", "consequences", "axis of resistance",
+        "not a party to", "will not accept", "cannot accept", "withdraw from",
+        "pull out of", "does not recognize", "will not recognize", "suspend cooperation",
+        "halt cooperation", "suspend participation", "ultimatum", "final warning",
+        "last chance", "illegitimate", "illegal occupation", "sovereign right",
+        "not respect", "does not comply", "demarche", "expel diplomats",
+        "recall ambassador", "sever relations", "downgrade relations",
+        "persona non grata", "cross-border incursion", "provocation",
+        "hostile act", "belligerent"
+    ],
+    "medium": [
+        "sovereign decision", "will act alone", "independent action", "will not be dictated",
+        "on our own terms", "firm resolve", "unwavering position", "no retreat",
+        "irrevocable", "protest note", "note verbale", "formal objection",
+        "strongly condemn", "categorical denial", "unilateral action"
+    ]
+}
+
+GRAY_TERMS: dict[str, list[str]] = {
+    "critical": [
+        "will not comply with", "refuse to comply with", "not bound by", "no longer recognize",
+        "withdraw from the", "exit the agreement", "not abide by the", "not honor the",
+        "declare null and void", "reject the framework", "reject the resolution",
+        "defy the ruling", "renounce the treaty", "revoke participation",
+        "terminate the agreement", "abrogate the treaty", "repudiate the accord",
+        "void the agreement", "defy international law", "violate the resolution"
+    ],
+    "high": [
+        "suspend all cooperation", "respond with force", "hold responsible",
+        "bear the consequences", "will not stand idly", "forced to respond",
+        "on the table", "all options", "strategic patience has limits",
+        "proportional response", "severe consequences", "decisive action",
+        "right to retaliate", "will pay a price", "cross a threshold",
+        "point of no return", "escalatory measures", "coercive measures",
+        "impose costs", "diplomatic fallout", "spiral of distrust"
+    ],
+    "medium": [
+        "reassessing our position", "reviewing our commitments", "reconsider our participation",
+        "deeply concerned", "gravely concerned", "cannot remain silent",
+        "calls into question", "undermines", "destabilizing", "provocative",
+        "reckless behavior", "irresponsible", "dangerous precedent",
+        "eroding trust", "calculated ambiguity", "unilateral measures"
+    ]
+}
+
+COERCIVE_TERMS: dict[str, list[str]] = {
+    "critical": [
+        "total embargo", "economic warfare", "complete blockade", "weaponize trade",
+        "weaponize energy", "financial strangulation", "economic strangulation"
+    ],
+    "high": [
+        "sanctions", "embargo", "blockade", "asset freeze", "trade restriction",
+        "arms embargo", "economic coercion", "economic pressure", "punitive measures",
+        "punitive sanctions", "secondary sanctions", "snap-back sanctions",
+        "energy cutoff", "trade war", "financial sanctions", "blacklist", "export controls"
+    ],
+    "medium": [
+        "travel ban", "diplomatic isolation", "economic leverage", "conditionality",
+        "compliance mechanism", "enforcement measure", "restrictive measures",
+        "denial of access", "supply disruption"
+    ]
+}
+
+HYBRID_TERMS: dict[str, list[str]] = {
+    "critical": [
+        "proxy war", "hybrid warfare", "asymmetric attack", "state-sponsored terrorism",
+        "cyber warfare", "cyber attack", "information warfare", "weaponization"
+    ],
+    "high": [
+        "gray zone operations", "gray zone", "disinformation campaign", "propaganda",
+        "election interference", "foreign interference", "subversion", "covert operations",
+        "insurgency", "non-state actors", "paramilitary", "militia", "sabotage",
+        "destabilization", "irregular warfare", "false flag", "plausible deniability",
+        "fifth column"
+    ],
+    "medium": [
+        "influence operations", "narrative warfare", "cognitive warfare",
+        "strategic communication", "lawfare", "economic espionage",
+        "critical infrastructure", "supply chain attack", "dual-use technology",
+        "regime proxy"
+    ]
+}
+
 DIPLOMATIC_TERMS: dict[str, list[str]] = {
-    "high": ["treaty", "agreement", "breakthrough", "rapprochement", "normalization"],
-    "medium": ["talks", "negotiation", "dialogue", "concession", "relief"],
-    "low": ["meeting", "statement", "visit", "consultation"],
+    "high": [
+        "treaty", "agreement", "breakthrough", "rapprochement", "normalization",
+        "ceasefire", "peace pact", "disarmament", "arms control", "peace accord",
+        "peace process", "reconciliation", "détente", "non-aggression pact", "armistice"
+    ],
+    "medium": [
+        "talks", "negotiation", "dialogue", "concession", "relief", "mediation",
+        "de-escalation", "diplomatic solution", "peaceful resolution",
+        "confidence-building", "good faith", "constructive engagement",
+        "back-channel", "humanitarian corridor", "truce", "peacekeeping"
+    ],
+    "low": [
+        "meeting", "statement", "visit", "consultation", "cooperation", "summit",
+        "envoy", "goodwill gesture", "communiqué", "memorandum of understanding",
+        "bilateral", "multilateral"
+    ],
 }
 
 MILITARY_WEIGHTS: dict[str, int] = {"critical": 15, "high": 8, "medium": 3}
+DEFIANCE_WEIGHTS: dict[str, int] = {"critical": 12, "high": 7, "medium": 4}
+GRAY_WEIGHTS: dict[str, int] = {"critical": 10, "high": 7, "medium": 4}
+COERCIVE_WEIGHTS: dict[str, int] = {"critical": 12, "high": 7, "medium": 4}
+HYBRID_WEIGHTS: dict[str, int] = {"critical": 12, "high": 7, "medium": 4}
 DIPLOMATIC_WEIGHTS: dict[str, int] = {"high": -10, "medium": -5, "low": -2}
 
 # --- Data Models -------------------------------------------------------------
@@ -81,6 +206,8 @@ class ArticleAnalysis:
     key_phrases: list[str]
     military_hits: int = 0
     diplomatic_hits: int = 0
+    source_name: str = "Unknown"
+    date: str = "2026-01-01"
 
 @dataclass
 class ReportMeta:
@@ -153,13 +280,23 @@ def calculate_risk_score(text: str, sentiment: float) -> tuple[float, int, int]:
     military_hits = 0
     diplomatic_hits = 0
 
-    for tier, terms in MILITARY_TERMS.items():
-        weight = MILITARY_WEIGHTS[tier]
-        for term in terms:
-            count = text_lower.count(term)
-            if count > 0:
-                term_score += weight * min(count, 3)  # cap at 3x per term
-                military_hits += count
+    # Categorize and weigh terms
+    term_categories = [
+        (MILITARY_TERMS, MILITARY_WEIGHTS),
+        (DEFIANCE_TERMS, DEFIANCE_WEIGHTS),
+        (GRAY_TERMS, GRAY_WEIGHTS),
+        (COERCIVE_TERMS, COERCIVE_WEIGHTS),
+        (HYBRID_TERMS, HYBRID_WEIGHTS)
+    ]
+
+    for terms_dict, weights_dict in term_categories:
+        for tier, terms in terms_dict.items():
+            weight = weights_dict[tier]
+            for term in terms:
+                count = text_lower.count(term)
+                if count > 0:
+                    term_score += weight * min(count, 3)  # cap at 3x per term
+                    military_hits += count
 
     for tier, terms in DIPLOMATIC_TERMS.items():
         weight = DIPLOMATIC_WEIGHTS[tier]
@@ -198,11 +335,26 @@ def extract_title(props: dict) -> str:
     return title_list[0].get("plain_text", "Untitled") if title_list else "Untitled"
 
 
+def extract_date(props: dict) -> str:
+    """Safely extract date from Notion properties."""
+    date_obj = props.get("Date", {}).get("date")
+    return date_obj.get("start", "2026-01-01") if date_obj else "2026-01-01"
+
+
 def analyze_article(article: dict) -> Optional[ArticleAnalysis]:
     """Analyze a single Notion article for sentiment and risk."""
     props = article.get("properties", {})
     title = extract_title(props)
     full_text = extract_text(props, "Full text")
+    date = extract_date(props)
+    
+    # Extract source name for intellectual property/branding
+    source_url = props.get("Sources", {}).get("url", "")
+    source_name = "Unknown Source"
+    if source_url:
+        from urllib.parse import urlparse
+        domain = urlparse(source_url).netloc
+        source_name = domain.replace("www.", "").split(".")[0].upper()
 
     if not full_text:
         log.debug("Skipping '%s' — no full text", title)
@@ -214,7 +366,12 @@ def analyze_article(article: dict) -> Optional[ArticleAnalysis]:
 
     try:
         blob = TextBlob(full_text)
-        key_phrases = list(blob.noun_phrases[:5])
+        # Clean phrases to prevent JSON injection/syntax errors
+        key_phrases = []
+        for p in blob.noun_phrases[:5]:
+            clean_p = p.replace("\"", "").replace("\\", "").strip()
+            if clean_p:
+                key_phrases.append(clean_p)
     except Exception:
         key_phrases = []
         log.debug("TextBlob corpus missing — skipping noun phrases for '%s'", title)
@@ -228,24 +385,54 @@ def analyze_article(article: dict) -> Optional[ArticleAnalysis]:
         key_phrases=key_phrases,
         military_hits=mil_hits,
         diplomatic_hits=dip_hits,
+        source_name=source_name,
+        date=date
     )
 
 
 # --- Report Generation --------------------------------------------------------
 
 def generate_report(results: list[ArticleAnalysis]) -> dict:
-    """Build the full analysis report with metadata."""
+    """Build the full analysis report with metadata and trend analysis."""
     risk_scores = [r.risk_score for r in results]
+    
+    # Trend Analysis: Compare last 3 days vs previous 3 days
+    # (Assuming latest date in dataset is "today")
+    sorted_articles = sorted(results, key=lambda x: x.date, reverse=True)
+    if not sorted_articles:
+        return {"meta": {}, "articles": []}
+        
+    latest_date_str = sorted_articles[0].date
+    latest_dt = datetime.strptime(latest_date_str, "%Y-%m-%d")
+    
+    current_window = [r.risk_score for r in results if (latest_dt - datetime.strptime(r.date, "%Y-%m-%d")).days <= 2]
+    previous_window = [r.risk_score for r in results if 3 <= (latest_dt - datetime.strptime(r.date, "%Y-%m-%d")).days <= 5]
+    
+    current_risk = round(sum(current_window) / len(current_window), 1) if current_window else 0
+    previous_risk = round(sum(previous_window) / len(previous_window), 1) if previous_window else 0
+    
+    trend = "STABLE"
+    if current_risk > previous_risk + 2: trend = "UP"
+    elif current_risk < previous_risk - 2: trend = "DOWN"
+
     meta = ReportMeta(
         generated_at=datetime.now().isoformat(),
         article_count=len(results),
-        avg_risk_score=round(sum(risk_scores) / len(risk_scores), 1) if risk_scores else 0,
+        avg_risk_score=current_risk, # Focus on Current Risk
         max_risk_score=max(risk_scores) if risk_scores else 0,
     )
-    return {
+    
+    report_data = {
         "meta": asdict(meta),
+        "trend": {
+            "status": trend,
+            "current": current_risk,
+            "previous": previous_risk,
+            "global_avg": round(sum(risk_scores) / len(risk_scores), 1) if risk_scores else 0
+        },
         "articles": [asdict(r) for r in results],
     }
+    return report_data
 
 
 # --- Dashboard Update ---------------------------------------------------------
@@ -278,6 +465,23 @@ def update_dashboard(report: dict) -> None:
 
     log.info("📊 Dashboard updated: %s", DASHBOARD_PATH)
 
+
+def push_to_github():
+    """Sync the updated dashboard and report to GitHub Pages."""
+    log.info("🚀 Syncing results to GitHub Pages...")
+    try:
+        import subprocess
+        # Copy dashboard to index.html for GitHub Pages
+        subprocess.run(["cp", "dashboard.html", "index.html"], check=True)
+        
+        # Git operations
+        subprocess.run(["git", "add", "index.html", "analysis_report_v2.json", "dashboard.html"], check=True)
+        commit_msg = f"auto-sync: analysis update {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+        subprocess.run(["git", "commit", "-m", commit_msg], check=True)
+        subprocess.run(["git", "push", "origin", "main"], check=True)
+        log.info("✅ Successfully pushed to GitHub Pages.")
+    except Exception as e:
+        log.error(f"❌ Failed to push to GitHub: {e}")
 
 # --- Main Entry ---------------------------------------------------------------
 
@@ -317,6 +521,9 @@ def main() -> None:
              report["meta"]["avg_risk_score"])
 
     update_dashboard(report)
+    
+    # Auto-push to GitHub
+    push_to_github()
 
 
 if __name__ == "__main__":
