@@ -1,16 +1,16 @@
 {
     "meta": {
-        "generated_at": "2026-02-25T06:51:42.752808",
-        "article_count": 60,
-        "avg_risk_score": 25.8,
+        "generated_at": "2026-02-25T06:53:56.344014",
+        "article_count": 62,
+        "avg_risk_score": 28.2,
         "max_risk_score": 74.0,
         "analyzer_version": "1.0"
     },
     "trend": {
         "status": "DOWN",
-        "current": 25.8,
+        "current": 28.2,
         "previous": 34.3,
-        "global_avg": 33.3
+        "global_avg": 33.5
     },
     "articles": [
         {
@@ -48,6 +48,24 @@
             "diplomatic_hits": 1,
             "source_name": "CRISISGROUP",
             "date": "2026-02-23"
+        },
+        {
+            "title": "China Denies Military Transport to Iran, Calls Reports \"Malicious Fabrication\"",
+            "sentiment_polarity": -0.477,
+            "sentiment_method": "vader",
+            "risk_score": 29.5,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "beijing",
+                "feb",
+                "ministry",
+                "emergency airlift",
+                "military hardware"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "FMPRC",
+            "date": "2026-02-25"
         },
         {
             "title": "What Would War With Iran Look Like?",
@@ -839,6 +857,24 @@
             "diplomatic_hits": 1,
             "source_name": "MIDDLEEASTMONITOR",
             "date": "2026-01-29"
+        },
+        {
+            "title": "US Carrier Strike Group 8 Enters Persian Gulf Amid High Tension",
+            "sentiment_polarity": 0.302,
+            "sentiment_method": "vader",
+            "risk_score": 46.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "aboard uss harry s. truman",
+                "feb",
+                "carrier strike",
+                "csg",
+                "aircraft carrier"
+            ],
+            "military_hits": 4,
+            "diplomatic_hits": 0,
+            "source_name": "NAVY",
+            "date": "2026-02-25"
         },
         {
             "title": "EU's Borrell: Diplomacy is the only path to nuclear safety",
