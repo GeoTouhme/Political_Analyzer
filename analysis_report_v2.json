@@ -1,10 +1,10 @@
 {
     "meta": {
-        "generated_at": "2026-02-25T11:30:00.762251",
+        "generated_at": "2026-02-25T11:30:51.686001",
         "article_count": 68,
         "avg_risk_score": 21.9,
         "max_risk_score": 58.0,
-        "strategic_outlook": "Despite elevated rhetoric concerning U.S. naval deployments and Iranian procurement activities, the low risk score of 21.9 indicates that established diplomatic buffers and deterrence mechanisms continue to effectively suppress the potential for kinetic escalation. The downward risk trend suggests that recent military maneuvers function primarily as strategic signaling rather than precursors to immediate conflict, with stability maintained through existing geopolitical norms. No confirmed reactive linkage detected between specific U.S. force posture adjustments and reported adversarial countermeasures.",
+        "strategic_outlook": "Despite elevated rhetoric surrounding U.S. naval positioning and Iranian strategic posturing, the aggregate risk score of 21.9 indicates that diplomatic buffers and deterrence mechanisms remain effective at preventing kinetic breakout. The simultaneous presence of U.S. carrier groups and reports of Iranian defensive mobilization reflects parallel precautionary measures rather than a breakdown of containment norms. No confirmed reactive linkage detected between recent force projections and a specific adversarial trigger, suggesting the security environment remains structurally stable despite the volume of signaling.",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
@@ -843,7 +843,7 @@
         },
         {
             "title": "ترمب في خطاب حالة الاتحاد: جيشنا الأقوى ولن نسمح لإيران نووية",
-            "sentiment_polarity": 0.87,
+            "sentiment_polarity": 0.859,
             "sentiment_method": "vader",
             "risk_score": 18.0,
             "risk_level": "LOW",
@@ -1028,11 +1028,11 @@
             "risk_score": 15.0,
             "risk_level": "LOW",
             "key_phrases": [
+                "* *",
+                "english translation",
+                "* *",
                 "protect journalists",
-                "urgent report",
-                "israel",
-                "bears responsibility",
-                "gaza"
+                "cpj"
             ],
             "military_hits": 0,
             "diplomatic_hits": 0,
@@ -1184,16 +1184,16 @@
         },
         {
             "title": "مستوطنون يحرقون منازل ومركبات فلسطينية في الخليل",
-            "sentiment_polarity": -0.772,
+            "sentiment_polarity": -0.878,
             "sentiment_method": "vader",
             "risk_score": 15.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "susya",
                 "hebron",
-                "widespread settler attacks",
+                "extensive assaults",
                 "ramadan",
-                "arson attacks"
+                "palestinian-owned"
             ],
             "military_hits": 0,
             "diplomatic_hits": 0,
