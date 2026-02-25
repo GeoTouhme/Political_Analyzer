@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generated_at": "2026-02-25T05:08:54.749769",
+        "generated_at": "2026-02-25T05:11:56.441594",
         "article_count": 45,
         "avg_risk_score": 32.7,
         "max_risk_score": 74.4,
@@ -428,7 +428,7 @@
             "risk_level": "MEDIUM",
             "key_phrases": [
                 "donald trump",
-                "bad things\\",
+                "bad things",
                 "iran",
                 "nuclear framework",
                 "white house"
@@ -557,7 +557,7 @@
                 "ayatollah ali khamenei",
                 "nuclear enrichment",
                 "peaceful purposes",
-                "inalienable right\\"
+                "inalienable right"
             ],
             "military_hits": 0,
             "diplomatic_hits": 0,
@@ -682,7 +682,7 @@
                 "foreign minister",
                 "hakan fidan",
                 "current path",
-                "regional dark age.\\",
+                "regional dark age.",
                 "naval buildup"
             ],
             "military_hits": 1,
@@ -699,7 +699,7 @@
             "key_phrases": [
                 "lloyd austin",
                 "u.s.",
-                "full operational synchronization\\",
+                "full operational synchronization",
                 "additional carrier strike groups",
                 "deter aggression"
             ],
