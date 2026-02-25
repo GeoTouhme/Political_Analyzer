@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Political Analysis Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #1a1a1a; color: #e0e0e0; margin: 20px; }
+        .container { max-width: 1000px; margin: auto; }
+        .header { text-align: center; margin-bottom: 40px; border-bottom: 2px solid #333; padding-bottom: 20px; }
+        .header h1 { color: #ff4d4d; margin: 0; }
+        .header p { color: #888; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .card { background: #262626; border-radius: 12px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+        .full-width { grid-column: span 2; }
+        h2 { margin-top: 0; color: #fff; border-right: 4px solid #ff4d4d; padding-right: 10px; font-size: 1.2rem; }
+        .risk-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; padding: 8px; border-radius: 6px; background: #333; }
+        .risk-score { font-weight: bold; padding: 2px 8px; border-radius: 4px; }
+        .CRITICAL { color: #ff4d4d; background: rgba(255, 77, 77, 0.1); }
+        .HIGH { color: #ffa366; background: rgba(255, 163, 102, 0.1); }
+        .MEDIUM { color: #ffff80; background: rgba(255, 255, 128, 0.1); }
+        .LOW { color: #80ffaa; background: rgba(128, 255, 170, 0.1); }
+        .keywords { font-size: 0.8rem; color: #aaa; margin-top: 4px; }
+        canvas { max-height: 300px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Strategic Analysis Dashboard</h1>
+            <p>Project: Political Pattern Analyzer | Data as of Feb 25, 2026</p>
+        </div>
+
+        <div class="grid">
+            <div class="card full-width">
+                <h2>Risk Overview by Source</h2>
+                <div id="riskList"></div>
+            </div>
+
+            <div class="card">
+                <h2>Risk vs. Sentiment</h2>
+                <canvas id="sentimentChart"></canvas>
+            </div>
+
+            <div class="card">
+                <h2>Source Distribution</h2>
+                <canvas id="levelChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const data = [
+            {"title": "U.S. Military: Numbers Behind Trump’s Threats", "risk_score": 51.0, "risk_level": "HIGH", "sentiment": 0.0, "keywords": "csis, force composition, armada"},
+            {"title": "Iran considers its response to strikes", "risk_score": 45.5, "risk_level": "MEDIUM", "sentiment": 0.08, "keywords": "buildup, offensive doctrine"},
+            {"title": "US military positioning multiple strikes", "risk_score": 43.5, "risk_level": "MEDIUM", "sentiment": 0.03, "keywords": "carriers, air force"},
+            {"title": "The U.S. and Iran Can Still Avoid a War", "risk_score": 43.3, "risk_level": "MEDIUM", "sentiment": 0.04, "keywords": "mutual antagonism, diplomacy"},
+            {"title": "The High Stakes of a Potential Conflict", "risk_score": 40.1, "risk_level": "MEDIUM", "sentiment": 0.04, "keywords": "nyt, oil prices"},
+            {"title": "Iran Update | ISW", "risk_score": 29.9, "risk_level": "MEDIUM", "sentiment": -0.34, "keywords": "deterrent, us demands"},
+            {"title": "What Would War With Iran Look Like?", "risk_score": 24.0, "risk_level": "LOW", "sentiment": -0.2, "keywords": "large-scale, fallout"},
+            {"title": "Iran, US hold first nuclear talks", "risk_score": 19.6, "risk_level": "LOW", "sentiment": 0.17, "keywords": "geneva, ap, talks"},
+            {"title": "For Iran’s rulers, refusing demands is a risk", "risk_score": 16.3, "risk_level": "LOW", "sentiment": 0.18, "keywords": "tehran, survival"},
+            {"title": "U.S., Iran near nuclear pact", "risk_score": 12.9, "risk_level": "LOW", "sentiment": 0.01, "keywords": "reuters, pact, looms"}
+        ];
+
+        // Populate Risk List
+        const listDiv = document.getElementById('riskList');
+        data.forEach(item => {
+            const div = document.createElement('div');
+            div.className = 'risk-item';
+            div.innerHTML = `
+                <div>
+                    <strong>${item.title}</strong>
+                    <div class="keywords">${item.keywords}</div>
+                </div>
+                <div class="risk-score ${item.risk_level}">${item.risk_score}</div>
+            `;
+            listDiv.appendChild(div);
+        });
+
+        // Sentiment Chart
+        new Chart(document.getElementById('sentimentChart'), {
+            type: 'scatter',
+            data: {
+                datasets: [{
+                    label: 'Articles',
+                    data: data.map(i => ({x: i.sentiment, y: i.risk_score})),
+                    backgroundColor: '#ff4d4d'
+                }]
+            },
+            options: {
+                scales: {
+                    x: { title: { display: true, text: 'Sentiment (Negative < 0 > Positive)', color: '#888' } },
+                    y: { title: { display: true, text: 'Risk Score', color: '#888' } }
+                }
+            }
+        });
+
+        // Level Chart
+        const counts = data.reduce((acc, i) => { acc[i.risk_level] = (acc[i.risk_level] || 0) + 1; return acc; }, {});
+        new Chart(document.getElementById('levelChart'), {
+            type: 'doughnut',
+            data: {
+                labels: Object.keys(counts),
+                datasets: [{
+                    data: Object.values(counts),
+                    backgroundColor: ['#ffa366', '#ffff80', '#80ffaa']
+                }]
+            }
+        });
+    </script>
+</body>
+</html>

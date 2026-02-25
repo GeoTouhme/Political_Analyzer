@@ -1,0 +1,130 @@
+[
+    {
+        "title": "Iran considers its response to potential renewed US-Israeli strikes",
+        "sentiment_polarity": 0.08,
+        "risk_score": 45.5,
+        "risk_level": "MEDIUM",
+        "key_phrases": [
+            "rapid military buildup",
+            "familiar anxiety",
+            "iran",
+            "iranian",
+            "full-scale war"
+        ]
+    },
+    {
+        "title": "The U.S. and Iran Can Still Avoid a War",
+        "sentiment_polarity": 0.04,
+        "risk_score": 43.3,
+        "risk_level": "MEDIUM",
+        "key_phrases": [
+            "mutual antagonism",
+            "u.s.",
+            "iran",
+            "major war ...",
+            "recent weeks"
+        ]
+    },
+    {
+        "title": "What Would War With Iran Look Like?",
+        "sentiment_polarity": -0.2,
+        "risk_score": 24.0,
+        "risk_level": "LOW",
+        "key_phrases": [
+            "pentagon officials",
+            "large-scale conflict",
+            "economic fallout",
+            "oil prices",
+            "strategic chicken"
+        ]
+    },
+    {
+        "title": "For Iran\u2019s rulers, refusing US demands is a risk worth taking",
+        "sentiment_polarity": 0.18,
+        "risk_score": 16.3,
+        "risk_level": "LOW",
+        "key_phrases": [
+            "tehran",
+            "washington",
+            "internal",
+            "social unrest",
+            "economic pressure"
+        ]
+    },
+    {
+        "title": "U.S. Military in the Middle East: Numbers Behind Trump\u2019s Threats Against Iran",
+        "sentiment_polarity": 0.0,
+        "risk_score": 51.0,
+        "risk_level": "HIGH",
+        "key_phrases": [
+            "csis analysis",
+            "force composition lacks",
+            "logistical tail",
+            "ground elements",
+            "sof"
+        ]
+    },
+    {
+        "title": "US military positioning multiple waves of strikes",
+        "sentiment_polarity": 0.03,
+        "risk_score": 43.5,
+        "risk_level": "MEDIUM",
+        "key_phrases": [
+            "military forces",
+            "multiple waves",
+            "navy carriers",
+            "air force squadrons"
+        ]
+    },
+    {
+        "title": "U.S., Iran near nuclear pact as war threat looms",
+        "sentiment_polarity": 0.01,
+        "risk_score": 12.9,
+        "risk_level": "LOW",
+        "key_phrases": [
+            "geneva",
+            "feb",
+            "reuters",
+            "negotiators",
+            "iran"
+        ]
+    },
+    {
+        "title": "Iran, US hold first nuclear talks since war scare",
+        "sentiment_polarity": 0.17,
+        "risk_score": 19.6,
+        "risk_level": "LOW",
+        "key_phrases": [
+            "geneva",
+            "ap",
+            "iran",
+            "direct nuclear talks",
+            "brokers"
+        ]
+    },
+    {
+        "title": "The High Stakes of a Potential Iran Conflict",
+        "sentiment_polarity": 0.04,
+        "risk_score": 40.1,
+        "risk_level": "MEDIUM",
+        "key_phrases": [
+            "york",
+            "briefing",
+            "feb",
+            "washington",
+            "tehran"
+        ]
+    },
+    {
+        "title": "Iran Update, January 30, 2026 | ISW",
+        "sentiment_polarity": -0.34,
+        "risk_score": 29.9,
+        "risk_level": "MEDIUM",
+        "key_phrases": [
+            "iran",
+            "us demands",
+            "strategic deterrent",
+            "u.s."
+        ]
+    }
+]
