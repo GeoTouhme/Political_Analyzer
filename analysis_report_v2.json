@@ -1,17 +1,17 @@
 {
     "meta": {
-        "generated_at": "2026-02-25T10:46:31.225042",
-        "article_count": 67,
-        "avg_risk_score": 21.1,
+        "generated_at": "2026-02-25T10:50:10.962322",
+        "article_count": 64,
+        "avg_risk_score": 24.9,
         "max_risk_score": 74.0,
-        "strategic_outlook": "Despite high-profile military posturing, including the deployment of U.S. Carrier Strike Group 8 and joint China-Iran naval exercises, the aggregate risk score of 21.1 reflects a security environment stabilized by effective diplomatic buffers and deterrence mechanisms. The downward trend suggests that while rhetoric regarding potential strikes remains elevated, these actions currently function as political signaling rather than precursors to imminent kinetic engagement. No confirmed reactive linkage detected between the reported mobilization efforts and specific adversarial triggers.",
+        "strategic_outlook": "Current intelligence assessment indicates that despite elevated rhetoric regarding U.S. military readiness and Iranian strategic maneuvering, the regional security architecture remains stable due to robust diplomatic buffers. Recent events, including naval drills and force posturing, appear to be isolated signaling efforts rather than components of an accelerating conflict cycle. No confirmed reactive linkage detected between specific deployment announcements and reciprocal kinetic actions. Consequently, the downward trend highlights the effectiveness of current mediation channels in preventing isolated flashpoints from coalescing into a broader escalation.",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
         "status": "DOWN",
-        "current": 21.1,
+        "current": 24.9,
         "previous": 34.3,
-        "global_avg": 31.5
+        "global_avg": 32.7
     },
     "articles": [
         {
@@ -662,24 +662,6 @@
             "date": "2026-02-25"
         },
         {
-            "title": "Trump delivers State of the Union: Warns Iran of \"Total Accountability\"",
-            "sentiment_polarity": 0.886,
-            "sentiment_method": "vader",
-            "risk_score": 6.3,
-            "risk_level": "LOW",
-            "key_phrases": [
-                "washington",
-                "feb",
-                "donald trump",
-                "marathon state",
-                "union address"
-            ],
-            "military_hits": 2,
-            "diplomatic_hits": 3,
-            "source_name": "GEOPOLITICAL-MONITOR",
-            "date": "2026-02-25"
-        },
-        {
             "title": "Lavrov: Russia will provide technical support to Iran if attacked",
             "sentiment_polarity": 0.82,
             "sentiment_method": "vader",
@@ -1022,24 +1004,6 @@
             "date": "2026-02-25"
         },
         {
-            "title": "Trump SOTU 2026: Warns Iran of Total Accountability",
-            "sentiment_polarity": 0.912,
-            "sentiment_method": "vader",
-            "risk_score": 5.8,
-            "risk_level": "LOW",
-            "key_phrases": [
-                "washington",
-                "feb",
-                "donald trump",
-                "marathon state",
-                "union address"
-            ],
-            "military_hits": 2,
-            "diplomatic_hits": 3,
-            "source_name": "GEOPOLITICAL-MONITOR",
-            "date": "2026-02-25"
-        },
-        {
             "title": "Lloyd Austin: U.S. forces are combat-ready for Middle East escalation",
             "sentiment_polarity": -0.788,
             "sentiment_method": "vader",
@@ -1181,24 +1145,6 @@
             "diplomatic_hits": 0,
             "source_name": "ALJAZEERA",
             "date": "2026-01-30"
-        },
-        {
-            "title": "Trump SOTU 2026: Warns Iran of Total Accountability",
-            "sentiment_polarity": 0.912,
-            "sentiment_method": "vader",
-            "risk_score": 5.8,
-            "risk_level": "LOW",
-            "key_phrases": [
-                "washington",
-                "feb",
-                "donald trump",
-                "marathon state",
-                "union address"
-            ],
-            "military_hits": 2,
-            "diplomatic_hits": 3,
-            "source_name": "GEOPOLITICAL-MONITOR",
-            "date": "2026-02-25"
         },
         {
             "title": "Blinken: The window for a diplomatic solution is closing fast",
