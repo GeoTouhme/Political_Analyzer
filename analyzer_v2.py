@@ -633,6 +633,31 @@ def main() -> None:
     # Auto-push to GitHub
     push_to_github()
 
+    # New: Update Strategic Log
+    update_strategic_log(report)
+
+
+def update_strategic_log(report: dict):
+    """Append current session stats to STRATEGIC_LOG.md for long-term archiving."""
+    log_path = "STRATEGIC_LOG.md"
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M %p")
+    meta = report.get("meta", {})
+    trend = report.get("trend", {})
+    
+    log_entry = f"""
+## [{timestamp}] Analysis Cycle
+- **Risk Score:** {trend.get('current', 0)} ({trend.get('status', 'STABLE')})
+- **Article Count:** {meta.get('article_count', 0)}
+- **AI Outlook:** {meta.get('strategic_outlook', 'N/A')}
+---
+"""
+    try:
+        with open(log_path, "a", encoding="utf-8") as f:
+            f.write(log_entry)
+        log.info("📜 Strategic Log updated.")
+    except Exception as e:
+        log.error(f"Failed to update Strategic Log: {e}")
+
 
 if __name__ == "__main__":
     main()
