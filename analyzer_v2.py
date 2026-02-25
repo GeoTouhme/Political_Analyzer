@@ -12,7 +12,9 @@ import time
 from dataclasses import dataclass, asdict
 from datetime import datetime
 from typing import Optional
+import math
 
+import pandas as pd
 import requests
 import google.generativeai as genai
 from dotenv import load_dotenv
@@ -189,12 +191,13 @@ DIPLOMATIC_TERMS: dict[str, list[str]] = {
     ],
 }
 
-MILITARY_WEIGHTS: dict[str, int] = {"critical": 15, "high": 8, "medium": 3}
-DEFIANCE_WEIGHTS: dict[str, int] = {"critical": 12, "high": 7, "medium": 4}
-GRAY_WEIGHTS: dict[str, int] = {"critical": 10, "high": 7, "medium": 4}
-COERCIVE_WEIGHTS: dict[str, int] = {"critical": 12, "high": 7, "medium": 4}
-HYBRID_WEIGHTS: dict[str, int] = {"critical": 12, "high": 7, "medium": 4}
-DIPLOMATIC_WEIGHTS: dict[str, int] = {"high": -10, "medium": -5, "low": -2}
+# v5.1 — Weights raised ~50% for realism; diplomatic penalty softened
+MILITARY_WEIGHTS: dict[str, int] = {"critical": 22, "high": 12, "medium": 5}
+DEFIANCE_WEIGHTS: dict[str, int] = {"critical": 18, "high": 10, "medium": 5}
+GRAY_WEIGHTS: dict[str, int] = {"critical": 15, "high": 10, "medium": 5}
+COERCIVE_WEIGHTS: dict[str, int] = {"critical": 16, "high": 9, "medium": 4}
+HYBRID_WEIGHTS: dict[str, int] = {"critical": 16, "high": 9, "medium": 4}
+DIPLOMATIC_WEIGHTS: dict[str, int] = {"high": -5, "medium": -2, "low": -1}
 
 # --- Data Models -------------------------------------------------------------
 
@@ -271,13 +274,23 @@ def get_sentiment(text: str) -> tuple[float, str]:
     return round(blob.sentiment.polarity, 3), "textblob"
 
 
-def calculate_risk_score(text: str, sentiment: float, recent_history: list = None) -> tuple[float, int, int]:
-    """Calculate 0-100 risk score with frequency-weighted term matching
-    and Temporal Correlation (v3.0).
+# Title-threat keywords that trigger a headline multiplier
+_TITLE_THREAT_TERMS = [
+    "strike", "war", "attack", "combat", "nuclear", "carrier", "missile",
+    "escalation", "kinetic", "accountability", "retaliation", "conflict",
+    "mobilization", "preemptive", "invasion", "obliterate", "annihilation",
+    "military action", "all-out", "high alert", "full alert", "war scare",
+]
+
+
+def calculate_risk_score(text: str, sentiment: float, recent_history: list = None, title: str = "") -> tuple[float, int, int]:
+    """Calculate 0-100 risk score with TF-IDF style frequency-weighted targeting
+    (Logic v5.1), Partial Sentiment, Title Multiplier, and Temporal Correlation.
 
     Returns (risk_score, military_hits, diplomatic_hits).
     """
-    base_score = (1 - sentiment) * 20
+    # Stronger sentiment contribution: hostile tone adds up to +15 pts (v5.1)
+    base_score = abs(sentiment) * 15
     term_score = 0
     text_lower = text.lower()
     military_hits = 0
@@ -299,7 +312,7 @@ def calculate_risk_score(text: str, sentiment: float, recent_history: list = Non
             for term in terms:
                 count = text_lower.count(term)
                 if count > 0:
-                    term_score += weight * min(count, 3)  # cap at 3x per term
+                    term_score += weight * (1 + math.log(count))
                     military_hits += count
                     categories_hit.add(cat_name)
 
@@ -308,10 +321,32 @@ def calculate_risk_score(text: str, sentiment: float, recent_history: list = Non
         for term in terms:
             count = text_lower.count(term)
             if count > 0:
-                term_score += weight * min(count, 3)
+                term_score += weight * (1 + math.log(count))
                 diplomatic_hits += count
 
     total_risk = base_score + term_score
+    
+    # Strategic Floor Logic (v5.1 — floor raised to 35)
+    critical_threats = [
+        # Nuclear / WMD
+        "nuclear", "enrichment", "uranium", "warhead", "ballistic missile",
+        # Carrier / Naval power projection
+        "carrier", "carriers", "carrier strike group", "csg",
+        # Combat readiness / strike orders
+        "combat-ready", "combat ready", "strike group", "kinetic",
+        "waves of strikes", "operational plans", "preemptive",
+        # Escalation signaling
+        "full alert", "high alert", "maximum readiness", "war scare",
+        "all-out war", "military action",
+    ]
+    if any(threat in text_lower for threat in critical_threats):
+        total_risk = max(total_risk, 35.0)
+
+    # Title-threat multiplier: aggressive headline boosts score by 40%
+    title_lower = title.lower()
+    if any(t in title_lower for t in _TITLE_THREAT_TERMS):
+        total_risk *= 1.4
+        log.debug("Title-threat multiplier applied for: %s", title[:60])
 
     # --- TEMPORAL CORRELATION LOGIC ---
     multiplier = 1.0
@@ -411,7 +446,7 @@ def analyze_article(article: dict, recent_results: list = None) -> Optional[Arti
         return None
 
     sentiment, method = get_sentiment(full_text)
-    risk_score, mil_hits, dip_hits = calculate_risk_score(full_text, sentiment, recent_results)
+    risk_score, mil_hits, dip_hits = calculate_risk_score(full_text, sentiment, recent_results, title=title)
     risk_level = classify_risk(risk_score)
 
     try:
@@ -440,7 +475,7 @@ def analyze_article(article: dict, recent_results: list = None) -> Optional[Arti
     )
 
 
-def get_strategic_outlook(results: list) -> str:
+def get_strategic_outlook(results: list, trend: str = "STABLE", current_risk: float = 0.0, prev_risk: float = 0.0) -> str:
     """Call the Gemini API to generate a dynamic strategic outlook based on live results."""
     if not results:
         return "No data available for strategic assessment."
@@ -451,25 +486,60 @@ def get_strategic_outlook(results: list) -> str:
 
     log.info("Generating Strategic Outlook via Gemini API...")
 
-    top_events = sorted(results, key=lambda x: x.risk_score, reverse=True)[:10]
-    summary_text = "\n".join(
-        [f"- {a.title} (Risk: {a.risk_score}, Sentiment: {a.sentiment_polarity})" for a in top_events]
-    )
+    # --- Build structured intelligence brief ---
+    # Top 8 highest-risk articles (threats)
+    threat_articles = sorted(results, key=lambda x: x.risk_score, reverse=True)[:8]
+    # Top 4 most diplomatic articles (de-escalation signals)
+    diplomatic_articles = sorted(results, key=lambda x: x.diplomatic_hits, reverse=True)[:4]
 
-    prompt = f"""You are a senior geopolitical intelligence analyst specializing in the US-Iran 2026 crisis.
-Based on the following recent events and risk scores, provide a concise (3-4 sentences) strategic outlook.
-Identify the primary driver of risk and the likely trajectory for the next 48-72 hours.
-Tone: Professional, urgent, objective.
+    def fmt(a: "ArticleAnalysis") -> str:
+        return (
+            f"  [{a.risk_level}] \"{a.title}\" | Source: {a.source_name} | Date: {a.date} "
+            f"| Risk: {a.risk_score} | MilHits: {a.military_hits} | DipHits: {a.diplomatic_hits}"
+        )
 
-RECENT EVENTS:
-{summary_text}
+    threat_block = "\n".join(fmt(a) for a in threat_articles)
+    diplo_block = "\n".join(fmt(a) for a in diplomatic_articles)
 
-OUTPUT: A single paragraph of 3-4 sentences. Do not include any preamble or labels."""
+    trend_desc = {
+        "UP": f"ESCALATING (current avg {current_risk} vs previous {prev_risk})",
+        "DOWN": f"DE-ESCALATING (current avg {current_risk} vs previous {prev_risk})",
+        "STABLE": f"STABLE (current avg {current_risk})",
+    }.get(trend, "UNKNOWN")
+
+    prompt = f"""You are a senior intelligence analyst at a strategic threat assessment center, specializing in the 2026 US-Iran Persian Gulf crisis.
+
+SYSTEM CONTEXT:
+- Overall risk trend: {trend_desc}
+- Dataset: {len(results)} articles analyzed
+
+THREAT SIGNALS (highest-risk articles):
+{threat_block}
+
+DIPLOMATIC SIGNALS (de-escalation indicators):
+{diplo_block}
+
+TASK:
+Write a 3-sentence strategic assessment for a high-level policy brief.
+Sentence 1: Identify the single PRIMARY DRIVER of current risk (cite specific event/actor).
+Sentence 2: Assess the status of diplomatic off-ramps — are they viable or collapsing?
+Sentence 3: State the most likely trajectory over the next 48-72 hours (kinetic/proxy/diplomatic).
+
+RULES:
+- Be direct, specific, and data-grounded. Cite source names or article titles where relevant.
+- Avoid vague language like "tensions remain high." 
+- No preamble, no labels, no markdown. Output a single plain-text paragraph only."""
 
     try:
         genai.configure(api_key=GEMINI_API_KEY)
         model = genai.GenerativeModel("gemini-3-pro-preview")
-        response = model.generate_content(prompt)
+        response = model.generate_content(
+            prompt,
+            generation_config=genai.types.GenerationConfig(
+                temperature=0.3,       # Low temp = more factual, less hallucination
+                max_output_tokens=200, # Enforce brevity
+            )
+        )
         outlook = response.text.strip()
         log.info("Strategic outlook generated successfully.")
         return outlook
@@ -482,49 +552,49 @@ OUTPUT: A single paragraph of 3-4 sentences. Do not include any preamble or labe
 # --- Report Generation --------------------------------------------------------
 
 def generate_report(results: list[ArticleAnalysis]) -> dict:
-    """Build the full analysis report with metadata and trend analysis."""
-    risk_scores = [r.risk_score for r in results]
+    """Build the full analysis report with metadata and trend analysis (Pandas v5.0)."""
     
-    # Sort articles by date to find the latest data point
-    sorted_articles = sorted(results, key=lambda x: x.date, reverse=True)
-    if not sorted_articles:
-        return {"meta": {}, "articles": []}
-        
-    latest_date = sorted_articles[0].date
+    if not results:
+        return {"meta": {}, "trend": {}, "articles": []}
     
-    # 1. Current Risk = Average of the LATEST single day
-    latest_day_scores = [r.risk_score for r in results if r.date == latest_date]
-    current_risk = round(sum(latest_day_scores) / len(latest_day_scores), 1)
+    df = pd.DataFrame([asdict(r) for r in results])
+    df['date'] = pd.to_datetime(df['date'])
     
-    # 2. Previous Context = Average of the 3 days BEFORE the latest day
-    latest_dt = datetime.strptime(latest_date, "%Y-%m-%d")
-    context_window = [
-        r.risk_score for r in results 
-        if 1 <= (latest_dt - datetime.strptime(r.date, "%Y-%m-%d")).days <= 3
-    ]
-    previous_risk = round(sum(context_window) / len(context_window), 1) if context_window else current_risk
+    latest_date = df['date'].max()
+    
+    # Current Risk = Average of the LATEST single day
+    current_risk_df = df[df['date'] == latest_date]
+    current_risk = round(current_risk_df['risk_score'].mean(), 1) if not current_risk_df.empty else 0.0
+
+    # Previous Context = Average of the 3 days BEFORE the latest day
+    three_days_prior = latest_date - pd.Timedelta(days=3)
+    previous_risk_df = df[(df['date'] < latest_date) & (df['date'] >= three_days_prior)]
+    previous_risk = round(previous_risk_df['risk_score'].mean(), 1) if not previous_risk_df.empty else current_risk
     
     trend = "STABLE"
     if current_risk > previous_risk + 1: trend = "UP"
     elif current_risk < previous_risk - 1: trend = "DOWN"
+    
+    global_avg = round(df['risk_score'].mean(), 1) if not df.empty else 0.0
+    max_risk = round(df['risk_score'].max(), 1) if not df.empty else 0.0
 
     # New: Strategic Outlook via Gemini 3 Pro
-    strategic_outlook = get_strategic_outlook(results)
+    strategic_outlook = get_strategic_outlook(results, trend=trend, current_risk=current_risk, prev_risk=previous_risk)
 
     report_data = {
         "meta": {
             "generated_at": datetime.now().isoformat(),
             "article_count": len(results),
-            "avg_risk_score": current_risk, # Now matches the latest graph point
-            "max_risk_score": max(risk_scores) if risk_scores else 0,
+            "avg_risk_score": float(current_risk), # Cast to float for JSON serializer
+            "max_risk_score": float(max_risk),
             "strategic_outlook": strategic_outlook,
             "model_id": "google/gemini-3-pro-preview"
         },
         "trend": {
             "status": trend,
-            "current": current_risk,
-            "previous": previous_risk,
-            "global_avg": round(sum(risk_scores) / len(risk_scores), 1) if risk_scores else 0
+            "current": float(current_risk),
+            "previous": float(previous_risk),
+            "global_avg": float(global_avg)
         },
         "articles": [asdict(r) for r in results],
     }

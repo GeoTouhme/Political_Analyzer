@@ -1,25 +1,25 @@
 {
     "meta": {
-        "generated_at": "2026-02-25T11:35:35.162530",
-        "article_count": 68,
-        "avg_risk_score": 31.9,
-        "max_risk_score": 74.0,
-        "strategic_outlook": "Despite high-profile force projection and rhetoric regarding potential US-Israeli strikes, the aggregate risk score of 31.9 indicates that diplomatic buffers continue to effectively suppress the probability of systemic conflict. Recent developments, including the deployment of Carrier Strike Group 8 and Sino-Iranian naval cooperation, function as independent deterrence signaling rather than steps in an inevitable escalation ladder. Accordingly, as these maneuvers remain isolated from active kinetic exchange, no confirmed reactive linkage detected.",
+        "generated_at": "2026-02-25T13:29:32.239654",
+        "article_count": 73,
+        "avg_risk_score": 9.6,
+        "max_risk_score": 40.5,
+        "strategic_outlook": "The deployment of Carrier Strike Group 8 to the Persian Gulf, coupled with President Trump's \"total accountability\" ultimatum, signals an imminent transition from coercive diplomacy to kinetic readiness. The primary driver of risk is now the synchronization of this aggressive US force posture with Israel’s rejection of the Geneva framework, effectively backing Tehran into a corner with diminishing diplomatic off-ramps. Consequently, the likely trajectory for the next 48 to 72 hours involves a high probability of asymmetrical proxy escalations or maritime harassment as Iran attempts to re-establish deterrence before US combat integration is complete.",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
         "status": "DOWN",
-        "current": 31.9,
-        "previous": 35.4,
-        "global_avg": 35.1
+        "current": 9.6,
+        "previous": 12.1,
+        "global_avg": 12.3
     },
     "articles": [
         {
             "title": "Iran considers its response to potential renewed US-Israeli strikes",
             "sentiment_polarity": -0.55,
             "sentiment_method": "vader",
-            "risk_score": 74.0,
-            "risk_level": "HIGH",
+            "risk_score": 40.5,
+            "risk_level": "MEDIUM",
             "key_phrases": [
                 "rapid military buildup",
                 "familiar anxiety",
@@ -36,8 +36,8 @@
             "title": "The U.S. and Iran Can Still Avoid a War",
             "sentiment_polarity": -0.831,
             "sentiment_method": "vader",
-            "risk_score": 68.0,
-            "risk_level": "HIGH",
+            "risk_score": 31.0,
+            "risk_level": "MEDIUM",
             "key_phrases": [
                 "mutual antagonism",
                 "u.s.",
@@ -45,7 +45,7 @@
                 "major war ...",
                 "recent weeks"
             ],
-            "military_hits": 4,
+            "military_hits": 5,
             "diplomatic_hits": 1,
             "source_name": "CRISISGROUP",
             "date": "2026-02-23"
@@ -54,8 +54,8 @@
             "title": "China Denies Military Transport to Iran, Calls Reports \"Malicious Fabrication\"",
             "sentiment_polarity": -0.477,
             "sentiment_method": "vader",
-            "risk_score": 29.5,
-            "risk_level": "MEDIUM",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "beijing",
                 "feb",
@@ -72,8 +72,8 @@
             "title": "What Would War With Iran Look Like?",
             "sentiment_polarity": -0.477,
             "sentiment_method": "vader",
-            "risk_score": 29.5,
-            "risk_level": "MEDIUM",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "pentagon officials",
                 "large-scale conflict",
@@ -87,11 +87,29 @@
             "date": "2026-02-22"
         },
         {
+            "title": "Strategic Deployment: U.S. KC-46 Tankers Increase at Ben Gurion Airport",
+            "sentiment_polarity": -0.128,
+            "sentiment_method": "vader",
+            "risk_score": 3.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "u.s.",
+                "israel",
+                "ben gurion",
+                "kc-46",
+                "temporary stopover"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "T",
+            "date": "2026-02-24"
+        },
+        {
             "title": "Internal Protests in Tehran: A Regime Under Pressure",
             "sentiment_polarity": -0.742,
             "sentiment_method": "vader",
-            "risk_score": 42.8,
-            "risk_level": "MEDIUM",
+            "risk_score": 8.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "tehran",
                 "feb",
@@ -108,8 +126,8 @@
             "title": "Germany and France Criticize US \"Lack of Diplomatic Flexibility\"",
             "sentiment_polarity": -0.742,
             "sentiment_method": "vader",
-            "risk_score": 38.6,
-            "risk_level": "MEDIUM",
+            "risk_score": 2.6,
+            "risk_level": "LOW",
             "key_phrases": [
                 "berlin/paris",
                 "feb",
@@ -126,7 +144,7 @@
             "title": "Israel Finalizes Multi-Layer Defense Shield Activation",
             "sentiment_polarity": 0.315,
             "sentiment_method": "vader",
-            "risk_score": 19.2,
+            "risk_score": 0.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "security alert",
@@ -144,8 +162,8 @@
             "title": "Iraq Struggles to Maintain Neutrality Amid US-Iran Crossfire",
             "sentiment_polarity": -0.494,
             "sentiment_method": "vader",
-            "risk_score": 36.9,
-            "risk_level": "MEDIUM",
+            "risk_score": 7.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "baghdad",
                 "feb",
@@ -153,7 +171,7 @@
                 "us-iran",
                 "pro-iranian"
             ],
-            "military_hits": 0,
+            "military_hits": 1,
             "diplomatic_hits": 0,
             "source_name": "REUTERS",
             "date": "2026-02-18"
@@ -162,8 +180,8 @@
             "title": "Iran Ready for War as US President Renews Action Threat",
             "sentiment_polarity": -0.872,
             "sentiment_method": "vader",
-            "risk_score": 40.4,
-            "risk_level": "MEDIUM",
+            "risk_score": 3.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "january",
                 "iranian",
@@ -180,8 +198,8 @@
             "title": "For Iran’s rulers, refusing US demands is a risk worth taking",
             "sentiment_polarity": -0.852,
             "sentiment_method": "vader",
-            "risk_score": 44.0,
-            "risk_level": "MEDIUM",
+            "risk_score": 7.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "tehran",
                 "washington",
@@ -189,7 +207,7 @@
                 "social unrest",
                 "economic pressure"
             ],
-            "military_hits": 0,
+            "military_hits": 1,
             "diplomatic_hits": 0,
             "source_name": "NYTIMES",
             "date": "2026-02-23"
@@ -198,7 +216,7 @@
             "title": "Turkey Offers to Mediate as Regional War Threat Grows",
             "sentiment_polarity": 0.44,
             "sentiment_method": "vader",
-            "risk_score": 13.8,
+            "risk_score": 0.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "ankara",
@@ -207,17 +225,35 @@
                 "erdogan",
                 "host high-level"
             ],
-            "military_hits": 0,
+            "military_hits": 1,
             "diplomatic_hits": 1,
             "source_name": "AL-MONITOR",
             "date": "2026-02-22"
         },
         {
+            "title": "Netanyahu Issues Stern Warning: Unprecedented Response to Potential Iranian Attack",
+            "sentiment_polarity": -0.649,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israeli prime",
+                "benjamin netanyahu",
+                "direct warning",
+                "tehran",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "T",
+            "date": "2026-02-20"
+        },
+        {
             "title": "Hossein Salami: IRGC will target U.S. interests globally if attacked",
             "sentiment_polarity": -0.756,
             "sentiment_method": "vader",
-            "risk_score": 43.1,
-            "risk_level": "MEDIUM",
+            "risk_score": 8.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "hossein salami",
                 "commander-in-chief",
@@ -234,7 +270,7 @@
             "title": "UAE Boosts Missile Defenses to Protect Global Hubs",
             "sentiment_polarity": 0.402,
             "sentiment_method": "vader",
-            "risk_score": 20.0,
+            "risk_score": 8.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "abu dhabi",
@@ -252,8 +288,8 @@
             "title": "Netanyahu: Israel will not be bound by Geneva framework",
             "sentiment_polarity": 0.466,
             "sentiment_method": "vader",
-            "risk_score": 37.1,
-            "risk_level": "MEDIUM",
+            "risk_score": 25.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "prime",
                 "benjamin netanyahu",
@@ -261,7 +297,7 @@
                 "washington",
                 "israel"
             ],
-            "military_hits": 0,
+            "military_hits": 3,
             "diplomatic_hits": 3,
             "source_name": "ALJAZEERA",
             "date": "2026-02-12"
@@ -270,8 +306,8 @@
             "title": "Oman Issues Emergency Mediation Proposal to Geneva Delegates",
             "sentiment_polarity": -0.539,
             "sentiment_method": "vader",
-            "risk_score": 37.9,
-            "risk_level": "MEDIUM",
+            "risk_score": 6.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "diplomatic update",
                 "feb",
@@ -288,8 +324,8 @@
             "title": "U.S. Military in the Middle East: Numbers Behind Trump’s Threats Against Iran",
             "sentiment_polarity": -0.751,
             "sentiment_method": "vader",
-            "risk_score": 66.0,
-            "risk_level": "HIGH",
+            "risk_score": 31.0,
+            "risk_level": "MEDIUM",
             "key_phrases": [
                 "csis analysis",
                 "force composition lacks",
@@ -306,7 +342,7 @@
             "title": "Trump delivers State of the Union: Warns Iran of \"Total Accountability\"",
             "sentiment_polarity": 0.886,
             "sentiment_method": "vader",
-            "risk_score": 22.0,
+            "risk_score": 25.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "washington",
@@ -324,8 +360,8 @@
             "title": "Saudi Arabia’s Delicate Balancing Act",
             "sentiment_polarity": -0.369,
             "sentiment_method": "vader",
-            "risk_score": 71.0,
-            "risk_level": "HIGH",
+            "risk_score": 39.5,
+            "risk_level": "MEDIUM",
             "key_phrases": [
                 "riyadh",
                 "feb",
@@ -342,7 +378,7 @@
             "title": "Israel Approves Operational Plans for Multi-Front Defense",
             "sentiment_polarity": 0.248,
             "sentiment_method": "vader",
-            "risk_score": 18.0,
+            "risk_score": 3.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "jerusalem",
@@ -360,8 +396,8 @@
             "title": "China Calls for Emergency UN Security Council Meeting",
             "sentiment_polarity": -0.92,
             "sentiment_method": "vader",
-            "risk_score": 31.7,
-            "risk_level": "MEDIUM",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "beijing",
                 "feb",
@@ -378,7 +414,7 @@
             "title": "Russian Transport Planes Spotted in Tehran; Reports of Advanced S-500 Transit",
             "sentiment_polarity": 0.128,
             "sentiment_method": "vader",
-            "risk_score": 22.0,
+            "risk_score": 0.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "tehran",
@@ -396,8 +432,8 @@
             "title": "Russia Slams US Strike Threats, Warns Against Interference",
             "sentiment_polarity": -0.937,
             "sentiment_method": "vader",
-            "risk_score": 58.8,
-            "risk_level": "HIGH",
+            "risk_score": 20.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "ministry",
                 "stern warning",
@@ -405,7 +441,7 @@
                 "irans",
                 "internal affairs"
             ],
-            "military_hits": 1,
+            "military_hits": 3,
             "diplomatic_hits": 1,
             "source_name": "TASS",
             "date": "2026-01-13"
@@ -414,8 +450,8 @@
             "title": "The Logistic Challenges of a Sustained Gulf Campaign",
             "sentiment_polarity": -0.761,
             "sentiment_method": "vader",
-            "risk_score": 43.2,
-            "risk_level": "MEDIUM",
+            "risk_score": 25.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "washington",
                 "feb",
@@ -429,11 +465,29 @@
             "date": "2026-02-15"
         },
         {
+            "title": "Sofia Airport Restricted to Military Traffic; Surge in U.S. Tanker Activity",
+            "sentiment_polarity": -0.382,
+            "sentiment_method": "vader",
+            "risk_score": 25.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "sofia",
+                "bulgaria",
+                "military aircraft",
+                "civilian flights",
+                "february"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "T",
+            "date": "2026-02-21"
+        },
+        {
             "title": "The Cyber Front: First Strikes in Digital Domain?",
             "sentiment_polarity": -0.929,
             "sentiment_method": "vader",
-            "risk_score": 46.6,
-            "risk_level": "MEDIUM",
+            "risk_score": 8.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "washington",
                 "feb",
@@ -450,7 +504,7 @@
             "title": "China Calls for UN Action to Halt Persian Gulf Militarization",
             "sentiment_polarity": 0.43,
             "sentiment_method": "vader",
-            "risk_score": 11.4,
+            "risk_score": 0.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "beijing",
@@ -468,8 +522,8 @@
             "title": "US and Iran Slide Towards Conflict as Hopes for Peace Fade",
             "sentiment_polarity": -0.527,
             "sentiment_method": "vader",
-            "risk_score": 46.5,
-            "risk_level": "MEDIUM",
+            "risk_score": 16.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "dubai",
                 "feb",
@@ -486,8 +540,8 @@
             "title": "US military positioning multiple waves of strikes",
             "sentiment_polarity": 0.44,
             "sentiment_method": "vader",
-            "risk_score": 35.2,
-            "risk_level": "MEDIUM",
+            "risk_score": 25.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "military forces",
                 "multiple waves",
@@ -503,8 +557,8 @@
             "title": "Russia Warns Against US Escalation in Persian Gulf",
             "sentiment_polarity": 0.572,
             "sentiment_method": "vader",
-            "risk_score": 26.1,
-            "risk_level": "MEDIUM",
+            "risk_score": 16.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "moscow",
                 "feb",
@@ -512,7 +566,7 @@
                 "military action",
                 "iran"
             ],
-            "military_hits": 2,
+            "military_hits": 3,
             "diplomatic_hits": 1,
             "source_name": "TASS",
             "date": "2026-02-19"
@@ -521,8 +575,8 @@
             "title": "China-Iran Naval Drills to Include \"Advanced Electronic Warfare\" Testing",
             "sentiment_polarity": -0.297,
             "sentiment_method": "vader",
-            "risk_score": 48.9,
-            "risk_level": "MEDIUM",
+            "risk_score": 25.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "beijing",
                 "feb",
@@ -530,26 +584,26 @@
                 "peoples liberation",
                 "pla"
             ],
-            "military_hits": 3,
+            "military_hits": 4,
             "diplomatic_hits": 0,
             "source_name": "GEOPOLITICAL-MONITOR",
             "date": "2026-02-24"
         },
         {
             "title": "إيران تتفاوض مع الصين لشراء صواريخ CM-302 المضادة للحاملات",
-            "sentiment_polarity": 0.25,
+            "sentiment_polarity": 0.0,
             "sentiment_method": "vader",
-            "risk_score": 54.1,
-            "risk_level": "HIGH",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
             "key_phrases": [
-                "* *",
-                "english translation",
-                "* *",
-                "informed",
-                "reuters"
+                "كشفت مصادر مطلعة لرويترز والجزيرة عن مفاوضات سرية في مراحل متقدمة بين طهران وبكين لشراء صواريخ كروز من طراز",
+                "cm-302",
+                "تتميز هذه الصواريخ بقدرات عالية على المناورة وسرعة تفوق سرعة الصوت، وهي مصممة خصيصاً لاستهداف وإغراق حاملات الطائرات والقطع البحرية الكبيرة",
+                "يأتي هذا التحرك الإيراني رداً مباشراً على أكبر انتشار عسكري أمريكي في المنطقة منذ عام 2003، حيث تسعى طهران لتعزيز قدرات الردع البحري ومنع الوصول",
+                "a2/ad"
             ],
-            "military_hits": 7,
-            "diplomatic_hits": 1,
+            "military_hits": 0,
+            "diplomatic_hits": 0,
             "source_name": "GEOPOLITICAL-MONITOR",
             "date": "2026-02-25"
         },
@@ -557,8 +611,8 @@
             "title": "Houthi Threats to Red Sea Shipping Intensify",
             "sentiment_polarity": -0.918,
             "sentiment_method": "vader",
-            "risk_score": 38.4,
-            "risk_level": "MEDIUM",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "sanaa",
                 "feb",
@@ -575,8 +629,8 @@
             "title": "Trump: Iran will face 'bad things' without nuclear deal",
             "sentiment_polarity": -0.162,
             "sentiment_method": "vader",
-            "risk_score": 38.2,
-            "risk_level": "MEDIUM",
+            "risk_score": 25.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "donald trump",
                 "bad things",
@@ -584,16 +638,34 @@
                 "nuclear framework",
                 "white house"
             ],
-            "military_hits": 1,
+            "military_hits": 2,
             "diplomatic_hits": 0,
             "source_name": "APNEWS",
             "date": "2026-02-20"
         },
         {
+            "title": "USS Gerald R. Ford Reaches Crete; US Embassy Beirut Partially Evacuates",
+            "sentiment_polarity": 0.572,
+            "sentiment_method": "vader",
+            "risk_score": 25.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "february",
+                "us aircraft carrier",
+                "uss gerald r. ford",
+                "greek island",
+                "crete"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "T",
+            "date": "2026-02-23"
+        },
+        {
             "title": "Iran Foreign Minister: Nuclear deal within reach if diplomacy prioritized",
             "sentiment_polarity": 0.714,
             "sentiment_method": "vader",
-            "risk_score": 22.0,
+            "risk_score": 25.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "geneva",
@@ -611,7 +683,7 @@
             "title": "US State Department Issues \"Level 4: Do Not Travel\" for Entire Region",
             "sentiment_polarity": 0.226,
             "sentiment_method": "vader",
-            "risk_score": 23.5,
+            "risk_score": 8.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "official advisory",
@@ -629,8 +701,8 @@
             "title": "Putin: Russian Mediterranean fleet on high alert",
             "sentiment_polarity": -0.557,
             "sentiment_method": "vader",
-            "risk_score": 29.6,
-            "risk_level": "MEDIUM",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "vladimir putin",
                 "russian naval group",
@@ -647,8 +719,8 @@
             "title": "Trump rebukes reports of Military General concerns over Iran strikes",
             "sentiment_polarity": -0.612,
             "sentiment_method": "vader",
-            "risk_score": 38.2,
-            "risk_level": "MEDIUM",
+            "risk_score": 4.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "washington",
                 "feb",
@@ -665,8 +737,8 @@
             "title": "Guterres: Persian Gulf is at a \"Breaking Point,\" Urges Maximum Restraint",
             "sentiment_polarity": -0.826,
             "sentiment_method": "vader",
-            "risk_score": 40.5,
-            "risk_level": "MEDIUM",
+            "risk_score": 4.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "united nations",
                 "feb",
@@ -674,7 +746,7 @@
                 "general assembly",
                 "somber warning"
             ],
-            "military_hits": 0,
+            "military_hits": 1,
             "diplomatic_hits": 0,
             "source_name": "GEOPOLITICAL-MONITOR",
             "date": "2026-02-25"
@@ -683,7 +755,7 @@
             "title": "Lavrov: Russia will provide technical support to Iran if attacked",
             "sentiment_polarity": 0.82,
             "sentiment_method": "vader",
-            "risk_score": 10.6,
+            "risk_score": 7.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "foreign minister",
@@ -692,7 +764,7 @@
                 "moscow",
                 "lavrov"
             ],
-            "military_hits": 0,
+            "military_hits": 1,
             "diplomatic_hits": 0,
             "source_name": "TASS",
             "date": "2026-02-18"
@@ -701,7 +773,7 @@
             "title": "US Orders Partial Evacuation of Embassy in Baghdad",
             "sentiment_polarity": 0.557,
             "sentiment_method": "vader",
-            "risk_score": 22.2,
+            "risk_score": 7.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "washington/baghdad",
@@ -710,7 +782,7 @@
                 "u.s.",
                 "state department"
             ],
-            "military_hits": 0,
+            "military_hits": 1,
             "diplomatic_hits": 0,
             "source_name": "GEOPOLITICAL-MONITOR",
             "date": "2026-02-23"
@@ -719,8 +791,8 @@
             "title": "U.S., Iran near nuclear pact as war threat looms",
             "sentiment_polarity": -0.064,
             "sentiment_method": "vader",
-            "risk_score": 28.3,
-            "risk_level": "MEDIUM",
+            "risk_score": 25.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "geneva",
                 "feb",
@@ -728,7 +800,7 @@
                 "negotiators",
                 "iran"
             ],
-            "military_hits": 1,
+            "military_hits": 2,
             "diplomatic_hits": 2,
             "source_name": "REUTERS",
             "date": "2026-02-18"
@@ -737,7 +809,7 @@
             "title": "Bin Farhan: Saudi Arabia will not be a launchpad for strikes",
             "sentiment_polarity": 0.281,
             "sentiment_method": "vader",
-            "risk_score": 19.9,
+            "risk_score": 1.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "faisal",
@@ -755,7 +827,7 @@
             "title": "Trump SOTU 2026: Warns Iran of Total Accountability",
             "sentiment_polarity": 0.912,
             "sentiment_method": "vader",
-            "risk_score": 22.0,
+            "risk_score": 25.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "washington",
@@ -773,8 +845,8 @@
             "title": "Oil Markets Bracing for $150+ Scenario",
             "sentiment_polarity": -0.796,
             "sentiment_method": "vader",
-            "risk_score": 35.9,
-            "risk_level": "MEDIUM",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "new york",
                 "feb",
@@ -791,7 +863,7 @@
             "title": "European Union Split on Sanctions vs. Diplomacy",
             "sentiment_polarity": 0.226,
             "sentiment_method": "vader",
-            "risk_score": 11.6,
+            "risk_score": 0.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "brussels",
@@ -809,7 +881,7 @@
             "title": "IRGC Announces \"Great Prophet 21\" Naval Drills",
             "sentiment_polarity": 0.852,
             "sentiment_method": "vader",
-            "risk_score": 20.0,
+            "risk_score": 16.1,
             "risk_level": "LOW",
             "key_phrases": [
                 "military update",
@@ -827,8 +899,8 @@
             "title": "Khamenei: Nuclear enrichment is a non-negotiable right",
             "sentiment_polarity": 0.379,
             "sentiment_method": "vader",
-            "risk_score": 26.4,
-            "risk_level": "MEDIUM",
+            "risk_score": 25.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "supreme leader",
                 "ayatollah ali khamenei",
@@ -836,23 +908,21 @@
                 "peaceful purposes",
                 "inalienable right"
             ],
-            "military_hits": 0,
+            "military_hits": 2,
             "diplomatic_hits": 0,
             "source_name": "NYTIMES",
             "date": "2026-02-23"
         },
         {
             "title": "ترمب في خطاب حالة الاتحاد: جيشنا الأقوى ولن نسمح لإيران نووية",
-            "sentiment_polarity": 0.713,
+            "sentiment_polarity": 0.0,
             "sentiment_method": "vader",
-            "risk_score": 22.0,
+            "risk_score": 0.0,
             "risk_level": "LOW",
             "key_phrases": [
-                "union address",
-                "congress",
-                "donald trump",
-                "u.s.",
-                "direct message"
+                "في خطاب حالة الاتحاد أمام الكونغرس، أكد الرئيس دونالد ترمب أن الجيش الأمريكي هو الأقوى في العالم حالياً",
+                "ووجه رسالة مباشرة للنظام الإيراني قائلاً إن الولايات المتحدة لن نسمح أبداً لطهران بتطوير برنامجها النووي العسكري أو تهديد أمن المنطقة",
+                "وأشار ترمب إلى أن إدارته اتخذت إجراءات تاريخية لتعزيز أمن الحدود واستعادة التفوق الاقتصادي، مشدداً على أن أيام الابتزاز النووي قد ولت"
             ],
             "military_hits": 0,
             "diplomatic_hits": 0,
@@ -863,7 +933,7 @@
             "title": "Inside Iran's Crisis: Protests, Blackouts, and High Stakes",
             "sentiment_polarity": -0.406,
             "sentiment_method": "vader",
-            "risk_score": 24.1,
+            "risk_score": 25.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "february",
@@ -881,8 +951,8 @@
             "title": "US-Iran Tensions: Timeline of December 2025 Protests",
             "sentiment_polarity": -0.9,
             "sentiment_method": "vader",
-            "risk_score": 36.2,
-            "risk_level": "MEDIUM",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "december",
                 "widespread",
@@ -917,7 +987,7 @@
             "title": "Russia, China, and Iran Sign Trilateral Strategic Pact",
             "sentiment_polarity": 0.922,
             "sentiment_method": "vader",
-            "risk_score": 12.2,
+            "risk_score": 1.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "dramatic geopolitical",
@@ -935,7 +1005,7 @@
             "title": "US Carrier Strike Group 8 Enters Persian Gulf Amid High Tension",
             "sentiment_polarity": 0.302,
             "sentiment_method": "vader",
-            "risk_score": 46.0,
+            "risk_score": 27.1,
             "risk_level": "MEDIUM",
             "key_phrases": [
                 "aboard uss harry s. truman",
@@ -953,7 +1023,7 @@
             "title": "EU's Borrell: Diplomacy is the only path to nuclear safety",
             "sentiment_polarity": 0.037,
             "sentiment_method": "vader",
-            "risk_score": 22.0,
+            "risk_score": 25.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "high representative",
@@ -971,8 +1041,8 @@
             "title": "The High Stakes of a Potential Iran Conflict",
             "sentiment_polarity": -0.863,
             "sentiment_method": "vader",
-            "risk_score": 58.6,
-            "risk_level": "HIGH",
+            "risk_score": 25.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "york",
                 "briefing",
@@ -989,7 +1059,7 @@
             "title": "US Strategic Command: Nuclear Triad on \"Constant Readiness\"",
             "sentiment_polarity": 0.631,
             "sentiment_method": "vader",
-            "risk_score": 37.0,
+            "risk_score": 25.5,
             "risk_level": "MEDIUM",
             "key_phrases": [
                 "official statement",
@@ -1007,8 +1077,8 @@
             "title": "Hakan Fidan: Turkey warns of regional collapse if war breaks out",
             "sentiment_polarity": -0.681,
             "sentiment_method": "vader",
-            "risk_score": 37.4,
-            "risk_level": "MEDIUM",
+            "risk_score": 3.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "foreign minister",
                 "hakan fidan",
@@ -1023,16 +1093,13 @@
         },
         {
             "title": "لجنة حماية الصحفيين: إسرائيل مسؤولة عن مقتل ثلثي صحفيي العالم",
-            "sentiment_polarity": -0.872,
+            "sentiment_polarity": 0.0,
             "sentiment_method": "vader",
-            "risk_score": 37.4,
-            "risk_level": "MEDIUM",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
             "key_phrases": [
-                "protect journalists",
-                "cpj",
-                "urgent report",
-                "israel",
-                "bears responsibility"
+                "أعلنت لجنة حماية الصحفيين في تقرير عاجل أن إسرائيل تتحمل المسؤولية عن مقتل ثلثي الصحفيين الذين لقوا حتفهم في العالم خلال العامين الماضيين",
+                "يأتي هذا التقرير في ظل استمرار الحرب في غزة والتوترات المتصاعدة في المنطقة، مما يزيد من الضغوط الدولية والحقوقية على تل أبيب"
             ],
             "military_hits": 0,
             "diplomatic_hits": 0,
@@ -1043,8 +1110,8 @@
             "title": "Iraqi Prime Minister: Iraq Will Not Be a Proxy Battlefield for US or Iran",
             "sentiment_polarity": -0.824,
             "sentiment_method": "vader",
-            "risk_score": 34.7,
-            "risk_level": "MEDIUM",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "baghdad",
                 "feb",
@@ -1061,8 +1128,8 @@
             "title": "Lloyd Austin: U.S. forces are combat-ready for Middle East escalation",
             "sentiment_polarity": -0.788,
             "sentiment_method": "vader",
-            "risk_score": 62.8,
-            "risk_level": "HIGH",
+            "risk_score": 27.0,
+            "risk_level": "MEDIUM",
             "key_phrases": [
                 "lloyd austin",
                 "u.s.",
@@ -1079,8 +1146,8 @@
             "title": "Erdogan: Turkey ready to host direct Trump-Khamenei talks",
             "sentiment_polarity": -0.84,
             "sentiment_method": "vader",
-            "risk_score": 35.0,
-            "risk_level": "MEDIUM",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "recep tayyip erdogan",
                 "persian gulf",
@@ -1097,7 +1164,7 @@
             "title": "US Mission in Lebanon Authorized for Voluntary Departure",
             "sentiment_polarity": 0.221,
             "sentiment_method": "vader",
-            "risk_score": 15.6,
+            "risk_score": 0.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "beirut",
@@ -1115,8 +1182,8 @@
             "title": "Iran Update, January 30, 2026 | ISW",
             "sentiment_polarity": -0.36,
             "sentiment_method": "vader",
-            "risk_score": 31.8,
-            "risk_level": "MEDIUM",
+            "risk_score": 3.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "iran",
                 "us demands",
@@ -1132,8 +1199,8 @@
             "title": "UK Foreign Office Withdraws Staff from Gulf Embassies",
             "sentiment_polarity": -0.392,
             "sentiment_method": "vader",
-            "risk_score": 27.8,
-            "risk_level": "MEDIUM",
+            "risk_score": 25.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "london",
                 "feb",
@@ -1150,8 +1217,8 @@
             "title": "Lebanon’s Hezbollah on Full Alert as War Clouds Gather",
             "sentiment_polarity": -0.912,
             "sentiment_method": "vader",
-            "risk_score": 54.2,
-            "risk_level": "HIGH",
+            "risk_score": 16.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "beirut",
                 "feb",
@@ -1168,8 +1235,8 @@
             "title": "Global Times: US Gunboat Diplomacy is a Relic of the Past",
             "sentiment_polarity": -0.48,
             "sentiment_method": "vader",
-            "risk_score": 56.6,
-            "risk_level": "HIGH",
+            "risk_score": 27.0,
+            "risk_level": "MEDIUM",
             "key_phrases": [
                 "global",
                 "chinese outlet",
@@ -1183,17 +1250,33 @@
             "date": "2026-02-15"
         },
         {
-            "title": "مستوطنون يحرقون منازل ومركبات فلسطينية في الخليل",
-            "sentiment_polarity": -0.832,
+            "title": "Gang of Eight Briefing: Democratic Warnings of War and Trump’s Silence",
+            "sentiment_polarity": -0.881,
             "sentiment_method": "vader",
-            "risk_score": 36.6,
-            "risk_level": "MEDIUM",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
             "key_phrases": [
-                "susiya",
-                "hebron",
-                "extensive attacks",
-                "ramadan",
-                "arson attacks"
+                "trump",
+                "'s state",
+                "union address",
+                "select group",
+                "congress"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "T",
+            "date": "2026-02-25"
+        },
+        {
+            "title": "مستوطنون يحرقون منازل ومركبات فلسطينية في الخليل",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "شهدت قرية سوسيا جنوب الخليل اعتداءات واسعة من قبل المستوطنين خلال ليالي شهر رمضان",
+                "قام المعتدون بإحراق منازل ومركبات تابعة للفلسطينيين وإطلاق قنابل الغاز المسيل للدموع داخل المساكن، مما أدى لإصابات عديدة بالاختناق",
+                "هذه الاعتداءات تزيد من حالة الاحتقان الشعبي في الضفة الغربية"
             ],
             "military_hits": 0,
             "diplomatic_hits": 0,
@@ -1204,8 +1287,8 @@
             "title": "Diplomatic Scramble to Prevent All-Out War",
             "sentiment_polarity": -0.438,
             "sentiment_method": "vader",
-            "risk_score": 44.8,
-            "risk_level": "MEDIUM",
+            "risk_score": 16.0,
+            "risk_level": "LOW",
             "key_phrases": [
                 "january",
                 "frantic diplomatic effort",
@@ -1222,7 +1305,7 @@
             "title": "Blinken: The window for a diplomatic solution is closing fast",
             "sentiment_polarity": 0.318,
             "sentiment_method": "vader",
-            "risk_score": 22.0,
+            "risk_score": 25.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "antony blinken",
