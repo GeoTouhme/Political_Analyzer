@@ -1,6 +1,7 @@
 .env
-__pycache__/
 *.pyc
-*.pyo
-analysis_report_*.json
-.agent/
+__pycache__/
+analyzer.py
+strategic_prompt.txt
+test_analyzer.py
+collection_db.json
