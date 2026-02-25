@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generated_at": "2026-02-25T04:48:18.158467",
+        "generated_at": "2026-02-25T04:51:31.412700",
         "article_count": 24,
         "avg_risk_score": 36.5,
         "max_risk_score": 74.4,
@@ -21,7 +21,8 @@
                 "full-scale war"
             ],
             "military_hits": 5,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "MEI"
         },
         {
             "title": "The U.S. and Iran Can Still Avoid a War",
@@ -37,7 +38,8 @@
                 "recent weeks"
             ],
             "military_hits": 4,
-            "diplomatic_hits": 1
+            "diplomatic_hits": 1,
+            "source_name": "CRISISGROUP"
         },
         {
             "title": "What Would War With Iran Look Like?",
@@ -53,7 +55,8 @@
                 "strategic chicken"
             ],
             "military_hits": 0,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "THEATLANTIC"
         },
         {
             "title": "Internal Protests in Tehran: A Regime Under Pressure",
@@ -69,7 +72,8 @@
                 "iran"
             ],
             "military_hits": 1,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "BBC"
         },
         {
             "title": "Iraq Struggles to Maintain Neutrality Amid US-Iran Crossfire",
@@ -85,7 +89,8 @@
                 "pro-iranian"
             ],
             "military_hits": 0,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "REUTERS"
         },
         {
             "title": "For Iran’s rulers, refusing US demands is a risk worth taking",
@@ -101,7 +106,8 @@
                 "economic pressure"
             ],
             "military_hits": 0,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "NYTIMES"
         },
         {
             "title": "Turkey Offers to Mediate as Regional War Threat Grows",
@@ -117,7 +123,8 @@
                 "host high-level"
             ],
             "military_hits": 0,
-            "diplomatic_hits": 1
+            "diplomatic_hits": 1,
+            "source_name": "AL-MONITOR"
         },
         {
             "title": "UAE Boosts Missile Defenses to Protect Global Hubs",
@@ -133,7 +140,8 @@
                 "regional crisis"
             ],
             "military_hits": 1,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "KHALEEJTIMES"
         },
         {
             "title": "U.S. Military in the Middle East: Numbers Behind Trump’s Threats Against Iran",
@@ -149,7 +157,8 @@
                 "sof"
             ],
             "military_hits": 3,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "CSIS"
         },
         {
             "title": "Saudi Arabia’s Delicate Balancing Act",
@@ -165,7 +174,8 @@
                 "complex geopolitical challenge"
             ],
             "military_hits": 5,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "ARABNEWS"
         },
         {
             "title": "Israel Approves Operational Plans for Multi-Front Defense",
@@ -181,7 +191,8 @@
                 "operational plans"
             ],
             "military_hits": 0,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "TIMESOFISRAEL"
         },
         {
             "title": "China Calls for Emergency UN Security Council Meeting",
@@ -197,7 +208,8 @@
                 "un security council"
             ],
             "military_hits": 0,
-            "diplomatic_hits": 1
+            "diplomatic_hits": 1,
+            "source_name": "SCMP"
         },
         {
             "title": "The Logistic Challenges of a Sustained Gulf Campaign",
@@ -213,7 +225,8 @@
                 "massive logistical challenge"
             ],
             "military_hits": 1,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "DEFENSENEWS"
         },
         {
             "title": "The Cyber Front: First Strikes in Digital Domain?",
@@ -229,7 +242,8 @@
                 "digital realm"
             ],
             "military_hits": 1,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "WIRED"
         },
         {
             "title": "US military positioning multiple waves of strikes",
@@ -244,7 +258,8 @@
                 "air force squadrons"
             ],
             "military_hits": 3,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "CNN"
         },
         {
             "title": "Russia Warns Against US Escalation in Persian Gulf",
@@ -260,7 +275,8 @@
                 "iran"
             ],
             "military_hits": 2,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "TASS"
         },
         {
             "title": "Houthi Threats to Red Sea Shipping Intensify",
@@ -276,7 +292,8 @@
                 "severe warning"
             ],
             "military_hits": 0,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "ALJAZEERA"
         },
         {
             "title": "U.S., Iran near nuclear pact as war threat looms",
@@ -292,7 +309,8 @@
                 "iran"
             ],
             "military_hits": 1,
-            "diplomatic_hits": 2
+            "diplomatic_hits": 2,
+            "source_name": "REUTERS"
         },
         {
             "title": "Oil Markets Bracing for $150+ Scenario",
@@ -308,7 +326,8 @@
                 "goldman sachs"
             ],
             "military_hits": 0,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "BLOOMBERG"
         },
         {
             "title": "European Union Split on Sanctions vs. Diplomacy",
@@ -324,7 +343,8 @@
                 "standoff intensifies"
             ],
             "military_hits": 0,
-            "diplomatic_hits": 1
+            "diplomatic_hits": 1,
+            "source_name": "POLITICO"
         },
         {
             "title": "Iran, US hold first nuclear talks since war scare",
@@ -340,7 +360,8 @@
                 "brokers"
             ],
             "military_hits": 1,
-            "diplomatic_hits": 1
+            "diplomatic_hits": 1,
+            "source_name": "APNEWS"
         },
         {
             "title": "The High Stakes of a Potential Iran Conflict",
@@ -356,7 +377,8 @@
                 "tehran"
             ],
             "military_hits": 3,
-            "diplomatic_hits": 1
+            "diplomatic_hits": 1,
+            "source_name": "NYTIMES"
         },
         {
             "title": "Iran Update, January 30, 2026 | ISW",
@@ -371,7 +393,8 @@
                 "u.s."
             ],
             "military_hits": 1,
-            "diplomatic_hits": 1
+            "diplomatic_hits": 1,
+            "source_name": "UNDERSTANDINGWAR"
         },
         {
             "title": "Lebanon’s Hezbollah on Full Alert as War Clouds Gather",
@@ -387,7 +410,8 @@
                 "hezbollah"
             ],
             "military_hits": 1,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "NAHARNET"
         }
     ]
 }
