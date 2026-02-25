@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Analysis Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-primary: #0f1117;
+            --bg-card: #1a1d28;
+            --bg-card-hover: #1f2233;
+            --border: #2a2d3a;
+            --text-primary: #e8eaed;
+            --text-secondary: #9aa0b0;
+            --text-muted: #6b7280;
+            --accent-red: #ef4444;
+            --accent-orange: #f97316;
+            --accent-yellow: #eab308;
+            --accent-green: #22c55e;
+            --accent-blue: #3b82f6;
+            --gradient-red: linear-gradient(135deg, #ef4444, #dc2626);
+            --gradient-orange: linear-gradient(135deg, #f97316, #ea580c);
+            --gradient-yellow: linear-gradient(135deg, #eab308, #ca8a04);
+            --gradient-green: linear-gradient(135deg, #22c55e, #16a34a);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header .subtitle {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 6px;
+        }
+
+        .header .timestamp {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 4px 12px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: var(--accent-blue);
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-card .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .stat-card .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Charts Grid */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        /* Card */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .card.full-width {
+            grid-column: span 2;
+        }
+
+        .card h2 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card h2::before {
+            content: '';
+            width: 3px;
+            height: 16px;
+            background: var(--accent-red);
+            border-radius: 2px;
+        }
+
+        /* Risk Items */
+        .risk-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid transparent;
+            margin-bottom: 8px;
+            transition: background 0.15s, border-color 0.15s;
+        }
+
+        .risk-item:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--border);
+        }
+
+        .risk-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .risk-item .title {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .risk-item .meta {
+            display: flex;
+            gap: 12px;
+            margin-top: 4px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .risk-item .meta span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .risk-badge {
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 6px;
+            white-space: nowrap;
+        }
+
+        .risk-badge.CRITICAL {
+            color: #fca5a5;
+            background: rgba(239, 68, 68, 0.15);
+        }
+
+        .risk-badge.HIGH {
+            color: #fdba74;
+            background: rgba(249, 115, 22, 0.15);
+        }
+
+        .risk-badge.MEDIUM {
+            color: #fde68a;
+            background: rgba(234, 179, 8, 0.15);
+        }
+
+        .risk-badge.LOW {
+            color: #86efac;
+            background: rgba(34, 197, 94, 0.15);
+        }
+
+        canvas {
+            max-height: 280px;
+        }
+
+        /* Loading / Error */
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+        }
+
+        .error-msg {
+            text-align: center;
+            padding: 40px;
+            color: var(--accent-red);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 16px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card.full-width {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Strategic Analysis Dashboard</h1>
+            <div class="subtitle">Political Pattern Analyzer — U.S. / Iran Conflict Monitor</div>
+            <div class="timestamp" id="timestamp">Loading...</div>
+        </div>
+
+        <div class="stats-grid" id="statsGrid">
+            <div class="stat-card">
+                <div class="stat-value" id="articleCount">—</div>
+                <div class="stat-label">Articles</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avgRisk">—</div>
+                <div class="stat-label">Avg Risk</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="maxRisk">—</div>
+                <div class="stat-label">Peak Risk</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="dominantLevel">—</div>
+                <div class="stat-label">Dominant Level</div>
+            </div>
+        </div>
+
+        <div class="charts-grid">
+            <div class="card">
+                <h2>Risk vs Sentiment</h2>
+                <canvas id="sentimentChart"></canvas>
+            </div>
+            <div class="card">
+                <h2>Risk Distribution</h2>
+                <canvas id="levelChart"></canvas>
+            </div>
+        </div>
+
+        <div class="card full-width">
+            <h2>Risk Overview by Source</h2>
+            <div id="riskList">
+                <div class="loading">Loading report data...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const REPORT_PATH = 'analysis_report_v2.json';
+        const LEVEL_COLORS = {
+            CRITICAL: { bg: 'rgba(239,68,68,0.6)', border: '#ef4444' },
+            HIGH: { bg: 'rgba(249,115,22,0.6)', border: '#f97316' },
+            MEDIUM: { bg: 'rgba(234,179,8,0.6)', border: '#eab308' },
+            LOW: { bg: 'rgba(34,197,94,0.6)', border: '#22c55e' },
+        };
+
+        async function loadReport() {
+            try {
+                const res = await fetch(REPORT_PATH);
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                return await res.json();
+            } catch (err) {
+                console.error('Failed to load report:', err);
+                return null;
+            }
+        }
+
+        function renderStats(report) {
+            const meta = report.meta || {};
+            const articles = report.articles || [];
+
+            document.getElementById('articleCount').textContent = meta.article_count ?? articles.length;
+            document.getElementById('avgRisk').textContent = meta.avg_risk_score?.toFixed(1) ?? '—';
+            document.getElementById('maxRisk').textContent = meta.max_risk_score?.toFixed(1) ?? '—';
+
+            // Dominant level
+            const levels = articles.map(a => a.risk_level);
+            const counts = levels.reduce((acc, l) => { acc[l] = (acc[l] || 0) + 1; return acc; }, {});
+            const dominant = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
+            const domEl = document.getElementById('dominantLevel');
+            if (dominant) {
+                domEl.textContent = dominant[0];
+                domEl.style.color = LEVEL_COLORS[dominant[0]]?.border || '#fff';
+            }
+
+            // Timestamp
+            const ts = meta.generated_at ? new Date(meta.generated_at) : null;
+            document.getElementById('timestamp').textContent = ts
+                ? `Last updated: ${ts.toLocaleDateString()} ${ts.toLocaleTimeString()}`
+                : 'Static data';
+        }
+
+        function renderRiskList(articles) {
+            const listDiv = document.getElementById('riskList');
+            listDiv.innerHTML = '';
+
+            const sorted = [...articles].sort((a, b) => b.risk_score - a.risk_score);
+
+            sorted.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'risk-item';
+                const sentiment = item.sentiment_polarity ?? 0;
+                const sentimentLabel = sentiment > 0.05 ? '↑ Dovish' : sentiment < -0.05 ? '↓ Hawkish' : '— Neutral';
+                const phrases = (item.key_phrases || []).join(', ');
+                div.innerHTML = `
+                    <div>
+                        <div class="title">${item.title}</div>
+                        <div class="meta">
+                            <span>📊 ${sentimentLabel} (${sentiment.toFixed(2)})</span>
+                            <span>🏷️ ${phrases || 'No keywords'}</span>
+                        </div>
+                    </div>
+                    <div class="risk-badge ${item.risk_level}">${item.risk_score.toFixed(1)}</div>
+                `;
+                listDiv.appendChild(div);
+            });
+        }
+
+        function renderCharts(articles) {
+            // Scatter: Risk vs Sentiment
+            const scatterData = articles.map(a => ({
+                x: a.sentiment_polarity,
+                y: a.risk_score,
+                label: a.title,
+            }));
+
+            new Chart(document.getElementById('sentimentChart'), {
+                type: 'scatter',
+                data: {
+                    datasets: [{
+                        label: 'Articles',
+                        data: scatterData,
+                        backgroundColor: scatterData.map(d => {
+                            const level = d.y > 75 ? 'CRITICAL' : d.y > 50 ? 'HIGH' : d.y > 25 ? 'MEDIUM' : 'LOW';
+                            return LEVEL_COLORS[level].bg;
+                        }),
+                        borderColor: scatterData.map(d => {
+                            const level = d.y > 75 ? 'CRITICAL' : d.y > 50 ? 'HIGH' : d.y > 25 ? 'MEDIUM' : 'LOW';
+                            return LEVEL_COLORS[level].border;
+                        }),
+                        pointRadius: 6,
+                        pointHoverRadius: 9,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: ctx => `${scatterData[ctx.dataIndex].label} (Risk: ${ctx.parsed.y}, Sent: ${ctx.parsed.x})`
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: { display: true, text: 'Sentiment (Hawkish ← → Dovish)', color: '#6b7280' },
+                            grid: { color: 'rgba(255,255,255,0.05)' },
+                            ticks: { color: '#6b7280' },
+                        },
+                        y: {
+                            title: { display: true, text: 'Risk Score', color: '#6b7280' },
+                            grid: { color: 'rgba(255,255,255,0.05)' },
+                            ticks: { color: '#6b7280' },
+                            min: 0, max: 100,
+                        }
+                    }
+                }
+            });
+
+            // Doughnut: Level Distribution
+            const counts = articles.reduce((acc, a) => { acc[a.risk_level] = (acc[a.risk_level] || 0) + 1; return acc; }, {});
+            const orderedLevels = ['CRITICAL', 'HIGH', 'MEDIUM', 'LOW'].filter(l => counts[l]);
+
+            new Chart(document.getElementById('levelChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: orderedLevels,
+                    datasets: [{
+                        data: orderedLevels.map(l => counts[l]),
+                        backgroundColor: orderedLevels.map(l => LEVEL_COLORS[l].bg),
+                        borderColor: orderedLevels.map(l => LEVEL_COLORS[l].border),
+                        borderWidth: 2,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { color: '#9aa0b0', padding: 16 }
+                        }
+                    }
+                }
+            });
+        }
+
+        // __REPORT_DATA_START__
+        const EMBEDDED_REPORT = {"meta": {"generated_at": "2026-02-25T04:15:58.523284", "article_count": 24, "avg_risk_score": 36.5, "max_risk_score": 74.4, "analyzer_version": "1.0"}, "articles": [{"title": "Iran considers its response to potential renewed US-Israeli strikes", "sentiment_polarity": -0.55, "sentiment_method": "vader", "risk_score": 66.0, "risk_level": "HIGH", "key_phrases": ["rapid military buildup", "familiar anxiety", "iran", "iranian", "full-scale war"], "military_hits": 5, "diplomatic_hits": 0}, {"title": "The U.S. and Iran Can Still Avoid a War", "sentiment_polarity": -0.831, "sentiment_method": "vader", "risk_score": 60.6, "risk_level": "HIGH", "key_phrases": ["mutual antagonism", "u.s.", "iran", "major war ...", "recent weeks"], "military_hits": 4, "diplomatic_hits": 1}, {"title": "What Would War With Iran Look Like?", "sentiment_polarity": -0.477, "sentiment_method": "vader", "risk_score": 29.5, "risk_level": "MEDIUM", "key_phrases": ["pentagon officials", "large-scale conflict", "economic fallout", "oil prices", "strategic chicken"], "military_hits": 0, "diplomatic_hits": 0}, {"title": "Internal Protests in Tehran: A Regime Under Pressure", "sentiment_polarity": -0.742, "sentiment_method": "vader", "risk_score": 42.8, "risk_level": "MEDIUM", "key_phrases": ["tehran", "feb", "new wave", "domestic unrest", "iran"], "military_hits": 1, "diplomatic_hits": 0}, {"title": "Iraq Struggles to Maintain Neutrality Amid US-Iran Crossfire", "sentiment_polarity": -0.494, "sentiment_method": "vader", "risk_score": 29.9, "risk_level": "MEDIUM", "key_phrases": ["baghdad", "feb", "iraqi", "us-iran", "pro-iranian"], "military_hits": 0, "diplomatic_hits": 0}, {"title": "For Iran’s rulers, refusing US demands is a risk worth taking", "sentiment_polarity": -0.852, "sentiment_method": "vader", "risk_score": 37.0, "risk_level": "MEDIUM", "key_phrases": ["tehran", "washington", "internal", "social unrest", "economic pressure"], "military_hits": 0, "diplomatic_hits": 0}, {"title": "Turkey Offers to Mediate as Regional War Threat Grows", "sentiment_polarity": 0.44, "sentiment_method": "vader", "risk_score": 6.2, "risk_level": "LOW", "key_phrases": ["ankara", "feb", "turkish president", "erdogan", "host high-level"], "military_hits": 0, "diplomatic_hits": 1}, {"title": "UAE Boosts Missile Defenses to Protect Global Hubs", "sentiment_polarity": 0.402, "sentiment_method": "vader", "risk_score": 20.0, "risk_level": "LOW", "key_phrases": ["abu dhabi", "feb", "arab emirates", "missile defense networks", "regional crisis"], "military_hits": 1, "diplomatic_hits": 0}, {"title": "U.S. Military in the Middle East: Numbers Behind Trump’s Threats Against Iran", "sentiment_polarity": -0.751, "sentiment_method": "vader", "risk_score": 66.0, "risk_level": "HIGH", "key_phrases": ["csis analysis", "force composition lacks", "logistical tail", "ground elements", "sof"], "military_hits": 3, "diplomatic_hits": 0}, {"title": "Saudi Arabia’s Delicate Balancing Act", "sentiment_polarity": -0.369, "sentiment_method": "vader", "risk_score": 74.4, "risk_level": "HIGH", "key_phrases": ["riyadh", "feb", "kingdom", "saudi arabia", "complex geopolitical challenge"], "military_hits": 5, "diplomatic_hits": 0}, {"title": "Israel Approves Operational Plans for Multi-Front Defense", "sentiment_polarity": 0.248, "sentiment_method": "vader", "risk_score": 15.0, "risk_level": "LOW", "key_phrases": ["jerusalem", "feb", "idf", "security cabinet", "operational plans"], "military_hits": 0, "diplomatic_hits": 0}, {"title": "China Calls for Emergency UN Security Council Meeting", "sentiment_polarity": -0.92, "sentiment_method": "vader", "risk_score": 33.4, "risk_level": "MEDIUM", "key_phrases": ["beijing", "feb", "china", "emergency session", "un security council"], "military_hits": 0, "diplomatic_hits": 1}, {"title": "The Logistic Challenges of a Sustained Gulf Campaign", "sentiment_polarity": -0.761, "sentiment_method": "vader", "risk_score": 43.2, "risk_level": "MEDIUM", "key_phrases": ["washington", "feb", "aircraft carriers", "stealth fighters", "massive logistical challenge"], "military_hits": 1, "diplomatic_hits": 0}, {"title": "The Cyber Front: First Strikes in Digital Domain?", "sentiment_polarity": -0.929, "sentiment_method": "vader", "risk_score": 46.6, "risk_level": "MEDIUM", "key_phrases": ["washington", "feb", "kinetic war", "massive shadow war", "digital realm"], "military_hits": 1, "diplomatic_hits": 0}, {"title": "US military positioning multiple waves of strikes", "sentiment_polarity": 0.44, "sentiment_method": "vader", "risk_score": 35.2, "risk_level": "MEDIUM", "key_phrases": ["military forces", "multiple waves", "navy carriers", "air force squadrons"], "military_hits": 3, "diplomatic_hits": 0}, {"title": "Russia Warns Against US Escalation in Persian Gulf", "sentiment_polarity": 0.572, "sentiment_method": "vader", "risk_score": 19.6, "risk_level": "LOW", "key_phrases": ["moscow", "feb", "kremlin", "military action", "iran"], "military_hits": 2, "diplomatic_hits": 0}, {"title": "Houthi Threats to Red Sea Shipping Intensify", "sentiment_polarity": -0.918, "sentiment_method": "vader", "risk_score": 38.4, "risk_level": "MEDIUM", "key_phrases": ["sanaa", "feb", "houthi", "yemen", "severe warning"], "military_hits": 0, "diplomatic_hits": 0}, {"title": "U.S., Iran near nuclear pact as war threat looms", "sentiment_polarity": -0.064, "sentiment_method": "vader", "risk_score": 14.3, "risk_level": "LOW", "key_phrases": ["geneva", "feb", "reuters", "negotiators", "iran"], "military_hits": 1, "diplomatic_hits": 2}, {"title": "Oil Markets Bracing for $150+ Scenario", "sentiment_polarity": -0.796, "sentiment_method": "vader", "risk_score": 35.9, "risk_level": "MEDIUM", "key_phrases": ["new york", "feb", "energy", "iran", "goldman sachs"], "military_hits": 0, "diplomatic_hits": 0}, {"title": "European Union Split on Sanctions vs. Diplomacy", "sentiment_polarity": 0.226, "sentiment_method": "vader", "risk_score": 5.5, "risk_level": "LOW", "key_phrases": ["brussels", "feb", "european union", "us-iran", "standoff intensifies"], "military_hits": 0, "diplomatic_hits": 1}, {"title": "Iran, US hold first nuclear talks since war scare", "sentiment_polarity": 0.026, "sentiment_method": "vader", "risk_score": 22.5, "risk_level": "LOW", "key_phrases": ["geneva", "ap", "iran", "direct nuclear talks", "brokers"], "military_hits": 1, "diplomatic_hits": 1}, {"title": "The High Stakes of a Potential Iran Conflict", "sentiment_polarity": -0.863, "sentiment_method": "vader", "risk_score": 58.3, "risk_level": "HIGH", "key_phrases": ["york", "briefing", "feb", "washington", "tehran"], "military_hits": 3, "diplomatic_hits": 1}, {"title": "Iran Update, January 30, 2026 | ISW", "sentiment_polarity": -0.36, "sentiment_method": "vader", "risk_score": 30.2, "risk_level": "MEDIUM", "key_phrases": ["iran", "us demands", "strategic deterrent", "u.s."], "military_hits": 1, "diplomatic_hits": 1}, {"title": "Lebanon’s Hezbollah on Full Alert as War Clouds Gather", "sentiment_polarity": -0.912, "sentiment_method": "vader", "risk_score": 46.2, "risk_level": "MEDIUM", "key_phrases": ["beirut", "feb", "tensions", "blue line", "hezbollah"], "military_hits": 1, "diplomatic_hits": 0}]};
+        // __REPORT_DATA_END__
+
+        // --- Boot ---
+        (async () => {
+            let report = null;
+
+            // Try embedded data first (injected by analyzer_v2.py)
+            if (typeof EMBEDDED_REPORT !== 'undefined') {
+                report = EMBEDDED_REPORT;
+            } else {
+                report = await loadReport();
+            }
+
+            if (!report) {
+                document.getElementById('riskList').innerHTML =
+                    '<div class="error-msg">⚠️ Could not load report. Run <code>python analyzer_v2.py</code> first.</div>';
+                document.getElementById('timestamp').textContent = 'No data';
+                return;
+            }
+
+            // Support both old format (flat array) and new format (meta + articles)
+            const articles = Array.isArray(report) ? report : (report.articles || []);
+            const fullReport = Array.isArray(report) ? { meta: {}, articles: report } : report;
+
+            renderStats(fullReport);
+            renderRiskList(articles);
+            renderCharts(articles);
+        })();
+    </script>
+</body>
+
+</html>
