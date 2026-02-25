@@ -1,3 +1,5 @@
-requests
-textblob
-python-dotenv
+requests>=2.31.0
+textblob>=0.18.0
+python-dotenv>=1.0.0
+vaderSentiment>=3.3.2
+pytest>=8.0.0

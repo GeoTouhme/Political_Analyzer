@@ -1,31 +1,55 @@
-# Political Pattern Analyzer (v0.2) 👾
+# Political Pattern Analyzer (v1.0) 👾
 
-Strategic intelligence pipeline designed to ingest, analyze, and visualize geopolitical trends between the U.S. and Iran (2026 Conflict Context). This tool helps bridge the gap between raw news signals and actionable political commentary.
+Strategic intelligence pipeline designed to ingest, analyze, and visualize geopolitical trends between the U.S. and Iran (2026 Conflict Context). This tool bridges the gap between raw news signals and actionable political commentary.
 
 ## 🚀 Overview
-The analyzer processes full-text articles from a Notion database, applies NLP for sentiment analysis and weighted risk scoring, and generates a visual dashboard for pattern recognition.
+The analyzer processes full-text articles from a Notion database, applies dual NLP engines for sentiment analysis and frequency-weighted risk scoring, and generates a visual dashboard for pattern recognition.
 
 ### Key Features
-- **Notion Integration:** Automated ingestion of strategic articles from multiple global sources (NYT, Reuters, CSIS, MEI, etc.).
-- **Risk Scoring Engine:** Calculates a 0-100 risk score based on military vs. diplomatic terminology density.
-- **Sentiment Analysis:** Uses `TextBlob` to measure discourse polarity (Hawkish vs. Dovish).
-- **Visual Dashboard:** Self-contained HTML/Chart.js visualization of the "Strategic Triangle" (Intentions, Capabilities, and Context).
+- **Notion Integration:** Automated ingestion of strategic articles from multiple global sources (NYT, Reuters, CSIS, MEI, etc.)
+- **Dual NLP Sentiment:** VADER (news-optimized) + TextBlob fallback with automatic detection
+- **Risk Scoring Engine:** Frequency-weighted 0-100 risk score based on military vs. diplomatic terminology density
+- **Visual Dashboard:** Self-contained HTML/Chart.js dashboard with dynamic JSON loading
+- **Structured Reports:** JSON output with metadata (timestamp, averages, peak risk)
+- **Robust Error Handling:** Retry logic with exponential backoff for API calls
 
-## 🛠 Project Structure
-- `analyzer_v2.py`: The core NLP engine (Sentiment + Risk Logic).
-- `dashboard.html`: Interactive visualization of current intelligence.
-- `POLITICAL_ANALYSIS_PROJECT.md`: Project charter and methodology.
-- `analysis_report_v2.json`: Machine-readable output of the latest run.
+## 🛠 Setup
+
+```bash
+pip install -r requirements.txt
+python -m textblob.download_corpora  # Optional: improves noun phrase extraction
+```
+
+Create a `.env` file:
+```
+NOTION_API_KEY=your_notion_token_here
+```
+
+## 📊 Usage
+
+```bash
+python analyzer_v2.py          # Run analysis
+python -m pytest test_analyzer.py -v  # Run tests
+```
+
+Open `dashboard.html` in your browser to view results.
+
+## 📁 Project Structure
+- `analyzer_v2.py` — Core NLP engine (Sentiment + Risk + Report generation)
+- `dashboard.html` — Interactive visualization dashboard
+- `test_analyzer.py` — Unit test suite (24 tests)
+- `analysis_report_v2.json` — Machine-readable output of the latest run
+- `POLITICAL_ANALYSIS_PROJECT.md` — Project charter and methodology
 
 ## 📊 Methodology (The Strategic Triangle)
-The system analyzes three core pillars:
-1. **Intentions:** Iranian offensive doctrine and internal political rigidity.
-2. **Capabilities:** U.S. military force composition and naval buildup metrics.
-3. **Context:** Economic deterrents (oil prices) and diplomatic framework status in Geneva.
+1. **Intentions:** Iranian offensive doctrine and internal political rigidity
+2. **Capabilities:** U.S. military force composition and naval buildup metrics
+3. **Context:** Economic deterrents (oil prices) and diplomatic framework status
 
 ## 🔒 Security
-- `.env` management for Notion and GitHub API keys (secrets are ignored by Git).
-- Local-first processing to minimize API overhead.
+- `.env` management for Notion API keys (gitignored)
+- Fail-fast validation — missing tokens abort immediately
+- No raw API responses leaked in error output
 
 ---
 *Created by George & vit (OpenClaw Assistant)*
