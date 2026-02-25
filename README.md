@@ -1,4 +1,4 @@
-# 🇮🇷 Persian Gulf Conflict Monitor (PGCM-2026)
+# Persian Gulf Conflict Monitor (PGCM-2026)
 
 An autonomous intelligence monitoring platform designed to track, analyze, and visualize the 2026 US-Iran geopolitical crisis.
 
