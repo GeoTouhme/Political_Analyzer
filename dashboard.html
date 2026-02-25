@@ -243,7 +243,67 @@
 
         .card.full-width {
             grid-column: span 2;
-            margin-bottom: 32px; /* Increased margin to fix the overlap in mobile/desktop view */
+            margin-bottom: 32px;
+        }
+
+        /* Fixed-height Scrollable Container for Articles */
+        .scroll-container {
+            max-height: 600px;
+            overflow-y: auto;
+            padding-right: 8px;
+            margin-top: 16px;
+        }
+
+        /* Custom Scrollbar */
+        .scroll-container::-webkit-scrollbar {
+            width: 6px;
+        }
+        .scroll-container::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.02);
+        }
+        .scroll-container::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 10px;
+        }
+
+        /* Filter Controls */
+        .filter-bar {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .search-input {
+            flex: 1;
+            min-width: 200px;
+            background: var(--bg-card-hover);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 8px 12px;
+            color: var(--text-primary);
+            font-size: 0.85rem;
+            outline: none;
+        }
+        .search-input:focus {
+            border-color: var(--accent-blue);
+        }
+
+        .filter-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 6px 16px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .filter-btn.active {
+            background: var(--accent-blue);
+            color: white;
+            border-color: var(--accent-blue);
         }
 
         .card h2 {
@@ -482,8 +542,14 @@
         </div>
 
         <div class="card full-width">
+            <div class="filter-bar">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search headline or source...">
+                <button class="filter-btn active" onclick="setFilter('all', this)">All</button>
+                <button class="filter-btn" onclick="setFilter('high', this)">High Risk</button>
+                <button class="filter-btn" onclick="setFilter('latest', this)">Latest 10</button>
+            </div>
             <h2>Risk Overview by Source</h2>
-            <div id="riskList">
+            <div id="riskList" class="scroll-container">
                 <div class="loading">Loading report data...</div>
             </div>
         </div>
@@ -498,16 +564,53 @@
             LOW: { bg: 'rgba(34,197,94,0.6)', border: '#22c55e' },
         };
 
+        let globalArticles = [];
+        let currentFilter = 'all';
+
+        function setFilter(filter, btn) {
+            currentFilter = filter;
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            let filtered = [...globalArticles];
+
+            // Filter by search
+            if (searchTerm) {
+                filtered = filtered.filter(a => 
+                    a.title.toLowerCase().includes(searchTerm) || 
+                    a.source_name.toLowerCase().includes(searchTerm)
+                );
+            }
+
+            // Filter by category
+            if (currentFilter === 'high') {
+                filtered = filtered.filter(a => a.risk_score >= 50);
+            } else if (currentFilter === 'latest') {
+                filtered = [...globalArticles].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 10);
+            }
+
+            renderRiskList(filtered);
+        }
+
         async function loadReport() {
             try {
                 const res = await fetch(REPORT_PATH);
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
-                return await res.json();
+                const data = await res.json();
+                globalArticles = Array.isArray(data) ? data : (data.articles || []);
+                return data;
             } catch (err) {
                 console.error('Failed to load report:', err);
                 return null;
             }
         }
+
+        // Add search listener
+        document.getElementById('searchInput')?.addEventListener('input', applyFilters);
 
         function renderStats(report) {
             const meta = report.meta || {};
@@ -732,6 +835,7 @@
 
             // Support both old format (flat array) and new format (meta + articles)
             const articles = Array.isArray(report) ? report : (report.articles || []);
+            globalArticles = articles; // Sync global state
             const fullReport = Array.isArray(report) ? { meta: {}, articles: report } : report;
 
             renderStats(fullReport);
