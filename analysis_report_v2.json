@@ -1,9 +1,9 @@
 {
     "meta": {
-        "generated_at": "2026-02-25T02:05:48.737358",
-        "article_count": 24,
-        "avg_risk_score": 36.5,
-        "max_risk_score": 74.4,
+        "generated_at": "2026-02-25T05:51:36.738904",
+        "article_count": 45,
+        "avg_risk_score": 35.5,
+        "max_risk_score": 74.0,
         "analyzer_version": "1.0"
     },
     "articles": [
@@ -11,7 +11,7 @@
             "title": "Iran considers its response to potential renewed US-Israeli strikes",
             "sentiment_polarity": -0.55,
             "sentiment_method": "vader",
-            "risk_score": 66.0,
+            "risk_score": 74.0,
             "risk_level": "HIGH",
             "key_phrases": [
                 "rapid military buildup",
@@ -20,14 +20,16 @@
                 "iranian",
                 "full-scale war"
             ],
-            "military_hits": 5,
-            "diplomatic_hits": 0
+            "military_hits": 6,
+            "diplomatic_hits": 0,
+            "source_name": "MEI",
+            "date": "2026-02-20"
         },
         {
             "title": "The U.S. and Iran Can Still Avoid a War",
             "sentiment_polarity": -0.831,
             "sentiment_method": "vader",
-            "risk_score": 60.6,
+            "risk_score": 67.6,
             "risk_level": "HIGH",
             "key_phrases": [
                 "mutual antagonism",
@@ -36,8 +38,10 @@
                 "major war ...",
                 "recent weeks"
             ],
-            "military_hits": 4,
-            "diplomatic_hits": 1
+            "military_hits": 5,
+            "diplomatic_hits": 1,
+            "source_name": "CRISISGROUP",
+            "date": "2026-02-23"
         },
         {
             "title": "What Would War With Iran Look Like?",
@@ -53,7 +57,9 @@
                 "strategic chicken"
             ],
             "military_hits": 0,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "THEATLANTIC",
+            "date": "2026-02-22"
         },
         {
             "title": "Internal Protests in Tehran: A Regime Under Pressure",
@@ -69,13 +75,15 @@
                 "iran"
             ],
             "military_hits": 1,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "BBC",
+            "date": "2026-02-18"
         },
         {
             "title": "Iraq Struggles to Maintain Neutrality Amid US-Iran Crossfire",
             "sentiment_polarity": -0.494,
             "sentiment_method": "vader",
-            "risk_score": 29.9,
+            "risk_score": 36.9,
             "risk_level": "MEDIUM",
             "key_phrases": [
                 "baghdad",
@@ -84,14 +92,34 @@
                 "us-iran",
                 "pro-iranian"
             ],
-            "military_hits": 0,
-            "diplomatic_hits": 0
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "REUTERS",
+            "date": "2026-02-18"
+        },
+        {
+            "title": "Iran Ready for War as US President Renews Action Threat",
+            "sentiment_polarity": -0.872,
+            "sentiment_method": "vader",
+            "risk_score": 40.4,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "january",
+                "iranian",
+                "u.s.",
+                "donald trump",
+                "military action"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "EN",
+            "date": "2026-01-13"
         },
         {
             "title": "For Iran’s rulers, refusing US demands is a risk worth taking",
             "sentiment_polarity": -0.852,
             "sentiment_method": "vader",
-            "risk_score": 37.0,
+            "risk_score": 44.0,
             "risk_level": "MEDIUM",
             "key_phrases": [
                 "tehran",
@@ -100,14 +128,16 @@
                 "social unrest",
                 "economic pressure"
             ],
-            "military_hits": 0,
-            "diplomatic_hits": 0
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "NYTIMES",
+            "date": "2026-02-23"
         },
         {
             "title": "Turkey Offers to Mediate as Regional War Threat Grows",
             "sentiment_polarity": 0.44,
             "sentiment_method": "vader",
-            "risk_score": 6.2,
+            "risk_score": 10.2,
             "risk_level": "LOW",
             "key_phrases": [
                 "ankara",
@@ -116,8 +146,28 @@
                 "erdogan",
                 "host high-level"
             ],
-            "military_hits": 0,
-            "diplomatic_hits": 1
+            "military_hits": 1,
+            "diplomatic_hits": 1,
+            "source_name": "AL-MONITOR",
+            "date": "2026-02-22"
+        },
+        {
+            "title": "Hossein Salami: IRGC will target U.S. interests globally if attacked",
+            "sentiment_polarity": -0.756,
+            "sentiment_method": "vader",
+            "risk_score": 43.1,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "hossein salami",
+                "commander-in-chief",
+                "islamic",
+                "revolutionary guard corps",
+                "irgc"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "TEHRANTIMES",
+            "date": "2026-02-24"
         },
         {
             "title": "UAE Boosts Missile Defenses to Protect Global Hubs",
@@ -133,7 +183,27 @@
                 "regional crisis"
             ],
             "military_hits": 1,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "KHALEEJTIMES",
+            "date": "2026-02-14"
+        },
+        {
+            "title": "Netanyahu: Israel will not be bound by Geneva framework",
+            "sentiment_polarity": 0.466,
+            "sentiment_method": "vader",
+            "risk_score": 24.7,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "prime",
+                "benjamin netanyahu",
+                "trump",
+                "washington",
+                "israel"
+            ],
+            "military_hits": 3,
+            "diplomatic_hits": 3,
+            "source_name": "ALJAZEERA",
+            "date": "2026-02-12"
         },
         {
             "title": "U.S. Military in the Middle East: Numbers Behind Trump’s Threats Against Iran",
@@ -149,13 +219,15 @@
                 "sof"
             ],
             "military_hits": 3,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "CSIS",
+            "date": "2026-02-20"
         },
         {
             "title": "Saudi Arabia’s Delicate Balancing Act",
             "sentiment_polarity": -0.369,
             "sentiment_method": "vader",
-            "risk_score": 74.4,
+            "risk_score": 69.4,
             "risk_level": "HIGH",
             "key_phrases": [
                 "riyadh",
@@ -165,13 +237,15 @@
                 "complex geopolitical challenge"
             ],
             "military_hits": 5,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 1,
+            "source_name": "ARABNEWS",
+            "date": "2026-02-23"
         },
         {
             "title": "Israel Approves Operational Plans for Multi-Front Defense",
             "sentiment_polarity": 0.248,
             "sentiment_method": "vader",
-            "risk_score": 15.0,
+            "risk_score": 18.0,
             "risk_level": "LOW",
             "key_phrases": [
                 "jerusalem",
@@ -180,14 +254,16 @@
                 "security cabinet",
                 "operational plans"
             ],
-            "military_hits": 0,
-            "diplomatic_hits": 0
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "TIMESOFISRAEL",
+            "date": "2026-02-24"
         },
         {
             "title": "China Calls for Emergency UN Security Council Meeting",
             "sentiment_polarity": -0.92,
             "sentiment_method": "vader",
-            "risk_score": 33.4,
+            "risk_score": 31.4,
             "risk_level": "MEDIUM",
             "key_phrases": [
                 "beijing",
@@ -197,7 +273,27 @@
                 "un security council"
             ],
             "military_hits": 0,
-            "diplomatic_hits": 1
+            "diplomatic_hits": 2,
+            "source_name": "SCMP",
+            "date": "2026-02-20"
+        },
+        {
+            "title": "Russia Slams US Strike Threats, Warns Against Interference",
+            "sentiment_polarity": -0.937,
+            "sentiment_method": "vader",
+            "risk_score": 58.7,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "ministry",
+                "stern warning",
+                "subversive external interference",
+                "irans",
+                "internal affairs"
+            ],
+            "military_hits": 3,
+            "diplomatic_hits": 1,
+            "source_name": "TASS",
+            "date": "2026-01-13"
         },
         {
             "title": "The Logistic Challenges of a Sustained Gulf Campaign",
@@ -213,7 +309,9 @@
                 "massive logistical challenge"
             ],
             "military_hits": 1,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "DEFENSENEWS",
+            "date": "2026-02-15"
         },
         {
             "title": "The Cyber Front: First Strikes in Digital Domain?",
@@ -229,7 +327,45 @@
                 "digital realm"
             ],
             "military_hits": 1,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "WIRED",
+            "date": "2026-02-22"
+        },
+        {
+            "title": "China Calls for UN Action to Halt Persian Gulf Militarization",
+            "sentiment_polarity": 0.43,
+            "sentiment_method": "vader",
+            "risk_score": 11.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "beijing",
+                "un security council",
+                "rapid militarization",
+                "persian gulf",
+                "ministry"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "XINHUANET",
+            "date": "2026-02-20"
+        },
+        {
+            "title": "US and Iran Slide Towards Conflict as Hopes for Peace Fade",
+            "sentiment_polarity": -0.527,
+            "sentiment_method": "vader",
+            "risk_score": 46.5,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "dubai",
+                "feb",
+                "reuters",
+                "iran",
+                "military conflict"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 0,
+            "source_name": "REUTERS",
+            "date": "2026-02-20"
         },
         {
             "title": "US military positioning multiple waves of strikes",
@@ -244,13 +380,15 @@
                 "air force squadrons"
             ],
             "military_hits": 3,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "CNN",
+            "date": "2026-02-23"
         },
         {
             "title": "Russia Warns Against US Escalation in Persian Gulf",
             "sentiment_polarity": 0.572,
             "sentiment_method": "vader",
-            "risk_score": 19.6,
+            "risk_score": 24.6,
             "risk_level": "LOW",
             "key_phrases": [
                 "moscow",
@@ -259,8 +397,10 @@
                 "military action",
                 "iran"
             ],
-            "military_hits": 2,
-            "diplomatic_hits": 0
+            "military_hits": 3,
+            "diplomatic_hits": 1,
+            "source_name": "TASS",
+            "date": "2026-02-19"
         },
         {
             "title": "Houthi Threats to Red Sea Shipping Intensify",
@@ -276,13 +416,69 @@
                 "severe warning"
             ],
             "military_hits": 0,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "ALJAZEERA",
+            "date": "2026-02-16"
+        },
+        {
+            "title": "Trump: Iran will face 'bad things' without nuclear deal",
+            "sentiment_polarity": -0.162,
+            "sentiment_method": "vader",
+            "risk_score": 38.2,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "donald trump",
+                "bad things",
+                "iran",
+                "nuclear framework",
+                "white house"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 0,
+            "source_name": "APNEWS",
+            "date": "2026-02-20"
+        },
+        {
+            "title": "Putin: Russian Mediterranean fleet on high alert",
+            "sentiment_polarity": -0.557,
+            "sentiment_method": "vader",
+            "risk_score": 29.1,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "vladimir putin",
+                "russian naval group",
+                "mediterranean",
+                "russia",
+                "regional stability"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 1,
+            "source_name": "TASS",
+            "date": "2026-02-19"
+        },
+        {
+            "title": "Lavrov: Russia will provide technical support to Iran if attacked",
+            "sentiment_polarity": 0.82,
+            "sentiment_method": "vader",
+            "risk_score": 10.6,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "foreign minister",
+                "sergey lavrov",
+                "russia",
+                "moscow",
+                "lavrov"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "TASS",
+            "date": "2026-02-18"
         },
         {
             "title": "U.S., Iran near nuclear pact as war threat looms",
             "sentiment_polarity": -0.064,
             "sentiment_method": "vader",
-            "risk_score": 14.3,
+            "risk_score": 21.3,
             "risk_level": "LOW",
             "key_phrases": [
                 "geneva",
@@ -291,8 +487,28 @@
                 "negotiators",
                 "iran"
             ],
+            "military_hits": 2,
+            "diplomatic_hits": 2,
+            "source_name": "REUTERS",
+            "date": "2026-02-18"
+        },
+        {
+            "title": "Bin Farhan: Saudi Arabia will not be a launchpad for strikes",
+            "sentiment_polarity": 0.281,
+            "sentiment_method": "vader",
+            "risk_score": 15.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "faisal",
+                "farhan",
+                "saudi arabia",
+                "regional de-escalation",
+                "economic interests"
+            ],
             "military_hits": 1,
-            "diplomatic_hits": 2
+            "diplomatic_hits": 2,
+            "source_name": "ARABNEWS",
+            "date": "2026-02-22"
         },
         {
             "title": "Oil Markets Bracing for $150+ Scenario",
@@ -308,7 +524,9 @@
                 "goldman sachs"
             ],
             "military_hits": 0,
-            "diplomatic_hits": 0
+            "diplomatic_hits": 0,
+            "source_name": "BLOOMBERG",
+            "date": "2026-02-21"
         },
         {
             "title": "European Union Split on Sanctions vs. Diplomacy",
@@ -324,7 +542,63 @@
                 "standoff intensifies"
             ],
             "military_hits": 0,
-            "diplomatic_hits": 1
+            "diplomatic_hits": 1,
+            "source_name": "POLITICO",
+            "date": "2026-02-21"
+        },
+        {
+            "title": "Khamenei: Nuclear enrichment is a non-negotiable right",
+            "sentiment_polarity": 0.379,
+            "sentiment_method": "vader",
+            "risk_score": 26.4,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "supreme leader",
+                "ayatollah ali khamenei",
+                "nuclear enrichment",
+                "peaceful purposes",
+                "inalienable right"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 0,
+            "source_name": "NYTIMES",
+            "date": "2026-02-23"
+        },
+        {
+            "title": "Inside Iran's Crisis: Protests, Blackouts, and High Stakes",
+            "sentiment_polarity": -0.406,
+            "sentiment_method": "vader",
+            "risk_score": 21.1,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "february",
+                "iran",
+                "domestic",
+                "state violence",
+                "internet blackouts"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 2,
+            "source_name": "FOREIGNPRESS",
+            "date": "2026-02-09"
+        },
+        {
+            "title": "US-Iran Tensions: Timeline of December 2025 Protests",
+            "sentiment_polarity": -0.9,
+            "sentiment_method": "vader",
+            "risk_score": 36.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "december",
+                "widespread",
+                "economic conditions",
+                "tehran",
+                "severe internet blackouts"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 1,
+            "source_name": "LIVEMINT",
+            "date": "2026-01-05"
         },
         {
             "title": "Iran, US hold first nuclear talks since war scare",
@@ -340,7 +614,45 @@
                 "brokers"
             ],
             "military_hits": 1,
-            "diplomatic_hits": 1
+            "diplomatic_hits": 1,
+            "source_name": "APNEWS",
+            "date": "2026-02-24"
+        },
+        {
+            "title": "Russia, China, and Iran Sign Trilateral Strategic Pact",
+            "sentiment_polarity": 0.922,
+            "sentiment_method": "vader",
+            "risk_score": 2.6,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "dramatic geopolitical",
+                "iran",
+                "china",
+                "russia",
+                "naval exercises"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 1,
+            "source_name": "MIDDLEEASTMONITOR",
+            "date": "2026-01-29"
+        },
+        {
+            "title": "EU's Borrell: Diplomacy is the only path to nuclear safety",
+            "sentiment_polarity": 0.037,
+            "sentiment_method": "vader",
+            "risk_score": 17.3,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "high representative",
+                "josep borrell",
+                "europe",
+                "diplomatic track",
+                "military solution"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 1,
+            "source_name": "EEAS",
+            "date": "2026-02-19"
         },
         {
             "title": "The High Stakes of a Potential Iran Conflict",
@@ -356,7 +668,63 @@
                 "tehran"
             ],
             "military_hits": 3,
-            "diplomatic_hits": 1
+            "diplomatic_hits": 1,
+            "source_name": "NYTIMES",
+            "date": "2026-02-23"
+        },
+        {
+            "title": "Hakan Fidan: Turkey warns of regional collapse if war breaks out",
+            "sentiment_polarity": -0.681,
+            "sentiment_method": "vader",
+            "risk_score": 36.6,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "foreign minister",
+                "hakan fidan",
+                "current path",
+                "regional dark age.",
+                "naval buildup"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 1,
+            "source_name": "AA",
+            "date": "2026-02-23"
+        },
+        {
+            "title": "Lloyd Austin: U.S. forces are combat-ready for Middle East escalation",
+            "sentiment_polarity": -0.788,
+            "sentiment_method": "vader",
+            "risk_score": 62.8,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "lloyd austin",
+                "u.s.",
+                "full operational synchronization",
+                "additional carrier strike groups",
+                "deter aggression"
+            ],
+            "military_hits": 4,
+            "diplomatic_hits": 0,
+            "source_name": "DEFENSE",
+            "date": "2026-02-18"
+        },
+        {
+            "title": "Erdogan: Turkey ready to host direct Trump-Khamenei talks",
+            "sentiment_polarity": -0.84,
+            "sentiment_method": "vader",
+            "risk_score": 34.8,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "recep tayyip erdogan",
+                "persian gulf",
+                "entire region",
+                "direct communication",
+                "washington"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 1,
+            "source_name": "AL-MONITOR",
+            "date": "2026-02-22"
         },
         {
             "title": "Iran Update, January 30, 2026 | ISW",
@@ -371,14 +739,16 @@
                 "u.s."
             ],
             "military_hits": 1,
-            "diplomatic_hits": 1
+            "diplomatic_hits": 1,
+            "source_name": "UNDERSTANDINGWAR",
+            "date": "2026-01-30"
         },
         {
             "title": "Lebanon’s Hezbollah on Full Alert as War Clouds Gather",
             "sentiment_polarity": -0.912,
             "sentiment_method": "vader",
-            "risk_score": 46.2,
-            "risk_level": "MEDIUM",
+            "risk_score": 54.2,
+            "risk_level": "HIGH",
             "key_phrases": [
                 "beirut",
                 "feb",
@@ -386,8 +756,64 @@
                 "blue line",
                 "hezbollah"
             ],
-            "military_hits": 1,
-            "diplomatic_hits": 0
+            "military_hits": 2,
+            "diplomatic_hits": 0,
+            "source_name": "NAHARNET",
+            "date": "2026-02-20"
+        },
+        {
+            "title": "Global Times: US Gunboat Diplomacy is a Relic of the Past",
+            "sentiment_polarity": -0.48,
+            "sentiment_method": "vader",
+            "risk_score": 56.6,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "global",
+                "chinese outlet",
+                "u.s.",
+                "desperate gunboat diplomacy",
+                "u.s."
+            ],
+            "military_hits": 4,
+            "diplomatic_hits": 0,
+            "source_name": "GLOBALTIMES",
+            "date": "2026-02-15"
+        },
+        {
+            "title": "Diplomatic Scramble to Prevent All-Out War",
+            "sentiment_polarity": -0.438,
+            "sentiment_method": "vader",
+            "risk_score": 44.8,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "january",
+                "frantic diplomatic effort",
+                "us president",
+                "donald trump",
+                "military intervention"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 0,
+            "source_name": "ALJAZEERA",
+            "date": "2026-01-30"
+        },
+        {
+            "title": "Blinken: The window for a diplomatic solution is closing fast",
+            "sentiment_polarity": 0.318,
+            "sentiment_method": "vader",
+            "risk_score": 13.6,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "antony blinken",
+                "brussels",
+                "washington",
+                "diplomatic outcome",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "REUTERS",
+            "date": "2026-02-21"
         }
     ]
 }
