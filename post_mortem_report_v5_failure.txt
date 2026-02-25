@@ -1,0 +1,39 @@
+Post-Mortem: Logic v5.0 Update Failure Analysis
+Date: February 25, 2026
+Final Status: Hard Rollback executed to stable version (v4.1).
+
+---
+
+1. Original Objectives (What we tried to achieve):
+We attempted to upgrade the system's "core logic" from v4.1 to Logic v5.0 to implement:
+- Logarithmic Weighting (TF-IDF style): Replacing simple keyword counting to prevent score inflation from repetitive terms.
+- Pandas Integration: Using the Pandas library for precise historical trend analysis (comparing risk over 3-day windows).
+- Sentiment Decoupling: Isolating "risk assessment" from "sentiment analysis" (ensuring risk scores reflect military facts regardless of diplomatic tone).
+- Strategic Floor: Establishing a minimum risk threshold (e.g., 25.0) for articles mentioning critical threats like "nuclear" or "carriers".
+
+---
+
+2. Technical Failures (Root Causes):
+
+A) Timestamp Serialization Error:
+- Cause: The Pandas library uses a specific `Timestamp` object for dates, which standard JSON serializers cannot handle.
+- Result: The script crashed during the report generation phase, failing to save `analysis_report_v2.json`, interrupting the data pipeline.
+
+B) Data Structure Mismatch:
+- Cause: The v5.0 update restructured the JSON output (nesting statistics under "meta" and "trend" keys).
+- Result: The frontend JavaScript (`dashboard.html`) was expecting the old flat structure. It failed to find the data, resulting in infinite "Loading..." indicators.
+
+C) UI Regression (Vertical Layout):
+- Cause: In an attempt to fix the data loading issue by simplifying the HTML, we inadvertently removed key CSS grid classes.
+- Result: The dashboard layout collapsed into a single vertical column, destroying the visual design and usability.
+
+---
+
+3. Corrective Action:
+- Executed a "Hard Rollback" to the last stable commit (11:35 AM timestamp).
+- System restored to Logic v4.1 (Protected Threat Core). Dashboard is functional.
+
+4. Recommendations for Next Attempt:
+- Ensure all Pandas `Timestamp` objects are converted to strings before JSON serialization.
+- Update the frontend JavaScript to handle the new JSON structure *before* deploying the Python backend changes.
+- Perform local validation of the generated HTML/JSON before pushing to GitHub Pages.
