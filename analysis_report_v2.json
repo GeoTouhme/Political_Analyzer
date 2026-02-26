@@ -1,17 +1,17 @@
 {
     "meta": {
-        "generated_at": "2026-02-26T11:57:55.559937",
-        "article_count": 404,
-        "avg_risk_score": 45.0,
+        "generated_at": "2026-02-26T21:18:06.387304",
+        "article_count": 452,
+        "avg_risk_score": 38.6,
         "max_risk_score": 71.6,
-        "strategic_outlook": "The primary driver of the escalating risk score is the deployment of the USS Gerald R. Ford and the surge of U.S. air assets to \"2003 levels,\" which OANN reports coincides with administration discussions regarding Iranian regime change. Diplomatic off-ramps remain technically open via backchannel talks in Oman, but their viability is rapidly eroding as the administration's rhetoric shifts from negotiation to \"new leadership\" demands. The most likely trajectory for the next 72 hours involves asymmetric escalation, specifically Houthi strikes in the Red Sea as cited by YNETNEWS, rather than immediate direct state-on-state conflict.",
+        "strategic_outlook": "The primary driver of current risk is the deployment of the USS Gerald R. Ford and the expansion of U.S. air assets to 2003 levels, which CFR identifies as creating a volatile decision window for potential Iranian regime change. Despite this kinetic posturing, diplomatic off-ramps remain viable and active, evidenced by Fox News reporting the presence of envoys Witkoff and Kushner in Geneva on February 26 for direct negotiations. Consequently, the immediate 72-hour trajectory projects asymmetric proxy harassment, specifically Houthi Red Sea attacks warned of by Ynetnews, serving as leverage during the ongoing Geneva dialogue rather than triggering full-scale kinetic engagement.",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
-        "status": "UP",
-        "current": 45.0,
-        "previous": 39.0,
-        "global_avg": 35.1
+        "status": "STABLE",
+        "current": 38.6,
+        "previous": 39.1,
+        "global_avg": 35.4
     },
     "articles": [
         {
@@ -5251,6 +5251,24 @@
             "date": "2026-02-17"
         },
         {
+            "title": "Will Trump’s Luck Run Out if He Attacks Iran Again?",
+            "sentiment_polarity": -0.637,
+            "sentiment_method": "vader",
+            "risk_score": 49.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "will trump",
+                "’ s",
+                "luck run",
+                "iran"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "FOREIGNPOLICY",
+            "date": "2026-02-25"
+        },
+        {
             "title": "For Iran's rulers, refusing US demands is a risk worth taking",
             "sentiment_polarity": -0.952,
             "sentiment_method": "vader",
@@ -5323,6 +5341,24 @@
             "date": "2026-02-24"
         },
         {
+            "title": "Nuclear deal with US within reach, but only if...: Iran Minister amid tensions",
+            "sentiment_polarity": 0.052,
+            "sentiment_method": "vader",
+            "risk_score": 49.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "nuclear",
+                "iran",
+                "source",
+                "date"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 2,
+            "source_name": "INDIATODAY",
+            "date": "2026-02-26"
+        },
+        {
             "title": "Trump’s Plan for Strikes on Iran carries major Risks – and the US Military knows it",
             "sentiment_polarity": -0.369,
             "sentiment_method": "vader",
@@ -5377,6 +5413,24 @@
             "date": "2026-02-02"
         },
         {
+            "title": "U.S. deploys USS Gerald R. Ford Carrier Strike Group to Mediterranean amid escalating Iran tensions – NaturalNews.com",
+            "sentiment_polarity": -0.773,
+            "sentiment_method": "vader",
+            "risk_score": 84.8,
+            "risk_level": "CRITICAL",
+            "key_phrases": [
+                "title",
+                "u.s.",
+                "uss gerald r. ford carrier strike",
+                "mediterranean",
+                "iran"
+            ],
+            "military_hits": 6,
+            "diplomatic_hits": 0,
+            "source_name": "NATURALNEWS",
+            "date": "2026-02-25"
+        },
+        {
             "title": "Rubio plans to update Netanyahu on US-Iran talks in Israel next week, officials say",
             "sentiment_polarity": -0.077,
             "sentiment_method": "vader",
@@ -5393,6 +5447,24 @@
             "diplomatic_hits": 3,
             "source_name": "Unknown Source",
             "date": "2026-02-19"
+        },
+        {
+            "title": "Iran's opposition urges ICC probe into regime's actions",
+            "sentiment_polarity": 0.382,
+            "sentiment_method": "vader",
+            "risk_score": 5.7,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "iran",
+                "'s opposition",
+                "regime 's actions",
+                "source"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "JPOST",
+            "date": "2026-02-26"
         },
         {
             "title": "Nvidia Record Sales Calm AI Bubble Fears as Markets Gird for 15% Tariff Shock and Iran Nuclear Talks",
@@ -5629,6 +5701,60 @@
             "date": "2026-02-24"
         },
         {
+            "title": "The Weakening Position of Aircraft Carriers in the Hypersonic Era - Global Research",
+            "sentiment_polarity": -0.09,
+            "sentiment_method": "vader",
+            "risk_score": 49.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "weakening position",
+                "carriers",
+                "hypersonic era",
+                "global"
+            ],
+            "military_hits": 4,
+            "diplomatic_hits": 0,
+            "source_name": "GLOBALRESEARCH",
+            "date": "2026-02-26"
+        },
+        {
+            "title": "Man arrested after arson attack on Iran-funded Islamic centre in Maida Vale",
+            "sentiment_polarity": -0.98,
+            "sentiment_method": "vader",
+            "risk_score": 37.4,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "arson attack",
+                "iran-funded islamic",
+                "maida vale source",
+                "iran"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown Source",
+            "date": "2026-02-03"
+        },
+        {
+            "title": "What are each side's goals in US-Iran nuclear talks?",
+            "sentiment_polarity": 0.153,
+            "sentiment_method": "vader",
+            "risk_score": 49.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "side 's goals",
+                "us-iran",
+                "nuclear talks",
+                "source"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 1,
+            "source_name": "JPOST",
+            "date": "2026-02-26"
+        },
+        {
             "title": "State Department orders nonessential U.S. diplomats to leave Lebanon as tensions with Iran soar",
             "sentiment_polarity": -0.586,
             "sentiment_method": "vader",
@@ -5863,6 +5989,24 @@
             "date": "2026-02-24"
         },
         {
+            "title": "UN nuclear chief joins the Iran-US talks, source says – Ya Libnan",
+            "sentiment_polarity": 0.718,
+            "sentiment_method": "vader",
+            "risk_score": 49.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "nuclear chief joins",
+                "iran-us",
+                "ya libnan source",
+                "date"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 4,
+            "source_name": "YALIBNAN",
+            "date": "2026-02-26"
+        },
+        {
             "title": "Treasury sanctions Iran’s petroleum ‘shadow fleet,’ ballistic missile networks",
             "sentiment_polarity": 0.527,
             "sentiment_method": "vader",
@@ -5899,6 +6043,60 @@
             "date": "2026-02-05"
         },
         {
+            "title": "Weakened by war and protests, Iran could still inflict pain in response to a US attack",
+            "sentiment_polarity": -0.932,
+            "sentiment_method": "vader",
+            "risk_score": 36.4,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "weakened",
+                "iran",
+                "inflict pain",
+                "us attack"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "WINNIPEGFREEPRESS",
+            "date": "2026-02-26"
+        },
+        {
+            "title": "Windscribe’s New Stealth VPN App Takes Aim at Internet Censorship in Iran, Russia, and Beyond",
+            "sentiment_polarity": -0.077,
+            "sentiment_method": "vader",
+            "risk_score": 1.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "windscribe",
+                "’ s",
+                "stealth vpn app takes aim",
+                "internet censorship"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "WEBPRONEWS",
+            "date": "2026-02-25"
+        },
+        {
+            "title": "Explainer-US seeks deal to prevent Iran acquiring nuclear arsenal",
+            "sentiment_polarity": 0.951,
+            "sentiment_method": "vader",
+            "risk_score": 49.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "explainer-us",
+                "iran",
+                "nuclear arsenal",
+                "source"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 4,
+            "source_name": "AL-MONITOR",
+            "date": "2026-02-26"
+        },
+        {
             "title": "Iraqi militia warns Syria against involvement in US ground military action against Iran",
             "sentiment_polarity": 0.0,
             "sentiment_method": "vader",
@@ -5933,6 +6131,42 @@
             "diplomatic_hits": 2,
             "source_name": "YNETNEWS",
             "date": "2026-02-25"
+        },
+        {
+            "title": "With US imperialist war machine in position, Trump menaces Iran in State of the Union speech",
+            "sentiment_polarity": 0.077,
+            "sentiment_method": "vader",
+            "risk_score": 1.6,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "us imperialist war machine",
+                "trump",
+                "iran",
+                "union speech"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "WSWS",
+            "date": "2026-02-26"
+        },
+        {
+            "title": "Iran would be outgunned in any war with US but could still inflict considerable pain",
+            "sentiment_polarity": -0.955,
+            "sentiment_method": "vader",
+            "risk_score": 55.3,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "title",
+                "iran",
+                "considerable pain",
+                "source",
+                "date"
+            ],
+            "military_hits": 3,
+            "diplomatic_hits": 0,
+            "source_name": "KOREATIMES",
+            "date": "2026-02-26"
         },
         {
             "title": "Netanyahu tells Knesset Israel facing “very complex, difficult days” amid Iran tensions",
@@ -6007,6 +6241,24 @@
             "date": "2026-02-26"
         },
         {
+            "title": "What the Pentagon Fears in Iran",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "iran source",
+                "date",
+                "region",
+                "iran primary_actors"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "THEATLANTIC",
+            "date": "2026-02-26"
+        },
+        {
             "title": "US Ramps Up Middle East Air Assets To 2003 Levels Amid Iran Tensions, Trump Briefed On Strike Options: Report",
             "sentiment_polarity": 0.869,
             "sentiment_method": "vader",
@@ -6025,6 +6277,78 @@
             "date": "2026-02-19"
         },
         {
+            "title": "Does the US have enough aircraft carriers for all Trump’s wars?",
+            "sentiment_polarity": -0.713,
+            "sentiment_method": "vader",
+            "risk_score": 49.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "does",
+                "aircraft carriers",
+                "trump",
+                "’ s wars"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 0,
+            "source_name": "VOX",
+            "date": "2026-02-26"
+        },
+        {
+            "title": "Go Time? US Navy HQ in Bahrain Reportedly on 'Mission Critical' Status As Potential Iran Hostilities Loom",
+            "sentiment_polarity": -0.91,
+            "sentiment_method": "vader",
+            "risk_score": 35.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "us navy",
+                "hq",
+                "bahrain reportedly",
+                "critical"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "REDSTATE",
+            "date": "2026-02-26"
+        },
+        {
+            "title": "US Navy reduces staff to 'mission critical' levels in Bahrain ahead of potential strikes on Iran: officials",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 42.8,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "us navy reduces staff",
+                "bahrain",
+                "potential strikes",
+                "iran"
+            ],
+            "military_hits": 3,
+            "diplomatic_hits": 0,
+            "source_name": "FOXNEWS",
+            "date": "2026-02-26"
+        },
+        {
+            "title": "Can the U.S. and Iran reach a nuclear deal to avert a war?",
+            "sentiment_polarity": -0.951,
+            "sentiment_method": "vader",
+            "risk_score": 49.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "u.s.",
+                "iran",
+                "source",
+                "date"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 3,
+            "source_name": "CBSNEWS",
+            "date": "2026-02-26"
+        },
+        {
             "title": "Vance: Trump prefers a diplomatic solution with Iran",
             "sentiment_polarity": 0.827,
             "sentiment_method": "vader",
@@ -6041,6 +6365,42 @@
             "diplomatic_hits": 1,
             "source_name": "EN",
             "date": "2026-02-25"
+        },
+        {
+            "title": "Iran pushes back against Trump ahead of Geneva talks in face of major US military deployment",
+            "sentiment_polarity": 0.421,
+            "sentiment_method": "vader",
+            "risk_score": 11.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "iran",
+                "trump",
+                "geneva",
+                "major us"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 2,
+            "source_name": "WINNIPEGFREEPRESS",
+            "date": "2026-02-25"
+        },
+        {
+            "title": "Iran accuses Trump of ‘big lies’ ahead of upcoming Geneva talks – Ya Libnan",
+            "sentiment_polarity": 0.103,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "iran",
+                "trump",
+                "geneva",
+                "talks –"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 2,
+            "source_name": "YALIBNAN",
+            "date": "2026-02-26"
         },
         {
             "title": "A look at the long, fraught timeline of Iran nuclear tensions as talks with US loom",
@@ -6205,6 +6565,42 @@
             "date": "2026-02-25"
         },
         {
+            "title": "Weakened by war, protests, Iran could still inflict pain in response to a US attack",
+            "sentiment_polarity": -0.983,
+            "sentiment_method": "vader",
+            "risk_score": 55.9,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "title",
+                "weakened",
+                "iran",
+                "inflict pain",
+                "us attack"
+            ],
+            "military_hits": 3,
+            "diplomatic_hits": 0,
+            "source_name": "ABCNEWS",
+            "date": "2026-02-26"
+        },
+        {
+            "title": "What are Iran's ballistic missile capabilities?",
+            "sentiment_polarity": 0.681,
+            "sentiment_method": "vader",
+            "risk_score": 56.5,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "title",
+                "iran",
+                "'s ballistic missile capabilities",
+                "source",
+                "date"
+            ],
+            "military_hits": 6,
+            "diplomatic_hits": 2,
+            "source_name": "ECONOMICTIMES",
+            "date": "2026-02-26"
+        },
+        {
             "title": "‘Gamechanger’? China and Iran Reach a Deal That Could be Disturbing News for U.S.",
             "sentiment_polarity": -0.494,
             "sentiment_method": "vader",
@@ -6277,6 +6673,24 @@
             "date": "2026-02-25"
         },
         {
+            "title": "FACTBOX: What we know about third round of Iran-US talks in Geneva",
+            "sentiment_polarity": 0.67,
+            "sentiment_method": "vader",
+            "risk_score": 8.1,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "factbox",
+                "iran-us",
+                "geneva source",
+                "date"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 1,
+            "source_name": "TASS",
+            "date": "2026-02-26"
+        },
+        {
             "title": "Iran Accuses Trump Administration of Spreading ‘Big Lies’",
             "sentiment_polarity": -0.382,
             "sentiment_method": "vader",
@@ -6311,6 +6725,42 @@
             "diplomatic_hits": 3,
             "source_name": "Unknown Source",
             "date": "2026-02-14"
+        },
+        {
+            "title": "Russia Is Offering An Informal Nuclear Deal. Washington Should Take It.",
+            "sentiment_polarity": 0.718,
+            "sentiment_method": "vader",
+            "risk_score": 49.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "russia",
+                "offering",
+                "informal nuclear deal",
+                "washington"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 7,
+            "source_name": "DAILYCALLER",
+            "date": "2026-02-25"
+        },
+        {
+            "title": "Rubio: Talks with Iran Focused on Nuclear Program; Disputes Over Ballistic Missiles Persist",
+            "sentiment_polarity": 0.883,
+            "sentiment_method": "vader",
+            "risk_score": 49.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "rubio",
+                "talks",
+                "iran focused",
+                "nuclear program"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 4,
+            "source_name": "ENGLISH",
+            "date": "2026-02-26"
         },
         {
             "title": "Don’t Let Misplaced Concerns over Missiles Jeopardize Iran Deal - Global Research",
@@ -6475,6 +6925,60 @@
             "date": "2026-02-02"
         },
         {
+            "title": "U.S. accelerates major military deployment as Iran deadline looms – NaturalNews.com",
+            "sentiment_polarity": -0.153,
+            "sentiment_method": "vader",
+            "risk_score": 14.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "u.s.",
+                "major military deployment",
+                "iran",
+                "deadline looms –"
+            ],
+            "military_hits": 4,
+            "diplomatic_hits": 0,
+            "source_name": "NATURALNEWS",
+            "date": "2026-02-25"
+        },
+        {
+            "title": "Donald Trump advisors would rather Israel strike Iran before US",
+            "sentiment_polarity": 0.557,
+            "sentiment_method": "vader",
+            "risk_score": 40.1,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "donald trump",
+                "israel",
+                "iran",
+                "source"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 0,
+            "source_name": "JPOST",
+            "date": "2026-02-26"
+        },
+        {
+            "title": "‘The Girl in the Red Jacket’: A Testimony From Inside Iran",
+            "sentiment_polarity": -0.681,
+            "sentiment_method": "vader",
+            "risk_score": 10.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "girl",
+                "jacket",
+                "testimony",
+                "iran source"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "ALGEMEINER",
+            "date": "2026-02-25"
+        },
+        {
             "title": "USS Gerald R. Ford aircraft carrier headed from Caribbean to Middle East: Officials",
             "sentiment_polarity": -0.735,
             "sentiment_method": "vader",
@@ -6509,6 +7013,24 @@
             "diplomatic_hits": 0,
             "source_name": "Unknown Source",
             "date": "2026-02-21"
+        },
+        {
+            "title": "Hezbollah will not get involved if US strikes Iran",
+            "sentiment_polarity": -0.9,
+            "sentiment_method": "vader",
+            "risk_score": 59.0,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "title",
+                "hezbollah",
+                "us strikes",
+                "iran source",
+                "date"
+            ],
+            "military_hits": 4,
+            "diplomatic_hits": 0,
+            "source_name": "JPOST",
+            "date": "2026-02-25"
         },
         {
             "title": "Western forces in Erbil relocate ahead of possible US strikes on Iran",
@@ -6583,6 +7105,60 @@
             "date": "2026-02-24"
         },
         {
+            "title": "US, Iran resume nuclear talks amid rising Middle East tensions",
+            "sentiment_polarity": 0.758,
+            "sentiment_method": "vader",
+            "risk_score": 49.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "iran",
+                "nuclear talks",
+                "source",
+                "date"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 4,
+            "source_name": "DAILYTIMES",
+            "date": "2026-02-26"
+        },
+        {
+            "title": "US Demands Iran Dismantle Its 3 Main Nuclear Sites In Hours-Long Talks",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 49.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "demands iran dismantle",
+                "nuclear sites",
+                "hours-long talks source",
+                "date"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 2,
+            "source_name": "ZEROHEDGE",
+            "date": "2026-02-26"
+        },
+        {
+            "title": "Iran would be outgunned in any war with the US but could still inflict considerable pain",
+            "sentiment_polarity": -0.955,
+            "sentiment_method": "vader",
+            "risk_score": 55.3,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "title",
+                "iran",
+                "considerable pain",
+                "source",
+                "date"
+            ],
+            "military_hits": 3,
+            "diplomatic_hits": 0,
+            "source_name": "REVIEWJOURNAL",
+            "date": "2026-02-26"
+        },
+        {
             "title": "Saudi Arabia may have uranium enrichment under proposed deal with U.S., arms control experts warn",
             "sentiment_polarity": 0.791,
             "sentiment_method": "vader",
@@ -6599,6 +7175,24 @@
             "diplomatic_hits": 2,
             "source_name": "Unknown Source",
             "date": "2026-02-20"
+        },
+        {
+            "title": "In Syria, Hezbollah reduced to smuggling network",
+            "sentiment_polarity": -0.936,
+            "sentiment_method": "vader",
+            "risk_score": 14.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "syria",
+                "hezbollah",
+                "source",
+                "date"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "JPOST",
+            "date": "2026-02-26"
         },
         {
             "title": "Trump Says Xi Jinping 'Amazed' By US Progress As Wide-Ranging Call Boosts Soybean Hopes, Flags Taiwan Tensions",
@@ -6691,6 +7285,24 @@
             "date": "2026-02-24"
         },
         {
+            "title": "Imminence and Authority: What Law Governs a Presidential Strike on Iran?",
+            "sentiment_polarity": -0.392,
+            "sentiment_method": "vader",
+            "risk_score": 52.1,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "title",
+                "imminence",
+                "governs",
+                "strike",
+                "iran"
+            ],
+            "military_hits": 5,
+            "diplomatic_hits": 0,
+            "source_name": "SOFREP",
+            "date": "2026-02-25"
+        },
+        {
             "title": "Iran Military Helicopter Crash: Iran: Military chopper crashes into market; 4 dead",
             "sentiment_polarity": -0.95,
             "sentiment_method": "vader",
@@ -6707,6 +7319,24 @@
             "diplomatic_hits": 0,
             "source_name": "TIMESOFINDIA",
             "date": "2026-02-24"
+        },
+        {
+            "title": "The Laundering of Iran's Atrocities: How Western Voices Became a Shield for the Islamic Republic's Mass Killings",
+            "sentiment_polarity": -0.875,
+            "sentiment_method": "vader",
+            "risk_score": 25.1,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "laundering",
+                "iran",
+                "atrocities",
+                "voices became"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "WESTERNJOURNAL",
+            "date": "2026-02-25"
         },
         {
             "title": "Israeli forces capture a Hamas ally in south Lebanon as an Israeli drone kills 3, including a child",
@@ -6781,6 +7411,24 @@
             "date": "2026-02-24"
         },
         {
+            "title": "Why does Iran persist on nuclear enrichment?",
+            "sentiment_polarity": -0.153,
+            "sentiment_method": "vader",
+            "risk_score": 49.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "iran",
+                "nuclear enrichment",
+                "source",
+                "date"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 4,
+            "source_name": "MIDDLEEASTMONITOR",
+            "date": "2026-02-26"
+        },
+        {
             "title": "Trump Sends Iran Strike Odds Surging, Says Diego Garcia 'May Be Necessary To Eradicate A Potential Attack'",
             "sentiment_polarity": -0.929,
             "sentiment_method": "vader",
@@ -6797,6 +7445,24 @@
             "diplomatic_hits": 2,
             "source_name": "Unknown Source",
             "date": "2026-02-18"
+        },
+        {
+            "title": "US Sanctions Iran's Shadow Fleet, Networks Supplying Ballistic Missile",
+            "sentiment_polarity": 0.586,
+            "sentiment_method": "vader",
+            "risk_score": 73.6,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "title",
+                "sanctions iran",
+                "shadow fleet",
+                "networks supplying ballistic missile source",
+                "date"
+            ],
+            "military_hits": 7,
+            "diplomatic_hits": 0,
+            "source_name": "RTTNEWS",
+            "date": "2026-02-26"
         },
         {
             "title": "U.S. expands sanctions on Iran over oil sales, weapons programs",
@@ -6851,6 +7517,42 @@
             "diplomatic_hits": 0,
             "source_name": "ECONOMICTIMES",
             "date": "2026-02-24"
+        },
+        {
+            "title": "Next US, Iran talks may be last chance for peace before war",
+            "sentiment_polarity": 0.735,
+            "sentiment_method": "vader",
+            "risk_score": 49.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "iran",
+                "source",
+                "date",
+                "region"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 1,
+            "source_name": "JPOST",
+            "date": "2026-02-25"
+        },
+        {
+            "title": "The strategic move bringing a US strike on Iran closer",
+            "sentiment_polarity": 0.382,
+            "sentiment_method": "vader",
+            "risk_score": 51.9,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "title",
+                "us strike",
+                "iran",
+                "source",
+                "date"
+            ],
+            "military_hits": 5,
+            "diplomatic_hits": 0,
+            "source_name": "ISRAELHAYOM",
+            "date": "2026-02-26"
         },
         {
             "title": "Hezbollah Will Stay Out Of US-Iran Fight, But Only If Strikes 'Limited'",
@@ -6923,6 +7625,42 @@
             "diplomatic_hits": 1,
             "source_name": "Unknown Source",
             "date": "2026-02-01"
+        },
+        {
+            "title": "Rubio: Talks with Iran Focused on Nuclear Program; Disputes Over Ballistic Missiles Persist",
+            "sentiment_polarity": 0.883,
+            "sentiment_method": "vader",
+            "risk_score": 49.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "rubio",
+                "talks",
+                "iran focused",
+                "nuclear program"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 4,
+            "source_name": "ENGLISH",
+            "date": "2026-02-26"
+        },
+        {
+            "title": "Geneva Diplomacy Hub: Ukraine and Iran Talks Spark Market Volatility",
+            "sentiment_polarity": 0.758,
+            "sentiment_method": "vader",
+            "risk_score": 8.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "geneva diplomacy hub",
+                "ukraine",
+                "iran talks spark market volatility source",
+                "date"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 2,
+            "source_name": "STOCKMARKETWATCH",
+            "date": "2026-02-26"
         },
         {
             "title": "Iran FM says nuclear deal 'within reach' ahead of U.S. talks",
@@ -7033,6 +7771,24 @@
             "date": "2026-02-25"
         },
         {
+            "title": "Iran Nears Deal With China for CM-302 Anti-Ship Missiles Amid Rising US Tensions — UNITED24 Media",
+            "sentiment_polarity": -0.823,
+            "sentiment_method": "vader",
+            "risk_score": 87.9,
+            "risk_level": "CRITICAL",
+            "key_phrases": [
+                "title",
+                "iran nears deal",
+                "china",
+                "cm-302 anti-ship",
+                "amid rising"
+            ],
+            "military_hits": 7,
+            "diplomatic_hits": 2,
+            "source_name": "UNITED24MEDIA",
+            "date": "2026-02-25"
+        },
+        {
             "title": "Iran Nears Deal to Buy Supersonic Anti-Ship Missiles From China",
             "sentiment_polarity": 0.0,
             "sentiment_method": "vader",
@@ -7085,6 +7841,24 @@
             "diplomatic_hits": 0,
             "source_name": "BREITBART",
             "date": "2026-02-24"
+        },
+        {
+            "title": "'Pause’ in Geneva talks as Iran’s new proposal and tough US demands are revealed",
+            "sentiment_polarity": -0.827,
+            "sentiment_method": "vader",
+            "risk_score": 21.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "'pause ’",
+                "geneva",
+                "iran",
+                "’ s"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 5,
+            "source_name": "YNETNEWS",
+            "date": "2026-02-26"
         },
         {
             "title": "Second U.S. carrier nears Iran, as Trump warns of 'bad things' without 'meaningful deal'",
@@ -7159,6 +7933,42 @@
             "date": "2026-02-03"
         },
         {
+            "title": "The Massive Questions Surrounding A Major American Air War Against Iran",
+            "sentiment_polarity": -0.918,
+            "sentiment_method": "vader",
+            "risk_score": 19.3,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "massive",
+                "american air war",
+                "against iran source",
+                "date"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "TWZ",
+            "date": "2026-02-26"
+        },
+        {
+            "title": "US-Iran tensions LIVE: Third round of nuclear talks to take place in Geneva amid biggest military build-up since 2003",
+            "sentiment_polarity": -0.649,
+            "sentiment_method": "vader",
+            "risk_score": 49.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "us-iran",
+                "live",
+                "nuclear talks",
+                "geneva"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 3,
+            "source_name": "LIVEMINT",
+            "date": "2026-02-26"
+        },
+        {
             "title": "Activists say Iran's crackdown has killed at least 6,159 people, as the country's currency plunges",
             "sentiment_polarity": -0.988,
             "sentiment_method": "vader",
@@ -7211,6 +8021,24 @@
             "diplomatic_hits": 0,
             "source_name": "BREITBART",
             "date": "2026-02-24"
+        },
+        {
+            "title": "Trump envoy Witkoff and Jared Kushner in Geneva for closely watched Iran negotiations",
+            "sentiment_polarity": 0.421,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "trump",
+                "witkoff",
+                "jared kushner",
+                "geneva"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 10,
+            "source_name": "FOXNEWS",
+            "date": "2026-02-26"
         },
         {
             "title": "'Like 1990 Persian Gulf War I': Ex-Nato commander warns US Middle East buildup mirrors 'Dante’s Inferno'",
@@ -7267,6 +8095,24 @@
             "date": "2026-02-25"
         },
         {
+            "title": "The Iranian case for bombing Iran",
+            "sentiment_polarity": -0.883,
+            "sentiment_method": "vader",
+            "risk_score": 25.2,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "iranian",
+                "iran source",
+                "date",
+                "region"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "SPECTATOR",
+            "date": "2026-02-26"
+        },
+        {
             "title": "Lebanon fears Israeli strikes if Iran situation escalates",
             "sentiment_polarity": -0.937,
             "sentiment_method": "vader",
@@ -7283,6 +8129,24 @@
             "diplomatic_hits": 0,
             "source_name": "AL-MONITOR",
             "date": "2026-02-24"
+        },
+        {
+            "title": "Geopolitical Tensions Peak as Iran Talks Stall and Pentagon Issues AI Ultimatum",
+            "sentiment_polarity": 0.691,
+            "sentiment_method": "vader",
+            "risk_score": 35.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "geopolitical tensions peak",
+                "iran talks stall",
+                "issues ai ultimatum source",
+                "date"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 4,
+            "source_name": "STOCKMARKETWATCH",
+            "date": "2026-02-26"
         }
     ]
 }
