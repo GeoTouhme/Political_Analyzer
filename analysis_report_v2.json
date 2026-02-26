@@ -1,10 +1,10 @@
 {
     "meta": {
-        "generated_at": "2026-02-26T10:55:47.160310",
+        "generated_at": "2026-02-26T11:05:40.380514",
         "article_count": 404,
         "avg_risk_score": 45.0,
-        "max_risk_score": 100.0,
-        "strategic_outlook": "The primary driver of the",
+        "max_risk_score": 71.6,
+        "strategic_outlook": "The primary driver of the escalating",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
