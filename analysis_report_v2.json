@@ -1,10 +1,10 @@
 {
     "meta": {
-        "generated_at": "2026-02-26T11:22:33.092139",
+        "generated_at": "2026-02-26T11:31:29.647769",
         "article_count": 404,
         "avg_risk_score": 45.0,
         "max_risk_score": 71.6,
-        "strategic_outlook": "The primary driver of the",
+        "strategic_outlook": "The primary driver of the escalating risk trend is the deployment of the USS Gerald R. Ford and a force buildup reaching 2003 levels, which OANN reports coincides with administration discussions regarding regime",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
