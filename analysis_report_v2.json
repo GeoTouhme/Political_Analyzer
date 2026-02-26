@@ -1,10 +1,10 @@
 {
     "meta": {
-        "generated_at": "2026-02-26T11:42:14.071237",
+        "generated_at": "2026-02-26T11:57:55.559937",
         "article_count": 404,
         "avg_risk_score": 45.0,
         "max_risk_score": 71.6,
-        "strategic_outlook": "The primary driver of the escalating risk trend is the deployment of the USS Gerald R. Ford and the surge of US air assets to 2003 levels, which the CFR identifies as creating a critical \"decision window\" for offensive action. Diplomatic off-ramps via Oman are effectively collapsing, as the administration's pivot toward \"regime change\" considerations reported by OANN on February 14 overrides earlier signals of willingness to negotiate. Consequently, the trajectory over the next 72 hours is kinetic, with Iran likely activating the \"multi-front war plan\" cited in intelligence reports through Houthi proxy strikes to test US defenses.",
+        "strategic_outlook": "The primary driver of the escalating risk score is the deployment of the USS Gerald R. Ford and the surge of U.S. air assets to \"2003 levels,\" which OANN reports coincides with administration discussions regarding Iranian regime change. Diplomatic off-ramps remain technically open via backchannel talks in Oman, but their viability is rapidly eroding as the administration's rhetoric shifts from negotiation to \"new leadership\" demands. The most likely trajectory for the next 72 hours involves asymmetric escalation, specifically Houthi strikes in the Red Sea as cited by YNETNEWS, rather than immediate direct state-on-state conflict.",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
