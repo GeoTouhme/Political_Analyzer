@@ -1,10 +1,10 @@
 {
     "meta": {
-        "generated_at": "2026-02-26T21:18:06.387304",
+        "generated_at": "2026-02-26T23:04:31.745241",
         "article_count": 452,
         "avg_risk_score": 38.6,
         "max_risk_score": 71.6,
-        "strategic_outlook": "The primary driver of current risk is the deployment of the USS Gerald R. Ford and the expansion of U.S. air assets to 2003 levels, which CFR identifies as creating a volatile decision window for potential Iranian regime change. Despite this kinetic posturing, diplomatic off-ramps remain viable and active, evidenced by Fox News reporting the presence of envoys Witkoff and Kushner in Geneva on February 26 for direct negotiations. Consequently, the immediate 72-hour trajectory projects asymmetric proxy harassment, specifically Houthi Red Sea attacks warned of by Ynetnews, serving as leverage during the ongoing Geneva dialogue rather than triggering full-scale kinetic engagement.",
+        "strategic_outlook": "The primary driver of current risk is the deployment of the USS Gerald R. Ford and the surge of US air assets to 2003 levels, which has prompted Iran to operationalize damaged ballistic missile sites as reported by the NY Post. Despite this kinetic posturing, diplomatic off-ramps remain viable and active, evidenced by Fox News reporting the presence of envoys Witkoff and Kushner in Geneva for high-stakes negotiations as of February 26. Consequently, the likely trajectory over the next 72 hours involves intensified coercive diplomacy to maximize leverage in these talks rather than immediate direct strikes, though asymmetric Houthi attacks cited by Ynetnews remain a volatile variable.",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
