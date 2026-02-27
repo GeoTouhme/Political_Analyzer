@@ -1,10 +1,10 @@
 {
     "meta": {
-        "generated_at": "2026-02-28T00:36:23.937672",
+        "generated_at": "2026-02-28T00:41:38.479806",
         "article_count": 643,
         "avg_risk_score": 35.6,
         "max_risk_score": 100.0,
-        "strategic_outlook": "The primary driver of immediate escalation risk",
+        "strategic_outlook": "The primary driver of current risk is the aggressive US force projection, specifically the deployment of 50 advanced fighters and a carrier strike group reported by IndiaToday, which has placed Iranian forces on maximum alert. Diplomatic off-ramps have significantly narrowed following the conclusion of the Geneva talks without a deal as reported by The Hindu Business Line, a failure compounded by Prime Minister Netanyahu's rejection of the binding framework. Consequently, the trajectory for the next 72 hours favors asymmetric escalation via Houthi maritime strikes in the Red Sea rather than direct state-on-state conflict as both sides recalibrate leverage.",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
