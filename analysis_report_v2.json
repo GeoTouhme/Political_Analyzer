@@ -1,10 +1,10 @@
 {
     "meta": {
-        "generated_at": "2026-02-28T01:43:59.097995",
+        "generated_at": "2026-02-28T01:50:51.644791",
         "article_count": 643,
         "avg_risk_score": 35.6,
         "max_risk_score": 100.0,
-        "strategic_outlook": "The primary driver of current volatility is the massive U.S. military buildup, specifically the \"50-jet deployment\" and arrival of a carrier strike group (IndiaToday, OANN), which has placed Iranian forces on maximum alert. Diplomatic off-ramps appear critically compromised following the conclusion of Geneva talks \"without deal\" (TheHinduBusinessLine) and Prime Minister Netanyahu’s explicit refusal to be bound by the emerging framework (AlJazeera). Given this impasse, the trajectory for the next 72 hours points toward asymmetric escalation via Houthi proxy attacks in the Red Sea rather than direct state-on-state conflict.",
+        "strategic_outlook": "The primary driver of immediate risk is the convergence of a massive US military buildup, including a 50-jet deployment noted by India Today, with the failure of the Geneva nuclear talks reported by The Hindu Business Line on February 27. Diplomatic off-ramps are critically eroding following Prime Minister Netanyahu's rejection of the Geneva framework cited by Al Jazeera and the subsequent inability of US envoys Witkoff and Kushner to secure a deal. The trajectory for the next 72 hours favors kinetic proxy escalation, specifically Houthi strikes in the Red Sea as threatened in Ynet News, rather than direct state-on-state conflict while the US Carrier Strike Group finalizes its positioning.",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
