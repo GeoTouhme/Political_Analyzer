@@ -1,17 +1,17 @@
 {
     "meta": {
-        "generated_at": "2026-02-28T01:27:07.826365",
-        "article_count": 611,
-        "avg_risk_score": 35.6,
+        "generated_at": "2026-02-28T01:35:12.726642",
+        "article_count": 662,
+        "avg_risk_score": 28.6,
         "max_risk_score": 100.0,
-        "strategic_outlook": "The primary driver of current risk is the aggressive U.S. force posturing involving a 50-jet deployment of F-22s and F-35s reported by India Today, which has triggered explicit \"all-out\" war threats from Tehran. Diplomatic off-ramps appear non-viable after The Hindu Business Line confirmed the February 27 Geneva talks ended without a deal, a failure exacerbated by Prime Minister Netanyahu’s refusal to be bound by the framework. The trajectory for the next 72 hours indicates a shift toward kinetic proxy escalation, specifically Houthi Red Sea attacks as flagged by Ynet News, rather than direct state-on-state confrontation.",
+        "strategic_outlook": "The primary driver of current risk is the significant U.S. force projection into the theater, specifically the deployment of 50 combat aircraft and a carrier strike group reported by IndiaToday and OANN, which has triggered reciprocal threats of \"all-out\" war from Tehran. Diplomatic off-ramps are currently stalled following the conclusion of Geneva negotiations without a deal (TheHinduBusinessLine) and Prime Minister Netanyahu’s explicit rejection of the proposed framework (AlJazeera). Despite this diplomatic impasse, the overall de-escalating risk trend suggests the next 72 hours will likely be characterized by high-intensity military signaling and proxy maneuvers rather than the initiation of direct kinetic conflict.",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
-        "status": "STABLE",
-        "current": 35.6,
-        "previous": 35.9,
-        "global_avg": 39.3
+        "status": "DOWN",
+        "current": 28.6,
+        "previous": 36.2,
+        "global_avg": 38.8
     },
     "articles": [
         {
@@ -3500,6 +3500,27 @@
             "data_source": "notion"
         },
         {
+            "title": "Iranian Regime Threatens “All-Out” War as U.S. Carrier Strike Group Nears Persia",
+            "sentiment_polarity": -0.818,
+            "sentiment_method": "vader",
+            "risk_score": 100.0,
+            "risk_level": "CRITICAL",
+            "key_phrases": [
+                "title",
+                "iranian regime threatens",
+                "all-out",
+                "” war",
+                "u.s. carrier strike"
+            ],
+            "military_hits": 3,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown Source",
+            "date": "2026-01-24",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
             "title": "“The Bullet Won’t Miss”: Iran Airs Assassination Threat Against Donald Trump on State TV",
             "sentiment_polarity": -0.936,
             "sentiment_method": "vader",
@@ -3894,6 +3915,27 @@
             "diplomatic_hits": 3,
             "source_name": "GEOPOLITICAL-MONITOR",
             "date": "2026-02-25",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
+            "title": "U.S. sends world’s largest aircraft carrier to Middle East as Trump mulls Irania",
+            "sentiment_polarity": 0.421,
+            "sentiment_method": "vader",
+            "risk_score": 49.8,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "u.s.",
+                "sends world ’ s",
+                "aircraft carrier",
+                "trump"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown Source",
+            "date": "2026-02-14",
             "credibility_weight": 1.0,
             "raw_score": 0.0,
             "data_source": "notion"
@@ -4398,6 +4440,27 @@
             "diplomatic_hits": 0,
             "source_name": "Unknown Source",
             "date": "2026-01-14",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
+            "title": "Trump makes bold statement against Iran’s supreme leader Khamenei, calls him a ‘",
+            "sentiment_polarity": 0.84,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "trump",
+                "bold statement",
+                "iran",
+                "’ s"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 2,
+            "source_name": "Unknown Source",
+            "date": "2026-01-18",
             "credibility_weight": 1.0,
             "raw_score": 0.0,
             "data_source": "notion"
@@ -5369,6 +5432,27 @@
             "data_source": "notion"
         },
         {
+            "title": "Iran nears China anti-ship supersonic missile deal as US carriers mass in region",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 50.7,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "title",
+                "iran",
+                "china",
+                "anti-ship supersonic missile",
+                "us carriers mass"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown Source",
+            "date": "2026-02-24",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
             "title": "Ondas Stock Climbs On Rising Iran Conflict Fears",
             "sentiment_polarity": -0.625,
             "sentiment_method": "vader",
@@ -5536,6 +5620,27 @@
             "data_source": "notion"
         },
         {
+            "title": "Pentagon Plans Multiweek Strikes on Iran; NYT Says Trump Reviewing Commando Depl",
+            "sentiment_polarity": -0.052,
+            "sentiment_method": "vader",
+            "risk_score": 51.7,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "title",
+                "plans multiweek strikes",
+                "iran",
+                "nyt says trump reviewing commando depl source",
+                "date"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown Source",
+            "date": "2026-02-14",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
             "title": "Trump Orders Major Military Buildup Toward Iran While Advisers Push Economic Age",
             "sentiment_polarity": 0.421,
             "sentiment_method": "vader",
@@ -5657,6 +5762,27 @@
             "diplomatic_hits": 0,
             "source_name": "Unknown Source",
             "date": "2026-02-19",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
+            "title": "An F-35 stealth fighter shot down an Iranian drone flying toward a US Navy aircr",
+            "sentiment_polarity": 0.477,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "f-35",
+                "stealth fighter shot",
+                "iranian",
+                "us navy aircr"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown Source",
+            "date": "2026-02-03",
             "credibility_weight": 1.0,
             "raw_score": 0.0,
             "data_source": "notion"
@@ -5851,6 +5977,27 @@
             "data_source": "notion"
         },
         {
+            "title": "Satellite images show Iran focusing on repairing ballistic missile sites damaged",
+            "sentiment_polarity": -0.527,
+            "sentiment_method": "vader",
+            "risk_score": 100.0,
+            "risk_level": "CRITICAL",
+            "key_phrases": [
+                "title",
+                "satellite",
+                "iran",
+                "ballistic missile sites",
+                "source"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown Source",
+            "date": "2026-02-06",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
             "title": "Diplomatic Scramble to Prevent All-Out War",
             "sentiment_polarity": -0.438,
             "sentiment_method": "vader",
@@ -6035,6 +6182,27 @@
             "diplomatic_hits": 0,
             "source_name": "AL-MONITOR",
             "date": "2026-02-25",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
+            "title": "Trump Signals Willingness To Talk With Iran—But Not Back Down—As US Flexes Military Muscle To Nuclear Talks: 'We're In No Rush'",
+            "sentiment_polarity": -0.178,
+            "sentiment_method": "vader",
+            "risk_score": 35.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "trump signals willingness",
+                "talk",
+                "iran",
+                "down"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 10,
+            "source_name": "Unknown Source",
+            "date": "2026-02-07",
             "credibility_weight": 1.0,
             "raw_score": 0.0,
             "data_source": "notion"
@@ -6250,6 +6418,27 @@
             "data_source": "notion"
         },
         {
+            "title": "Navy leader wants to move faster and leaner instead of turning to aircraft carriers in crisis",
+            "sentiment_polarity": 0.818,
+            "sentiment_method": "vader",
+            "risk_score": 35.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "navy leader",
+                "aircraft carriers",
+                "source",
+                "us navy"
+            ],
+            "military_hits": 3,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown Source",
+            "date": "2026-02-10",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
             "title": "Woman in Tehran praises students for reigniting protests after bloody crackdown",
             "sentiment_polarity": -0.727,
             "sentiment_method": "vader",
@@ -6371,6 +6560,27 @@
             "diplomatic_hits": 0,
             "source_name": "ZEROHEDGE",
             "date": "2026-02-24",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
+            "title": "U.S. shoots down Iranian drone that 'aggressively' approached an aircraft carrier, military says",
+            "sentiment_polarity": -0.66,
+            "sentiment_method": "vader",
+            "risk_score": 51.7,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "title",
+                "u.s.",
+                "iranian",
+                "aircraft carrier",
+                "source"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 1,
+            "source_name": "Unknown Source",
+            "date": "2026-02-03",
             "credibility_weight": 1.0,
             "raw_score": 0.0,
             "data_source": "notion"
@@ -6502,6 +6712,27 @@
             "data_source": "notion"
         },
         {
+            "title": "State Department orders nonessential U.S. diplomats to leave Lebanon as tensions with Iran soar",
+            "sentiment_polarity": -0.586,
+            "sentiment_method": "vader",
+            "risk_score": 50.6,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "title",
+                "state department orders nonessential",
+                "u.s.",
+                "lebanon",
+                "iran"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown Source",
+            "date": "2026-02-23",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
             "title": "Iran rejects U.S. claims on missile programme as 'big lies'",
             "sentiment_polarity": -0.718,
             "sentiment_method": "vader",
@@ -6544,6 +6775,27 @@
             "data_source": "notion"
         },
         {
+            "title": "Trump ‘insisted’ that US talks with Iran will continue as Netanyahu pushes for their expansion",
+            "sentiment_polarity": -0.2,
+            "sentiment_method": "vader",
+            "risk_score": 35.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "trump",
+                "iran",
+                "netanyahu",
+                "source"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 6,
+            "source_name": "Unknown Source",
+            "date": "2026-02-11",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
             "title": "US and Iran Tensions Grow Amid Military Build up in Middle East",
             "sentiment_polarity": -0.44,
             "sentiment_method": "vader",
@@ -6560,6 +6812,27 @@
             "diplomatic_hits": 0,
             "source_name": "TODAY",
             "date": "2026-02-24",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
+            "title": "Crackdown on dissent after nationwide protests in Iran widens to ensnare reformist figures",
+            "sentiment_polarity": -0.818,
+            "sentiment_method": "vader",
+            "risk_score": 41.2,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "crackdown",
+                "nationwide protests",
+                "iran",
+                "ensnare reformist figures"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 1,
+            "source_name": "Unknown Source",
+            "date": "2026-02-09",
             "credibility_weight": 1.0,
             "raw_score": 0.0,
             "data_source": "notion"
@@ -6749,6 +7022,27 @@
             "diplomatic_hits": 0,
             "source_name": "NYPOST",
             "date": "2026-02-25",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
+            "title": "Missile barrages and cyber operations: Iran outlines multi-front war plan against US - report",
+            "sentiment_polarity": -0.972,
+            "sentiment_method": "vader",
+            "risk_score": 87.7,
+            "risk_level": "CRITICAL",
+            "key_phrases": [
+                "title",
+                "missile",
+                "cyber operations",
+                "iran",
+                "outlines multi-front war plan"
+            ],
+            "military_hits": 3,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown Source",
+            "date": "2026-02-05",
             "credibility_weight": 1.0,
             "raw_score": 0.0,
             "data_source": "notion"
@@ -7001,6 +7295,27 @@
             "diplomatic_hits": 0,
             "source_name": "THEATLANTIC",
             "date": "2026-02-26",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
+            "title": "US Ramps Up Middle East Air Assets To 2003 Levels Amid Iran Tensions, Trump Briefed On Strike Options: Report",
+            "sentiment_polarity": 0.869,
+            "sentiment_method": "vader",
+            "risk_score": 69.2,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "title",
+                "ramps up",
+                "assets",
+                "levels amid iran tensions",
+                "trump briefed"
+            ],
+            "military_hits": 6,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown Source",
+            "date": "2026-02-19",
             "credibility_weight": 1.0,
             "raw_score": 0.0,
             "data_source": "notion"
@@ -7300,6 +7615,27 @@
             "data_source": "notion"
         },
         {
+            "title": "At least 10 killed in Israeli strikes on Lebanon - including 'senior Hezbollah official'",
+            "sentiment_polarity": -0.975,
+            "sentiment_method": "vader",
+            "risk_score": 34.7,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "israeli",
+                "lebanon",
+                "hezbollah",
+                "source"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 1,
+            "source_name": "Unknown Source",
+            "date": "2026-02-20",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
             "title": "US Crude Oil Plunges on Massive Inventory Build; Treasury Ramps Up Iran Pressure",
             "sentiment_polarity": 0.128,
             "sentiment_method": "vader",
@@ -7489,6 +7825,27 @@
             "data_source": "notion"
         },
         {
+            "title": "Trump To Reportedly Push Iran And Russia-Ukraine Talks In Geneva As Israel Monitors Potential Deals Tied To Regional Security",
+            "sentiment_polarity": 0.599,
+            "sentiment_method": "vader",
+            "risk_score": 35.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "trump",
+                "reportedly push iran",
+                "russia-ukraine talks",
+                "geneva"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 3,
+            "source_name": "Unknown Source",
+            "date": "2026-02-14",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
             "title": "Russia Is Offering An Informal Nuclear Deal. Washington Should Take It.",
             "sentiment_polarity": 0.718,
             "sentiment_method": "vader",
@@ -7547,6 +7904,27 @@
             "diplomatic_hits": 2,
             "source_name": "GLOBALRESEARCH",
             "date": "2026-02-25",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
+            "title": "Binance Reportedly Fired Multiple Compliance Investigators In Potential Iran-Linked Sanctions Violation",
+            "sentiment_polarity": -0.968,
+            "sentiment_method": "vader",
+            "risk_score": 64.9,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "title",
+                "binance reportedly fired multiple compliance investigators",
+                "potential iran-linked sanctions violation source",
+                "iran",
+                "date"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown Source",
+            "date": "2026-02-13",
             "credibility_weight": 1.0,
             "raw_score": 0.0,
             "data_source": "notion"
@@ -7762,6 +8140,48 @@
             "data_source": "notion"
         },
         {
+            "title": "USS Gerald R. Ford aircraft carrier headed from Caribbean to Middle East: Officials",
+            "sentiment_polarity": -0.735,
+            "sentiment_method": "vader",
+            "risk_score": 100.0,
+            "risk_level": "CRITICAL",
+            "key_phrases": [
+                "title",
+                "uss gerald r. ford",
+                "aircraft carrier",
+                "caribbean",
+                "source"
+            ],
+            "military_hits": 8,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown Source",
+            "date": "2026-02-13",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
+            "title": "Trump Orders Major Military Buildup Toward Iran While Advisers Push Economic Agenda",
+            "sentiment_polarity": -0.928,
+            "sentiment_method": "vader",
+            "risk_score": 100.0,
+            "risk_level": "CRITICAL",
+            "key_phrases": [
+                "title",
+                "trump orders",
+                "buildup toward iran",
+                "advisers push",
+                "agenda source"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown Source",
+            "date": "2026-02-21",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
             "title": "Hezbollah will not get involved if US strikes Iran",
             "sentiment_polarity": -0.9,
             "sentiment_method": "vader",
@@ -7930,6 +8350,27 @@
             "data_source": "notion"
         },
         {
+            "title": "Saudi Arabia may have uranium enrichment under proposed deal with U.S., arms control experts warn",
+            "sentiment_polarity": 0.791,
+            "sentiment_method": "vader",
+            "risk_score": 35.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "saudi arabia",
+                "uranium enrichment",
+                "u.s.",
+                "arms control experts"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 2,
+            "source_name": "Unknown Source",
+            "date": "2026-02-20",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
             "title": "In Syria, Hezbollah reduced to smuggling network",
             "sentiment_polarity": -0.936,
             "sentiment_method": "vader",
@@ -7951,6 +8392,27 @@
             "data_source": "notion"
         },
         {
+            "title": "Trump Says Xi Jinping 'Amazed' By US Progress As Wide-Ranging Call Boosts Soybean Hopes, Flags Taiwan Tensions",
+            "sentiment_polarity": 0.952,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "trump says xi jinping",
+                "us progress",
+                "wide-ranging call boosts soybean hopes",
+                "flags taiwan tensions source"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 3,
+            "source_name": "Unknown Source",
+            "date": "2026-02-05",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
             "title": "Exclusive — Former IDF General: Iran May Arm Missiles with Chemical Warheads",
             "sentiment_polarity": -0.402,
             "sentiment_method": "vader",
@@ -7967,6 +8429,27 @@
             "diplomatic_hits": 1,
             "source_name": "BREITBART",
             "date": "2026-02-26",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
+            "title": "Trump Says Iran's Supreme Leader Should Be 'Very Worried' As Odds Of US Strike On Iran Rise",
+            "sentiment_polarity": -0.778,
+            "sentiment_method": "vader",
+            "risk_score": 84.4,
+            "risk_level": "CRITICAL",
+            "key_phrases": [
+                "title",
+                "trump says iran",
+                "supreme leader",
+                "be",
+                "worried"
+            ],
+            "military_hits": 6,
+            "diplomatic_hits": 2,
+            "source_name": "Unknown Source",
+            "date": "2026-02-04",
             "credibility_weight": 1.0,
             "raw_score": 0.0,
             "data_source": "notion"
@@ -8077,6 +8560,27 @@
             "data_source": "notion"
         },
         {
+            "title": "Israeli forces capture a Hamas ally in south Lebanon as an Israeli drone kills 3, including a child",
+            "sentiment_polarity": -0.818,
+            "sentiment_method": "vader",
+            "risk_score": 16.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title",
+                "israeli",
+                "hamas",
+                "lebanon",
+                "israeli"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown Source",
+            "date": "2026-02-09",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
             "title": "Lebanon FM says Israel may strike Beirut airport in war with Hezbollah",
             "sentiment_polarity": -0.948,
             "sentiment_method": "vader",
@@ -8156,6 +8660,27 @@
             "diplomatic_hits": 4,
             "source_name": "MIDDLEEASTMONITOR",
             "date": "2026-02-26",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
+            "title": "Trump Sends Iran Strike Odds Surging, Says Diego Garcia 'May Be Necessary To Eradicate A Potential Attack'",
+            "sentiment_polarity": -0.929,
+            "sentiment_method": "vader",
+            "risk_score": 48.1,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "trump sends iran strike odds surging",
+                "says diego garcia",
+                "be necessary",
+                "eradicate"
+            ],
+            "military_hits": 2,
+            "diplomatic_hits": 2,
+            "source_name": "Unknown Source",
+            "date": "2026-02-18",
             "credibility_weight": 1.0,
             "raw_score": 0.0,
             "data_source": "notion"
@@ -8329,6 +8854,69 @@
             "data_source": "notion"
         },
         {
+            "title": "Live: Trump hails ‘very good’ meeting with Netanyahu on Iran, says ‘nothing definitive’ reached",
+            "sentiment_polarity": -0.25,
+            "sentiment_method": "vader",
+            "risk_score": 35.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "live",
+                "trump",
+                "hails ‘",
+                "good ’ meeting"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 5,
+            "source_name": "Unknown Source",
+            "date": "2026-02-11",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
+            "title": "Explosion in Iranian port city ahead of Iran's naval drill in the Strait of Hormuz",
+            "sentiment_polarity": -0.557,
+            "sentiment_method": "vader",
+            "risk_score": 33.2,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "iranian",
+                "port city",
+                "iran",
+                "naval drill"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 1,
+            "source_name": "Unknown Source",
+            "date": "2026-02-01",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
+            "title": "Rubio: Talks with Iran Focused on Nuclear Program; Disputes Over Ballistic Missiles Persist",
+            "sentiment_polarity": 0.883,
+            "sentiment_method": "vader",
+            "risk_score": 35.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "rubio",
+                "talks",
+                "iran focused",
+                "nuclear program"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 4,
+            "source_name": "ENGLISH",
+            "date": "2026-02-26",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
             "title": "Geneva Diplomacy Hub: Ukraine and Iran Talks Spark Market Volatility",
             "sentiment_polarity": 0.758,
             "sentiment_method": "vader",
@@ -8428,6 +9016,27 @@
             "military_hits": 0,
             "diplomatic_hits": 0,
             "source_name": "MIDDLEEASTEYE",
+            "date": "2026-02-24",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
+            "title": "Iran’s shadowy chemical weapons program draws scrutiny as reports allege use against protesters",
+            "sentiment_polarity": -0.965,
+            "sentiment_method": "vader",
+            "risk_score": 100.0,
+            "risk_level": "CRITICAL",
+            "key_phrases": [
+                "title",
+                "iran",
+                "’ s",
+                "shadowy chemical weapons",
+                "draws scrutiny"
+            ],
+            "military_hits": 7,
+            "diplomatic_hits": 0,
+            "source_name": "FOXNEWS",
             "date": "2026-02-24",
             "credibility_weight": 1.0,
             "raw_score": 0.0,
@@ -8560,6 +9169,27 @@
             "data_source": "notion"
         },
         {
+            "title": "Second U.S. carrier nears Iran, as Trump warns of 'bad things' without 'meaningful deal'",
+            "sentiment_polarity": -0.118,
+            "sentiment_method": "vader",
+            "risk_score": 76.7,
+            "risk_level": "CRITICAL",
+            "key_phrases": [
+                "title",
+                "u.s.",
+                "carrier nears",
+                "iran",
+                "trump"
+            ],
+            "military_hits": 4,
+            "diplomatic_hits": 1,
+            "source_name": "Unknown Source",
+            "date": "2026-02-20",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
             "title": "Iran Buying Chinese Missiles and Russian Rockets as U.S. Military Buildup Intensifies",
             "sentiment_polarity": 0.421,
             "sentiment_method": "vader",
@@ -8602,6 +9232,27 @@
             "data_source": "notion"
         },
         {
+            "title": "US-Iran Nuclear Deal In 2026? Here's What The Crypto Punters Are Betting On Even As Trump Remains Tight-Lipped",
+            "sentiment_polarity": 0.981,
+            "sentiment_method": "vader",
+            "risk_score": 35.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "title",
+                "us-iran nuclear deal",
+                "crypto punters",
+                "betting",
+                "trump remains tight-lipped source"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 2,
+            "source_name": "Unknown Source",
+            "date": "2026-02-03",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
             "title": "The Massive Questions Surrounding A Major American Air War Against Iran",
             "sentiment_polarity": -0.918,
             "sentiment_method": "vader",
@@ -8639,6 +9290,27 @@
             "diplomatic_hits": 3,
             "source_name": "LIVEMINT",
             "date": "2026-02-26",
+            "credibility_weight": 1.0,
+            "raw_score": 0.0,
+            "data_source": "notion"
+        },
+        {
+            "title": "Activists say Iran's crackdown has killed at least 6,159 people, as the country's currency plunges",
+            "sentiment_polarity": -0.988,
+            "sentiment_method": "vader",
+            "risk_score": 100.0,
+            "risk_level": "CRITICAL",
+            "key_phrases": [
+                "title",
+                "activists",
+                "iran",
+                "'s crackdown",
+                "country 's currency plunges"
+            ],
+            "military_hits": 5,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown Source",
+            "date": "2026-01-27",
             "credibility_weight": 1.0,
             "raw_score": 0.0,
             "data_source": "notion"
@@ -12842,6 +13514,365 @@
             "credibility_weight": 1.0,
             "raw_score": 0.0,
             "data_source": "notion"
+        },
+        {
+            "title": "Foreign Minister briefs GCC counterparts on Iran – US talks",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "foreign minister briefs",
+                "gcc",
+                "iran",
+                "– us"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 1,
+            "source_name": "OMANOBSERVER",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 0.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "IAEA flags Iran 60 % uranium reserve why the revelation matters",
+            "sentiment_polarity": 0.026,
+            "sentiment_method": "vader",
+            "risk_score": 14.7,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iaea",
+                "iran",
+                "% uranium reserve",
+                "revelation matters"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "TIMESOFINDIA",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 35.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "Իրանի եւ ԱՄՆ - ի միջեւ բանակցությունները շարունակվում են , բայց դետալները դեռ պարզ չեն . « Իրանն այսօր »",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "իրանի եւ ամն",
+                "ի միջեւ բանակցությունները շարունակվում են",
+                "բայց դետալները դեռ պարզ չեն",
+                "« իրանն այսօր »"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "ARAVOT",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 0.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "ABDli isimden Ýranda  rejim deðiþikliði  mesajý",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "abdli",
+                "isimden ýranda rejim deðiþikliði mesajý"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "STAR",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 0.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "IAEA stresses  urgency  to verify Iran nuclear material",
+            "sentiment_polarity": -0.459,
+            "sentiment_method": "vader",
+            "risk_score": 14.7,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iaea",
+                "stresses urgency",
+                "iran",
+                "nuclear material"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "GJSENTINEL",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 35.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "PSX rebounds sharply amid rollover relief",
+            "sentiment_polarity": 0.477,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "psx",
+                "rollover relief"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 1,
+            "source_name": "TRIBUNE",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 0.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "Ýran için tüm seçenekler masada ! CENTCOMdan Trumpa kritik bilgilendirme",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "ýran için tüm seçenekler masada",
+                "centcomdan trumpa",
+                "kritik bilgilendirme"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "AKSAM",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 0.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "Umman ve İsviçre dışişleri bakanları , ABD - İran müzakerelerindeki arabuluculuk çabalarını görüştü",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "umman",
+                "ve i̇sviçre dışişleri bakanları",
+                "abd",
+                "i̇ran müzakerelerindeki arabuluculuk çabalarını görüştü"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "HABERLER",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 0.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "ABD Başkan Yardımcısı Vance , İrana olası saldırıların uzun savaşa dönüşme ihtimali olmadığını söyledi",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "abd başkan yardımcısı vance",
+                "i̇rana olası saldırıların uzun savaşa dönüşme ihtimali olmadığını söyledi"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "TRTHABER",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 0.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "ABD Başkan Yardımcısı Vance , İrana olası saldırıların uzun savaşa dönüşme ihtimali olmadığını söyledi",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "abd başkan yardımcısı vance",
+                "i̇rana olası saldırıların uzun savaşa dönüşme ihtimali olmadığını söyledi"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "BURSADABUGUN",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 0.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "ABD Başkan Yardımcısı Vance , İrana olası saldırıların uzun savaşa dönüşme ihtimali olmadığını söyledi Açıklaması",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "abd başkan yardımcısı vance",
+                "i̇rana olası saldırıların uzun savaşa dönüşme ihtimali olmadığını söyledi",
+                "açıklaması"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "HABERLER",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 0.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "ABC News : CENTCOM Komutanı , Trump  ı İrana yönelik olası saldırı seçenekleri üzerine bilgilendirdi",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "abc",
+                "centcom komutanı",
+                "trump",
+                "ı i̇rana yönelik olası saldırı seçenekleri üzerine bilgilendirdi"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "HABERLER",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 0.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "ABD Başkan Yardımcısı Vance , İrana olası saldırıların uzun savaşa dönüşme ihtimali olmadığını söyledi",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "abd başkan yardımcısı vance",
+                "i̇rana olası saldırıların uzun savaşa dönüşme ihtimali olmadığını söyledi"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "AA",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 0.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "Çinli şirket , ABD ordusunun İsrailde konuşlandırdığı F - 22 hayalet uçaklarının fotoğraflarını paylaştı",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "çinli şirket",
+                "abd",
+                "ordusunun i̇srailde konuşlandırdığı f",
+                "hayalet uçaklarının fotoğraflarını paylaştı"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "HABERLER",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 0.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "ABDde  İran  senaryoları : CENTCOM Komutanı , Trump  ı olası saldırı seçenekleri üzerine bilgilendirdi",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "abdde",
+                "i̇ran senaryoları",
+                "centcom komutanı",
+                "trump",
+                "ı olası saldırı seçenekleri üzerine bilgilendirdi"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "CNNTURK",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 0.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "Переговоры США и Ирана в Женеве 2026 : как прошли и что происходит ?",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "переговоры сша и ирана в женеве",
+                "как прошли и что происходит"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "VESTIKAVKAZA",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 0.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "国际观察丨美伊关键谈判  和平窗口  有多大 - 千龙网 · 中国首都网",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "国际观察丨美伊关键谈判 和平窗口 有多大",
+                "千龙网 · 中国首都网"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "WORLD",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 0.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "国际观察丨美伊关键谈判  和平窗口  有多大 -- 国际 -- 人民网",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "国际观察丨美伊关键谈判 和平窗口 有多大"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "WORLD",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 0.0,
+            "data_source": "gdelt"
+        },
+        {
+            "title": "战  还是  和 ？ 伊美谈判迎生死局 _ 伊朗 _ 与美国 _ 特朗普",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "战 还是 和 ？ 伊美谈判迎生死局 _ 伊朗 _ 与美国 _ 特朗普"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "SOHU",
+            "date": "2026-02-27",
+            "credibility_weight": 0.7,
+            "raw_score": 0.0,
+            "data_source": "gdelt"
         }
     ]
 }
