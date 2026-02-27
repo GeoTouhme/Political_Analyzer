@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST - Strategic Analysis Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-primary: #0f1117;
+            --bg-card: #1a1d28;
+            --border: #2a2d3a;
+            --text-primary: #e8eaed;
+            --accent-red: #ef4444;
+            --accent-orange: #f97316;
+            --accent-blue: #3b82f6;
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--bg-primary); color: var(--text-primary); padding: 24px; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        
+        /* MCI Hero Section */
+        .mci-hero {
+            background: linear-gradient(135deg, #1e2235 0%, #111420 100%);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 32px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
+        .mci-hero::before {
+            content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(239, 68, 68, 0.05) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .mci-title { font-size: 1rem; color: var(--accent-blue); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; font-weight: 600; }
+        .mci-value-container { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .mci-value { font-size: 5rem; font-weight: 800; line-height: 1; margin: 10px 0; background: linear-gradient(to bottom, #fff, #9aa0b0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .mci-status { font-size: 1.25rem; font-weight: 600; padding: 6px 20px; border-radius: 30px; margin-top: 10px; }
+        
+        .gauge-container { width: 300px; height: 160px; margin: 0 auto; position: relative; }
+        
+        .mci-description { max-width: 600px; margin: 24px auto 0; color: #9aa0b0; font-size: 0.95rem; line-height: 1.6; }
+
+        .stat-cards-mini { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 32px; }
+        .mini-card { background: rgba(255,255,255,0.03); border: 1px solid var(--border); padding: 16px; border-radius: 12px; }
+        .mini-label { font-size: 0.75rem; color: #6b7280; text-transform: uppercase; margin-bottom: 4px; }
+        .mini-value { font-size: 1.2rem; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header style="text-align: center; margin-bottom: 40px;">
+            <h1 style="font-size: 2rem; margin-bottom: 8px;">PGCM-2026 <span style="color: var(--accent-red)">TEST UI</span></h1>
+            <p style="color: #6b7280;">Experimental Interface v2.1 - Master Conflict Index Focus</p>
+        </header>
+
+        <!-- MASTER CONFLICT INDEX HERO -->
+        <section class="mci-hero">
+            <div class="mci-title">Master Conflict Index (MCI)</div>
+            
+            <div class="gauge-container">
+                <canvas id="mciGauge"></canvas>
+            </div>
+
+            <div class="mci-value-container">
+                <div class="mci-value" id="mciValue">82.4</div>
+                <div class="mci-status" id="mciStatus" style="background: rgba(239, 68, 68, 0.1); color: var(--accent-red); border: 1px solid rgba(239, 68, 68, 0.2);">
+                    CRITICAL ESCALATION
+                </div>
+            </div>
+
+            <p class="mci-description">
+                The MCI integrates military deployment signals, diplomatic rhetoric, and economic coercion levels. 
+                Current score indicates a <strong>high probability of kinetic activity</strong> within the next 72 hours.
+            </p>
+
+            <div class="stat-cards-mini">
+                <div class="mini-card">
+                    <div class="mini-label">Military Pressure</div>
+                    <div class="mini-value" style="color: var(--accent-red)">92%</div>
+                </div>
+                <div class="mini-card">
+                    <div class="mini-label">Diplomatic Off-ramps</div>
+                    <div class="mini-value" style="color: var(--accent-orange)">14%</div>
+                </div>
+                <div class="mini-card">
+                    <div class="mini-label">Regional Volatility</div>
+                    <div class="mini-value" style="color: var(--accent-yellow)">High</div>
+                </div>
+            </div>
+        </section>
+
+        <div style="text-align: center; color: #4b5563; font-size: 0.8rem;">
+            Secondary components (Timeline, Article Feed, etc.) would follow below.
+        </div>
+    </div>
+
+    <script>
+        // Custom Gauge Implementation with Chart.js
+        const ctx = document.getElementById('mciGauge').getContext('2d');
+        const score = 82.4;
+        
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [score, 100 - score],
+                    backgroundColor: [
+                        '#ef4444',
+                        '#2a2d3a'
+                    ],
+                    borderWidth: 0,
+                    circumference: 180,
+                    rotation: 270,
+                    cutout: '85%',
+                    borderRadius: 10
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { enabled: false }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

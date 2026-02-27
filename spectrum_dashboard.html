@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Spectrum v3.0 - Strategic Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0c10;
+            --bg-card: #12151c;
+            --border: #232834;
+            --text-primary: #e6edf3;
+            --text-muted: #7d8590;
+            --accent-blue: #2f81f7;
+            --zone-stable: #238636;
+            --zone-tense: #d29922;
+            --zone-high: #f85149;
+            --zone-critical: #8e1519;
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--bg-primary); color: var(--text-primary); padding: 40px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        
+        .panel {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .label-row { display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); }
+        
+        /* Spectrum Container */
+        .spectrum-container {
+            position: relative;
+            height: 48px;
+            background: #161b22;
+            border-radius: 6px;
+            margin-bottom: 40px;
+            overflow: visible;
+            border: 1px solid var(--border);
+        }
+
+        /* Color Zones */
+        .zone-bar { position: absolute; height: 100%; top: 0; opacity: 0.4; }
+        .zone-stable { left: 0; width: 25%; background: var(--zone-stable); }
+        .zone-tense { left: 25%; width: 25%; background: var(--zone-tense); }
+        .zone-high { left: 50%; width: 25%; background: var(--zone-high); }
+        .zone-critical { left: 75%; width: 25%; background: var(--zone-critical); }
+
+        /* Threshold Lines */
+        .threshold { position: absolute; height: 100%; width: 1px; background: rgba(255,255,255,0.1); z-index: 1; }
+        .t25 { left: 25%; } .t50 { left: 50%; } .t75 { left: 75%; }
+
+        /* Variance Band (Shadow Box) */
+        .variance-band {
+            position: absolute;
+            height: 60%;
+            top: 20%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px dashed rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            z-index: 2;
+            backdrop-filter: blur(2px);
+        }
+
+        /* Current Marker */
+        .marker {
+            position: absolute;
+            height: 140%;
+            width: 3px;
+            background: #fff;
+            top: -20%;
+            z-index: 10;
+            box-shadow: 0 0 15px rgba(255,255,255,0.5);
+            transition: left 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .marker::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 10px solid #fff;
+        }
+
+        .value-display { display: flex; align-items: baseline; gap: 12px; margin-top: 16px; }
+        .current-val { font-size: 3rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+        .variance-val { font-size: 1rem; color: var(--text-muted); }
+
+        .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 32px; border-top: 1px solid var(--border); padding-top: 24px; }
+        .meta-item h4 { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 4px; }
+        .meta-item p { font-size: 0.9rem; font-weight: 500; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header style="margin-bottom: 40px;">
+            <h2 style="font-weight: 700; letter-spacing: -0.02em;">Strategic Risk Assessment</h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Model: PGCM-2026.4 | Source Data: Notion Intelligence Feed</p>
+        </header>
+
+        <div class="panel">
+            <div class="label-row">
+                <span>De-escalation Zone</span>
+                <span>Active Engagement</span>
+                <span>Escalation Threshold</span>
+                <span>Kinetic Critical</span>
+            </div>
+
+            <div class="spectrum-container">
+                <div class="zone-bar zone-stable"></div>
+                <div class="zone-bar zone-tense"></div>
+                <div class="zone-bar zone-high"></div>
+                <div class="zone-bar zone-critical"></div>
+                
+                <div class="threshold t25"></div>
+                <div class="threshold t50"></div>
+                <div class="threshold t75"></div>
+
+                <!-- Variance Band (Example: 78 to 88) -->
+                <div class="variance-band" style="left: 78%; width: 10%;"></div>
+
+                <!-- Current Marker (Example: 83.2) -->
+                <div class="marker" style="left: 83.2%;"></div>
+            </div>
+
+            <div class="value-display">
+                <div class="current-val">83.2</div>
+                <div class="variance-val">± 4.8 Variance Band</div>
+            </div>
+
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <h4>Primary Conflict Driver</h4>
+                    <p>US Carrier Buildup / IRGC Nuclear Rhetoric Cluster</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Model Confidence</h4>
+                    <p>High (n=113 analyzed signals)</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 24px; color: var(--text-muted); font-size: 0.8rem; line-height: 1.5;">
+            * The <strong>Variance Band</strong> represents the statistical spread of risk scores across all source signals. 
+            A wider band indicates high uncertainty or conflicting reports (Gray Zone activity).
+        </div>
+    </div>
+</body>
+</html>
