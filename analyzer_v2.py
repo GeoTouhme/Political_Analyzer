@@ -1,22 +1,24 @@
-"""Political Pattern Analyzer v1.0 — Strategic intelligence pipeline.
+"""Political Pattern Analyzer v2.0 — Strategic intelligence pipeline (Logic v6.0).
 
 Ingests articles from Notion, applies NLP sentiment analysis and weighted
 risk scoring, and generates a JSON report for dashboard consumption.
 """
 
 import os
+import re
 import sys
 import json
+import math
 import logging
 import time
 from dataclasses import dataclass, asdict
 from datetime import datetime
-from typing import Optional
-import math
+from typing import Callable, Optional
 
 import pandas as pd
 import requests
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from dotenv import load_dotenv
 from textblob import TextBlob
 
@@ -38,7 +40,7 @@ log = logging.getLogger("analyzer")
 
 NOTION_TOKEN: str = os.getenv("NOTION_API_KEY", "")
 GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
-DATA_SOURCE_ID: str = "a9327cf7-8083-433e-aa7e-bca30160ffb6"
+DATA_SOURCE_ID: str = "87aeafb5-5c8a-4d09-98ef-b3b186d33403"
 
 MAX_RETRIES: int = 3
 RETRY_BACKOFF: float = 2.0
@@ -227,10 +229,10 @@ class ReportMeta:
 
 def fetch_notion_data() -> list[dict]:
     """Fetch articles from Notion database with retry logic."""
-    url = f"https://api.notion.com/v1/data_sources/{DATA_SOURCE_ID}/query"
+    url = f"https://api.notion.com/v1/databases/{DATA_SOURCE_ID}/query"
     headers = {
         "Authorization": f"Bearer {NOTION_TOKEN}",
-        "Notion-Version": "2025-09-03",
+        "Notion-Version": "2022-06-28",
         "Content-Type": "application/json",
     }
 
@@ -241,8 +243,8 @@ def fetch_notion_data() -> list[dict]:
             if response.status_code == 200:
                 return response.json().get("results", [])
 
-            log.error("Notion API error (attempt %d/%d): %d",
-                      attempt, MAX_RETRIES, response.status_code)
+            log.error("Notion API error (attempt %d/%d): %d — %s",
+                      attempt, MAX_RETRIES, response.status_code, response.text)
 
         except requests.Timeout:
             log.warning("Request timed out (attempt %d/%d)", attempt, MAX_RETRIES)
@@ -274,46 +276,246 @@ def get_sentiment(text: str) -> tuple[float, str]:
     return round(blob.sentiment.polarity, 3), "textblob"
 
 
-# Title-threat keywords that trigger a headline multiplier
-_TITLE_THREAT_TERMS = [
-    "strike", "war", "attack", "combat", "nuclear", "carrier", "missile",
-    "escalation", "kinetic", "accountability", "retaliation", "conflict",
-    "mobilization", "preemptive", "invasion", "obliterate", "annihilation",
-    "military action", "all-out", "high alert", "full alert", "war scare",
+# --- Negation Detection (Fix 2) ----------------------------------------------
+
+NEGATION_WINDOW = 4
+
+NEGATORS: set[str] = {
+    "not", "no", "never", "ruled", "rules", "denied", "denies",
+    "rejected", "without", "halt", "halted", "cease", "ceasefire",
+    "won't", "cannot", "can't", "doesn't", "wouldn't", "shouldn't"
+}
+
+
+def is_negated(tokens: list[str], term_idx: int) -> bool:
+    """Return True if the term at term_idx is preceded by a negation word
+    within NEGATION_WINDOW tokens.
+
+    Example:
+      tokens   = ["Iran", "will", "not", "launch", "a", "military", "strike"]
+      term_idx = 6   (index of "strike")
+      window   = tokens[2:6] = ["not", "launch", "a", "military"]
+      "not" in NEGATORS -> True -> term is negated -> do NOT count it
+    """
+    window_start = max(0, term_idx - NEGATION_WINDOW)
+    window = set(tokens[window_start:term_idx])
+    return bool(window & NEGATORS)
+
+
+# --- Length Normalization (Fix 3) --------------------------------------------
+
+REFERENCE_LENGTH = 500  # average news article word count
+
+
+def normalize_by_length(term_score: float, word_count: int) -> float:
+    """Reduce bias from long documents; amplify dense short ones.
+
+    sqrt() is used instead of direct division so that long documents are
+    gently penalised — not harshly zeroed — because the length/threat
+    density relationship is non-linear.
+    """
+    length_factor = math.sqrt(REFERENCE_LENGTH / max(word_count, 1))
+    return term_score * length_factor
+
+
+# --- Title Multiplier — Regex Patterns (Fix 4) --------------------------------
+
+# Context-aware regex patterns replace the old flat keyword list.
+# Each pattern requires a meaningful two-word combination, eliminating
+# false positives like "Teachers strike" or "Iran's war on poverty".
+_TITLE_THREAT_PATTERNS: list[str] = [
+    r"\bmilitary\s+strike\b",
+    r"\bair\s+strike\b",
+    r"\bnaval\s+strike\b",
+    r"\bwar\s+(imminent|warning|declaration|footing)\b",
+    r"\b(nuclear|missile|ballistic)\s+(attack|threat|launch|test)\b",
+    r"\bfull[- ]?scale\s+(war|conflict|attack|offensive)\b",
+    r"\b(preemptive|surgical)\s+(strike|attack|action)\b",
+    r"\bkinetic\s+(action|response|option)\b",
+    r"\b(evacuation|departure)\s+(order|warning|alert)\b",
+    r"\b(maximum|high|full)\s+(alert|readiness)\b",
 ]
 
 
+def apply_title_multiplier(total_risk: float, title: str) -> float:
+    """Apply a 1.25x headline boost when title contains a genuine threat phrase.
+
+    Uses regex multi-word patterns to avoid single-word false positives.
+    Hard ceiling at 85.0 prevents runaway multiplier stacking.
+    """
+    title_lower = title.lower()
+    matched = any(re.search(p, title_lower) for p in _TITLE_THREAT_PATTERNS)
+    if matched:
+        log.debug("Title-threat multiplier applied for: %s", title[:60])
+        return min(total_risk * 1.25, 85.0)
+    return total_risk
+
+
+# --- Temporal Correlation Clusters (Fix 6) -----------------------------------
+
+@dataclass
+class TemporalCluster:
+    """Describes a geopolitical escalation pattern to detect across recent history."""
+    name: str
+    condition: Callable[[str, bool, set], bool]
+    multiplier: float
+    log_message: str
+
+
+TEMPORAL_CLUSTERS: list[TemporalCluster] = [
+
+    # Scenario 1 — from v5.1
+    TemporalCluster(
+        name="EVAC_AFTER_MILITARY",
+        condition=lambda text, recent_mil, cats: (
+            ("evacuation" in text or "departure" in text) and recent_mil
+        ),
+        multiplier=0.40,
+        log_message="Security evacuation following military buildup",
+    ),
+
+    # Scenario 2 — from v5.1
+    TemporalCluster(
+        name="MULTI_VECTOR_PRESSURE",
+        condition=lambda text, recent_mil, cats: (
+            len(cats) >= 3 and recent_mil
+        ),
+        multiplier=0.20,
+        log_message="Multi-vector pressure across 3+ categories",
+    ),
+
+    # Scenario 3 — NEW: Combined economic coercion + military threat
+    TemporalCluster(
+        name="SANCTIONS_PLUS_MILITARY",
+        condition=lambda text, recent_mil, cats: (
+            "COERCIVE" in cats and "MILITARY" in cats and recent_mil
+        ),
+        multiplier=0.25,
+        log_message="Economic coercion + military threat cluster",
+    ),
+
+    # Scenario 4 — NEW: Proxy actor activation after direct signaling
+    TemporalCluster(
+        name="PROXY_ESCALATION",
+        condition=lambda text, recent_mil, cats: (
+            "HYBRID" in cats and recent_mil and
+            any(actor in text for actor in [
+                "hezbollah", "houthi", "kataib", "militia",
+                "proxy", "iraqi factions", "islamic resistance",
+            ])
+        ),
+        multiplier=0.30,
+        log_message="Proxy actor activation following direct military signaling",
+    ),
+
+    # Scenario 5 — NEW: Diplomatic track collapse
+    TemporalCluster(
+        name="DIPLOMATIC_COLLAPSE",
+        condition=lambda text, recent_mil, cats: (
+            "DEFIANCE" in cats and
+            any(w in text for w in [
+                "withdraw", "suspend talks", "walk out",
+                "no basis for negotiation", "preconditions rejected",
+            ])
+        ),
+        multiplier=0.20,
+        log_message="Diplomatic track collapse signal detected",
+    ),
+]
+
+
+def apply_temporal_correlation(
+    total_risk: float,
+    text_lower: str,
+    categories_hit: set,
+    recent_history: list,
+) -> float:
+    """Apply escalation cluster multipliers capped at x2.0.
+
+    military_hits threshold reduced from 5 -> 3 because Fix 5 now counts
+    MILITARY-category hits only (no longer polluted by DEFIANCE/COERCIVE/etc.).
+    """
+    if not recent_history:
+        return total_risk
+
+    recent_mil = any(
+        a.risk_score > 40 and a.military_hits > 3
+        for a in recent_history[-10:]
+    )
+
+    cumulative_multiplier = 1.0
+    triggered: list[str] = []
+
+    for cluster in TEMPORAL_CLUSTERS:
+        if cluster.condition(text_lower, recent_mil, categories_hit):
+            cumulative_multiplier += cluster.multiplier
+            triggered.append(cluster.name)
+            log.warning("[CLUSTER] %s: %s", cluster.name, cluster.log_message)
+
+    cumulative_multiplier = min(cumulative_multiplier, 2.0)  # hard cap at x2.0
+
+    if triggered:
+        log.info("Active clusters: %s | Total multiplier: %.2fx", triggered, cumulative_multiplier)
+
+    return total_risk * cumulative_multiplier
+
+
 def calculate_risk_score(text: str, sentiment: float, recent_history: list = None, title: str = "") -> tuple[float, int, int]:
-    """Calculate 0-100 risk score with TF-IDF style frequency-weighted targeting
-    (Logic v5.1), Partial Sentiment, Title Multiplier, and Temporal Correlation.
+    """Calculate 0-100 risk score using Logic v6.0.
+
+    Pipeline:
+      1. Negation-aware token matching (Fix 2)
+      2. Isolated per-category hit counters (Fix 5)
+      3. Length normalization via sqrt factor (Fix 3)
+      4. Directional sentiment: only negative sentiment contributes (Fix 1)
+      5. Strategic floor (context-gated)
+      6. Title multiplier via regex patterns, ceiling at 85 (Fix 4)
+      7. Temporal correlation across 5 escalation clusters, cap x2.0 (Fix 6)
 
     Returns (risk_score, military_hits, diplomatic_hits).
     """
-    # Stronger sentiment contribution: hostile tone adds up to +15 pts (v5.1)
-    base_score = abs(sentiment) * 15
-    term_score = 0
-    text_lower = text.lower()
-    military_hits = 0
-    diplomatic_hits = 0
-    categories_hit = set()
+    # Fix 1: Directional sentiment — positive sentiment = 0 contribution.
+    # max(0, -sentiment) ensures only negative (hostile) tone raises base_score.
+    base_score = max(0, -sentiment) * 20
 
-    # Categorize and weigh terms
+    term_score: float = 0.0
+    text_lower = text.lower()
+    tokens = text_lower.split()
+    diplomatic_hits = 0
+    categories_hit: set[str] = set()
+
+    # Fix 5: One counter per category — prevents non-military hits inflating military_hits.
+    category_hits: dict[str, int] = {
+        "MILITARY": 0, "DEFIANCE": 0, "GRAY": 0, "COERCIVE": 0, "HYBRID": 0
+    }
+
     term_categories = [
         ("MILITARY", MILITARY_TERMS, MILITARY_WEIGHTS),
         ("DEFIANCE", DEFIANCE_TERMS, DEFIANCE_WEIGHTS),
         ("GRAY", GRAY_TERMS, GRAY_WEIGHTS),
         ("COERCIVE", COERCIVE_TERMS, COERCIVE_WEIGHTS),
-        ("HYBRID", HYBRID_TERMS, HYBRID_WEIGHTS)
+        ("HYBRID", HYBRID_TERMS, HYBRID_WEIGHTS),
     ]
 
     for cat_name, terms_dict, weights_dict in term_categories:
         for tier, terms in terms_dict.items():
             weight = weights_dict[tier]
             for term in terms:
-                count = text_lower.count(term)
+                if term not in text_lower:
+                    continue
+                # Fix 2: Negation-aware matching — count only un-negated occurrences.
+                term_tokens = term.split()
+                count = 0
+                for i, token in enumerate(tokens):
+                    if token == term_tokens[0]:
+                        # For multi-word terms, verify the full phrase matches.
+                        phrase_end = i + len(term_tokens)
+                        if tokens[i:phrase_end] == term_tokens:
+                            if not is_negated(tokens, i):
+                                count += 1
                 if count > 0:
                     term_score += weight * (1 + math.log(count))
-                    military_hits += count
+                    category_hits[cat_name] += count
                     categories_hit.add(cat_name)
 
     for tier, terms in DIPLOMATIC_TERMS.items():
@@ -324,47 +526,32 @@ def calculate_risk_score(text: str, sentiment: float, recent_history: list = Non
                 term_score += weight * (1 + math.log(count))
                 diplomatic_hits += count
 
+    # Fix 3: Normalize term_score by article length.
+    word_count = len(tokens)
+    term_score = normalize_by_length(term_score, word_count)
+
+    # Fix 5: military_hits now reflects MILITARY category only.
+    military_hits = category_hits["MILITARY"]
+
     total_risk = base_score + term_score
-    
-    # Strategic Floor Logic (v5.1 — floor raised to 35)
+
+    # Strategic floor — hard lower bound for confirmed high-signal terms.
     critical_threats = [
-        # Nuclear / WMD
         "nuclear", "enrichment", "uranium", "warhead", "ballistic missile",
-        # Carrier / Naval power projection
         "carrier", "carriers", "carrier strike group", "csg",
-        # Combat readiness / strike orders
         "combat-ready", "combat ready", "strike group", "kinetic",
         "waves of strikes", "operational plans", "preemptive",
-        # Escalation signaling
         "full alert", "high alert", "maximum readiness", "war scare",
         "all-out war", "military action",
     ]
     if any(threat in text_lower for threat in critical_threats):
         total_risk = max(total_risk, 35.0)
 
-    # Title-threat multiplier: aggressive headline boosts score by 40%
-    title_lower = title.lower()
-    if any(t in title_lower for t in _TITLE_THREAT_TERMS):
-        total_risk *= 1.4
-        log.debug("Title-threat multiplier applied for: %s", title[:60])
+    # Fix 4: Context-aware title multiplier (regex, x1.25, ceiling 85).
+    total_risk = apply_title_multiplier(total_risk, title)
 
-    # --- TEMPORAL CORRELATION LOGIC ---
-    multiplier = 1.0
-    if recent_history:
-        # Check for military escalation clusters in the last 10 analyzed items
-        recent_mil = any(a.risk_score > 40 and a.military_hits > 5 for a in recent_history[-10:])
-        
-        # Scenario A: Security alert / Evacuation FOLLOWING military moves
-        if ("evacuation" in text_lower or "departure" in text_lower) and recent_mil:
-            multiplier += 0.40
-            log.warning("!!! STRATEGIC CLUSTER: Security evacuation following military build-up detected.")
-        
-        # Scenario B: Multiple high-risk categories in one burst
-        if len(categories_hit) >= 3 and recent_mil:
-            multiplier += 0.20
-            log.info("Sustained multi-vector pressure detected (+20% risk).")
-
-    total_risk *= multiplier
+    # Fix 6: 5-cluster temporal correlation engine, capped at x2.0.
+    total_risk = apply_temporal_correlation(total_risk, text_lower, categories_hit, recent_history or [])
 
     return round(max(0.0, min(100.0, total_risk)), 1), military_hits, diplomatic_hits
 
@@ -531,11 +718,11 @@ RULES:
 - No preamble, no labels, no markdown. Output a single plain-text paragraph only."""
 
     try:
-        genai.configure(api_key=GEMINI_API_KEY)
-        model = genai.GenerativeModel("gemini-3-pro-preview")
-        response = model.generate_content(
-            prompt,
-            generation_config=genai.types.GenerationConfig(
+        client = genai.Client(api_key=GEMINI_API_KEY)
+        response = client.models.generate_content(
+            model='gemini-3-pro-preview',
+            contents=prompt,
+            config=types.GenerateContentConfig(
                 temperature=0.3,       # Low temp = more factual, less hallucination
                 max_output_tokens=200, # Enforce brevity
             )
@@ -620,7 +807,6 @@ def update_dashboard(report: dict) -> None:
     data_block = f"{DATA_MARKER_START}\n        const EMBEDDED_REPORT = {json.dumps(report, ensure_ascii=False)};\n        {DATA_MARKER_END}"
 
     if DATA_MARKER_START in html:
-        import re
         pattern = re.escape(DATA_MARKER_START) + r".*?" + re.escape(DATA_MARKER_END)
         html = re.sub(pattern, data_block, html, flags=re.DOTALL)
     else:
@@ -636,10 +822,11 @@ def push_to_github():
     """Sync the updated dashboard and report to GitHub Pages."""
     log.info("🚀 Syncing results to GitHub Pages...")
     try:
+        import shutil
         import subprocess
-        # Copy dashboard to index.html for GitHub Pages
-        subprocess.run(["cp", "dashboard.html", "index.html"], check=True)
-        
+        # Cross-platform copy (replaces Unix-only 'cp')
+        shutil.copy("dashboard.html", "index.html")
+
         # Git operations
         subprocess.run(["git", "add", "index.html", "analysis_report_v2.json", "dashboard.html"], check=True)
         commit_msg = f"auto-sync: analysis update {datetime.now().strftime('%Y-%m-%d %H:%M')}"
@@ -647,12 +834,12 @@ def push_to_github():
         subprocess.run(["git", "push", "origin", "main"], check=True)
         log.info("✅ Successfully pushed to GitHub Pages.")
     except Exception as e:
-        log.error(f"❌ Failed to push to GitHub: {e}")
+        log.error("❌ Failed to push to GitHub: %s", e)
 
 # --- Main Entry ---------------------------------------------------------------
 
 def main() -> None:
-    log.info("--- Political Pattern Analyzer v1.0 ---")
+    log.info("--- Political Pattern Analyzer v2.0 (Logic v6.0) ---")
 
     if VADER_AVAILABLE:
         log.info("NLP Engine: VADER + TextBlob (noun phrases)")
