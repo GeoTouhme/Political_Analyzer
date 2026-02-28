@@ -157,7 +157,7 @@ export default function App() {
             <XAxis 
               dataKey="date" 
               tick={{ fontSize: 9, fill: "#64748b" }} 
-              interval={1} 
+              interval={4} 
               angle={-45}
               textAnchor="end"
               height={50}
