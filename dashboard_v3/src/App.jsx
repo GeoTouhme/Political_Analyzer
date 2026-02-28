@@ -53,7 +53,7 @@ export default function App() {
         if (report.daily_breakdown) {
           const formatted = report.daily_breakdown.map(d => ({
             date: d.date.substring(5), 
-            avg: d.anchored_risk || d.avg_risk || 0, // Fallback for different JSON versions
+            avg: d.anchored_risk || d.avg_risk || 0,
             articles: d.article_count || 0,
             level: d.risk_level || "UNKNOWN"
           }));
@@ -73,7 +73,7 @@ export default function App() {
   const validData = data.filter(d => d.avg !== undefined);
   const latestDay = validData.length > 0 ? validData[validData.length - 1] : {date: "N/A", avg: 0, articles: 0, level: "UNKNOWN"};
   const peakDay = validData.length > 0 ? validData.reduce((a, b) => b.avg > a.avg ? b : a, validData[0]) : {date: "N/A", avg: 0};
-  
+
   return (
     <div style={{
       background: "#020817", minHeight: "100vh", padding: "28px 24px",
@@ -191,7 +191,7 @@ export default function App() {
             <Line
               type="monotone" dataKey="avg"
               stroke="#3b82f6" strokeWidth={2}
-              dot={<CustomDot />}
+              dot={false}
               activeDot={{ r: 6, fill: "#3b82f6", stroke: "#fff", strokeWidth: 2 }}
             />
           </ComposedChart>
@@ -201,10 +201,10 @@ export default function App() {
       {/* Notable events */}
       <div style={{ marginTop: 20 }}>
         <div style={{ fontSize: 12, color: "#64748b", marginBottom: 10, letterSpacing: 1, textTransform: "uppercase" }}>
-          Notable Spikes
+          Recent Notable Spikes
         </div>
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-          {data.filter(d => d.avg >= 75).map(d => (
+          {data.slice(-10).filter(d => d.avg >= 65).reverse().map(d => (
             <div key={d.date} style={{
               background: "#0f172a", border: `1px solid ${LEVEL_COLOR[d.level]}22`,
               borderLeft: `3px solid ${LEVEL_COLOR[d.level]}`,
