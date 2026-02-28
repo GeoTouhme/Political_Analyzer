@@ -37,7 +37,7 @@ load_dotenv()
 NOTION_TOKEN: str       = os.getenv("NOTION_API_KEY", "")
 X_API_KEY: str          = os.getenv("X_API_KEY", "")
 NEWS_API_KEY: str       = os.getenv("NEWS_API_KEY", "")
-NOTION_DB_ID: str       = "87aeafb5-5c8a-4d09-98ef-b3b186d33403"
+NOTION_DB_ID: str       = "87aeafb55c8a4d0998efb3b186d33403"
 
 # Fixed start date as requested: collect from 2026-01-01 forward
 COLLECT_FROM_DATE: str  = "2026-01-01"

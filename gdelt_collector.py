@@ -126,33 +126,38 @@ def get_source_name(url: str) -> str:
 # ---------------------------------------------------------------------------
 
 GDELT_QUERIES: list[dict] = [
-    # Military & kinetic signals - Expanded with OR logic
+    # Military & kinetic signals
     {
-        "keyword": 'Iran (military OR strike OR deployment OR warship OR "carrier group")',
+        "keyword": "Iran military strike",
         "label": "MILITARY",
         "domains": [],
     },
-    # Nuclear track - Expanded
     {
-        "keyword": 'Iran (nuclear OR uranium OR enrichment OR IAEA)',
+        "keyword": "Iran aircraft carrier",
+        "label": "MILITARY_NAVAL",
+        "domains": [],
+    },
+    # Nuclear track
+    {
+        "keyword": "Iran nuclear uranium",
         "label": "NUCLEAR",
         "domains": [],
     },
     # Diplomatic track
     {
-        "keyword": 'Iran (negotiations OR diplomacy OR talks OR "back channel")',
+        "keyword": "Iran negotiations talks",
         "label": "DIPLOMATIC",
         "domains": [],
     },
     # Proxy & hybrid signals
     {
-        "keyword": 'Iran (Houthi OR Hezbollah OR "Red Sea" OR drone)',
+        "keyword": "Iran Houthi Hezbollah",
         "label": "PROXY",
         "domains": [],
     },
     # Sanctions & economic coercion
     {
-        "keyword": 'Iran (sanctions OR embargo OR "maximum pressure")',
+        "keyword": "Iran sanctions embargo",
         "label": "COERCIVE",
         "domains": [],
     },

@@ -1,1 +1,1 @@
-python3 analyzer_v2.py
+python3 political_analyzer/analyzer_v2.py
