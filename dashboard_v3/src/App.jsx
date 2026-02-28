@@ -47,19 +47,18 @@ export default function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // We will fetch from the generated JSON
     fetch("/analysis_report_v2.json")
       .then(res => res.json())
       .then(report => {
         if (report.daily_breakdown) {
           const formatted = report.daily_breakdown.map(d => ({
-            date: d.date.substring(5), // "Jan 01" style
-            avg: d.avg_risk,
-            articles: d.article_count,
-            level: d.risk_level
+            date: d.date.substring(5), 
+            avg: d.anchored_risk || d.avg_risk || 0, // Fallback for different JSON versions
+            articles: d.article_count || 0,
+            level: d.risk_level || "UNKNOWN"
           }));
           setData(formatted);
-          setMeta(report.meta);
+          setMeta(report.meta || {});
         }
         setLoading(false);
       })
@@ -71,58 +70,71 @@ export default function App() {
 
   if (loading) return <div style={{ background: "#020817", minHeight: "100vh", color: "#e2e8f0", display: "flex", justifyContent: "center", alignItems: "center" }}>Loading Analyzer Data...</div>;
 
-  const peakDay = data.reduce((a, b) => b.avg > a.avg ? b : a, data[0]);
-  const avgRisk = (data.reduce((s, d) => s + d.avg, 0) / data.length).toFixed(1);
+  const validData = data.filter(d => d.avg !== undefined);
+  const peakDay = validData.length > 0 ? validData.reduce((a, b) => b.avg > a.avg ? b : a, validData[0]) : {date: "N/A", avg: 0};
+  const avgRisk = validData.length > 0 ? (validData.reduce((s, d) => s + d.avg, 0) / validData.length).toFixed(1) : "0.0";
 
-  // Stats
   const counts = { CRITICAL: 0, HIGH: 0, MEDIUM: 0, LOW: 0 };
   data.forEach(d => { if(counts[d.level] !== undefined) counts[d.level]++ });
 
   return (
     <div style={{
       background: "#020817", minHeight: "100vh", padding: "28px 24px",
-      fontFamily: "'Inter', 'Segoe UI', sans-serif", color: "#e2e8f0"
+      fontFamily: "'Inter', 'Segoe UI', sans-serif", color: "#e2e8f0",
+      maxWidth: "1200px", margin: "0 auto"
     }}>
       {/* Header */}
-      <div style={{ marginBottom: 24 }}>
-        <div style={{ fontSize: 11, letterSpacing: 3, color: "#64748b", textTransform: "uppercase", marginBottom: 4 }}>
-          Political Pattern Analyzer v2.2
+      <div style={{ marginBottom: 24, display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: 16 }}>
+        <div>
+          <div style={{ fontSize: 11, letterSpacing: 3, color: "#64748b", textTransform: "uppercase", marginBottom: 4 }}>
+            Political Pattern Analyzer v2.2
+          </div>
+          <h1 style={{ fontSize: 26, fontWeight: 700, color: "#f8fafc", margin: 0 }}>
+            Daily Risk Breakdown
+          </h1>
+          <div style={{ fontSize: 13, color: "#64748b", marginTop: 4 }}>
+            {data.length} days · {data.reduce((s, d) => s + d.articles, 0)} articles analyzed
+          </div>
         </div>
-        <h1 style={{ fontSize: 22, fontWeight: 700, color: "#f8fafc", margin: 0 }}>
-          Daily Risk Breakdown — {meta.generated_at ? new Date(meta.generated_at).toLocaleDateString() : 'Live'}
-        </h1>
-        <div style={{ fontSize: 13, color: "#64748b", marginTop: 4 }}>
-          {data.length} days · {data.reduce((s, d) => s + d.articles, 0)} articles analyzed
+        <div style={{ textAlign: "right", color: "#64748b", fontSize: 13 }}>
+          Status as of: <span style={{ color: "#f8fafc", fontWeight: 600 }}>{meta.generated_at ? new Date(meta.generated_at).toLocaleDateString() : 'Live'}</span>
         </div>
       </div>
 
       {/* Strategic Outlook */}
       {meta.strategic_outlook && (
         <div style={{
-          background: "rgba(59, 130, 246, 0.05)", borderLeft: "4px solid #3b82f6",
-          padding: "16px 20px", borderRadius: "0 8px 8px 0", marginBottom: 28,
-          fontSize: 14, fontStyle: "italic", lineHeight: 1.6, color: "#cbd5e1"
+          background: "rgba(59, 130, 246, 0.08)", border: "1px solid rgba(59, 130, 246, 0.2)",
+          padding: "20px", borderRadius: "12px", marginBottom: 28,
+          fontSize: 15, fontStyle: "italic", lineHeight: 1.6, color: "#cbd5e1",
+          boxShadow: "0 4px 20px rgba(0,0,0,0.2)"
         }}>
           {meta.strategic_outlook}
         </div>
       )}
 
-      {/* Stat cards */}
-      <div style={{ display: "flex", gap: 12, marginBottom: 28, flexWrap: "wrap" }}>
+      {/* Stat cards Grid */}
+      <div style={{ 
+        display: "grid", 
+        gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", 
+        gap: 16, 
+        marginBottom: 32 
+      }}>
         {[
           { label: "Global Avg Risk", value: avgRisk, color: "#94a3b8" },
-          { label: "Peak Day", value: `${peakDay.date} — ${peakDay.avg}`, color: "#ef4444" },
-          { label: "CRITICAL days", value: counts.CRITICAL, color: LEVEL_COLOR.CRITICAL },
-          { label: "HIGH days",     value: counts.HIGH,     color: LEVEL_COLOR.HIGH },
-          { label: "MEDIUM days",   value: counts.MEDIUM,   color: LEVEL_COLOR.MEDIUM },
-          { label: "LOW days",      value: counts.LOW,      color: LEVEL_COLOR.LOW },
+          { label: "Peak Day", value: `${peakDay.date}: ${peakDay.avg}`, color: "#ef4444" },
+          { label: "CRITICAL", value: counts.CRITICAL, color: LEVEL_COLOR.CRITICAL },
+          { label: "HIGH",     value: counts.HIGH,     color: LEVEL_COLOR.HIGH },
+          { label: "MEDIUM",   value: counts.MEDIUM,   color: LEVEL_COLOR.MEDIUM },
+          { label: "LOW",      value: counts.LOW,      color: LEVEL_COLOR.LOW },
         ].map(c => (
           <div key={c.label} style={{
             background: "#0f172a", border: "1px solid #1e293b",
-            borderRadius: 10, padding: "12px 18px", minWidth: 120
+            borderRadius: 12, padding: "16px 20px",
+            transition: "transform 0.2s", cursor: "default"
           }}>
-            <div style={{ fontSize: 11, color: "#64748b", marginBottom: 4 }}>{c.label}</div>
-            <div style={{ fontSize: 20, fontWeight: 700, color: c.color }}>{c.value}</div>
+            <div style={{ fontSize: 11, color: "#64748b", marginBottom: 6, fontWeight: 600, textTransform: "uppercase" }}>{c.label}</div>
+            <div style={{ fontSize: 24, fontWeight: 800, color: c.color }}>{c.value}</div>
           </div>
         ))}
       </div>
