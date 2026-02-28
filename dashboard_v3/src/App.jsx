@@ -187,8 +187,17 @@ export default function App() {
           </div>
         </div>
 
-        {/* Article List */}
-        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        {/* Article List with Internal Scroll */}
+        <div style={{ 
+          display: "flex", 
+          flexDirection: "column", 
+          gap: 12,
+          maxHeight: "500px",
+          overflowY: "auto",
+          paddingRight: "6px",
+          scrollbarWidth: "thin",
+          scrollbarColor: "#1e293b #020817"
+        }}>
           {filteredArticles.length > 0 ? filteredArticles.map((art, idx) => (
             <div key={idx} style={{
               background: "#0f172a", border: "1px solid #1e293b", 
