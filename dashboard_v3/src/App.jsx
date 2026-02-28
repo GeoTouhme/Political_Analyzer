@@ -118,8 +118,8 @@ export default function App() {
           <div style={{ fontSize: 16, fontWeight: 800, color: "#ef4444" }}>{peakDay.date}: {peakDay.avg}</div>
         </div>
         <div style={{ background: "#0f172a", border: "1px solid #1e293b", borderRadius: 12, padding: "12px", textAlign: 'center' }}>
-          <div style={{ fontSize: 9, color: "#64748b", textTransform: "uppercase", marginBottom: 4 }}>Articles Today</div>
-          <div style={{ fontSize: 16, fontWeight: 800, color: "#58a6ff" }}>{latestDay.articles}</div>
+          <div style={{ fontSize: 9, color: "#64748b", textTransform: "uppercase", marginBottom: 4 }}>Total Articles</div>
+          <div style={{ fontSize: 16, fontWeight: 800, color: "#58a6ff" }}>{meta.article_count || articles.length}</div>
         </div>
       </div>
 
