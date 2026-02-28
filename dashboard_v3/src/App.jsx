@@ -98,46 +98,23 @@ export default function App() {
       {/* Hero Element: Today Risk Gauge */}
       <div style={{
         background: "#0f172a", border: "1px solid #1e293b",
-        borderRadius: 20, padding: "32px 20px", marginBottom: 24,
+        borderRadius: 20, padding: "24px 20px", marginBottom: 24,
         display: "flex", flexDirection: "column", alignItems: "center",
-        boxShadow: "0 8px 32px rgba(0,0,0,0.4)", position: "relative",
-        overflow: "hidden"
+        boxShadow: "0 8px 32px rgba(0,0,0,0.4)", position: "relative"
       }}>
-        {/* Glow Background */}
-        <div style={{
-          position: "absolute", top: "-50%", left: "-50%", width: "200%", height: "200%",
-          background: `radial-gradient(circle, ${LEVEL_COLOR[latestDay.level]}15 0%, transparent 70%)`,
-          pointerEvents: "none"
-        }} />
-
-        <div style={{ fontSize: 12, color: "#64748b", fontWeight: 700, textTransform: "uppercase", letterSpacing: 2, marginBottom: 20 }}>
+        <div style={{ fontSize: 11, color: "#64748b", fontWeight: 700, textTransform: "uppercase", letterSpacing: 2, marginBottom: 12 }}>
           Current Threat Level
         </div>
 
-        <div style={{ position: "relative", width: "280px", height: "160px", marginBottom: 10 }}>
-          <ResponsiveContainer width="100%" height="100%">
-            <ComposedChart margin={{ top: 0, right: 0, left: 0, bottom: 0 }}>
-              {/* Semi-circle Gauge logic using a Bar with custom shape or just simple arcs? 
-                  Let's use a PieChart for a proper gauge look. */}
-            </ComposedChart>
-          </ResponsiveContainer>
-          {/* Fallback to simple styled SVG Gauge for maximum control */}
-          <svg viewBox="0 0 100 55" style={{ width: "100%", height: "100%" }}>
-            <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#1e293b" strokeWidth="8" strokeLinecap="round" />
-            <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke={LEVEL_COLOR[latestDay.level]} strokeWidth="8" strokeLinecap="round"
-                  strokeDasharray={`${(latestDay.avg / 100) * 126} 126`} />
-            <text x="50" y="45" textAnchor="middle" fill="#f8fafc" style={{ fontSize: "16px", fontWeight: 900 }}>{latestDay.avg}</text>
+        <div style={{ width: "100%", maxWidth: "300px", height: "180px", position: "relative", display: "flex", justifyContent: "center" }}>
+          <svg viewBox="0 0 100 60" style={{ width: "100%", height: "100%" }}>
+            <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#1e293b" strokeWidth="6" strokeLinecap="round" />
+            <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke={LEVEL_COLOR[latestDay.level]} strokeWidth="6" strokeLinecap="round"
+                  strokeDasharray={`${(latestDay.avg / 100) * 126} 126`} 
+                  style={{ transition: "stroke-dasharray 1s ease-out" }} />
+            <text x="50" y="42" textAnchor="middle" fill="#f8fafc" style={{ fontSize: "14px", fontWeight: 900 }}>{latestDay.avg}</text>
+            <text x="50" y="55" textAnchor="middle" fill={LEVEL_COLOR[latestDay.level]} style={{ fontSize: "8px", fontWeight: 800, textTransform: "uppercase" }}>{latestDay.level}</text>
           </svg>
-        </div>
-
-        <div style={{ 
-          fontSize: 22, fontWeight: 900, 
-          color: LEVEL_COLOR[latestDay.level], 
-          textTransform: "uppercase", 
-          letterSpacing: 1,
-          marginTop: -10
-        }}>
-          {latestDay.level}
         </div>
       </div>
 
