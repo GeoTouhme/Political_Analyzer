@@ -134,7 +134,7 @@ export default function App() {
 
       {/* Main Chart */}
       <div style={{ background: "#0f172a", border: "1px solid #1e293b", borderRadius: 16, padding: "16px 10px 4px", marginBottom: 32 }}>
-        <ResponsiveContainer width="100%" height={220}>
+        <ResponsiveContainer width="100%" height={260}>
           <ComposedChart data={data}>
             <defs>
               <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
@@ -143,8 +143,26 @@ export default function App() {
               </linearGradient>
             </defs>
             <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" vertical={false} />
-            <XAxis dataKey="date" tick={{ fontSize: 9, fill: "#64748b" }} interval={Math.floor(data.length / 6)} />
-            <YAxis hide domain={[0, 100]} />
+            
+            {/* Threshold Lines with Labels */}
+            <ReferenceLine y={75} stroke="#ef4444" strokeDasharray="4 3" strokeOpacity={0.6}
+              label={{ value: "CRITICAL", position: "insideTopRight", fill: "#ef4444", fontSize: 9, fontWeight: 700 }} />
+            <ReferenceLine y={50} stroke="#f97316" strokeDasharray="4 3" strokeOpacity={0.6}
+              label={{ value: "HIGH", position: "insideTopRight", fill: "#f97316", fontSize: 9, fontWeight: 700 }} />
+            <ReferenceLine y={25} stroke="#eab308" strokeDasharray="4 3" strokeOpacity={0.5}
+              label={{ value: "MEDIUM", position: "insideTopRight", fill: "#eab308", fontSize: 9, fontWeight: 700 }} />
+            <ReferenceLine y={5} stroke="#22c55e" strokeDasharray="4 3" strokeOpacity={0.4}
+              label={{ value: "LOW", position: "insideTopRight", fill: "#22c55e", fontSize: 9, fontWeight: 700 }} />
+
+            <XAxis 
+              dataKey="date" 
+              tick={{ fontSize: 9, fill: "#64748b" }} 
+              interval={1} 
+              angle={-45}
+              textAnchor="end"
+              height={50}
+            />
+            <YAxis domain={[0, 100]} tick={{ fontSize: 9, fill: "#64748b" }} width={25} />
             <Tooltip content={<CustomTooltip />} />
             <Area type="monotone" dataKey="avg" fill="url(#areaGrad)" stroke="none" />
             <Line type="monotone" dataKey="avg" stroke="#3b82f6" strokeWidth={2} dot={false} />
