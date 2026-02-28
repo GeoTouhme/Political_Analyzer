@@ -118,28 +118,16 @@ export default function App() {
         </div>
       </div>
 
-      {/* Strategic Outlook */}
-      {meta.strategic_outlook && (
-        <div style={{
-          background: "rgba(59, 130, 246, 0.08)", border: "1px solid rgba(59, 130, 246, 0.2)",
-          padding: "20px", borderRadius: "12px", marginBottom: 24,
-          fontSize: 15, fontStyle: "italic", lineHeight: 1.6, color: "#cbd5e1"
-        }}>
-          {meta.strategic_outlook}
-        </div>
-      )}
-
       {/* Secondary Cards Grid */}
       <div style={{ 
         display: "grid", 
-        gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", 
+        gridTemplateColumns: "repeat(2, 1fr)", 
         gap: 12, 
-        marginBottom: 32 
+        marginBottom: 12
       }}>
         {[
           { label: "Peak Day", value: `${peakDay.date}: ${peakDay.avg}`, color: "#ef4444" },
           { label: "Articles Today", value: latestDay.articles, color: "#58a6ff" },
-          { label: "Today Situation", value: latestDay.level, color: LEVEL_COLOR[latestDay.level] || "#94a3b8" },
         ].map(c => (
           <div key={c.label} style={{
             background: "#0f172a", border: "1px solid #1e293b",
@@ -150,6 +138,18 @@ export default function App() {
             <div style={{ fontSize: typeof c.value === 'string' && c.value.length > 8 ? 14 : 20, fontWeight: 800, color: c.color }}>{c.value}</div>
           </div>
         ))}
+      </div>
+
+      {/* Today Situation - Centered Below */}
+      <div style={{ 
+        background: "#0f172a", border: "1px solid #1e293b",
+        borderRadius: 12, padding: "16px",
+        boxShadow: "0 2px 8px rgba(0,0,0,0.2)",
+        display: "flex", flexDirection: "column", alignItems: "center",
+        marginBottom: 32
+      }}>
+        <div style={{ fontSize: 10, color: "#64748b", marginBottom: 6, fontWeight: 600, textTransform: "uppercase", letterSpacing: 0.5 }}>Today Situation</div>
+        <div style={{ fontSize: 20, fontWeight: 800, color: LEVEL_COLOR[latestDay.level] || "#94a3b8" }}>{latestDay.level}</div>
       </div>
 
       {/* Main chart */}
