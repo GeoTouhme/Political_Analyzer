@@ -71,12 +71,9 @@ export default function App() {
   if (loading) return <div style={{ background: "#020817", minHeight: "100vh", color: "#e2e8f0", display: "flex", justifyContent: "center", alignItems: "center" }}>Loading Analyzer Data...</div>;
 
   const validData = data.filter(d => d.avg !== undefined);
+  const latestDay = validData.length > 0 ? validData[validData.length - 1] : {date: "N/A", avg: 0, articles: 0, level: "UNKNOWN"};
   const peakDay = validData.length > 0 ? validData.reduce((a, b) => b.avg > a.avg ? b : a, validData[0]) : {date: "N/A", avg: 0};
-  const avgRisk = validData.length > 0 ? (validData.reduce((s, d) => s + d.avg, 0) / validData.length).toFixed(1) : "0.0";
-
-  const counts = { CRITICAL: 0, HIGH: 0, MEDIUM: 0, LOW: 0 };
-  data.forEach(d => { if(counts[d.level] !== undefined) counts[d.level]++ });
-
+  
   return (
     <div style={{
       background: "#020817", minHeight: "100vh", padding: "28px 24px",
@@ -92,9 +89,6 @@ export default function App() {
           <h1 style={{ fontSize: 26, fontWeight: 700, color: "#f8fafc", margin: 0 }}>
             Daily Risk Breakdown
           </h1>
-          <div style={{ fontSize: 13, color: "#64748b", marginTop: 4 }}>
-            {data.length} days · {data.reduce((s, d) => s + d.articles, 0)} articles analyzed
-          </div>
         </div>
         <div style={{ textAlign: "right", color: "#64748b", fontSize: 13 }}>
           Status as of: <span style={{ color: "#f8fafc", fontWeight: 600 }}>{meta.generated_at ? new Date(meta.generated_at).toLocaleDateString() : 'Live'}</span>
@@ -113,28 +107,26 @@ export default function App() {
         </div>
       )}
 
-      {/* Stat cards Grid */}
+      {/* Stat cards Grid - 4 Main Cards */}
       <div style={{ 
         display: "grid", 
-        gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", 
-        gap: 16, 
+        gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", 
+        gap: 12, 
         marginBottom: 32 
       }}>
         {[
-          { label: "Global Avg Risk", value: avgRisk, color: "#94a3b8" },
+          { label: "Today Risk", value: latestDay.avg, color: LEVEL_COLOR[latestDay.level] || "#94a3b8" },
           { label: "Peak Day", value: `${peakDay.date}: ${peakDay.avg}`, color: "#ef4444" },
-          { label: "CRITICAL", value: counts.CRITICAL, color: LEVEL_COLOR.CRITICAL },
-          { label: "HIGH",     value: counts.HIGH,     color: LEVEL_COLOR.HIGH },
-          { label: "MEDIUM",   value: counts.MEDIUM,   color: LEVEL_COLOR.MEDIUM },
-          { label: "LOW",      value: counts.LOW,      color: LEVEL_COLOR.LOW },
+          { label: "Articles Today", value: latestDay.articles, color: "#58a6ff" },
+          { label: "Today Situation", value: latestDay.level, color: LEVEL_COLOR[latestDay.level] || "#94a3b8" },
         ].map(c => (
           <div key={c.label} style={{
             background: "#0f172a", border: "1px solid #1e293b",
-            borderRadius: 12, padding: "16px 20px",
-            transition: "transform 0.2s", cursor: "default"
+            borderRadius: 12, padding: "16px",
+            boxShadow: "0 2px 8px rgba(0,0,0,0.2)"
           }}>
-            <div style={{ fontSize: 11, color: "#64748b", marginBottom: 6, fontWeight: 600, textTransform: "uppercase" }}>{c.label}</div>
-            <div style={{ fontSize: 24, fontWeight: 800, color: c.color }}>{c.value}</div>
+            <div style={{ fontSize: 10, color: "#64748b", marginBottom: 6, fontWeight: 600, textTransform: "uppercase", letterSpacing: 0.5 }}>{c.label}</div>
+            <div style={{ fontSize: typeof c.value === 'string' && c.value.length > 8 ? 16 : 22, fontWeight: 800, color: c.color }}>{c.value}</div>
           </div>
         ))}
       </div>
