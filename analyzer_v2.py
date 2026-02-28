@@ -21,6 +21,7 @@ from google import genai
 from google.genai import types
 from dotenv import load_dotenv
 from textblob import TextBlob
+from gdelt_collector import fetch_gdelt_articles, merge_sources
 
 try:
     from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
@@ -40,7 +41,8 @@ log = logging.getLogger("analyzer")
 
 NOTION_TOKEN: str = os.getenv("NOTION_API_KEY", "")
 GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
-DATA_SOURCE_ID: str = "87aeafb5-5c8a-4d09-98ef-b3b186d33403"
+DATA_SOURCE_ID: str = "87aeafb55c8a4d0998efb3b186d33403"
+NOTION_VERSION: str = "2022-06-28"
 
 MAX_RETRIES: int = 3
 RETRY_BACKOFF: float = 2.0
@@ -215,6 +217,9 @@ class ArticleAnalysis:
     diplomatic_hits: int = 0
     source_name: str = "Unknown"
     date: str = "2026-01-01"
+    credibility_weight: float = 1.0   # NEW — from GDELT
+    raw_score: float = 0.0            # NEW — from GDELT
+    data_source: str = "notion"       # NEW — 'notion' or 'gdelt'
 
 @dataclass
 class ReportMeta:
@@ -228,39 +233,56 @@ class ReportMeta:
 # --- Notion API --------------------------------------------------------------
 
 def fetch_notion_data() -> list[dict]:
-    """Fetch articles from Notion database with retry logic."""
+    """Fetch all articles from Notion database with pagination and retry logic."""
     url = f"https://api.notion.com/v1/databases/{DATA_SOURCE_ID}/query"
     headers = {
         "Authorization": f"Bearer {NOTION_TOKEN}",
-        "Notion-Version": "2022-06-28",
+        "Notion-Version": NOTION_VERSION,
         "Content-Type": "application/json",
     }
 
-    for attempt in range(1, MAX_RETRIES + 1):
-        try:
-            response = requests.post(url, headers=headers, timeout=REQUEST_TIMEOUT)
+    all_results = []
+    has_more = True
+    next_cursor = None
 
-            if response.status_code == 200:
-                return response.json().get("results", [])
+    while has_more:
+        payload = {}
+        if next_cursor:
+            payload["start_cursor"] = next_cursor
 
-            log.error("Notion API error (attempt %d/%d): %d — %s",
-                      attempt, MAX_RETRIES, response.status_code, response.text)
+        for attempt in range(1, MAX_RETRIES + 1):
+            try:
+                response = requests.post(url, headers=headers, json=payload, timeout=REQUEST_TIMEOUT)
 
-        except requests.Timeout:
-            log.warning("Request timed out (attempt %d/%d)", attempt, MAX_RETRIES)
-        except requests.ConnectionError:
-            log.warning("Connection failed (attempt %d/%d)", attempt, MAX_RETRIES)
-        except requests.RequestException as exc:
-            log.error("Unexpected request error: %s", exc)
+                if response.status_code == 200:
+                    data = response.json()
+                    all_results.extend(data.get("results", []))
+                    has_more = data.get("has_more", False)
+                    next_cursor = data.get("next_cursor")
+                    log.info(f"Fetched {len(all_results)} articles so far...")
+                    break
+
+                log.error("Notion API error (attempt %d/%d): %d — %s",
+                          attempt, MAX_RETRIES, response.status_code, response.text)
+
+            except requests.Timeout:
+                log.warning("Request timed out (attempt %d/%d)", attempt, MAX_RETRIES)
+            except requests.ConnectionError:
+                log.warning("Connection failed (attempt %d/%d)", attempt, MAX_RETRIES)
+            except requests.RequestException as exc:
+                log.error("Unexpected request error: %s", exc)
+                break
+
+            if attempt < MAX_RETRIES:
+                wait = RETRY_BACKOFF ** attempt
+                log.info("Retrying in %.1fs...", wait)
+                time.sleep(wait)
+        else:
+            # If we exhausted retries and didn't break (success), stop pagination
+            log.error("Failed to fetch full dataset after retries.")
             break
-
-        if attempt < MAX_RETRIES:
-            wait = RETRY_BACKOFF ** attempt
-            log.info("Retrying in %.1fs...", wait)
-            time.sleep(wait)
-
-    log.error("Failed to fetch data after %d attempts.", MAX_RETRIES)
-    return []
+            
+    return all_results
 
 
 # --- NLP Engine ---------------------------------------------------------------
@@ -593,7 +615,7 @@ def extract_text(props: dict, page_id: str = None) -> str:
         url = f"https://api.notion.com/v1/blocks/{page_id}/children"
         headers = {
             "Authorization": f"Bearer {NOTION_TOKEN}",
-            "Notion-Version": "2025-09-03",
+            "Notion-Version": NOTION_VERSION,
         }
         try:
             r = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
@@ -658,7 +680,8 @@ def analyze_article(article: dict, recent_results: list = None) -> Optional[Arti
         military_hits=mil_hits,
         diplomatic_hits=dip_hits,
         source_name=source_name,
-        date=date
+        date=date,
+        data_source="notion"
     )
 
 
@@ -724,7 +747,7 @@ RULES:
             contents=prompt,
             config=types.GenerateContentConfig(
                 temperature=0.3,       # Low temp = more factual, less hallucination
-                max_output_tokens=200, # Enforce brevity
+                max_output_tokens=2000, # Enforce brevity
             )
         )
         outlook = response.text.strip()
@@ -863,6 +886,14 @@ def main() -> None:
     if not results:
         log.warning("No articles were analyzed. Check your Notion data source.")
         return
+
+    # --- GDELT Injection ---
+    log.info("Starting GDELT data collection...")
+    try:
+        gdelt_results = fetch_gdelt_articles(days_back=3)
+        results = merge_sources(results, gdelt_results)
+    except Exception as e:
+        log.error("GDELT integration failed: %s", e)
 
     report = generate_report(results)
     output_path = "analysis_report_v2.json"
