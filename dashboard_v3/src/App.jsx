@@ -87,7 +87,7 @@ export default function App() {
             Political Pattern Analyzer v2.2
           </div>
           <h1 style={{ fontSize: 26, fontWeight: 700, color: "#f8fafc", margin: 0 }}>
-            Daily Risk Breakdown
+            Strategic Intelligence
           </h1>
         </div>
         <div style={{ textAlign: "right", color: "#64748b", fontSize: 13 }}>
@@ -95,19 +95,64 @@ export default function App() {
         </div>
       </div>
 
+      {/* Hero Element: Today Risk Gauge */}
+      <div style={{
+        background: "#0f172a", border: "1px solid #1e293b",
+        borderRadius: 20, padding: "32px 20px", marginBottom: 24,
+        display: "flex", flexDirection: "column", alignItems: "center",
+        boxShadow: "0 8px 32px rgba(0,0,0,0.4)", position: "relative",
+        overflow: "hidden"
+      }}>
+        {/* Glow Background */}
+        <div style={{
+          position: "absolute", top: "-50%", left: "-50%", width: "200%", height: "200%",
+          background: `radial-gradient(circle, ${LEVEL_COLOR[latestDay.level]}15 0%, transparent 70%)`,
+          pointerEvents: "none"
+        }} />
+
+        <div style={{ fontSize: 12, color: "#64748b", fontWeight: 700, textTransform: "uppercase", letterSpacing: 2, marginBottom: 20 }}>
+          Current Threat Level
+        </div>
+
+        <div style={{ position: "relative", width: "280px", height: "160px", marginBottom: 10 }}>
+          <ResponsiveContainer width="100%" height="100%">
+            <ComposedChart margin={{ top: 0, right: 0, left: 0, bottom: 0 }}>
+              {/* Semi-circle Gauge logic using a Bar with custom shape or just simple arcs? 
+                  Let's use a PieChart for a proper gauge look. */}
+            </ComposedChart>
+          </ResponsiveContainer>
+          {/* Fallback to simple styled SVG Gauge for maximum control */}
+          <svg viewBox="0 0 100 55" style={{ width: "100%", height: "100%" }}>
+            <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#1e293b" strokeWidth="8" strokeLinecap="round" />
+            <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke={LEVEL_COLOR[latestDay.level]} strokeWidth="8" strokeLinecap="round"
+                  strokeDasharray={`${(latestDay.avg / 100) * 126} 126`} />
+            <text x="50" y="45" textAnchor="middle" fill="#f8fafc" style={{ fontSize: "16px", fontWeight: 900 }}>{latestDay.avg}</text>
+          </svg>
+        </div>
+
+        <div style={{ 
+          fontSize: 22, fontWeight: 900, 
+          color: LEVEL_COLOR[latestDay.level], 
+          textTransform: "uppercase", 
+          letterSpacing: 1,
+          marginTop: -10
+        }}>
+          {latestDay.level}
+        </div>
+      </div>
+
       {/* Strategic Outlook */}
       {meta.strategic_outlook && (
         <div style={{
           background: "rgba(59, 130, 246, 0.08)", border: "1px solid rgba(59, 130, 246, 0.2)",
-          padding: "20px", borderRadius: "12px", marginBottom: 28,
-          fontSize: 15, fontStyle: "italic", lineHeight: 1.6, color: "#cbd5e1",
-          boxShadow: "0 4px 20px rgba(0,0,0,0.2)"
+          padding: "20px", borderRadius: "12px", marginBottom: 24,
+          fontSize: 15, fontStyle: "italic", lineHeight: 1.6, color: "#cbd5e1"
         }}>
           {meta.strategic_outlook}
         </div>
       )}
 
-      {/* Stat cards Grid - 4 Main Cards */}
+      {/* Secondary Cards Grid */}
       <div style={{ 
         display: "grid", 
         gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", 
@@ -115,7 +160,6 @@ export default function App() {
         marginBottom: 32 
       }}>
         {[
-          { label: "Today Risk", value: latestDay.avg, color: LEVEL_COLOR[latestDay.level] || "#94a3b8" },
           { label: "Peak Day", value: `${peakDay.date}: ${peakDay.avg}`, color: "#ef4444" },
           { label: "Articles Today", value: latestDay.articles, color: "#58a6ff" },
           { label: "Today Situation", value: latestDay.level, color: LEVEL_COLOR[latestDay.level] || "#94a3b8" },
@@ -126,7 +170,7 @@ export default function App() {
             boxShadow: "0 2px 8px rgba(0,0,0,0.2)"
           }}>
             <div style={{ fontSize: 10, color: "#64748b", marginBottom: 6, fontWeight: 600, textTransform: "uppercase", letterSpacing: 0.5 }}>{c.label}</div>
-            <div style={{ fontSize: typeof c.value === 'string' && c.value.length > 8 ? 16 : 22, fontWeight: 800, color: c.color }}>{c.value}</div>
+            <div style={{ fontSize: typeof c.value === 'string' && c.value.length > 8 ? 14 : 20, fontWeight: 800, color: c.color }}>{c.value}</div>
           </div>
         ))}
       </div>
