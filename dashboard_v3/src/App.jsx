@@ -83,13 +83,13 @@ export default function App() {
       {/* Header */}
       <div style={{ marginBottom: 24, textAlign: 'center' }}>
         <div style={{ fontSize: 10, letterSpacing: 3, color: "#64748b", textTransform: "uppercase", marginBottom: 4 }}>
-          Project Radar v2.2
+          Intelligence Platform v2.2
         </div>
         <h1 style={{ fontSize: 24, fontWeight: 800, color: "#f8fafc", margin: 0 }}>
-          Political Pattern Analyzer
+          Persian Gulf Conflict Monitor
         </h1>
         <div style={{ color: "#64748b", fontSize: 12, marginTop: 4 }}>
-           Update: {meta.generated_at ? new Date(meta.generated_at).toLocaleDateString() : 'Live'}
+           PGCM-2026 | Updated: {meta.generated_at ? new Date(meta.generated_at).toLocaleDateString() : 'Live'}
         </div>
       </div>
 
