@@ -1,11 +1,11 @@
 {
     "meta": {
-        "generated_at": "2026-03-02T01:00:30.072976",
+        "generated_at": "2026-03-02T01:30:29.328350",
         "article_count": 2010,
         "day_count": 58,
         "global_avg_risk": 24.5,
         "max_risk_score": 100.0,
-        "strategic_outlook": "Despite a statistical de-escalation",
+        "strategic_outlook": "The primary driver of the current risk environment",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
