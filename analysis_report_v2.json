@@ -1,11 +1,11 @@
 {
     "meta": {
-        "generated_at": "2026-02-28T15:53:57.952713",
+        "generated_at": "2026-03-01T02:49:30.926444",
         "article_count": 793,
         "day_count": 57,
         "global_avg_risk": 40.4,
         "max_risk_score": 100.0,
-        "strategic_outlook": "The primary driver of the critical risk escalation",
+        "strategic_outlook": "The primary driver of the",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
