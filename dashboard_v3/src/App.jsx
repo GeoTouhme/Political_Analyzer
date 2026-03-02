@@ -31,6 +31,7 @@ export default function App() {
   const [data, setData] = useState([]);
   const [articles, setArticles] = useState([]);
   const [meta, setMeta] = useState({});
+  const [aiAnalysis, setAiAnalysis] = useState([]);
   const [loading, setLoading] = useState(true);
   
   // Filtering states
@@ -52,6 +53,9 @@ export default function App() {
         if (report.articles) {
           setArticles(report.articles);
         }
+        if (report.ai_deep_analysis) {
+          setAiAnalysis(report.ai_deep_analysis);
+        }
         setMeta(report.meta || {});
         setLoading(false);
       })
@@ -72,7 +76,7 @@ export default function App() {
     const matchesSearch = a.title.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesLevel = filterLevel === "ALL" || a.risk_level === filterLevel;
     return matchesSearch && matchesLevel;
-  }).slice(0, 100); // Limit to top 100 for performance
+  }).slice(0, 100); 
 
   return (
     <div style={{
@@ -83,13 +87,13 @@ export default function App() {
       {/* Header */}
       <div style={{ marginBottom: 24, textAlign: 'center' }}>
         <div style={{ fontSize: 10, letterSpacing: 3, color: "#64748b", textTransform: "uppercase", marginBottom: 4 }}>
-          Intelligence Platform v2.2
+          Intelligence Platform v4.0
         </div>
         <h1 style={{ fontSize: 24, fontWeight: 800, color: "#f8fafc", margin: 0 }}>
           Persian Gulf Conflict Monitor
         </h1>
         <div style={{ color: "#64748b", fontSize: 12, marginTop: 4 }}>
-           PGCM-2026 | Updated: {meta.generated_at ? new Date(meta.generated_at).toLocaleDateString() : 'Live'}
+           PGCM-2026 | Updated: {meta.generated_at ? new Date(meta.generated_at).toLocaleString() : 'Live'}
         </div>
       </div>
 
@@ -111,27 +115,6 @@ export default function App() {
         </div>
       </div>
 
-      {/* 2 Main Stats */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 10 }}>
-        <div style={{ background: "#0f172a", border: "1px solid #1e293b", borderRadius: 12, padding: "12px", textAlign: 'center' }}>
-          <div style={{ fontSize: 9, color: "#64748b", textTransform: "uppercase", marginBottom: 4 }}>Peak Day</div>
-          <div style={{ fontSize: 16, fontWeight: 800, color: "#ef4444" }}>{peakDay.date}: {peakDay.avg}</div>
-        </div>
-        <div style={{ background: "#0f172a", border: "1px solid #1e293b", borderRadius: 12, padding: "12px", textAlign: 'center' }}>
-          <div style={{ fontSize: 9, color: "#64748b", textTransform: "uppercase", marginBottom: 4 }}>Total Articles</div>
-          <div style={{ fontSize: 16, fontWeight: 800, color: "#58a6ff" }}>{meta.article_count || articles.length}</div>
-        </div>
-      </div>
-
-      {/* Centered Situation */}
-      <div style={{ 
-        background: "#0f172a", border: "1px solid #1e293b", borderRadius: 12, padding: "12px",
-        textAlign: 'center', marginBottom: 24 
-      }}>
-        <div style={{ fontSize: 9, color: "#64748b", textTransform: "uppercase", marginBottom: 4 }}>Today Situation</div>
-        <div style={{ fontSize: 18, fontWeight: 800, color: LEVEL_COLOR[latestDay.level] }}>{latestDay.level}</div>
-      </div>
-
       {/* Main Chart */}
       <div style={{ background: "#0f172a", border: "1px solid #1e293b", borderRadius: 16, padding: "16px 10px 4px", marginBottom: 32 }}>
         <ResponsiveContainer width="100%" height={260}>
@@ -143,25 +126,10 @@ export default function App() {
               </linearGradient>
             </defs>
             <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" vertical={false} />
-            
-            {/* Threshold Lines with Labels */}
-            <ReferenceLine y={75} stroke="#ef4444" strokeDasharray="4 3" strokeOpacity={0.6}
-              label={{ value: "CRITICAL", position: "insideTopRight", fill: "#ef4444", fontSize: 9, fontWeight: 700 }} />
-            <ReferenceLine y={50} stroke="#f97316" strokeDasharray="4 3" strokeOpacity={0.6}
-              label={{ value: "HIGH", position: "insideTopRight", fill: "#f97316", fontSize: 9, fontWeight: 700 }} />
-            <ReferenceLine y={25} stroke="#eab308" strokeDasharray="4 3" strokeOpacity={0.5}
-              label={{ value: "MEDIUM", position: "insideTopRight", fill: "#eab308", fontSize: 9, fontWeight: 700 }} />
-            <ReferenceLine y={5} stroke="#22c55e" strokeDasharray="4 3" strokeOpacity={0.4}
-              label={{ value: "LOW", position: "insideTopRight", fill: "#22c55e", fontSize: 9, fontWeight: 700 }} />
-
-            <XAxis 
-              dataKey="date" 
-              tick={{ fontSize: 9, fill: "#64748b" }} 
-              interval={4} 
-              angle={-45}
-              textAnchor="end"
-              height={50}
-            />
+            <ReferenceLine y={75} stroke="#ef4444" strokeDasharray="4 3" strokeOpacity={0.6} />
+            <ReferenceLine y={50} stroke="#f97316" strokeDasharray="4 3" strokeOpacity={0.6} />
+            <ReferenceLine y={25} stroke="#eab308" strokeDasharray="4 3" strokeOpacity={0.5} />
+            <XAxis dataKey="date" tick={{ fontSize: 9, fill: "#64748b" }} interval={4} angle={-45} textAnchor="end" height={50} />
             <YAxis domain={[0, 100]} tick={{ fontSize: 9, fill: "#64748b" }} width={25} />
             <Tooltip content={<CustomTooltip />} />
             <Area type="monotone" dataKey="avg" fill="url(#areaGrad)" stroke="none" />
@@ -170,74 +138,58 @@ export default function App() {
         </ResponsiveContainer>
       </div>
 
-      {/* ARTICLES SECTION */}
-      <div style={{ marginBottom: 20 }}>
-        <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16 }}>Intelligence Feed</h3>
-        
-        {/* Search & Filters */}
-        <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 20 }}>
-          <input 
-            type="text" 
-            placeholder="Search articles..." 
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            style={{
-              background: "#0f172a", border: "1px solid #1e293b", borderRadius: 8,
-              padding: "10px 14px", color: "#f8fafc", fontSize: 14, outline: "none"
-            }}
-          />
-          <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
-            {["ALL", "CRITICAL", "HIGH", "MEDIUM", "LOW"].map(lvl => (
-              <button
-                key={lvl}
-                onClick={() => setFilterLevel(lvl)}
-                style={{
-                  padding: "6px 12px", borderRadius: "20px", fontSize: 11, fontWeight: 600,
-                  cursor: "pointer", border: "1px solid #1e293b",
-                  background: filterLevel === lvl ? (LEVEL_COLOR[lvl] || "#3b82f6") : "#0f172a",
-                  color: filterLevel === lvl ? (lvl === "MEDIUM" ? "#000" : "#fff") : "#94a3b8",
-                  transition: "all 0.2s"
-                }}
-              >
-                {lvl}
-              </button>
+      {/* AI DEEP ANALYSIS SECTION - NEW V4 */}
+      {aiAnalysis.length > 0 && (
+        <div style={{ marginBottom: 40, background: "rgba(239, 68, 68, 0.05)", border: "1px solid rgba(239, 68, 68, 0.2)", borderRadius: 16, padding: "20px" }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 12, color: "#ef4444", display: "flex", alignItems: "center", gap: 8 }}>
+            <span>🤖</span> AI Transformer Analysis (Live)
+          </h3>
+          <p style={{ fontSize: 12, color: "#94a3b8", marginBottom: 16 }}>
+            Top risk signals detected by the neural network trained on US-Iran war patterns.
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+            {aiAnalysis.map((ai, idx) => (
+              <div key={idx} style={{ background: "#0f172a", borderRadius: 8, padding: "12px", display: "flex", alignItems: "center", gap: 12, border: "1px solid #1e293b" }}>
+                <div style={{ 
+                  minWidth: "45px", height: "45px", borderRadius: "50%", 
+                  background: `rgba(239, 68, 68, ${ai.ai_risk_score/100})`,
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  fontSize: 10, fontWeight: 800, color: "#fff", border: "2px solid #ef4444"
+                }}>
+                  {ai.ai_risk_score}%
+                </div>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontSize: 13, fontWeight: 600, color: "#f1f5f9", lineHeight: 1.3 }}>{ai.translated_title || ai.title}</div>
+                  <div style={{ fontSize: 10, color: "#64748b", marginTop: 4 }}>{ai.date} • <a href={ai.url} target="_blank" style={{ color: "#3b82f6" }}>View Source</a></div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
+      )}
 
-        {/* Article List with Internal Scroll */}
-        <div style={{ 
-          display: "flex", 
-          flexDirection: "column", 
-          gap: 12,
-          maxHeight: "500px",
-          overflowY: "auto",
-          paddingRight: "6px",
-          scrollbarWidth: "thin",
-          scrollbarColor: "#1e293b #020817"
-        }}>
-          {filteredArticles.length > 0 ? filteredArticles.map((art, idx) => (
-            <div key={idx} style={{
-              background: "#0f172a", border: "1px solid #1e293b", 
-              borderLeft: `4px solid ${LEVEL_COLOR[art.risk_level]}`,
-              borderRadius: 8, padding: "14px"
-            }}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 6 }}>
-                <span style={{ fontSize: 10, fontWeight: 700, color: LEVEL_COLOR[art.risk_level], letterSpacing: 0.5 }}>
-                  {art.risk_level} — {art.risk_score}
-                </span>
+      {/* INTELLIGENCE FEED */}
+      <div style={{ marginBottom: 20 }}>
+        <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16 }}>Intelligence Feed</h3>
+        <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 20 }}>
+          <input 
+            type="text" placeholder="Search articles..." value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            style={{ background: "#0f172a", border: "1px solid #1e293b", borderRadius: 8, padding: "10px 14px", color: "#f8fafc", fontSize: 14, outline: "none" }}
+          />
+        </div>
+
+        <div style={{ display: "flex", flexDirection: "column", gap: 12, maxHeight: "500px", overflowY: "auto" }}>
+          {filteredArticles.map((art, idx) => (
+            <div key={idx} style={{ background: "#0f172a", border: "1px solid #1e293b", borderLeft: `4px solid ${LEVEL_COLOR[art.risk_level]}`, borderRadius: 8, padding: "14px" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
+                <span style={{ fontSize: 10, fontWeight: 700, color: LEVEL_COLOR[art.risk_level] }}>{art.risk_level} — {art.risk_score}</span>
                 <span style={{ fontSize: 10, color: "#64748b" }}>{art.date}</span>
               </div>
-              <div style={{ fontSize: 14, fontWeight: 600, color: "#f1f5f9", marginBottom: 8, lineHeight: 1.4 }}>
-                {art.title}
-              </div>
-              <div style={{ fontSize: 11, color: "#64748b", display: "flex", justifyContent: "space-between" }}>
-                <span>Source: <strong style={{color: "#94a3b8"}}>{art.source_name}</strong></span>
-              </div>
+              <div style={{ fontSize: 14, fontWeight: 600, color: "#f1f5f9", marginBottom: 4 }}>{art.title}</div>
+              <div style={{ fontSize: 11, color: "#64748b" }}>Source: {art.source_name}</div>
             </div>
-          )) : (
-            <div style={{ textAlign: "center", color: "#64748b", padding: "40px 0" }}>No articles found matching filters.</div>
-          )}
+          ))}
         </div>
       </div>
     </div>
