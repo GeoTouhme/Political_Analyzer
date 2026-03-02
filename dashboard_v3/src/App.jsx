@@ -84,40 +84,51 @@ export default function App() {
       fontFamily: "'Inter', 'Segoe UI', sans-serif", color: "#e2e8f0",
       maxWidth: "800px", margin: "0 auto"
     }}>
-      {/* Header */}
-      <div style={{ marginBottom: 24, textAlign: 'center' }}>
-        <div style={{ fontSize: 10, letterSpacing: 3, color: "#64748b", textTransform: "uppercase", marginBottom: 4 }}>
-          Intelligence Platform v4.0
-        </div>
-        <h1 style={{ fontSize: 24, fontWeight: 800, color: "#f8fafc", margin: 0 }}>
-          Persian Gulf Conflict Monitor
+      {/* Header - Simple & Clean */}
+      <div style={{ marginBottom: 16, textAlign: 'center' }}>
+        <h1 style={{ fontSize: 20, fontWeight: 800, color: "#f8fafc", margin: 0 }}>
+          Conflict Monitor v4.0
         </h1>
-        <div style={{ color: "#64748b", fontSize: 12, marginTop: 4 }}>
-           PGCM-2026 | Updated: {meta.generated_at ? new Date(meta.generated_at).toLocaleString() : 'Live'}
-        </div>
       </div>
 
-      {/* Hero: Gauge */}
+      {/* STICKY RADAR SECTION */}
       <div style={{
-        background: "#0f172a", border: "1px solid #1e293b",
-        borderRadius: 20, padding: "20px", marginBottom: 20,
-        display: "flex", flexDirection: "column", alignItems: "center",
-        boxShadow: "0 8px 32px rgba(0,0,0,0.4)"
+        position: "sticky",
+        top: 0,
+        zIndex: 100,
+        background: "rgba(2, 8, 23, 0.9)",
+        backdropFilter: "blur(12px)",
+        border: "1px solid #1e293b",
+        borderRadius: 16,
+        padding: "12px 20px",
+        marginBottom: 20,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        boxShadow: "0 10px 30px rgba(0,0,0,0.5)"
       }}>
-        <div style={{ width: "100%", maxWidth: "260px", height: "150px", position: "relative" }}>
-          <svg viewBox="0 0 100 60" style={{ width: "100%", height: "100%" }}>
-            <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#1e293b" strokeWidth="7" strokeLinecap="round" />
-            <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke={LEVEL_COLOR[latestDay.level]} strokeWidth="7" strokeLinecap="round"
-                  strokeDasharray={`${(latestDay.avg / 100) * 126} 126`} />
-            <text x="50" y="42" textAnchor="middle" fill="#f8fafc" style={{ fontSize: "14px", fontWeight: 900 }}>{latestDay.avg}</text>
-            <text x="50" y="55" textAnchor="middle" fill={LEVEL_COLOR[latestDay.level]} style={{ fontSize: "8px", fontWeight: 800 }}>{latestDay.level}</text>
-          </svg>
+        <div style={{ display: "flex", alignItems: "center", gap: 15 }}>
+          <div style={{ width: "60px", height: "40px" }}>
+            <svg viewBox="0 0 100 60">
+              <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#1e293b" strokeWidth="10" />
+              <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke={LEVEL_COLOR[latestDay.level]} strokeWidth="10" 
+                    strokeDasharray={`${(latestDay.avg / 100) * 126} 126`} />
+            </svg>
+          </div>
+          <div>
+            <div style={{ fontSize: 22, fontWeight: 900, color: "#fff", lineHeight: 1 }}>{latestDay.avg}%</div>
+            <div style={{ fontSize: 10, fontWeight: 700, color: LEVEL_COLOR[latestDay.level], textTransform: "uppercase" }}>{latestDay.level} RISK</div>
+          </div>
+        </div>
+        <div style={{ textAlign: "right" }}>
+          <div style={{ fontSize: 9, color: "#64748b" }}>STREAMS ANALYZED</div>
+          <div style={{ fontSize: 14, fontWeight: 800, color: "#58a6ff" }}>{meta.article_count || articles.length}</div>
         </div>
       </div>
 
-      {/* Main Chart */}
-      <div style={{ background: "#0f172a", border: "1px solid #1e293b", borderRadius: 16, padding: "16px 10px 4px", marginBottom: 32 }}>
-        <ResponsiveContainer width="100%" height={260}>
+      {/* Main Chart - Compact */}
+      <div style={{ background: "#0f172a", border: "1px solid #1e293b", borderRadius: 16, padding: "16px 10px 4px", marginBottom: 20 }}>
+        <ResponsiveContainer width="100%" height={180}>
           <ComposedChart data={data}>
             <defs>
               <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
