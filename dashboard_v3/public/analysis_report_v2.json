@@ -1,18 +1,18 @@
 {
     "meta": {
-        "generated_at": "2026-03-02T08:01:11.479989",
-        "article_count": 2505,
+        "generated_at": "2026-03-02T08:31:01.976095",
+        "article_count": 2528,
         "day_count": 59,
-        "global_avg_risk": 22.1,
+        "global_avg_risk": 22.0,
         "max_risk_score": 100.0,
-        "strategic_outlook": "The primary driver of the current high",
+        "strategic_outlook": "The primary driver of the current crisis",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
         "status": "STABLE",
-        "latest_day_final": 71.3,
+        "latest_day_final": 71.2,
         "previous_day_simple": 72.0,
-        "global_avg": 22.1
+        "global_avg": 22.0
     },
     "daily_breakdown": [
         {
@@ -1395,11 +1395,11 @@
         },
         {
             "date": "2026-03-02",
-            "article_count": 495,
-            "active_article_count": 342,
-            "anchored_risk": 71.3,
-            "simple_avg": 12.3,
-            "active_avg": 17.9,
+            "article_count": 518,
+            "active_article_count": 357,
+            "anchored_risk": 71.2,
+            "simple_avg": 12.2,
+            "active_avg": 17.8,
             "top3_avg": 100.0,
             "max_risk": 100.0,
             "min_risk": 0.0,
@@ -1411,10 +1411,10 @@
             ],
             "avg_military_hits": 0.1,
             "avg_diplomatic_hits": 0.03,
-            "day_over_day_delta": -0.7,
+            "day_over_day_delta": -0.8,
             "contradiction_index": 0.2,
             "contradiction_boost": 0.0,
-            "final_risk": 71.3,
+            "final_risk": 71.2,
             "contradiction_ratio": 0.006
         }
     ],
@@ -46354,6 +46354,420 @@
                 "< /a >"
             ],
             "military_hits": 2,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US charges 30 more in anti-ICE protest at Minnesota church - The Jerusalem Post",
+            "sentiment_polarity": -0.521,
+            "sentiment_method": "vader",
+            "risk_score": 10.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> us charges",
+                "minnesota",
+                "church < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Prepared, not invincible: Israel tested by Iran’s ballistic missile barrages - editorial - The Jerusalem Post",
+            "sentiment_polarity": -0.388,
+            "sentiment_method": "vader",
+            "risk_score": 72.8,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "prepared",
+                "israel",
+                "iran",
+                "’ s ballistic missile barrages",
+                "editorial < /a >"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "560 US soldiers killed or injured in Iranian attacks across the region - Tehran Times",
+            "sentiment_polarity": -0.878,
+            "sentiment_method": "vader",
+            "risk_score": 17.6,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "us soldiers",
+                "iranian",
+                "region < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "War widens to include Iranian-backed militias as Israeli and American planes pound Iran - Idaho State Journal",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> war widens",
+                "iranian-backed",
+                "israeli",
+                "american planes",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran war spreads across region as Israel strikes Hezbollah - AL-Monitor",
+            "sentiment_polarity": -0.751,
+            "sentiment_method": "vader",
+            "risk_score": 15.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "israel",
+                "hezbollah",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "U.S., Israel pound Iran as Trump signals willingness to talk after Khamenei’s death - The Hindu",
+            "sentiment_polarity": 0.273,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "u.s.",
+                "israel",
+                "iran",
+                "trump",
+                "signals willingness"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US targets numerous Iranian military assets in first day of operation: CENTCOM - Hürriyet Daily News",
+            "sentiment_polarity": 0.178,
+            "sentiment_method": "vader",
+            "risk_score": 27.1,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "> us targets",
+                "iranian",
+                "military assets",
+                "centcom",
+                "< /a >"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "U.S. troops killed as Iran retaliates with strikes after death of Supreme Leader - NBC10 Philadelphia",
+            "sentiment_polarity": -0.807,
+            "sentiment_method": "vader",
+            "risk_score": 16.1,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "u.s",
+                "iran",
+                "supreme leader < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Pentagon contradicts White House’s claim on “imminent threat” from Iran - HUM News - English",
+            "sentiment_polarity": -0.34,
+            "sentiment_method": "vader",
+            "risk_score": 6.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> pentagon contradicts",
+                "white house ’ s",
+                "imminent threat ”",
+                "iran",
+                "< /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices rise sharply after Middle East attacks disrupt supply - Tippah News",
+            "sentiment_polarity": -0.44,
+            "sentiment_method": "vader",
+            "risk_score": 8.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil prices rise",
+                "attacks disrupt",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "'A tax on households': Economists warn Middle East war to spike oil - Australian Broadcasting Corporation",
+            "sentiment_polarity": -0.649,
+            "sentiment_method": "vader",
+            "risk_score": 13.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "economists",
+                "spike oil < /a >",
+                "< font color=",
+                "# 6f6f6f",
+                "australian broadcasting"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Global Market | Middle East Shockwave: Markets brace for oil, inflation and regime risk - The Economic Times",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "global market",
+                "shockwave",
+                "markets",
+                "regime risk < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Gas prices could surge in Saskatchewan after Middle East strikes - larongeNOW",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> gas prices",
+                "saskatchewan",
+                "strikes < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Dubai Crude Price Spread Widens to $1.45/Barrel - Discovery Alert",
+            "sentiment_polarity": -0.572,
+            "sentiment_method": "vader",
+            "risk_score": 11.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "dubai crude price spread widens",
+                "$ 1.45/barrel < /a >",
+                "< font color=",
+                "# 6f6f6f",
+                "discovery alert"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "San Francisco crowd celebrates death of Iran’s supreme leader at Embarcadero Plaza - KRON4",
+            "sentiment_polarity": 0.527,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "san francisco",
+                "iran",
+                "’ s",
+                "supreme leader",
+                "embarcadero plaza"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US, Israel pound Iran as Trump signals willingness to talk to new leadership after Khamenei's death - WAPT",
+            "sentiment_polarity": 0.273,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> us",
+                "israel",
+                "iran",
+                "trump",
+                "signals willingness"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Sacramento-area Iranians react to death of Iran's supreme leader - CBS News",
+            "sentiment_polarity": -0.077,
+            "sentiment_method": "vader",
+            "risk_score": 1.5,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "sacramento-area iranians",
+                "iran",
+                "supreme leader < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran after 48 hours: Tactical success, strategic uncertainty - CNN",
+            "sentiment_polarity": 0.572,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "tactical",
+                "strategic uncertainty < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "How the World Is Reacting to the Attack on Iran - Inbox.lv",
+            "sentiment_polarity": -0.477,
+            "sentiment_method": "vader",
+            "risk_score": 9.5,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "reacting",
+                "attack",
+                "iran",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran Conflict: Israel Targets Hezbollah in Lebanon - vocal.media",
+            "sentiment_polarity": -0.318,
+            "sentiment_method": "vader",
+            "risk_score": 6.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "israel targets hezbollah",
+                "lebanon",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel Expands Offensive With New Wave of Coordinated Strikes in Iran and Lebanon - vocal.media",
+            "sentiment_polarity": -0.625,
+            "sentiment_method": "vader",
+            "risk_score": 12.5,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israel expands offensive",
+                "wave",
+                "coordinated strikes",
+                "iran",
+                "lebanon"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Strikes on Iran Spark Regional Escalation, Spread to Lebanon - Politics Today",
+            "sentiment_polarity": 0.226,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "strikes",
+                "iran spark",
+                "escalation",
+                "spread",
+                "lebanon"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "IDF Northern Command Chief: Strikes on Hezbollah to Intensify After Rocket, Drone Attack - VINnews",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "idf",
+                "northern command chief",
+                "strikes",
+                "hezbollah",
+                "intensify"
+            ],
+            "military_hits": 0,
             "diplomatic_hits": 0,
             "source_name": "Unknown",
             "date": "2026-03-02"
