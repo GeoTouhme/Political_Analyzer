@@ -1,18 +1,18 @@
 {
     "meta": {
-        "generated_at": "2026-03-02T10:01:38.652860",
-        "article_count": 2613,
+        "generated_at": "2026-03-02T10:31:21.419433",
+        "article_count": 2640,
         "day_count": 59,
-        "global_avg_risk": 21.6,
+        "global_avg_risk": 21.5,
         "max_risk_score": 100.0,
-        "strategic_outlook": "The primary driver of the",
+        "strategic_outlook": "The primary driver of current risk has shifted",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
         "status": "STABLE",
-        "latest_day_final": 71.2,
+        "latest_day_final": 71.0,
         "previous_day_simple": 72.0,
-        "global_avg": 21.6
+        "global_avg": 21.5
     },
     "daily_breakdown": [
         {
@@ -1395,11 +1395,11 @@
         },
         {
             "date": "2026-03-02",
-            "article_count": 603,
-            "active_article_count": 412,
-            "anchored_risk": 71.2,
-            "simple_avg": 12.0,
-            "active_avg": 17.6,
+            "article_count": 630,
+            "active_article_count": 436,
+            "anchored_risk": 71.0,
+            "simple_avg": 11.9,
+            "active_avg": 17.2,
             "top3_avg": 100.0,
             "max_risk": 100.0,
             "min_risk": 0.0,
@@ -1411,10 +1411,10 @@
             ],
             "avg_military_hits": 0.09,
             "avg_diplomatic_hits": 0.03,
-            "day_over_day_delta": -0.8,
+            "day_over_day_delta": -1.0,
             "contradiction_index": 0.2,
             "contradiction_boost": 0.0,
-            "final_risk": 71.2,
+            "final_risk": 71.0,
             "contradiction_ratio": 0.005
         }
     ],
@@ -48293,6 +48293,492 @@
                 "lebanon",
                 "< /a >",
                 "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "‘Simply not true’ UK is being dragged into Iraq-style conflict, says foreign secretary",
+            "sentiment_polarity": -0.856,
+            "sentiment_method": "vader",
+            "risk_score": 17.1,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "< p >",
+                "yvette cooper",
+                "britons",
+                "iran",
+                "war < /p > < ul > < li > < p > <"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Reports indicate jet downed in Kuwait as Iran strikes cont. - The Jerusalem Post",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> reports",
+                "kuwait",
+                "iran",
+                "strikes cont. < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Live Updates: Israelis injured, killed by Iranian missiles - The Jerusalem Post",
+            "sentiment_polarity": -0.802,
+            "sentiment_method": "vader",
+            "risk_score": 16.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "live updates",
+                "israelis",
+                "iranian",
+                "missiles < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "With Iraqi militia attacks on US forces, Iraq edges toward Iran war frontline - The Jerusalem Post",
+            "sentiment_polarity": -0.778,
+            "sentiment_method": "vader",
+            "risk_score": 63.0,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "iraqi",
+                "militia attacks",
+                "us forces",
+                "iraq",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Civil initatives return to 24/7 operation amid Iran strikes - The Jerusalem Post",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "civil initatives return",
+                "iran",
+                "strikes < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Who is Ali Larijani, the Iranian official who may play a key role in Iran's future? - analysis - The Jerusalem Post",
+            "sentiment_polarity": 0.414,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "who",
+                "ali larijani",
+                "iranian",
+                "key role",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "What to know about the latest US-Israeli attacks on Iran - AP News",
+            "sentiment_polarity": -0.44,
+            "sentiment_method": "vader",
+            "risk_score": 8.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "us-israeli",
+                "iran",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Lack of a clear Iran plan could suck US into a long conflict:‘Where does this go?’ - The Guardian",
+            "sentiment_polarity": -0.168,
+            "sentiment_method": "vader",
+            "risk_score": 3.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "lack",
+                "iran",
+                "suck us",
+                "long conflict",
+                "’ < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran conflict disrupts some Middle East oil, fuel assessments from reporting agency Platts - Reuters",
+            "sentiment_polarity": -0.318,
+            "sentiment_method": "vader",
+            "risk_score": 6.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "conflict disrupts",
+                "fuel assessments",
+                "platts",
+                "< /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Blasts shake Qatar, UAE, Kuwait as Iran’s retaliatory strikes continue - Al Jazeera",
+            "sentiment_polarity": -0.494,
+            "sentiment_method": "vader",
+            "risk_score": 9.9,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "blasts",
+                "qatar",
+                "uae",
+                "kuwait",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran war spreads across region as Israel strikes Hezbollah - CBS 19 News",
+            "sentiment_polarity": -0.751,
+            "sentiment_method": "vader",
+            "risk_score": 15.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "israel",
+                "hezbollah",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Erbil amid the crossfire of the US-Israel war on Iran - The New Arab",
+            "sentiment_polarity": -0.599,
+            "sentiment_method": "vader",
+            "risk_score": 12.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "erbil",
+                "us-israel",
+                "iran",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Gold climbs as U.S.-Israel strikes on Iran spark safe-haven demand - CNBC",
+            "sentiment_polarity": -0.153,
+            "sentiment_method": "vader",
+            "risk_score": 3.1,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "gold climbs",
+                "u.s.-israel",
+                "iran",
+                "safe-haven demand < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Pentagon reports three US troops killed in military operation against Iran - سانا",
+            "sentiment_polarity": -0.67,
+            "sentiment_method": "vader",
+            "risk_score": 13.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> pentagon reports",
+                "us troops",
+                "military operation",
+                "iran",
+                "< /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran conflict disrupts oil supply to Asian countries dependent on Middle East - Reuters",
+            "sentiment_polarity": -0.318,
+            "sentiment_method": "vader",
+            "risk_score": 6.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "conflict disrupts oil",
+                "asian countries",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices rise sharply after attacks in Middle East disrupt global energy supply - KOB.com",
+            "sentiment_polarity": -0.202,
+            "sentiment_method": "vader",
+            "risk_score": 4.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil prices rise",
+                "global energy",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "1970s-style oil shock loading? Crude may hit $100 if Strait of Hormuz shuts amid Middle East tensions - w - The Times of India",
+            "sentiment_polarity": -0.854,
+            "sentiment_method": "vader",
+            "risk_score": 17.1,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> 1970s-style oil shock",
+                "crude",
+                "strait",
+                "hormuz",
+                "w < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices jump and markets slide after strikes across Middle East - Oxford Mail",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil prices",
+                "markets slide",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil surges 9% as Iran conflict disrupts Middle Eastern supply flow - The Edge Malaysia",
+            "sentiment_polarity": -0.318,
+            "sentiment_method": "vader",
+            "risk_score": 6.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil surges",
+                "iran",
+                "conflict disrupts",
+                "flow < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran Rejects US Talks as Middle East Conflict Spreads - Discovery Alert",
+            "sentiment_polarity": -0.67,
+            "sentiment_method": "vader",
+            "risk_score": 1.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran rejects",
+                "talks",
+                "spreads",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 1,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices set for swings next week as US-Israel strikes raise supply uncertainty - CityNews Halifax",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil prices",
+                "us-israel",
+                "uncertainty < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel, Hezbollah trade fire: latest developments in Iran war - CBS 19 News",
+            "sentiment_polarity": -0.34,
+            "sentiment_method": "vader",
+            "risk_score": 6.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israel",
+                "hezbollah",
+                "trade fire",
+                "iran",
+                "war < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Phone, cellphone services cut across Iran as crowds celebrate report of Khamenei death - KOMO",
+            "sentiment_polarity": 0.382,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "phone",
+                "cellphone services",
+                "iran",
+                "khamenei",
+                "death < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran’s supreme leader Ayatollah Ali Khameni, it’s Defence minister and Chief of army staff killed in US-Israel air strikes - News On AIR",
+            "sentiment_polarity": -0.128,
+            "sentiment_method": "vader",
+            "risk_score": 2.6,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "’ s",
+                "supreme leader",
+                "ayatollah ali khameni",
+                "’ s"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel strikes Hezbollah in Lebanon after Iran-allied group launches missiles over the border - The Guardian",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israel",
+                "hezbollah",
+                "lebanon",
+                "iran-allied",
+                "group launches missiles"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israeli Strikes Kill at Least 31 in Lebanon as Iranian Attacks Intensify Across the Middle East - vocal.media",
+            "sentiment_polarity": -0.878,
+            "sentiment_method": "vader",
+            "risk_score": 17.6,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israeli strikes kill",
+                "least",
+                "lebanon",
+                "iranian",
+                "intensify across"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Middle East war widens as Israel bombs Lebanon; 31 reported dead | VIDEO - Mathrubhumi English",
+            "sentiment_polarity": -0.848,
+            "sentiment_method": "vader",
+            "risk_score": 17.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "war widens",
+                "israel",
+                "lebanon",
+                "dead |",
+                "video"
             ],
             "military_hits": 0,
             "diplomatic_hits": 0,
