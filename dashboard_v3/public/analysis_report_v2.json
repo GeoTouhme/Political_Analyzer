@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generated_at": "2026-03-02T15:01:10.151371",
+        "generated_at": "2026-03-02T15:09:32.064467",
         "article_count": 2973,
         "day_count": 59,
         "global_avg_risk": 20.4,
@@ -54739,6 +54739,128 @@
             "diplomatic_hits": 0,
             "source_name": "Unknown",
             "date": "2026-03-02"
+        }
+    ],
+    "ai_deep_analysis": [
+        {
+            "notion_id": "rss_2aa94d5910737bc1fc85711a2a00f783",
+            "title": "Israel’s protection gaps exposed under missile attacks - The Jerusalem Post",
+            "translated_title": null,
+            "date": "2026-03-02",
+            "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0yNVlhQ3VSMDlhbjZzaGgzY2hSMERoR2QyMkZ2M2NoOTFIS0YzSTg3RGZITnYtYndfSHVreTFmNlBOdGprQkdCMU5SaVlST3Q3RnJLUXNkel9RdEJk?oc=5",
+            "ai_risk_score": 98.9
+        },
+        {
+            "notion_id": "rss_3d144e64e53810768ab72cb15f94d498",
+            "title": "Why Iran has lashed out against Gulf states - The Jerusalem Post",
+            "translated_title": null,
+            "date": "2026-03-02",
+            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9sQUd1ZmpCSVRqSldTVlIybDNDR0VJZ3ZDRjRBNmtfQ3ZSZzBoZFBSVGMwbHctQmkwRkhwamFWQjJfRTdiaUlGMnpTSEJZMXZLdERBOUtkN3l1dnA4UGdGUzRkeVV2X0NFNHc?oc=5",
+            "ai_risk_score": 98.9
+        },
+        {
+            "notion_id": "rss_94e73d488a01bea9caf682b77e8ef375",
+            "title": "AWS's UAE data center shuts after fire amid Iran strikes - The Jerusalem Post",
+            "translated_title": null,
+            "date": "2026-03-02",
+            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1lMnlWUmZSNWkweU54bEJkSEwzSlRIZm1MNzZYRlJaanROOU9DdFlnVTBoc01VUVFadUI2Q1pSZEFmdWg1djB4SVR3aWhRZW1jcDltU3BqbERFTXluX2ZVUHVOTFVlUjcxYkE?oc=5",
+            "ai_risk_score": 98.9
+        },
+        {
+            "notion_id": "rss_23e1bb79eaf59d5525c2a6d475d2723b",
+            "title": "At least five wounded in Iran strike in Jerusalem area - The Jerusalem Post",
+            "translated_title": null,
+            "date": "2026-03-02",
+            "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5TeDk5Vm50WTV1ZGVNQ3dBRkZETHlsWnd4b3VuVkhMRldHS0ZTX2c2aTZSNmJVWE5GSEx2R3ptY25CZVBwVUw5NmhZejJxa0lUMWlsNk9jbWRHekNT?oc=5",
+            "ai_risk_score": 98.9
+        },
+        {
+            "notion_id": "rss_cdc5041ac772df42b53360a0c6650651",
+            "title": "Airlines keep canceling flights across Middle East as region's airspace remains closed - The Jerusalem Post",
+            "translated_title": null,
+            "date": "2026-03-02",
+            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBOVnNIT0diT24zUlpwMkhmdEJXQjR5MDVMLUViTXBxMmtOZno1U2s0cDJmeHJ6YnhjRl9sWGtIRmZISFVxc1NMUnR3ckd3NEtfS0wyblpHRFF5MmRSOHhPUnlGLVoxTGZLbFE?oc=5",
+            "ai_risk_score": 98.9
+        },
+        {
+            "notion_id": "q_d2102876343bc0065a12ac6def6018ee",
+            "title": "The 5 takeaways from the first 2 days of US-Israel war against Iran - South China Morning Post",
+            "translated_title": null,
+            "date": "2026-03-02",
+            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOc1FjTVVLQWliS0FtclBLR0d6WUdrSlJSb3R3XzZwVzNjM0owRnU5d1BuN2g1REIxeEpOOGFsWmxsZjM0UmNuYk5adlE4MUZLN2NzTUdWMktOWm1NTUl3aGxfTE1wcE55VVhGQ2ZhVVBQNXpudFRuaTBTZHZCMmFSaU5ud1JnM1VoYXZiR2lKWlVlbUVDb1ZtbXF0WlfSAZwBQVVfeXFMTU9kTDVMOGhfRnNEYnpnSEQ1d2VUendfM3hsRU0zbUk5ZHM0NWR2Z0pVeWN5VWZoRGpzaF9mNER0dmxYMFY3TkZSbnlaRjdXZ3VNUlFKRGdtME5ra0hVaEFZcEpCOUlyY0s1ME02ekZmQnpGZml3LUhpdTJRSWRWYVVRY0ZZN2pBVXFHOGxWejJsU2w3aFp4VmhsQ2tC?oc=5",
+            "ai_risk_score": 98.9
+        },
+        {
+            "notion_id": "q_cd97a19020852c55d8b5fd0300c6c442",
+            "title": "Oil prices set to swing next week amid US-Israel attack - Michael West Media",
+            "translated_title": null,
+            "date": "2026-03-02",
+            "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPemw4S0J4SXNyZEJiVHFmRm9oUzlhQjFCV2w3eFNuX21pMkN5aTdjcTU5M1VkNHczZk10UFp4ZzhEZ0NTWko1Y2xWNjlQQXgtM0lxZ2M4VW9jNmVFSVdmSDZudVR0eV9RR1RBTEZYRWFOODF4UTlLb3hLMmUyUzcxVV9fRVo2c1B0TF93?oc=5",
+            "ai_risk_score": 98.9
+        },
+        {
+            "notion_id": "rss_da28a2151c2e9b40857985da6609b52c",
+            "title": "Saudi Arabia, Israel pushed Trump to strike Iran for weeks before Operation Epic Fury - report - The Jerusalem Post",
+            "translated_title": null,
+            "date": "2026-03-02",
+            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5BNGNEVUFSUnVVZm5XMzRvWUJGdVA1Y1Z3cnJhUmN1emRKSTVOMzdSa3ktRlNKcXpCbEZKMDBrYmpVWXJSSFhTZGsyX0VsTGVFSFhNTXdNV0RaUW1kdDBSZFJTbU5BdG5VcHc?oc=5",
+            "ai_risk_score": 98.8
+        },
+        {
+            "notion_id": "rss_39bc9df7203d5270f030f33a8bcadf9e",
+            "title": "Annual pistachio exports reach $1.0b - Tehran Times",
+            "translated_title": null,
+            "date": "2026-03-02",
+            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQTjRKSmgxMG1wRlFJMGRHM25LOTFhcXg3SnZGS3BUUmc3SUdtb29kT0ZCOFhJdW12Y3Z2eHNMdThrT1NEWkFUOXg4QVJ0Z2NTRTRUdFl0WHNXWnBlU2IxM1ZrU25VQ1JDNzJaSlA2bkNuczVGR3VaSml1akxPdjFMRg?oc=5",
+            "ai_risk_score": 98.8
+        },
+        {
+            "notion_id": "q_50e155de0d063746591b87a52a4bfb12",
+            "title": "Oil prices rise sharply in market trading after attacks in Middle East disrupt global energy supply - WSMV",
+            "translated_title": null,
+            "date": "2026-03-02",
+            "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZDZTbjVEY3lJdnA1c3B6TmFldW83R3QzRGRsVWRLRkVuTU14TUE3WlBmRjRXdjJ6Z1ZQNnFOdjNvaFgyZTA3LUxLY1QyeF9mbWNyR2hrRmdXMVFEUTZnRGlfYTZSakJhNDM5bVUxTTNFRTdoWUpkX3loTjV2aVl5MEpkcU5vN0VldG53bGJsOXJSYkozS2dSM2lHaFZpYUUxN3J1Nm44RElnOUFYX2RKNTJyNmt6TmVSc05EdlNQd0tRa1Ns0gHYAUFVX3lxTE12cm8wMzR1UUtyZHM4WUdHT21JbDhNdWd3SlJxMWVsT1UyTGtUZmdEbnluYzFiTGFiQ1RqSjJwREhjZGNCYkdNaTd0cHF1RWctZG55VGRuSEJuS1E0Tjl6NlVHZUJEd3pwSmNkWUR4QVRoeXI1aXdXbm5DYjB4OVVQNmxHNkNrUEdaYjZYTFR4NlhISk5wMHl4MWZ3REVIazZXRmdzYmFKQ2ZJejlUcHllQUtpRUJGZlBtc3F2VHFVZjRxNzB5QkNha1FZMDVLS0xYVXFJRVR1Tg?oc=5",
+            "ai_risk_score": 98.8
+        },
+        {
+            "notion_id": "rss_3b5407d21d20b179363a9b8b8a8821ce",
+            "title": "In Syria, Hezbollah reduced to smuggling network - The Jerusalem Post",
+            "translated_title": null,
+            "date": "2026-03-02",
+            "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE94TExCS1FnYm9kQ2ZLdGZVeHQxMzNRdWJQeDMxN3ZFUEJlUTZtd3FnNmdFTXFORlY2VUUzaHUxSERWekpFSWhIZWREbGlGMmNFYUE4SWpEQldHb0lr?oc=5",
+            "ai_risk_score": 98.8
+        },
+        {
+            "notion_id": "rss_ec4b9d17c4be4a7f1b638b502eab05c8",
+            "title": "IDF more prepared for Iran missiles after June war - The Jerusalem Post",
+            "translated_title": null,
+            "date": "2026-03-02",
+            "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBvWThyb2tUQThXTDAzVktoVkJkQUVhMDhlU210UHdqTFJfN2tmbDUwa2ZXWkgwUkgxZFRmQ21tRE0tTXRvWUtvc3daWFZ3RkZOTDZyNGlySUp4dFg2?oc=5",
+            "ai_risk_score": 98.8
+        },
+        {
+            "notion_id": "q_b710fbf6a8da18e006d3e3a9e3bb73a9",
+            "title": "Oil prices rise sharply in market trading after attacks in Middle East disrupt supply - NPR",
+            "translated_title": null,
+            "date": "2026-03-02",
+            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQkZzQWRKYnVxNzBabkgtUGxDdXRPdEFMc2Y2YW9OZm5FZ0J3RlBuWkxJUGY5WmhvdkpFSERFRXYzZ25tZlJ5OVh0QVVOaU5DSmNvOVRjWnlJaXplcW1USXVQMmhFX2NnUGlIUW9CaDNBMjdMSDdod3cxZ3BfSTVMd0VlREw4UDhJRUE?oc=5",
+            "ai_risk_score": 98.8
+        },
+        {
+            "notion_id": "q_57099bb35500c7f32f65614bc46c7be6",
+            "title": "Brent crude jumps 10% amid concerns over Middle East conflict and potential oil supply disruptions - SSBCrack News",
+            "translated_title": null,
+            "date": "2026-03-02",
+            "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSnktN2ZhbG1rNUF2THVzSWh6Z2U2b2tlOElRb0JVNmVHTG0yVFBVcGtJalMtVS1CZlZCRE45em80a244STZkVmxEdDYwOU5RYmY5ZXl3VHp4a1RyVUNEdnk4a1pieDM3bWM2MG5Kd1VXOWtvelgxbm84Z3ZSSmZBOXdYZU56bjdlaExOT1BnTnl0c3poejBiUkFFYno5YmxheVE1MzB6eGNZM0UzV2VNTlV0MFlma19ERzR1ZHNVNHBzdw?oc=5",
+            "ai_risk_score": 98.8
+        },
+        {
+            "notion_id": "q_cde9199181189a1cc1c8675652184c1b",
+            "title": "Oil prices spike and stock futures tumble after Middle East attacks disrupt energy supply - Daily Express US",
+            "translated_title": null,
+            "date": "2026-03-02",
+            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUGtzeDdvU1ptbVBMaThrekdJS21FckZja3k4MHRMODZwMUUyRHlvRk5Ra3B5VDF0MXVzaGcyckM2a0VQbmFXWktsVTc1N09BZktjWHM3VVA1dnIwQlpqc2pUSHVBYk50eENqbDNwSm4zMUxPMmZfM1JkdlZUTmkxdmVkUkdNbWZnQ3VRdGUycVbSAZYBQVVfeXFMT1lnY0RfUFk3aDRnS1p3MVBpX2ZfN2xVN3htcE8yWEtpNDAzQXloYVNuX19RbXhUTlh0dFhjVHFMUzRvWWZuZFd6elVNOHM5UllTeWxHdFp3YlN4LVJoUEg0Z2ZfVTg0ZGFFOUxoYzRvUGcta0wwc05tVXZGbDJsSGUyUGdEZFN6U2pVTEkyT1lWTjdwdXRR?oc=5",
+            "ai_risk_score": 98.8
         }
     ]
 }
