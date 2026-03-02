@@ -1,18 +1,18 @@
 {
     "meta": {
-        "generated_at": "2026-03-02T11:31:05.250416",
-        "article_count": 2709,
+        "generated_at": "2026-03-02T12:01:00.659314",
+        "article_count": 2742,
         "day_count": 59,
-        "global_avg_risk": 21.3,
+        "global_avg_risk": 21.2,
         "max_risk_score": 100.0,
-        "strategic_outlook": "The primary driver of the current high-",
+        "strategic_outlook": "Strategic assessment unavailable due to Gemini API error.",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
         "status": "STABLE",
-        "latest_day_final": 71.0,
+        "latest_day_final": 71.1,
         "previous_day_simple": 72.0,
-        "global_avg": 21.3
+        "global_avg": 21.2
     },
     "daily_breakdown": [
         {
@@ -1395,11 +1395,11 @@
         },
         {
             "date": "2026-03-02",
-            "article_count": 699,
-            "active_article_count": 490,
-            "anchored_risk": 71.0,
-            "simple_avg": 12.0,
-            "active_avg": 17.1,
+            "article_count": 732,
+            "active_article_count": 515,
+            "anchored_risk": 71.1,
+            "simple_avg": 12.2,
+            "active_avg": 17.3,
             "top3_avg": 100.0,
             "max_risk": 100.0,
             "min_risk": 0.0,
@@ -1411,10 +1411,10 @@
             ],
             "avg_military_hits": 0.09,
             "avg_diplomatic_hits": 0.03,
-            "day_over_day_delta": -1.0,
+            "day_over_day_delta": -0.9,
             "contradiction_index": 0.1,
             "contradiction_boost": 0.0,
-            "final_risk": 71.0,
+            "final_risk": 71.1,
             "contradiction_ratio": 0.004
         }
     ],
@@ -50011,6 +50011,595 @@
                 "lebanon",
                 "iran",
                 "intensifies"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices rise sharply after US, Israeli attacks on Iran",
+            "sentiment_polarity": -0.572,
+            "sentiment_method": "vader",
+            "risk_score": 11.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "brent",
+                "trump",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Which teams are in the T20 World Cup semifinals and what’s the schedule?",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "title favourites",
+                "semifinals –",
+                "al jazeera"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Dubai's DP World says operations at UAE's Jebel Ali port resumed, notice shows - Reuters",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "dubai",
+                "dp",
+                "uae",
+                "jebel ali",
+                "notice shows < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "European military installations are  targeted in Iran retaliation",
+            "sentiment_polarity": -0.586,
+            "sentiment_method": "vader",
+            "risk_score": 11.7,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iranian",
+                "british royal air force base",
+                "akrotiri",
+                "cyprus"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "War widens to include Iranian-backed militias as Israeli and American planes pound Iran - AP News",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> war widens",
+                "iranian-backed",
+                "israeli",
+                "american planes",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Germany said considering joining Israel-US campaign against Iran - The Times of Israel",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "germany",
+                "israel-us",
+                "iran",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "European shares touch two-week lows on Middle East conflict - Reuters",
+            "sentiment_polarity": 0.103,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "european shares touch two-week lows",
+                "conflict < /a >",
+                "< font color=",
+                "# 6f6f6f",
+                "reuters"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "India news: Opposition criticizes Modi over Iran crisis - dw.com",
+            "sentiment_polarity": -0.34,
+            "sentiment_method": "vader",
+            "risk_score": 6.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "india",
+                "modi",
+                "iran",
+                "crisis < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Warships, explosive drones and stealth bombers: The high-tech weapons and hardware the US is using to attack Iran - CNN",
+            "sentiment_polarity": -0.743,
+            "sentiment_method": "vader",
+            "risk_score": 35.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "warships",
+                "explosive drones",
+                "stealth bombers",
+                "high-tech weapons",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Hundreds more flights cancelled as world faces worst travel chaos since Covid pandemic - The Guardian",
+            "sentiment_polarity": -0.877,
+            "sentiment_method": "vader",
+            "risk_score": 17.5,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "hundreds",
+                "travel chaos",
+                "covid",
+                "pandemic < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Pentagon’s Bombshell Admission on Trump’s Iran Claims Revealed - The Daily Beast",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> pentagon ’ s",
+                "bombshell admission",
+                "trump",
+                "’ s",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Pentagon tells Congress no sign that Iran was going to attack U.S. first, sources say - The Hindu",
+            "sentiment_polarity": -0.649,
+            "sentiment_method": "vader",
+            "risk_score": 13.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> pentagon",
+                "congress",
+                "iran",
+                "u.s.",
+                "< /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Pentagon tells Congress ‘no evidence Iran planned strike on US first’ - thenews.pk",
+            "sentiment_polarity": -0.128,
+            "sentiment_method": "vader",
+            "risk_score": 74.3,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "> pentagon",
+                "congress",
+                "iran",
+                "’ < /a >",
+                "< font color="
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Pentagon Tells Congress No Sign of Preemptive Strike from Iran, Sources Says - Tempo.co English",
+            "sentiment_polarity": -0.402,
+            "sentiment_method": "vader",
+            "risk_score": 43.8,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "> pentagon",
+                "tells congress",
+                "sign",
+                "preemptive strike",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "'They will pay a heavy price': Explosions rock cities across Middle East amid new wave of strikes - NZ Herald",
+            "sentiment_polarity": -0.103,
+            "sentiment_method": "vader",
+            "risk_score": 2.1,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> 'they",
+                "heavy price",
+                "explosions",
+                "rock cities",
+                "new wave"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran conflict disrupts oil supply to Asian countries dependent on Middle East - Korea JoongAng Daily",
+            "sentiment_polarity": -0.318,
+            "sentiment_method": "vader",
+            "risk_score": 6.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "conflict disrupts oil",
+                "asian countries",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Asia's oil and LNG dependence on the Middle East - Reuters",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "asia",
+                "'s oil",
+                "lng",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil surges as Iran conflict disrupts Middle Eastern supply flow - Arab News",
+            "sentiment_polarity": -0.318,
+            "sentiment_method": "vader",
+            "risk_score": 6.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil surges",
+                "iran",
+                "conflict disrupts",
+                "flow < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices rise sharply in market trading after attacks in Middle East disrupt global energy supply - Santa Cruz Sentinel",
+            "sentiment_polarity": -0.202,
+            "sentiment_method": "vader",
+            "risk_score": 4.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil prices rise",
+                "global energy",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices rise sharply after attacks in Middle East disrupt global energy supply - Delta Optimist",
+            "sentiment_polarity": -0.202,
+            "sentiment_method": "vader",
+            "risk_score": 4.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil prices rise",
+                "global energy",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices jump and markets slide after strikes across Middle East - London Now",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil prices",
+                "markets slide",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil soars above $80 as Middle East war rattles global markets and threatens supply chains - africannewsagency.com",
+            "sentiment_polarity": -0.758,
+            "sentiment_method": "vader",
+            "risk_score": 15.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil soars",
+                "war rattles",
+                "global markets",
+                "chains < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US-Israel Escalation Against Iran Sends Oil Toward $100 - The Eastern Herald",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 74.4,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "us-israel escalation against iran sends",
+                "toward",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel, Hezbollah trade fire: latest developments in Iran war - Key Biscayne Portal",
+            "sentiment_polarity": -0.34,
+            "sentiment_method": "vader",
+            "risk_score": 6.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israel",
+                "hezbollah",
+                "trade fire",
+                "iran",
+                "war < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel strikes Tehran: latest developments in Iran war - Twin States News",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israel",
+                "tehran",
+                "iran",
+                "war < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US and Israel launch attack on Iran, killing Supreme Leader Ayatollah Ali Khamenei - mariettatimes.com",
+            "sentiment_polarity": -0.599,
+            "sentiment_method": "vader",
+            "risk_score": 12.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> us",
+                "israel",
+                "launch attack",
+                "iran",
+                "supreme leader"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "What comes next for Iran’s leadership is uncertain. The country’s constitution calls for an assembly of experts to choose the next supreme leader, but that may not be possible in wartime. - Facebook",
+            "sentiment_polarity": 0.178,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "’ s leadership",
+                "country ’ s constitution calls",
+                "supreme leader",
+                "wartime. < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Kremlin says it is in constant contact with the Iranian leadership over 'outright aggression' against Tehran - Reuters",
+            "sentiment_polarity": -0.296,
+            "sentiment_method": "vader",
+            "risk_score": 5.9,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "kremlin",
+                "constant contact",
+                "iranian",
+                "'outright aggression",
+                "tehran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Why Khamenei’s death could spell the end of North Korea’s friendship with Iran - NK News",
+            "sentiment_polarity": -0.25,
+            "sentiment_method": "vader",
+            "risk_score": 5.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "khamenei",
+                "’ s death",
+                "korea",
+                "’ s friendship",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran state media confirms supreme leader killed by joint US-Israeli strikes | Nation and World | News - Las Vegas Review-Journal",
+            "sentiment_polarity": -0.527,
+            "sentiment_method": "vader",
+            "risk_score": 10.5,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "state media confirms",
+                "supreme leader",
+                "us-israeli",
+                "strikes |"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "The Iran Strike Is All About China - The Free Press",
+            "sentiment_polarity": 0.421,
+            "sentiment_method": "vader",
+            "risk_score": 77.5,
+            "risk_level": "CRITICAL",
+            "key_phrases": [
+                "iran strike",
+                "china",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Middle East on high alert: multi-front confrontation in the last 24 hours - Atalayar",
+            "sentiment_polarity": -0.026,
+            "sentiment_method": "vader",
+            "risk_score": 43.8,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "multi-front confrontation",
+                "hours < /a >",
+                "< font color=",
+                "# 6f6f6f",
+                "atalayar"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Hezbollah strikes trigger massive Israeli retaliation - MSN",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "hezbollah",
+                "strikes trigger",
+                "israeli",
+                "retaliation < /a >",
+                "< font color="
             ],
             "military_hits": 0,
             "diplomatic_hits": 0,
