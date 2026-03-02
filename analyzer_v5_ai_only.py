@@ -62,6 +62,7 @@ def main():
 
     # 4. Aggregation
     daily_results = []
+    df = df.dropna(subset=['date'])
     unique_dates = sorted(df['date'].unique())
     prev_final = None
 
