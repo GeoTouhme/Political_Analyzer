@@ -147,7 +147,16 @@ export default function App() {
           <p style={{ fontSize: 12, color: "#94a3b8", marginBottom: 16 }}>
             Top risk signals detected by the neural network trained on US-Iran war patterns.
           </p>
-          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+          <div style={{ 
+            display: "flex", 
+            flexDirection: "column", 
+            gap: 10,
+            maxHeight: "400px",
+            overflowY: "auto",
+            paddingRight: "8px",
+            scrollbarWidth: "thin",
+            scrollbarColor: "#ef4444 #0f172a"
+          }}>
             {aiAnalysis.map((ai, idx) => (
               <div key={idx} style={{ background: "#0f172a", borderRadius: 8, padding: "12px", display: "flex", alignItems: "center", gap: 12, border: "1px solid #1e293b" }}>
                 <div style={{ 
