@@ -58,7 +58,7 @@ def main():
 
     df['risk_score'] = ai_scores
     df['risk_level'] = df['risk_score'].apply(classify_risk)
-    df['date'] = pd.to_datetime(df['date']).dt.strftime('%Y-%m-%d')
+    df['date'] = pd.to_datetime(df['date'], format='mixed').dt.strftime('%Y-%m-%d')
 
     # 4. Aggregation
     daily_results = []
