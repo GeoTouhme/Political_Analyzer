@@ -87,7 +87,7 @@ export default function App() {
       {/* Header - Simple & Clean */}
       <div style={{ marginBottom: 16, textAlign: 'center' }}>
         <h1 style={{ fontSize: 20, fontWeight: 800, color: "#f8fafc", margin: 0 }}>
-          Conflict Monitor v4.0
+          PGCM - Persian Gulf Conflict Monitor
         </h1>
       </div>
 
