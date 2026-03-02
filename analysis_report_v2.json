@@ -1,18 +1,18 @@
 {
     "meta": {
-        "generated_at": "2026-03-02T09:01:24.241764",
-        "article_count": 2556,
+        "generated_at": "2026-03-02T09:31:03.694716",
+        "article_count": 2588,
         "day_count": 59,
-        "global_avg_risk": 21.9,
+        "global_avg_risk": 21.7,
         "max_risk_score": 100.0,
-        "strategic_outlook": "The primary driver of the current",
+        "strategic_outlook": "The primary driver of the",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
         "status": "STABLE",
         "latest_day_final": 71.2,
         "previous_day_simple": 72.0,
-        "global_avg": 21.9
+        "global_avg": 21.7
     },
     "daily_breakdown": [
         {
@@ -1395,11 +1395,11 @@
         },
         {
             "date": "2026-03-02",
-            "article_count": 546,
-            "active_article_count": 377,
+            "article_count": 578,
+            "active_article_count": 395,
             "anchored_risk": 71.2,
-            "simple_avg": 12.2,
-            "active_avg": 17.7,
+            "simple_avg": 12.1,
+            "active_avg": 17.6,
             "top3_avg": 100.0,
             "max_risk": 100.0,
             "min_risk": 0.0,
@@ -1409,7 +1409,7 @@
                 "Dramatic moment Iran’s retaliatory missile barrage hits Israel",
                 "Sustained war with Iran could drain US missile stockpiles, test escalation control - Fox News"
             ],
-            "avg_military_hits": 0.1,
+            "avg_military_hits": 0.09,
             "avg_diplomatic_hits": 0.03,
             "day_over_day_delta": -0.8,
             "contradiction_index": 0.2,
@@ -47270,6 +47270,582 @@
                 "lebanon",
                 "hezbollah",
                 "dead < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Rubio to brief US House and Senate leaders on Monday - Reuters",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "rubio",
+                "brief us house",
+                "senate leaders",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "UAE journalist: Iran regime survivors spared for a reason - The Jerusalem Post",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "uae",
+                "iran",
+                "regime survivors",
+                "reason < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Ex-Israel Navy chief: Iran burned regional bridges - The Jerusalem Post",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "ex-israel",
+                "iran",
+                "regional bridges < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Leader of the Islamic Revolution Ayatollah Seyyed Ali Khamenei martyred in his office - Tehran Times",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> leader",
+                "islamic revolution ayatollah seyyed ali khamenei",
+                "office < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "War widens to include Iranian-backed militias as Israeli and American planes pound Iran - FOX19 | Cincinnati",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> war widens",
+                "iranian-backed",
+                "israeli",
+                "american planes",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran‑Israel War: US Embassy in Kuwait Under Attack, Drone, Missile Threats Trigger Security Alerts & Escalate Gulf Tensions - The Sunday Guardian",
+            "sentiment_polarity": -0.813,
+            "sentiment_method": "vader",
+            "risk_score": 72.2,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "iran‑israel",
+                "us embassy",
+                "kuwait",
+                "attack",
+                "drone"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "War widens across West Asia as U.S., Israel launch joint attack on Iran: In Pictures - The Hindu",
+            "sentiment_polarity": -0.477,
+            "sentiment_method": "vader",
+            "risk_score": 9.5,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> war widens",
+                "asia",
+                "u.s.",
+                "israel",
+                "launch joint attack"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US, Israel and Iran trade strikes amid deadly conflict - NBC 5 Chicago",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> us",
+                "israel",
+                "iran",
+                "trade strikes",
+                "conflict < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Pentagon Admits Lack of Evidence on Iranian Strike Plans - Caspian Post",
+            "sentiment_polarity": -0.153,
+            "sentiment_method": "vader",
+            "risk_score": 77.5,
+            "risk_level": "CRITICAL",
+            "key_phrases": [
+                "> pentagon",
+                "admits lack",
+                "evidence",
+                "iranian strike plans",
+                "< /a >"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "The Pentagon strongarmed AI firms before Iran strikes – in dark news for the future of ‘ethical AI’ - The Conversation",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "ai",
+                "iran",
+                "strikes –",
+                "dark news",
+                "ai"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Crude Oil Prices Jump as US-Israel-Iran War Escalates - Meyka",
+            "sentiment_polarity": -0.599,
+            "sentiment_method": "vader",
+            "risk_score": 12.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "crude",
+                "prices",
+                "us-israel-iran",
+                "escalates",
+                "< /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Gas prices could surge in Saskatchewan after Middle East strikes - paNOW",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> gas prices",
+                "saskatchewan",
+                "strikes < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran war could see 'record petrol prices' for Brits as drivers issued warning - The Mirror",
+            "sentiment_polarity": -0.599,
+            "sentiment_method": "vader",
+            "risk_score": 12.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "'record petrol prices",
+                "brits",
+                "warning < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "India’s oil and gas supplies secure despite Strait of Hormuz tensions - The New Indian Express",
+            "sentiment_polarity": 0.34,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "india",
+                "’ s oil",
+                "gas supplies",
+                "strait",
+                "hormuz"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Hormuz flashpoint jolts oil markets, India remains confident on energy security - Organiser",
+            "sentiment_polarity": 0.649,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "hormuz",
+                "flashpoint jolts oil markets",
+                "india",
+                "energy security < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Africa’s Energy sovereignty is being tested in the Strait of Hormuz - MyJoyOnline",
+            "sentiment_polarity": 0.273,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "africa",
+                "’ s",
+                "energy",
+                "strait",
+                "hormuz"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel, Hezbollah trade fire: latest developments in Iran war - The Moore County News-Press",
+            "sentiment_polarity": -0.34,
+            "sentiment_method": "vader",
+            "risk_score": 6.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israel",
+                "hezbollah",
+                "trade fire",
+                "iran",
+                "war < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Trump vows to avenge deaths of US troops: latest Iran developments - Twin States News",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "trump",
+                "avenge deaths",
+                "us troops",
+                "iran",
+                "developments < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel strikes Tehran: latest developments in Iran war - Elk Valley Times",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israel",
+                "tehran",
+                "iran",
+                "war < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran’s Larijani refutes claims Tehran pushed to resume US talks - Al Jazeera",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "’ s",
+                "larijani",
+                "refutes claims",
+                "tehran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 1,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Khamenei's killing sparks concerns over prolonged regional chaos - China Military",
+            "sentiment_polarity": -0.66,
+            "sentiment_method": "vader",
+            "risk_score": 13.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "khamenei",
+                "regional chaos < /a >",
+                "< font color=",
+                "# 6f6f6f",
+                "china"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Supreme Leader Ayatollah Ali Khamenei, who ruled Iran with iron grip, killed in strike, Trump says - Los Angeles Times",
+            "sentiment_polarity": -0.718,
+            "sentiment_method": "vader",
+            "risk_score": 14.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "supreme leader",
+                "ayatollah ali khamenei",
+                "iran",
+                "trump",
+                "< /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "After Khamenei's Killing, Qom's Clerics Hold Key To Next Supreme Leader - NDTV",
+            "sentiment_polarity": -0.202,
+            "sentiment_method": "vader",
+            "risk_score": 4.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "khamenei",
+                "killing",
+                "qom",
+                "clerics hold key",
+                "supreme leader < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israeli airstrikes kill senior Hezbollah leader; 30+ reported dead across Lebanon - شفق نيوز",
+            "sentiment_polarity": -0.875,
+            "sentiment_method": "vader",
+            "risk_score": 17.5,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israeli",
+                "hezbollah",
+                "lebanon",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israeli airstrikes resume in Lebanon - شفق نيوز",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israeli",
+                "airstrikes resume",
+                "lebanon",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "BREAKING: Hezbollah Launches Missiles Toward Israel — And The Region Holds Its Breath - Binance",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "breaking",
+                "hezbollah launches",
+                "toward israel",
+                "region holds",
+                "breath"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "IDF strikes Hezbollah targets in Lebanon after projectile fire toward Northern Israel; 31 killed - Indiablooms",
+            "sentiment_polarity": -0.599,
+            "sentiment_method": "vader",
+            "risk_score": 12.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "idf",
+                "hezbollah",
+                "lebanon",
+                "projectile fire",
+                "israel"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Hezbollah Fires Advanced Rockets As Israel Targets Lebanon Infrastructure - streamlinefeed.co.ke",
+            "sentiment_polarity": 0.25,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "hezbollah fires advanced rockets",
+                "israel targets lebanon infrastructure",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Bahrain Joins Oman, Kuwait, UAE, Saudi Arabia, and Qatar as Taiwan Issues Orange Travel Alert Amid Escalating Middle East Tensions: All You Need To Know - Travel And Tour World",
+            "sentiment_polarity": -0.128,
+            "sentiment_method": "vader",
+            "risk_score": 2.6,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "bahrain joins oman",
+                "kuwait",
+                "uae",
+                "saudi arabia",
+                "qatar"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israeli Army Issues Urgent Warnings to Evacuate 53 Villages in Lebanon - Sada Elbalad english",
+            "sentiment_polarity": -0.103,
+            "sentiment_method": "vader",
+            "risk_score": 2.1,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israeli",
+                "issues urgent warnings",
+                "evacuate",
+                "villages",
+                "lebanon"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US-Israel Attack Iran: 31 Killed, 149 Wounded In Israeli Strikes On Lebanon After Hezbollah Rocket Fire - Free Press Journal",
+            "sentiment_polarity": -0.878,
+            "sentiment_method": "vader",
+            "risk_score": 17.6,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "us-israel attack iran",
+                "killed",
+                "wounded",
+                "israeli strikes",
+                "lebanon"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "The barrel suddenly turned to Lebanon! Bloody threat from the Israeli commander. - Haberler",
+            "sentiment_polarity": -0.764,
+            "sentiment_method": "vader",
+            "risk_score": 15.3,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "lebanon",
+                "bloody",
+                "israeli",
+                "commander. < /a >",
+                "< font color="
             ],
             "military_hits": 0,
             "diplomatic_hits": 0,
