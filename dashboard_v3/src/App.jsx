@@ -180,25 +180,71 @@ export default function App() {
       {/* INTELLIGENCE FEED */}
       <div style={{ marginBottom: 20 }}>
         <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16 }}>Intelligence Feed</h3>
+        
+        {/* Search & Filters */}
         <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 20 }}>
           <input 
-            type="text" placeholder="Search articles..." value={searchTerm}
+            type="text" 
+            placeholder="Search articles..." 
+            value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            style={{ background: "#0f172a", border: "1px solid #1e293b", borderRadius: 8, padding: "10px 14px", color: "#f8fafc", fontSize: 14, outline: "none" }}
+            style={{
+              background: "#0f172a", border: "1px solid #1e293b", borderRadius: 8,
+              padding: "10px 14px", color: "#f8fafc", fontSize: 14, outline: "none"
+            }}
           />
+          <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+            {["ALL", "CRITICAL", "HIGH", "MEDIUM", "LOW"].map(lvl => (
+              <button
+                key={lvl}
+                onClick={() => setFilterLevel(lvl)}
+                style={{
+                  padding: "6px 12px", borderRadius: "20px", fontSize: 11, fontWeight: 600,
+                  cursor: "pointer", border: "1px solid #1e293b",
+                  background: filterLevel === lvl ? (LEVEL_COLOR[lvl] || "#3b82f6") : "#0f172a",
+                  color: filterLevel === lvl ? (lvl === "MEDIUM" ? "#000" : "#fff") : "#94a3b8",
+                  transition: "all 0.2s"
+                }}
+              >
+                {lvl}
+              </button>
+            ))}
+          </div>
         </div>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: 12, maxHeight: "500px", overflowY: "auto" }}>
-          {filteredArticles.map((art, idx) => (
-            <div key={idx} style={{ background: "#0f172a", border: "1px solid #1e293b", borderLeft: `4px solid ${LEVEL_COLOR[art.risk_level]}`, borderRadius: 8, padding: "14px" }}>
-              <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
-                <span style={{ fontSize: 10, fontWeight: 700, color: LEVEL_COLOR[art.risk_level] }}>{art.risk_level} — {art.risk_score}</span>
+        {/* Article List with Internal Scroll */}
+        <div style={{ 
+          display: "flex", 
+          flexDirection: "column", 
+          gap: 12,
+          maxHeight: "600px",
+          overflowY: "auto",
+          paddingRight: "8px",
+          scrollbarWidth: "thin",
+          scrollbarColor: "#1e293b #020817"
+        }}>
+          {filteredArticles.length > 0 ? filteredArticles.map((art, idx) => (
+            <div key={idx} style={{
+              background: "#0f172a", border: "1px solid #1e293b", 
+              borderLeft: `4px solid ${LEVEL_COLOR[art.risk_level]}`,
+              borderRadius: 8, padding: "14px"
+            }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 6 }}>
+                <span style={{ fontSize: 10, fontWeight: 700, color: LEVEL_COLOR[art.risk_level], letterSpacing: 0.5 }}>
+                  {art.risk_level} — {art.risk_score}
+                </span>
                 <span style={{ fontSize: 10, color: "#64748b" }}>{art.date}</span>
               </div>
-              <div style={{ fontSize: 14, fontWeight: 600, color: "#f1f5f9", marginBottom: 4 }}>{art.title}</div>
-              <div style={{ fontSize: 11, color: "#64748b" }}>Source: {art.source_name}</div>
+              <div style={{ fontSize: 14, fontWeight: 600, color: "#f1f5f9", marginBottom: 8, lineHeight: 1.4 }}>
+                {art.title}
+              </div>
+              <div style={{ fontSize: 11, color: "#64748b", display: "flex", justifyContent: "space-between" }}>
+                <span>Source: <strong style={{color: "#94a3b8"}}>{art.source_name || "RSS Feed"}</strong></span>
+              </div>
             </div>
-          ))}
+          )) : (
+            <div style={{ textAlign: "center", color: "#64748b", padding: "40px 0" }}>No articles found matching filters.</div>
+          )}
         </div>
       </div>
     </div>
