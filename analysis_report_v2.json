@@ -1,16 +1,16 @@
 {
     "meta": {
-        "generated_at": "2026-03-02T07:31:02.282542",
-        "article_count": 2486,
+        "generated_at": "2026-03-02T08:01:11.479989",
+        "article_count": 2505,
         "day_count": 59,
         "global_avg_risk": 22.1,
         "max_risk_score": 100.0,
-        "strategic_outlook": "The primary driver of the current",
+        "strategic_outlook": "The primary driver of the current high",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
         "status": "STABLE",
-        "latest_day_final": 71.2,
+        "latest_day_final": 71.3,
         "previous_day_simple": 72.0,
         "global_avg": 22.1
     },
@@ -1395,11 +1395,11 @@
         },
         {
             "date": "2026-03-02",
-            "article_count": 476,
-            "active_article_count": 330,
-            "anchored_risk": 71.2,
+            "article_count": 495,
+            "active_article_count": 342,
+            "anchored_risk": 71.3,
             "simple_avg": 12.3,
-            "active_avg": 17.7,
+            "active_avg": 17.9,
             "top3_avg": 100.0,
             "max_risk": 100.0,
             "min_risk": 0.0,
@@ -1411,10 +1411,10 @@
             ],
             "avg_military_hits": 0.1,
             "avg_diplomatic_hits": 0.03,
-            "day_over_day_delta": -0.8,
+            "day_over_day_delta": -0.7,
             "contradiction_index": 0.2,
             "contradiction_boost": 0.0,
-            "final_risk": 71.2,
+            "final_risk": 71.3,
             "contradiction_ratio": 0.006
         }
     ],
@@ -46014,6 +46014,346 @@
                 "airstrike. < /a >"
             ],
             "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "HOLD-Analysis: Khamenei’s killing leaves Iran’s ‘axis’ in disarray",
+            "sentiment_polarity": -0.852,
+            "sentiment_method": "vader",
+            "risk_score": 17.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "tehran",
+                "‘ burn",
+                "suicidal revenge",
+                "local survival"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "After Iran’s salvo hit their skylines, will Gulf states enter the war?",
+            "sentiment_polarity": -0.691,
+            "sentiment_method": "vader",
+            "risk_score": 13.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "gulf states",
+                "impossible choice",
+                "iranian",
+                "israel"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Daughter and grandchild of Iran's Khamenei killed in US-Israeli strikes, state media says - Reuters",
+            "sentiment_polarity": -0.791,
+            "sentiment_method": "vader",
+            "risk_score": 15.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "daughter",
+                "iran",
+                "khamenei",
+                "us-israeli",
+                "state media"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "What can China do to slow down its rising currency? - Reuters",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "china",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f",
+                "reuters"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Irish Jews report verbal abuse, vandalism, threats - The Jerusalem Post",
+            "sentiment_polarity": -0.637,
+            "sentiment_method": "vader",
+            "risk_score": 12.7,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "jews",
+                "report verbal abuse",
+                "threats < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "IDF strikes Hezbollah in response to northern attack - The Jerusalem Post",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "idf",
+                "hezbollah",
+                "northern attack < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Hezbollah leader Mohammad Raad killed in IDF strikes - The Jerusalem Post",
+            "sentiment_polarity": -0.67,
+            "sentiment_method": "vader",
+            "risk_score": 13.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "hezbollah",
+                "mohammad raad",
+                "idf",
+                "strikes < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US-Iran war spreads: Israel bombs Hezbollah targets in Beirut; Gulf nations vow to defend themselves — ke - The Times of India",
+            "sentiment_polarity": -0.599,
+            "sentiment_method": "vader",
+            "risk_score": 12.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "us-iran",
+                "israel",
+                "hezbollah",
+                "beirut",
+                "gulf nations vow"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "After Iran’s salvo hit their skylines, will Gulf states enter the war? - Al Jazeera",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "’ s salvo",
+                "gulf states",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US intel did not suggest a preemptive strike from Iran before US-Israeli attacks, AP sources say - Upper Michigan's Source",
+            "sentiment_polarity": -0.527,
+            "sentiment_method": "vader",
+            "risk_score": 43.8,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "> us intel",
+                "preemptive strike",
+                "iran",
+                "us-israeli",
+                "< /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Live. Europe Today Special: European leaders react to US-Israeli war on Iran - Euronews.com",
+            "sentiment_polarity": -0.296,
+            "sentiment_method": "vader",
+            "risk_score": 5.9,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "live",
+                "europe",
+                "european leaders",
+                "us-israeli",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US and Israel pound Iran as Trump signals willingness to talk to new leaders after Khamenei's death - Toronto Star",
+            "sentiment_polarity": 0.273,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> us",
+                "israel",
+                "iran",
+                "trump",
+                "signals willingness"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Pentagon tells Congress no sign that Iran was going to attack US first, sources say - The Economic Times",
+            "sentiment_polarity": -0.649,
+            "sentiment_method": "vader",
+            "risk_score": 13.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> pentagon",
+                "congress",
+                "iran",
+                "attack us",
+                "< /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Dire Straits for Global Oil Trade Amid Hormuz Shipping Disruptions - Global Banking & Finance Review®",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "dire straits",
+                "global",
+                "oil trade",
+                "amid hormuz shipping disruptions",
+                "< /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Some celebrate in Iran after supreme leader's death, but deep fear and uncertainty remain - News4JAX",
+            "sentiment_polarity": -0.735,
+            "sentiment_method": "vader",
+            "risk_score": 14.7,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "supreme leader 's death",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Blow after blow to the power of Iran and its proxy militias set the stage for US-Israel attacks - WGNO",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "blow",
+                "iran",
+                "proxy militias",
+                "us-israel",
+                "attacks < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Death of Iran's supreme leader is deeply personal for Brooklyn native taken hostage in Tehran 1979 - News12 | Westchester",
+            "sentiment_polarity": 0.557,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "death",
+                "iran",
+                "supreme leader",
+                "brooklyn",
+                "tehran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "What to Know About Iran's Revolutionary Guard, a Powerful Force Within the Country's Theocracy - U.S. News & World Report",
+            "sentiment_polarity": 0.421,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "know",
+                "iran",
+                "revolutionary guard",
+                "powerful",
+                "country 's"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel Preventive Strike on Iran: Critical Escalation in Middle East Tensions - CryptoRank",
+            "sentiment_polarity": -0.421,
+            "sentiment_method": "vader",
+            "risk_score": 100.0,
+            "risk_level": "CRITICAL",
+            "key_phrases": [
+                "israel preventive strike",
+                "iran",
+                "critical escalation",
+                "tensions",
+                "< /a >"
+            ],
+            "military_hits": 2,
             "diplomatic_hits": 0,
             "source_name": "Unknown",
             "date": "2026-03-02"
