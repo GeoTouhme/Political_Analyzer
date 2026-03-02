@@ -1,18 +1,18 @@
 {
     "meta": {
-        "generated_at": "2026-03-02T05:31:12.213326",
-        "article_count": 2356,
+        "generated_at": "2026-03-02T06:01:25.869738",
+        "article_count": 2402,
         "day_count": 59,
-        "global_avg_risk": 22.7,
+        "global_avg_risk": 22.6,
         "max_risk_score": 100.0,
-        "strategic_outlook": "The primary driver of the current",
+        "strategic_outlook": "The primary driver of current",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
         "status": "STABLE",
-        "latest_day_final": 71.1,
+        "latest_day_final": 71.4,
         "previous_day_simple": 72.0,
-        "global_avg": 22.7
+        "global_avg": 22.6
     },
     "daily_breakdown": [
         {
@@ -1395,11 +1395,11 @@
         },
         {
             "date": "2026-03-02",
-            "article_count": 346,
-            "active_article_count": 250,
-            "anchored_risk": 71.1,
-            "simple_avg": 12.7,
-            "active_avg": 17.5,
+            "article_count": 392,
+            "active_article_count": 276,
+            "anchored_risk": 71.4,
+            "simple_avg": 12.8,
+            "active_avg": 18.2,
             "top3_avg": 100.0,
             "max_risk": 100.0,
             "min_risk": 0.0,
@@ -1411,11 +1411,11 @@
             ],
             "avg_military_hits": 0.11,
             "avg_diplomatic_hits": 0.03,
-            "day_over_day_delta": -0.9,
+            "day_over_day_delta": -0.6,
             "contradiction_index": 0.2,
             "contradiction_boost": 0.0,
-            "final_risk": 71.1,
-            "contradiction_ratio": 0.009
+            "final_risk": 71.4,
+            "contradiction_ratio": 0.008
         }
     ],
     "articles": [
@@ -43675,6 +43675,834 @@
                 "hezbollah",
                 "'s retaliatory attack",
                 "khamenei"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran’s annual saffron production rises 20% - Tehran Times",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "’ s",
+                "annual saffron production rises",
+                "% < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Dezful shines as premier holiday destination - Tehran Times",
+            "sentiment_polarity": 0.402,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "dezful",
+                "premier holiday destination < /a >",
+                "< font color=",
+                "# 6f6f6f",
+                "tehran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "'Iran-Tajikistan ties rooted in deep history’ - Tehran Times",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> 'iran-tajikistan ties",
+                "deep history ’ < /a >",
+                "< font color=",
+                "# 6f6f6f",
+                "tehran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "CBI opens 5 new foreign bank accounts - Tehran Times",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "cbi",
+                "new foreign bank accounts < /a >",
+                "< font color=",
+                "# 6f6f6f",
+                "tehran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Saffron exports increase 33% in 10 months - Tehran Times",
+            "sentiment_polarity": 0.318,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "saffron",
+                "exports increase",
+                "months < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Top Iranian archaeologist passes away at 96 - Tehran Times",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "top iranian",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f",
+                "tehran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran’s historic Yazd city inscribed on UNESCO World Heritage List - Tehran Times",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "’ s",
+                "yazd",
+                "unesco",
+                "world heritage"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Winners of International Mendeleev Olympiad in Сhinese Shenzhen are announced - Tehran Times",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "winners",
+                "mendeleev olympiad",
+                "shenzhen",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Markets begin to react as Trump’s attack on Iran risks hitting American pocketbooks - The Washington Post",
+            "sentiment_polarity": -0.637,
+            "sentiment_method": "vader",
+            "risk_score": 12.7,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "markets",
+                "trump",
+                "’ s attack",
+                "iran",
+                "american pocketbooks < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Kaine to force Senate vote on Iran war, which Trump warns could last ‘weeks’ - Breaking Defense",
+            "sentiment_polarity": -0.649,
+            "sentiment_method": "vader",
+            "risk_score": 13.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "kaine",
+                "force senate vote",
+                "iran",
+                "trump",
+                "‘ weeks ’ < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Three US Troops Killed In Iran Operations: Pentagon - Ommcom News",
+            "sentiment_polarity": -0.67,
+            "sentiment_method": "vader",
+            "risk_score": 13.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "troops killed",
+                "iran operations",
+                "pentagon < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices rise in early market trading after attacks in Middle East disrupt global energy supply - KAKE",
+            "sentiment_polarity": -0.202,
+            "sentiment_method": "vader",
+            "risk_score": 4.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil prices rise",
+                "early market",
+                "global energy",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices rise sharply in market trading after attacks in Middle East disrupt global energy supply - Tribune India",
+            "sentiment_polarity": -0.202,
+            "sentiment_method": "vader",
+            "risk_score": 4.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil prices rise",
+                "global energy",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US Israel attack Iran: Oil prices rise sharply after attacks in Middle East disrupt global energy supply - Mid-day",
+            "sentiment_polarity": -0.599,
+            "sentiment_method": "vader",
+            "risk_score": 12.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> us",
+                "israel",
+                "iran",
+                "oil prices rise",
+                "global energy"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "South Korea ready to release SPR after oil surge - Quantum Commodity Intelligence",
+            "sentiment_polarity": 0.361,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "korea",
+                "spr",
+                "oil surge < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "India Unlikely to Face Immediate Oil Supply Disruption Amid Strait of Hormuz Tensions - Daily Pioneer",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 28.9,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "india unlikely",
+                "face immediate",
+                "oil supply",
+                "disruption amid strait",
+                "hormuz tensions"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Amid Iran Crisis, India Unlikely To Face Near-Term Oil Disruption; Prolonged Blockade Of The Strait Of Hormuz Poses Challenge - ETV Bharat",
+            "sentiment_polarity": -0.765,
+            "sentiment_method": "vader",
+            "risk_score": 57.3,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "amid iran crisis",
+                "india unlikely",
+                "face near-term",
+                "disruption",
+                "prolonged blockade"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Global oil prices to rise as US, Israel launch massive attack on Iran - lokmattimes.com",
+            "sentiment_polarity": -0.477,
+            "sentiment_method": "vader",
+            "risk_score": 9.5,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "global",
+                "oil prices",
+                "israel",
+                "massive attack",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Escalating Middle East Tensions Threaten Indias Trade As Strait Of Hormuz Faces Disruption - Free Press Journal",
+            "sentiment_polarity": -0.649,
+            "sentiment_method": "vader",
+            "risk_score": 13.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "escalating",
+                "tensions threaten indias",
+                "strait",
+                "hormuz faces disruption",
+                "< /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices surge 8% as Iran conflict and Strait of Hormuz tensions shake global markets - BusinessLine",
+            "sentiment_polarity": -0.691,
+            "sentiment_method": "vader",
+            "risk_score": 13.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil prices surge",
+                "iran",
+                "strait",
+                "hormuz",
+                "global markets < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel, Hezbollah trade fire: latest developments in Iran war - norfolkneradio.com",
+            "sentiment_polarity": -0.34,
+            "sentiment_method": "vader",
+            "risk_score": 6.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israel",
+                "hezbollah",
+                "trade fire",
+                "iran",
+                "war < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Phone, cellphone services cut across Iran as crowds celebrate report of Khamenei death - KSNV",
+            "sentiment_polarity": 0.382,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "phone",
+                "cellphone services",
+                "iran",
+                "khamenei",
+                "death < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran’s Regime May Survive, but the Middle East Will Be Changed - The New York Times",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "’ s",
+                "regime may survive",
+                "will be changed",
+                "< /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "LIVE BLOG: Israel Strikes Lebanon as Hezbollah Joins Fighting, Iran Widens Offensive - Day 3 - Palestine Chronicle",
+            "sentiment_polarity": -0.791,
+            "sentiment_method": "vader",
+            "risk_score": 15.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "live blog",
+                "israel strikes lebanon",
+                "hezbollah joins fighting",
+                "iran widens offensive",
+                "< /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Top updates: Israel strikes Lebanon after Hezbollah fires missiles across border - Scroll.in",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "top",
+                "israel",
+                "lebanon",
+                "hezbollah",
+                "fires missiles"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran starts five-year tobacco-free national plan - Tehran Times",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "five-year tobacco-free",
+                "national plan < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Ayatollah Khamenei: Iran’s presence in the region is political - Tehran Times",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "ayatollah khamenei",
+                "iran",
+                "’ s presence",
+                "political < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Naqsh-e Jahan: a journey through Isfahan’s architectural marvel - Tehran Times",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "naqsh-e jahan",
+                "isfahan",
+                "’ s architectural",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Zangezur: The corridor that could break the Caucasus - Tehran Times",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "zangezur",
+                "caucasus",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Self-sufficiency in equipment production a top priority of Iran Army: commander - Tehran Times",
+            "sentiment_polarity": 0.202,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "self-sufficiency",
+                "equipment production",
+                "top priority",
+                "iran",
+                "commander < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Dramatic moment Iran’s retaliatory missile barrage hits Israel - Al Jazeera",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 77.5,
+            "risk_level": "CRITICAL",
+            "key_phrases": [
+                "dramatic",
+                "iran",
+                "’ s retaliatory missile barrage hits",
+                "israel",
+                "< /a >"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel strikes Lebanon following Hezbollah attacks, widening Iran conflict - Reuters",
+            "sentiment_polarity": -0.66,
+            "sentiment_method": "vader",
+            "risk_score": 13.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israel",
+                "lebanon",
+                "hezbollah",
+                "iran",
+                "conflict < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Britain to let US use bases to strike Iran — as it happened - The Times",
+            "sentiment_polarity": -0.128,
+            "sentiment_method": "vader",
+            "risk_score": 67.6,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "britain",
+                "us use bases",
+                "iran",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel bombs Beirut after Hezbollah launches rocket attack - Al Jazeera",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israel",
+                "beirut",
+                "hezbollah",
+                "launches rocket attack < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Fighting Between Israel and Hezbollah Reignites as Iran War Expands - The New York Times",
+            "sentiment_polarity": -0.599,
+            "sentiment_method": "vader",
+            "risk_score": 12.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "fighting",
+                "israel",
+                "hezbollah reignites",
+                "iran",
+                "expands"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Pentagon Undercuts White House’s Iran Preemptive Strike Claim: Report - Newsweek",
+            "sentiment_polarity": -0.128,
+            "sentiment_method": "vader",
+            "risk_score": 85.0,
+            "risk_level": "CRITICAL",
+            "key_phrases": [
+                "> pentagon",
+                "undercuts",
+                "white house ’ s",
+                "iran preemptive strike claim",
+                "< /a >"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices rise sharply after attacks in Middle East disrupt global energy supply - WKMG",
+            "sentiment_polarity": -0.202,
+            "sentiment_method": "vader",
+            "risk_score": 4.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil prices rise",
+                "global energy",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "How the attack on Iran could impact gas prices - NBC Bay Area",
+            "sentiment_polarity": -0.477,
+            "sentiment_method": "vader",
+            "risk_score": 9.5,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "impact gas prices < /a >",
+                "< font color=",
+                "# 6f6f6f",
+                "> nbc bay area < /font >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US-Iran Conflict Impact on Global Markets & Economy - Discovery Alert",
+            "sentiment_polarity": -0.318,
+            "sentiment_method": "vader",
+            "risk_score": 6.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "us-iran",
+                "impact",
+                "global markets",
+                "economy",
+                "< /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Members of Fargo’s Iranian community gather at Broadway Square after supreme leader killed - Valley News Live",
+            "sentiment_polarity": 0.557,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> members",
+                "fargo",
+                "’ s",
+                "iranian",
+                "broadway"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "What to know as US, Israel strike Iran, Iranian supreme leader is killed, US soldiers dead - ocolly.com",
+            "sentiment_polarity": -0.34,
+            "sentiment_method": "vader",
+            "risk_score": 68.4,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "israel",
+                "iran",
+                "iranian",
+                "supreme leader",
+                "us soldiers"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "The Latest: Israel hits Tehran as Iran's counterattacks widen after supreme leader is killed - Times Union",
+            "sentiment_polarity": 0.557,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "latest",
+                "israel",
+                "tehran",
+                "iran",
+                "'s counterattacks widen"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Trump Says Iranian Supreme Leader Is Dead - Foreign Policy",
+            "sentiment_polarity": 0.557,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "trump says iranian",
+                "supreme leader",
+                "dead",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel Beirut Strike: Critical Escalation Follows Hezbollah Rocket Barrage - Bitcoin world",
+            "sentiment_polarity": -0.421,
+            "sentiment_method": "vader",
+            "risk_score": 82.8,
+            "risk_level": "CRITICAL",
+            "key_phrases": [
+                "israel beirut strike",
+                "critical escalation follows hezbollah rocket barrage",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "WATCH: Israel strikes Beirut after Hezbollah fires border missiles - Stuff",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "watch",
+                "israel",
+                "beirut",
+                "hezbollah",
+                "fires border missiles < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel strikes Lebanon following Hezbollah attacks, widening Iran - Global Banking & Finance Review®",
+            "sentiment_polarity": -0.66,
+            "sentiment_method": "vader",
+            "risk_score": 13.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israel",
+                "lebanon",
+                "hezbollah",
+                "iran",
+                "< /a >"
             ],
             "military_hits": 0,
             "diplomatic_hits": 0,
