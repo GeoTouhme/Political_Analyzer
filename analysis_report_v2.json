@@ -1,18 +1,18 @@
 {
     "meta": {
-        "generated_at": "2026-03-02T06:01:25.869738",
-        "article_count": 2402,
+        "generated_at": "2026-03-02T06:31:00.227353",
+        "article_count": 2430,
         "day_count": 59,
-        "global_avg_risk": 22.6,
+        "global_avg_risk": 22.4,
         "max_risk_score": 100.0,
-        "strategic_outlook": "The primary driver of current",
+        "strategic_outlook": "The primary driver of current risk remains the",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
         "status": "STABLE",
-        "latest_day_final": 71.4,
+        "latest_day_final": 71.2,
         "previous_day_simple": 72.0,
-        "global_avg": 22.6
+        "global_avg": 22.4
     },
     "daily_breakdown": [
         {
@@ -1395,11 +1395,11 @@
         },
         {
             "date": "2026-03-02",
-            "article_count": 392,
-            "active_article_count": 276,
-            "anchored_risk": 71.4,
-            "simple_avg": 12.8,
-            "active_avg": 18.2,
+            "article_count": 420,
+            "active_article_count": 297,
+            "anchored_risk": 71.2,
+            "simple_avg": 12.5,
+            "active_avg": 17.7,
             "top3_avg": 100.0,
             "max_risk": 100.0,
             "min_risk": 0.0,
@@ -1409,13 +1409,13 @@
                 "Dramatic moment Iran’s retaliatory missile barrage hits Israel",
                 "Sustained war with Iran could drain US missile stockpiles, test escalation control - Fox News"
             ],
-            "avg_military_hits": 0.11,
-            "avg_diplomatic_hits": 0.03,
-            "day_over_day_delta": -0.6,
-            "contradiction_index": 0.2,
+            "avg_military_hits": 0.1,
+            "avg_diplomatic_hits": 0.02,
+            "day_over_day_delta": -0.8,
+            "contradiction_index": 0.1,
             "contradiction_boost": 0.0,
-            "final_risk": 71.4,
-            "contradiction_ratio": 0.008
+            "final_risk": 71.2,
+            "contradiction_ratio": 0.007
         }
     ],
     "articles": [
@@ -44503,6 +44503,509 @@
                 "hezbollah",
                 "iran",
                 "< /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Al Jazeera reports from Beirut as residents flee following Israeli strikes",
+            "sentiment_polarity": -0.67,
+            "sentiment_method": "vader",
+            "risk_score": 13.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "tens",
+                "lebanese",
+                "beirut",
+                "israeli"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Rock band Radiohead urges US ICE to take down video using its song - Reuters",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "rock",
+                "radiohead",
+                "ice",
+                "song < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Kurdish groups unite to fight against Iran - The Jerusalem Post",
+            "sentiment_polarity": -0.382,
+            "sentiment_method": "vader",
+            "risk_score": 7.6,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "kurdish",
+                "iran",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Epstein scandal goes far beyond one man, says American journalist - Tehran Times",
+            "sentiment_polarity": -0.44,
+            "sentiment_method": "vader",
+            "risk_score": 8.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "epstein",
+                "american journalist < /a >",
+                "< font color=",
+                "# 6f6f6f",
+                "tehran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran pounds Israel, keeps up attacks on regional U.S. bases overnight - Tehran Times",
+            "sentiment_polarity": -0.44,
+            "sentiment_method": "vader",
+            "risk_score": 8.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "israel",
+                "u.s.",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran conflict: Where things stand, global responses — and what comes next - CNBC",
+            "sentiment_polarity": -0.318,
+            "sentiment_method": "vader",
+            "risk_score": 6.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "things stand",
+                "global responses —",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Watch: Iranian Americans celebrate on the streets of Los Angeles - BBC",
+            "sentiment_polarity": 0.572,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "watch",
+                "iranian",
+                "los angeles",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US, Israel pound Iran as Trump signals willingness to talk to new leadership after Khamenei’s death - The Hill",
+            "sentiment_polarity": 0.273,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> us",
+                "israel",
+                "iran",
+                "trump",
+                "signals willingness"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices rise sharply after attacks in Middle East disrupt global energy supply - AP News",
+            "sentiment_polarity": -0.202,
+            "sentiment_method": "vader",
+            "risk_score": 4.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil prices rise",
+                "global energy",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Three US military members killed in Iran operation: Pentagon - RFI",
+            "sentiment_polarity": -0.67,
+            "sentiment_method": "vader",
+            "risk_score": 13.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "military members",
+                "iran",
+                "pentagon < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US Military Deployed Claude AI in Iran Strikes Despite Trump’s Ban - The Hans India",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> us",
+                "deployed claude ai",
+                "iran strikes",
+                "trump",
+                "’ s"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil Surges After Middle East Attacks Disrupt Supply - Deccan Chronicle",
+            "sentiment_polarity": -0.44,
+            "sentiment_method": "vader",
+            "risk_score": 8.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil",
+                "surges",
+                "disrupt",
+                "supply < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices rise sharply after attacks in Middle East disrupt global energy supply - The Hindu",
+            "sentiment_polarity": -0.202,
+            "sentiment_method": "vader",
+            "risk_score": 4.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil prices rise",
+                "global energy",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices rise sharply after attacks in Middle East disrupt global energy supply - WVNS",
+            "sentiment_polarity": -0.202,
+            "sentiment_method": "vader",
+            "risk_score": 4.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil prices rise",
+                "global energy",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Middle East conflict jolts Vietnam stocks - DTiNews",
+            "sentiment_polarity": -0.318,
+            "sentiment_method": "vader",
+            "risk_score": 6.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "conflict jolts",
+                "vietnam",
+                "stocks < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Global oil disruptions will impact Nigeria’s growth projections - The Nation Newspaper",
+            "sentiment_polarity": 0.052,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "global",
+                "oil disruptions",
+                "nigeria",
+                "’ s growth projections < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil Surges Above $80 as US-Israel Strikes on Iran Escalate Middle East Crisis - ProPakistani",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil",
+                "surges",
+                "us-israel strikes",
+                "iran escalate",
+                "crisis"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel, Hezbollah trade fire: latest developments in Iran war - The Sanford Herald",
+            "sentiment_polarity": -0.34,
+            "sentiment_method": "vader",
+            "risk_score": 6.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israel",
+                "hezbollah",
+                "trade fire",
+                "iran",
+                "war < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel strikes Tehran: latest developments in Iran war - HomeTown Register",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israel",
+                "tehran",
+                "iran",
+                "war < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Rockets fired from Lebanon as US-Israel war on Iran expands - The New Arab",
+            "sentiment_polarity": -0.818,
+            "sentiment_method": "vader",
+            "risk_score": 16.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "rockets",
+                "lebanon",
+                "us-israel",
+                "iran",
+                "expands < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "What’s Next for Iran? Big Change Seems Certain, but Direction Is Unclear. - The New York Times",
+            "sentiment_polarity": 0.229,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "’ s",
+                "iran",
+                "seems",
+                "direction",
+                "unclear."
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "An Iranian news anchor has been captured sobbing while reporting the death of Supreme Leader Ayatollah Ali Khamenei. - Facebook",
+            "sentiment_polarity": -0.44,
+            "sentiment_method": "vader",
+            "risk_score": 8.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iranian",
+                "news anchor",
+                "supreme leader",
+                "ayatollah ali khamenei.",
+                "< /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "The Latest: Israel hits Tehran as Iran's counterattacks widen after supreme leader is killed - Union-Bulletin",
+            "sentiment_polarity": 0.557,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "latest",
+                "israel",
+                "tehran",
+                "iran",
+                "'s counterattacks widen"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran supreme leader Ayatollah Ali Khamenei dies, raising questions about nuclear program - WJLA",
+            "sentiment_polarity": 0.557,
+            "sentiment_method": "vader",
+            "risk_score": 35.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "iran",
+                "supreme leader",
+                "ayatollah ali khamenei",
+                "nuclear program < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Congress slams Modi over Iran attacks, calls foreign policy a betrayal - The Federal",
+            "sentiment_polarity": -0.44,
+            "sentiment_method": "vader",
+            "risk_score": 8.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "congress",
+                "modi",
+                "iran",
+                "foreign policy",
+                "betrayal < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Did China’s HQ-9B fail Iran? Big questions after US, Israel strikes - The Times of India",
+            "sentiment_polarity": -0.594,
+            "sentiment_method": "vader",
+            "risk_score": 11.9,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "china",
+                "’ s",
+                "hq-9b",
+                "iran",
+                "big questions"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel unleashes ‘Roaring Lion’ on Hezbollah in Beirut after rockets fired from Lebanese territory - The Statesman",
+            "sentiment_polarity": -0.557,
+            "sentiment_method": "vader",
+            "risk_score": 11.1,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israel",
+                "unleashes ‘",
+                "roaring lion",
+                "hezbollah",
+                "beirut"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US and Israel pound Iran as Trump signals willingness to talk to new leaders after Khamenei’s death - WGNO",
+            "sentiment_polarity": 0.273,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> us",
+                "israel",
+                "iran",
+                "trump",
+                "signals willingness"
             ],
             "military_hits": 0,
             "diplomatic_hits": 0,
