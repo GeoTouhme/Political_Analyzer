@@ -1,18 +1,18 @@
 {
     "meta": {
-        "generated_at": "2026-03-02T12:01:00.659314",
-        "article_count": 2742,
+        "generated_at": "2026-03-02T12:31:30.319587",
+        "article_count": 2773,
         "day_count": 59,
-        "global_avg_risk": 21.2,
+        "global_avg_risk": 21.0,
         "max_risk_score": 100.0,
-        "strategic_outlook": "Strategic assessment unavailable due to Gemini API error.",
+        "strategic_outlook": "The primary driver of the current",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
         "status": "STABLE",
-        "latest_day_final": 71.1,
+        "latest_day_final": 71.0,
         "previous_day_simple": 72.0,
-        "global_avg": 21.2
+        "global_avg": 21.0
     },
     "daily_breakdown": [
         {
@@ -1395,11 +1395,11 @@
         },
         {
             "date": "2026-03-02",
-            "article_count": 732,
-            "active_article_count": 515,
-            "anchored_risk": 71.1,
-            "simple_avg": 12.2,
-            "active_avg": 17.3,
+            "article_count": 763,
+            "active_article_count": 532,
+            "anchored_risk": 71.0,
+            "simple_avg": 11.9,
+            "active_avg": 17.1,
             "top3_avg": 100.0,
             "max_risk": 100.0,
             "min_risk": 0.0,
@@ -1411,10 +1411,10 @@
             ],
             "avg_military_hits": 0.09,
             "avg_diplomatic_hits": 0.03,
-            "day_over_day_delta": -0.9,
+            "day_over_day_delta": -1.0,
             "contradiction_index": 0.1,
             "contradiction_boost": 0.0,
-            "final_risk": 71.1,
+            "final_risk": 71.0,
             "contradiction_ratio": 0.004
         }
     ],
@@ -50600,6 +50600,564 @@
                 "israeli",
                 "retaliation < /a >",
                 "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Cuba to compete in World Baseball Classic despite visa denials - Reuters",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "cuba",
+                "world baseball",
+                "classic",
+                "visa denials < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Rupee drops to one-month low as escalating Middle East war keeps traders on edge - Reuters",
+            "sentiment_polarity": -0.718,
+            "sentiment_method": "vader",
+            "risk_score": 14.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "rupee",
+                "edge < /a >",
+                "< font color=",
+                "# 6f6f6f",
+                "reuters"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Worried about freedom of speech? Then what’s happening at the Open University should terrify you | Owen Jones",
+            "sentiment_polarity": 0.772,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "< p >",
+                "ou",
+                "pro-israel lobby group",
+                "term ‘",
+                "palestine"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Far-right Australian senator censured for Muslim comments - The Jerusalem Post",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "far-right australian",
+                "muslim",
+                "comments < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Millions of Iranians vow revenge while mourning Leader's martyrdom in the streets - Tehran Times",
+            "sentiment_polarity": -0.743,
+            "sentiment_method": "vader",
+            "risk_score": 14.9,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "millions",
+                "iranians",
+                "vow revenge",
+                "leader 's martyrdom",
+                "streets < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Fire, smoke rise from inside US Embassy compound in Kuwait after attack by Iran - KCRA",
+            "sentiment_polarity": -0.477,
+            "sentiment_method": "vader",
+            "risk_score": 9.5,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> fire",
+                "smoke rise",
+                "us embassy compound",
+                "kuwait",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Congress gears up for vote on Trump's war powers in Iran — after the battle began - NPR",
+            "sentiment_polarity": -0.758,
+            "sentiment_method": "vader",
+            "risk_score": 15.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "congress",
+                "trump",
+                "'s war powers",
+                "iran",
+                "< /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "War widens to include Iranian-backed militias as Israeli and American planes pound Iran - WLBT",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> war widens",
+                "iranian-backed",
+                "israeli",
+                "american planes",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel targets Hezbollah, Iran: latest developments in US-Iran war - Nonstop Local News",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israel",
+                "hezbollah",
+                "iran",
+                "us-iran",
+                "war < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "China ‘deeply concerned’ over spillover of US-Israel-Iran conflict, urges ceasefire - Anadolu Ajansı",
+            "sentiment_polarity": -0.318,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "china",
+                "us-israel-iran",
+                "ceasefire < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 1,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel targets Hezbollah, Iran: latest developments in US-Iran war - hpenews.com",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israel",
+                "hezbollah",
+                "iran",
+                "us-iran",
+                "war < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "AI in warfare is here: Pentagon used Anthropic's Claude AI in Iran strikes but it has many LLMs and tools from other firms. What we know - WION",
+            "sentiment_polarity": -0.329,
+            "sentiment_method": "vader",
+            "risk_score": 6.6,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "ai",
+                "anthropic",
+                "claude ai",
+                "iran",
+                "llms"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Strait of Hormuz Disruptions Threaten Jet Fuel Supply, Kpler Says - WSJ",
+            "sentiment_polarity": -0.612,
+            "sentiment_method": "vader",
+            "risk_score": 12.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "strait",
+                "hormuz disruptions threaten jet fuel",
+                "kpler says",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "War in the Middle East – implications for markets and macro - ING THINK economic and financial analysis | ING THINK",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> war",
+                "– implications",
+                "macro < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil Prices Set to Hit $80 as U.S. and Israeli Strikes on Iran Ignite Middle East Tensions - techi.com",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil",
+                "prices set",
+                "u.s.",
+                "israeli strikes",
+                "iran ignite"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "EU policymakers expect no immediate oil security impact from Iran - Global Banking & Finance Review®",
+            "sentiment_polarity": 0.052,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "eu",
+                "immediate oil security impact",
+                "iran",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices rise sharply after attacks in Middle East disrupt global energy supply - Western Investor",
+            "sentiment_polarity": -0.202,
+            "sentiment_method": "vader",
+            "risk_score": 4.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil prices rise",
+                "global energy",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Middle East on edge: What does it mean for Indian oil markets? - The Times of India",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "indian oil markets",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f",
+                "india"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Chevron stock jumps in premarket as oil spikes on Hormuz disruption, Middle East strikes - TechStock²",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "chevron",
+                "stock jumps",
+                "oil spikes",
+                "hormuz",
+                "strikes < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Maersk to Halt Some Red Sea Shipping in Sign of War’s Disruption to Global Supply Chain - The New York Times",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "maersk",
+                "halt",
+                "red sea",
+                "shipping",
+                "sign"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices jump and markets slide after strikes across Middle East - Cambs Times",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil prices",
+                "markets slide",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Saudi Aramco shuts down its largest refinery after drone strikes - Invezz",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "saudi aramco",
+                "drone strikes < /a >",
+                "< font color=",
+                "# 6f6f6f",
+                "invezz"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iran Crisis: Price Volatility, Macro Impact Seen on India, No Structural Oil Supply Risk Yet - outlookbusiness.com",
+            "sentiment_polarity": -0.813,
+            "sentiment_method": "vader",
+            "risk_score": 16.3,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran crisis",
+                "price volatility",
+                "macro impact seen",
+                "india",
+                "structural"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil and gold prices surge amid Hormuz Strait tensions - Operativ Məlumat Mərkəzi",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil",
+                "gold prices surge",
+                "hormuz strait",
+                "tensions < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Barcos en el estrecho de Ormuz alcanzados por proyectiles tras los ataques de Estados Unidos e Israel contra Irán - Fox News",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "barcos",
+                "el estrecho",
+                "ormuz",
+                "alcanzados por proyectiles tras los ataques",
+                "estados unidos"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Iranian leader Khamenei dead at 86 - The Arkansas Democrat-Gazette",
+            "sentiment_polarity": -0.649,
+            "sentiment_method": "vader",
+            "risk_score": 13.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iranian",
+                "khamenei",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Which Iranian officials have been killed, who's in charge now - and who will be its new leader? - Sky News",
+            "sentiment_polarity": -0.706,
+            "sentiment_method": "vader",
+            "risk_score": 14.1,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iranian",
+                "new leader",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Hezbollah Opens New Front, Fires Rockets and Drones Into Israel - The Media Line",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "hezbollah opens",
+                "front",
+                "fires rockets",
+                "drones",
+                "israel"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "'Made Big Mistake': Israeli Military Warns Hezbollah After Retaliatory Strikes Across Lebanon - Republic World",
+            "sentiment_polarity": -0.649,
+            "sentiment_method": "vader",
+            "risk_score": 13.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> 'made",
+                "mistake",
+                "israeli",
+                "warns hezbollah",
+                "retaliatory strikes across lebanon"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Escalating Middle East Tensions: Missiles, Crashes, and Closed Borders - Devdiscourse",
+            "sentiment_polarity": -0.402,
+            "sentiment_method": "vader",
+            "risk_score": 8.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "escalating",
+                "tensions",
+                "crashes",
+                "closed borders",
+                "< /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israeli army attacks Lebanon, 31 dead and 149 injured. Mass evacuations from Beirut - Balkanweb.com",
+            "sentiment_polarity": -0.872,
+            "sentiment_method": "vader",
+            "risk_score": 17.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israeli",
+                "army attacks",
+                "lebanon",
+                "mass",
+                "beirut"
             ],
             "military_hits": 0,
             "diplomatic_hits": 0,
