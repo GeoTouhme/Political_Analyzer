@@ -17,7 +17,17 @@ CORE_FEEDS = {
     'USNI News': 'https://news.usni.org/feed',
     'The Aviationist': 'https://theaviationist.com/feed/',
     'Jerusalem Post': 'https://news.google.com/rss/search?q=site:jpost.com&hl=en-US&gl=US&ceid=US:en',
-    'Tehran Times': 'https://news.google.com/rss/search?q=site:tehrantimes.com&hl=en-US&gl=US&ceid=US:en'
+    'Tehran Times': 'https://news.google.com/rss/search?q=site:tehrantimes.com&hl=en-US&gl=US&ceid=US:en',
+    'Tasnim News (Farsi)': 'https://www.tasnimnews.com/fa/rss/feed/0/7/1',
+    'Tasnim News (English)': 'https://www.tasnimnews.com/en/rss/feed/0/7/6/1',
+    'Mehr News (English)': 'https://en.mehrnews.com/rss',
+    'Haaretz (English)': 'https://www.haaretz.com/services/rss/all.xml',
+    'Ynetnews': 'https://www.ynetnews.com/category/3089/rss',
+    'Al Mayadeen (Arabic)': 'https://www.almayadeen.net/rss',
+    'Al Manar (Arabic)': 'http://almanar.com.lb/legacy/rss.php',
+    'NNA Lebanon (Arabic)': 'http://nna-leb.gov.lb/ar/rss',
+    'Al Jadeed (Arabic)': 'https://www.aljadeed.tv/arabic/rss-feeds',
+    'Press TV (English)': 'https://www.presstv.ir/rss'
 }
 
 # Google News RSS Queries (The "Secret Sauce")
