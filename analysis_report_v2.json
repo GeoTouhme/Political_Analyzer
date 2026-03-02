@@ -1,18 +1,18 @@
 {
     "meta": {
-        "generated_at": "2026-03-02T08:31:01.976095",
-        "article_count": 2528,
+        "generated_at": "2026-03-02T09:01:24.241764",
+        "article_count": 2556,
         "day_count": 59,
-        "global_avg_risk": 22.0,
+        "global_avg_risk": 21.9,
         "max_risk_score": 100.0,
-        "strategic_outlook": "The primary driver of the current crisis",
+        "strategic_outlook": "The primary driver of the current",
         "model_id": "google/gemini-3-pro-preview"
     },
     "trend": {
         "status": "STABLE",
         "latest_day_final": 71.2,
         "previous_day_simple": 72.0,
-        "global_avg": 22.0
+        "global_avg": 21.9
     },
     "daily_breakdown": [
         {
@@ -1395,11 +1395,11 @@
         },
         {
             "date": "2026-03-02",
-            "article_count": 518,
-            "active_article_count": 357,
+            "article_count": 546,
+            "active_article_count": 377,
             "anchored_risk": 71.2,
             "simple_avg": 12.2,
-            "active_avg": 17.8,
+            "active_avg": 17.7,
             "top3_avg": 100.0,
             "max_risk": 100.0,
             "min_risk": 0.0,
@@ -1415,7 +1415,7 @@
             "contradiction_index": 0.2,
             "contradiction_boost": 0.0,
             "final_risk": 71.2,
-            "contradiction_ratio": 0.006
+            "contradiction_ratio": 0.005
         }
     ],
     "articles": [
@@ -46766,6 +46766,510 @@
                 "strikes",
                 "hezbollah",
                 "intensify"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US-Iran talks end with no deal but potential signs of progress - Reuters",
+            "sentiment_polarity": -0.153,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "us-iran",
+                "talks end",
+                "potential signs",
+                "progress < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 1,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Hundreds more flights cancelled as world faces worst travel chaos since Covid pandemic",
+            "sentiment_polarity": -0.974,
+            "sentiment_method": "vader",
+            "risk_score": 35.0,
+            "risk_level": "MEDIUM",
+            "key_phrases": [
+                "< p >",
+                "hundreds",
+                "key air hubs",
+                "us-israeli",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 1,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Monday briefing: ​What does the escalation in the Middle East mean for global stability?",
+            "sentiment_polarity": -0.964,
+            "sentiment_method": "vader",
+            "risk_score": 16.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "< p >",
+                "’ s newsletter",
+                "proxy conflict",
+                "volatile moment",
+                "iran"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 1,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Sirens sound in Israel as Israel-Iran war continues - The Jerusalem Post",
+            "sentiment_polarity": -0.599,
+            "sentiment_method": "vader",
+            "risk_score": 12.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "sirens",
+                "israel",
+                "israel-iran",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Nir Barkat urges Israel to continue full-force Iran strikes - The Jerusalem Post",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "nir barkat",
+                "israel",
+                "iran",
+                "strikes < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Donald Trump says Iran wants talks after Ali Khamenei death reports - The Jerusalem Post",
+            "sentiment_polarity": -0.599,
+            "sentiment_method": "vader",
+            "risk_score": 0.8,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "donald trump",
+                "iran",
+                "ali khamenei",
+                "death reports < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 1,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US officials skeptical of Iran regime change - The Jerusalem Post",
+            "sentiment_polarity": -0.318,
+            "sentiment_method": "vader",
+            "risk_score": 6.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> us officials skeptical",
+                "iran",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israeli airstrike hits Iranian jets on runway - The Jerusalem Post",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israeli",
+                "airstrike hits",
+                "iranian",
+                "runway < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Just one in four Americans supports US strikes on Iran, Reuters/Ipsos poll finds - The Jerusalem Post",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "supports us strikes",
+                "iran",
+                "reuters/ipsos",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US, Israel strike targets in Iran as Trump signals openness to talk to new leadership - kare11.com",
+            "sentiment_polarity": 0.226,
+            "sentiment_method": "vader",
+            "risk_score": 63.2,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "> us",
+                "israel",
+                "strike targets",
+                "iran",
+                "trump"
+            ],
+            "military_hits": 1,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Blow after blow to the power of Iran and its proxy militias set the stage for US-Israel attacks - Yahoo",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "blow",
+                "iran",
+                "proxy militias",
+                "us-israel",
+                "attacks < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Analysis: Khamenei’s killing leaves Iran’s ‘axis’ in disarray - Al Jazeera",
+            "sentiment_polarity": -0.66,
+            "sentiment_method": "vader",
+            "risk_score": 13.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "analysis",
+                "khamenei",
+                "’ s",
+                "iran",
+                "’ s ‘ axis ’"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Cybercom didn’t tell troops to disable location services or uninstall apps, military officials say, after viral message spread amid Iran operation - DefenseScoop",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "cybercom",
+                "didn ’ t",
+                "location services",
+                "uninstall apps",
+                "military officials"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Three US Military Members Killed In Iran Operation, Says Pentagon - Channels Television",
+            "sentiment_polarity": -0.67,
+            "sentiment_method": "vader",
+            "risk_score": 13.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "military members",
+                "killed",
+                "iran",
+                "says",
+                "pentagon < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Three US Military Members Killed In Iran Operation – Pentagon - Channels Television",
+            "sentiment_polarity": -0.67,
+            "sentiment_method": "vader",
+            "risk_score": 13.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "military members",
+                "killed",
+                "iran",
+                "operation – pentagon < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil prices rise sharply after attacks in Middle East disrupt global energy supply - Los Angeles Times",
+            "sentiment_polarity": -0.202,
+            "sentiment_method": "vader",
+            "risk_score": 4.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil prices rise",
+                "global energy",
+                "< /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Oil surges as Iran conflict disrupts Middle Eastern supply flow - Reuters",
+            "sentiment_polarity": -0.318,
+            "sentiment_method": "vader",
+            "risk_score": 6.4,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> oil surges",
+                "iran",
+                "conflict disrupts",
+                "flow < /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Trade & Tension Tracker: Oil at $82, India-Iran Trade in Focus as Hormuz Blockade Intensifies War Shockwaves - ABP Live English",
+            "sentiment_polarity": -0.735,
+            "sentiment_method": "vader",
+            "risk_score": 57.6,
+            "risk_level": "HIGH",
+            "key_phrases": [
+                "> trade",
+                "tracker",
+                "india-iran",
+                "focus",
+                "hormuz blockade intensifies"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Qatar’s retail sector shows resilience amid regional tensions, says LuLu top exec| Gulf Times - Gulf Times",
+            "sentiment_polarity": -0.226,
+            "sentiment_method": "vader",
+            "risk_score": 4.5,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "qatar",
+                "’ s",
+                "retail sector shows resilience",
+                "regional tensions",
+                "lulu"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Bay Area Iranian Americans react to death of Iran’s Supreme Leader - KTVU",
+            "sentiment_polarity": -0.077,
+            "sentiment_method": "vader",
+            "risk_score": 1.5,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> bay area",
+                "iranian",
+                "iran",
+                "’ s",
+                "supreme leader < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Blow after blow to the power of Iran and its proxy militias set the stage for US-Israel attacks - WOWK 13 News",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "blow",
+                "iran",
+                "proxy militias",
+                "us-israel",
+                "attacks < /a >"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "After Iran, China faces 'difficult calculus' on Trump, oil and Taiwan - Nikkei Asia",
+            "sentiment_polarity": -0.361,
+            "sentiment_method": "vader",
+            "risk_score": 7.2,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "iran",
+                "china",
+                "faces 'difficult calculus",
+                "trump",
+                "taiwan"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "As Missiles Fly Across Middle East, Here's Who Stands With Whom - NDTV",
+            "sentiment_polarity": 0.0,
+            "sentiment_method": "vader",
+            "risk_score": 0.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "fly across",
+                "who stands",
+                "whom",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Hezbollah Joins Iran–Israel War, Rockets Northern Israel as IDF Strikes Across Lebanon - Israel Defense",
+            "sentiment_polarity": -0.751,
+            "sentiment_method": "vader",
+            "risk_score": 15.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "hezbollah joins iran",
+                "israel",
+                "rockets",
+                "israel",
+                "idf strikes across lebanon"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "Israel Strikes Lebanon After Hezbollah Rocket Fire as Middle East Conflict Widens - G Plus News",
+            "sentiment_polarity": -0.735,
+            "sentiment_method": "vader",
+            "risk_score": 14.7,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "israel strikes lebanon",
+                "hezbollah rocket",
+                "widens",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "US tells Lebanon Israel has no intention to escalate in country - The New Arab",
+            "sentiment_polarity": -0.296,
+            "sentiment_method": "vader",
+            "risk_score": 5.9,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "> us",
+                "lebanon israel",
+                "country < /a >",
+                "< font color=",
+                "# 6f6f6f"
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "U.S. Skepticism Over Post-Khamenei Iran Regime Change - Devdiscourse",
+            "sentiment_polarity": -0.25,
+            "sentiment_method": "vader",
+            "risk_score": 5.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "u.s",
+                "skepticism",
+                "post-khamenei iran regime",
+                "< /a >",
+                "< font color="
+            ],
+            "military_hits": 0,
+            "diplomatic_hits": 0,
+            "source_name": "Unknown",
+            "date": "2026-03-02"
+        },
+        {
+            "title": "BREAKING: Israeli strikes kill 31 in Lebanon, senior Hezbollah figures dead - Chronicle Nigeria",
+            "sentiment_polarity": -0.802,
+            "sentiment_method": "vader",
+            "risk_score": 16.0,
+            "risk_level": "LOW",
+            "key_phrases": [
+                "breaking",
+                "israeli",
+                "lebanon",
+                "hezbollah",
+                "dead < /a >"
             ],
             "military_hits": 0,
             "diplomatic_hits": 0,
