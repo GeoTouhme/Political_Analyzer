@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import {
-  ComposedChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
+  ComposedChart, Line, XAxis, YAxis, CartesianGrid, Tooltip,
   ReferenceLine, ResponsiveContainer, Area, Brush
 } from "recharts";
 
@@ -19,7 +19,7 @@ const CustomTooltip = ({ active, payload, label }) => {
       background: "#0f172a", border: `1px solid ${LEVEL_COLOR[d.level] || "#1e293b"}`,
       borderRadius: 8, padding: "10px 14px", fontSize: 13, color: "#e2e8f0"
     }}>
-      <div style={{ fontWeight: 700, marginBottom: 4 }}>{label}</div>
+      <div style={{ fontWeight: 700, marginBottom: 4 }}>{d.fullDate}</div>
       <div>Risk Score: <span style={{ color: LEVEL_COLOR[d.level], fontWeight: 700 }}>{d.avg}</span></div>
       <div>Level: <span style={{ color: LEVEL_COLOR[d.level], fontWeight: 700 }}>{d.level}</span></div>
       <div>Articles: <span style={{ color: "#94a3b8" }}>{d.articles}</span></div>
@@ -33,8 +33,6 @@ export default function App() {
   const [meta, setMeta] = useState({});
   const [aiAnalysis, setAiAnalysis] = useState([]);
   const [loading, setLoading] = useState(true);
-  
-  // Filtering states
   const [searchTerm, setSearchTerm] = useState("");
   const [filterLevel, setFilterLevel] = useState("ALL");
 
@@ -51,12 +49,8 @@ export default function App() {
             level: d.risk_level || "UNKNOWN"
           })));
         }
-        if (report.articles) {
-          setArticles(report.articles);
-        }
-        if (report.ai_deep_analysis) {
-          setAiAnalysis(report.ai_deep_analysis);
-        }
+        if (report.articles) setArticles(report.articles);
+        if (report.ai_deep_analysis) setAiAnalysis(report.ai_deep_analysis);
         setMeta(report.meta || {});
         setLoading(false);
       })
@@ -70,12 +64,7 @@ export default function App() {
 
   const validData = data.filter(d => d.avg !== undefined);
   const latestDay = validData.length > 0 ? validData[validData.length - 1] : {date: "N/A", avg: 0, articles: 0, level: "UNKNOWN"};
-  
-  // Dynamic Width Logic: Ensure at least 40px per data point
-  const minWidthPerPoint = 40;
-  const chartWidth = Math.max(800, validData.length * minWidthPerPoint);
 
-  // Filter Logic
   const filteredArticles = articles.filter(a => {
     const matchesSearch = a.title.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesLevel = filterLevel === "ALL" || a.risk_level === filterLevel;
@@ -84,70 +73,50 @@ export default function App() {
 
   return (
     <div style={{
-      background: "#020817", minHeight: "100vh", padding: "28px 20px",
-      fontFamily: "'Inter', 'Segoe UI', sans-serif", color: "#e2e8f0",
-      maxWidth: "850px", margin: "0 auto"
+      background: "#020817", minHeight: "100vh", padding: "20px",
+      fontFamily: "'Inter', sans-serif", color: "#e2e8f0",
+      maxWidth: "100%", overflowX: "hidden"
     }}>
-      {/* Header - Simple & Clean */}
-      <div style={{ marginBottom: 16, textAlign: 'center' }}>
-        <h1 style={{ fontSize: 20, fontWeight: 800, color: "#f8fafc", margin: 0 }}>
-          PGCM - Persian Gulf Conflict Monitor
-        </h1>
-      </div>
-
-      {/* STICKY RADAR SECTION */}
-      <div style={{
-        position: "sticky",
-        top: 0,
-        zIndex: 100,
-        background: "rgba(2, 8, 23, 0.9)",
-        backdropFilter: "blur(12px)",
-        border: "1px solid #1e293b",
-        borderRadius: 16,
-        padding: "12px 20px",
-        marginBottom: 20,
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        boxShadow: "0 10px 30px rgba(0,0,0,0.5)"
-      }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 15 }}>
-          <div style={{ width: "60px", height: "40px" }}>
-            <svg viewBox="0 0 100 60">
-              <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#1e293b" strokeWidth="10" />
-              <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke={LEVEL_COLOR[latestDay.level]} strokeWidth="10" 
-                    strokeDasharray={`${(latestDay.avg / 100) * 126} 126`} />
-            </svg>
-          </div>
-          <div>
-            <div style={{ fontSize: 22, fontWeight: 900, color: "#fff", lineHeight: 1 }}>{latestDay.avg}%</div>
-            <div style={{ fontSize: 10, fontWeight: 700, color: LEVEL_COLOR[latestDay.level], textTransform: "uppercase" }}>{latestDay.level} RISK</div>
-          </div>
+      <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+        {/* Header */}
+        <div style={{ marginBottom: 20, textAlign: 'center' }}>
+          <h1 style={{ fontSize: 22, fontWeight: 800, color: "#f8fafc" }}>
+            PGCM - Persian Gulf Conflict Monitor
+          </h1>
         </div>
-        <div style={{ textAlign: "right" }}>
-          <div style={{ fontSize: 9, color: "#64748b" }}>STREAMS ANALYZED</div>
-          <div style={{ fontSize: 14, fontWeight: 800, color: "#58a6ff" }}>{meta.article_count || articles.length}</div>
-        </div>
-      </div>
 
-      {/* Main Chart with Horizontal Scroll */}
-      <div style={{ 
-        background: "#0f172a", 
-        border: "1px solid #1e293b", 
-        borderRadius: 16, 
-        padding: "16px 0px 4px", 
-        marginBottom: 20,
-        overflow: "hidden"
-      }}>
-        <div style={{ 
-          overflowX: "auto", 
-          padding: "0 10px",
-          scrollbarWidth: "thin",
-          scrollbarColor: "#3b82f6 #0f172a"
+        {/* Radar Card */}
+        <div style={{
+          background: "rgba(15, 23, 42, 0.8)", border: "1px solid #1e293b", borderRadius: 16,
+          padding: "16px 20px", marginBottom: 24, display: "flex", alignItems: "center", justifyContent: "space-between"
         }}>
-          <div style={{ width: `${chartWidth}px`, height: "220px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 15 }}>
+            <div style={{ width: "60px", height: "40px" }}>
+              <svg viewBox="0 0 100 60">
+                <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#1e293b" strokeWidth="10" />
+                <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke={LEVEL_COLOR[latestDay.level]} strokeWidth="10" 
+                      strokeDasharray={`${(latestDay.avg / 100) * 126} 126`} />
+              </svg>
+            </div>
+            <div>
+              <div style={{ fontSize: 24, fontWeight: 900 }}>{latestDay.avg}%</div>
+              <div style={{ fontSize: 10, fontWeight: 700, color: LEVEL_COLOR[latestDay.level] }}>{latestDay.level} RISK</div>
+            </div>
+          </div>
+          <div style={{ textAlign: "right" }}>
+            <div style={{ fontSize: 9, color: "#64748b" }}>STREAMS ANALYZED</div>
+            <div style={{ fontSize: 16, fontWeight: 800, color: "#58a6ff" }}>{meta.article_count || articles.length}</div>
+          </div>
+        </div>
+
+        {/* Fixed Chart with Brush */}
+        <div style={{ 
+          background: "#0f172a", border: "1px solid #1e293b", borderRadius: 16, 
+          padding: "20px 10px 10px", marginBottom: 30
+        }}>
+          <div style={{ height: "300px", width: "100%" }}>
             <ResponsiveContainer width="100%" height="100%">
-              <ComposedChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+              <ComposedChart data={data} margin={{ top: 5, right: 5, left: -20, bottom: 0 }}>
                 <defs>
                   <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
                     <stop offset="0%" stopColor="#3b82f6" stopOpacity={0.2} />
@@ -155,137 +124,70 @@ export default function App() {
                   </linearGradient>
                 </defs>
                 <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" vertical={false} />
-                <ReferenceLine y={75} stroke="#ef4444" strokeDasharray="4 3" strokeOpacity={0.6} />
-                <ReferenceLine y={50} stroke="#f97316" strokeDasharray="4 3" strokeOpacity={0.6} />
-                <ReferenceLine y={25} stroke="#eab308" strokeDasharray="4 3" strokeOpacity={0.5} />
-                <XAxis 
-                  dataKey="date" 
-                  tick={{ fontSize: 10, fill: "#94a3b8" }} 
-                  interval={0} 
-                  angle={-45} 
-                  textAnchor="end" 
-                  height={60}
-                />
-                <YAxis domain={[0, 100]} tick={{ fontSize: 10, fill: "#64748b" }} width={35} />
+                <ReferenceLine y={75} stroke="#ef4444" strokeDasharray="4 3" />
+                <ReferenceLine y={50} stroke="#f97316" strokeDasharray="4 3" />
+                <XAxis dataKey="date" tick={{ fontSize: 10, fill: "#64748b" }} hide={false} />
+                <YAxis domain={[0, 100]} tick={{ fontSize: 10, fill: "#64748b" }} />
                 <Tooltip content={<CustomTooltip />} />
-                <Area type="monotone" dataKey="avg" fill="url(#areaGrad)" stroke="none" isAnimationActive={false} />
-                <Line type="monotone" dataKey="avg" stroke="#3b82f6" strokeWidth={3} dot={{ r: 2, fill: "#3b82f6" }} activeDot={{ r: 6 }} isAnimationActive={false} />
+                <Area type="monotone" dataKey="avg" fill="url(#areaGrad)" stroke="none" />
+                <Line type="monotone" dataKey="avg" stroke="#3b82f6" strokeWidth={3} dot={false} activeDot={{ r: 6 }} />
+                <Brush 
+                  dataKey="fullDate" 
+                  height={30} 
+                  stroke="#3b82f6" 
+                  fill="#020817"
+                  startIndex={data.length > 20 ? data.length - 20 : 0}
+                />
               </ComposedChart>
             </ResponsiveContainer>
           </div>
         </div>
-        <p style={{ fontSize: 10, color: "#64748b", textAlign: "center", margin: "10px 0" }}>
-          ↔️ Scroll horizontally to view full timeline
-        </p>
-      </div>
 
-      {/* AI DEEP ANALYSIS SECTION */}
-      {aiAnalysis.length > 0 && (
-        <div style={{ marginBottom: 40, background: "rgba(239, 68, 68, 0.05)", border: "1px solid rgba(239, 68, 68, 0.2)", borderRadius: 16, padding: "20px" }}>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 12, color: "#ef4444", display: "flex", alignItems: "center", gap: 8 }}>
-            <span>🤖</span> AI Transformer Analysis (Live)
-          </h3>
-          <p style={{ fontSize: 12, color: "#94a3b8", marginBottom: 16 }}>
-            Top risk signals detected by the neural network trained on US-Iran war patterns.
-          </p>
-          <div style={{ 
-            display: "flex", 
-            flexDirection: "column", 
-            gap: 10,
-            maxHeight: "400px",
-            overflowY: "auto",
-            paddingRight: "8px",
-            scrollbarWidth: "thin",
-            scrollbarColor: "#ef4444 #0f172a"
-          }}>
-            {aiAnalysis.map((ai, idx) => (
-              <div key={idx} style={{ background: "#0f172a", borderRadius: 8, padding: "12px", display: "flex", alignItems: "center", gap: 12, border: "1px solid #1e293b" }}>
-                <div style={{ 
-                  minWidth: "45px", height: "45px", borderRadius: "50%", 
-                  background: `rgba(239, 68, 68, ${ai.ai_risk_score/100})`,
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                  fontSize: 10, fontWeight: 800, color: "#fff", border: "2px solid #ef4444"
-                }}>
-                  {ai.ai_risk_score}%
+        {/* AI Deep Analysis */}
+        {aiAnalysis.length > 0 && (
+          <div style={{ marginBottom: 40, background: "rgba(239, 68, 68, 0.05)", border: "1px solid rgba(239, 68, 68, 0.2)", borderRadius: 16, padding: "20px" }}>
+            <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 12, color: "#ef4444" }}>🤖 AI Transformer Analysis (Live)</h3>
+            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+              {aiAnalysis.map((ai, idx) => (
+                <div key={idx} style={{ background: "#0f172a", borderRadius: 8, padding: "12px", display: "flex", alignItems: "center", gap: 12, border: "1px solid #1e293b" }}>
+                  <div style={{ minWidth: "45px", height: "45px", borderRadius: "50%", background: `rgba(239, 68, 68, ${ai.ai_risk_score/100})`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 800, color: "#fff", border: "2px solid #ef4444" }}>
+                    {ai.ai_risk_score}%
+                  </div>
+                  <div style={{ flex: 1 }}>
+                    <div style={{ fontSize: 13, fontWeight: 600, color: "#f1f5f9" }}>{ai.translated_title || ai.title}</div>
+                    <div style={{ fontSize: 10, color: "#64748b" }}>{ai.date} • <a href={ai.url} target="_blank" style={{ color: "#3b82f6", textDecoration: "none" }}>Source</a></div>
+                  </div>
                 </div>
-                <div style={{ flex: 1 }}>
-                  <div style={{ fontSize: 13, fontWeight: 600, color: "#f1f5f9", lineHeight: 1.3 }}>{ai.translated_title || ai.title}</div>
-                  <div style={{ fontSize: 10, color: "#64748b", marginTop: 4 }}>{ai.date} • <a href={ai.url} target="_blank" style={{ color: "#3b82f6" }}>View Source</a></div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* INTELLIGENCE FEED */}
-      <div style={{ marginBottom: 20 }}>
-        <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16 }}>Intelligence Feed</h3>
-        
-        {/* Search & Filters */}
-        <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 20 }}>
-          <input 
-            type="text" 
-            placeholder="Search articles..." 
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            style={{
-              background: "#0f172a", border: "1px solid #1e293b", borderRadius: 8,
-              padding: "10px 14px", color: "#f8fafc", fontSize: 14, outline: "none"
-            }}
-          />
-          <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
-            {["ALL", "CRITICAL", "HIGH", "MEDIUM", "LOW"].map(lvl => (
-              <button
-                key={lvl}
-                onClick={() => setFilterLevel(lvl)}
-                style={{
-                  padding: "6px 12px", borderRadius: "20px", fontSize: 11, fontWeight: 600,
-                  cursor: "pointer", border: "1px solid #1e293b",
-                  background: filterLevel === lvl ? (LEVEL_COLOR[lvl] || "#3b82f6") : "#0f172a",
-                  color: filterLevel === lvl ? (lvl === "MEDIUM" ? "#000" : "#fff") : "#94a3b8",
-                  transition: "all 0.2s"
-                }}
-              >
-                {lvl}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Article List with Internal Scroll */}
-        <div style={{ 
-          display: "flex", 
-          flexDirection: "column", 
-          gap: 12,
-          maxHeight: "600px",
-          overflowY: "auto",
-          paddingRight: "8px",
-          scrollbarWidth: "thin",
-          scrollbarColor: "#1e293b #020817"
-        }}>
-          {filteredArticles.length > 0 ? filteredArticles.map((art, idx) => (
-            <div key={idx} style={{
-              background: "#0f172a", border: "1px solid #1e293b", 
-              borderLeft: `4px solid ${LEVEL_COLOR[art.risk_level]}`,
-              borderRadius: 8, padding: "14px"
-            }}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 6 }}>
-                <span style={{ fontSize: 10, fontWeight: 700, color: LEVEL_COLOR[art.risk_level], letterSpacing: 0.5 }}>
-                  {art.risk_level} — {art.risk_score}
-                </span>
-                <span style={{ fontSize: 10, color: "#64748b" }}>{art.date}</span>
-              </div>
-              <div style={{ fontSize: 14, fontWeight: 600, color: "#f1f5f9", marginBottom: 8, lineHeight: 1.4 }}>
-                {art.title}
-              </div>
-              <div style={{ fontSize: 11, color: "#64748b", display: "flex", justifyContent: "space-between" }}>
-                <span>Source: <strong style={{color: "#94a3b8"}}>{art.source_name || "RSS Feed"}</strong></span>
-              </div>
+              ))}
             </div>
-          )) : (
-            <div style={{ textAlign: "center", color: "#64748b", padding: "40px 0" }}>No articles found matching filters.</div>
-          )}
+          </div>
+        )}
+
+        {/* Feed */}
+        <div style={{ marginBottom: 20 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16 }}>Intelligence Feed</h3>
+          <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 20 }}>
+            <input 
+              type="text" placeholder="Search..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}
+              style={{ background: "#0f172a", border: "1px solid #1e293b", borderRadius: 8, padding: "10px", color: "#fff", outline: "none" }}
+            />
+            <div style={{ display: "flex", gap: 5, flexWrap: "wrap" }}>
+              {["ALL", "CRITICAL", "HIGH", "MEDIUM", "LOW"].map(lvl => (
+                <button key={lvl} onClick={() => setFilterLevel(lvl)} style={{ padding: "5px 10px", borderRadius: "15px", fontSize: 10, background: filterLevel === lvl ? LEVEL_COLOR[lvl] : "#0f172a", color: "#fff", border: "1px solid #1e293b", cursor: "pointer" }}>{lvl}</button>
+              ))}
+            </div>
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            {filteredArticles.map((art, idx) => (
+              <div key={idx} style={{ background: "#0f172a", borderLeft: `4px solid ${LEVEL_COLOR[art.risk_level]}`, borderRadius: 8, padding: "14px" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", fontSize: 10, color: "#64748b", marginBottom: 4 }}>
+                  <span>{art.risk_level} — {art.risk_score}</span>
+                  <span>{art.date}</span>
+                </div>
+                <div style={{ fontSize: 14, fontWeight: 600 }}>{art.title}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
