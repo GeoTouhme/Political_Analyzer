@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   ComposedChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
-  ReferenceLine, ResponsiveContainer, Area
+  ReferenceLine, ResponsiveContainer, Area, Brush
 } from "recharts";
 
 const LEVEL_COLOR = {
@@ -45,6 +45,7 @@ export default function App() {
         if (report.daily_breakdown) {
           setData(report.daily_breakdown.map(d => ({
             date: d.date.substring(5), 
+            fullDate: d.date,
             avg: d.anchored_risk || d.avg_risk || 0,
             articles: d.article_count || 0,
             level: d.risk_level || "UNKNOWN"
@@ -69,7 +70,10 @@ export default function App() {
 
   const validData = data.filter(d => d.avg !== undefined);
   const latestDay = validData.length > 0 ? validData[validData.length - 1] : {date: "N/A", avg: 0, articles: 0, level: "UNKNOWN"};
-  const peakDay = validData.length > 0 ? validData.reduce((a, b) => b.avg > a.avg ? b : a, validData[0]) : {date: "N/A", avg: 0};
+  
+  // Dynamic Width Logic: Ensure at least 40px per data point
+  const minWidthPerPoint = 40;
+  const chartWidth = Math.max(800, validData.length * minWidthPerPoint);
 
   // Filter Logic
   const filteredArticles = articles.filter(a => {
@@ -82,7 +86,7 @@ export default function App() {
     <div style={{
       background: "#020817", minHeight: "100vh", padding: "28px 20px",
       fontFamily: "'Inter', 'Segoe UI', sans-serif", color: "#e2e8f0",
-      maxWidth: "800px", margin: "0 auto"
+      maxWidth: "850px", margin: "0 auto"
     }}>
       {/* Header - Simple & Clean */}
       <div style={{ marginBottom: 16, textAlign: 'center' }}>
@@ -126,30 +130,56 @@ export default function App() {
         </div>
       </div>
 
-      {/* Main Chart - Compact */}
-      <div style={{ background: "#0f172a", border: "1px solid #1e293b", borderRadius: 16, padding: "16px 10px 4px", marginBottom: 20 }}>
-        <ResponsiveContainer width="100%" height={180}>
-          <ComposedChart data={data}>
-            <defs>
-              <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#3b82f6" stopOpacity={0.2} />
-                <stop offset="100%" stopColor="#3b82f6" stopOpacity={0} />
-              </linearGradient>
-            </defs>
-            <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" vertical={false} />
-            <ReferenceLine y={75} stroke="#ef4444" strokeDasharray="4 3" strokeOpacity={0.6} />
-            <ReferenceLine y={50} stroke="#f97316" strokeDasharray="4 3" strokeOpacity={0.6} />
-            <ReferenceLine y={25} stroke="#eab308" strokeDasharray="4 3" strokeOpacity={0.5} />
-            <XAxis dataKey="date" tick={{ fontSize: 9, fill: "#64748b" }} interval={4} angle={-45} textAnchor="end" height={50} />
-            <YAxis domain={[0, 100]} tick={{ fontSize: 9, fill: "#64748b" }} width={25} />
-            <Tooltip content={<CustomTooltip />} />
-            <Area type="monotone" dataKey="avg" fill="url(#areaGrad)" stroke="none" />
-            <Line type="monotone" dataKey="avg" stroke="#3b82f6" strokeWidth={2} dot={false} />
-          </ComposedChart>
-        </ResponsiveContainer>
+      {/* Main Chart with Horizontal Scroll */}
+      <div style={{ 
+        background: "#0f172a", 
+        border: "1px solid #1e293b", 
+        borderRadius: 16, 
+        padding: "16px 0px 4px", 
+        marginBottom: 20,
+        overflow: "hidden"
+      }}>
+        <div style={{ 
+          overflowX: "auto", 
+          padding: "0 10px",
+          scrollbarWidth: "thin",
+          scrollbarColor: "#3b82f6 #0f172a"
+        }}>
+          <div style={{ width: `${chartWidth}px`, height: "220px" }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <ComposedChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+                <defs>
+                  <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#3b82f6" stopOpacity={0.2} />
+                    <stop offset="100%" stopColor="#3b82f6" stopOpacity={0} />
+                  </linearGradient>
+                </defs>
+                <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" vertical={false} />
+                <ReferenceLine y={75} stroke="#ef4444" strokeDasharray="4 3" strokeOpacity={0.6} />
+                <ReferenceLine y={50} stroke="#f97316" strokeDasharray="4 3" strokeOpacity={0.6} />
+                <ReferenceLine y={25} stroke="#eab308" strokeDasharray="4 3" strokeOpacity={0.5} />
+                <XAxis 
+                  dataKey="date" 
+                  tick={{ fontSize: 10, fill: "#94a3b8" }} 
+                  interval={0} 
+                  angle={-45} 
+                  textAnchor="end" 
+                  height={60}
+                />
+                <YAxis domain={[0, 100]} tick={{ fontSize: 10, fill: "#64748b" }} width={35} />
+                <Tooltip content={<CustomTooltip />} />
+                <Area type="monotone" dataKey="avg" fill="url(#areaGrad)" stroke="none" isAnimationActive={false} />
+                <Line type="monotone" dataKey="avg" stroke="#3b82f6" strokeWidth={3} dot={{ r: 2, fill: "#3b82f6" }} activeDot={{ r: 6 }} isAnimationActive={false} />
+              </ComposedChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+        <p style={{ fontSize: 10, color: "#64748b", textAlign: "center", margin: "10px 0" }}>
+          ↔️ Scroll horizontally to view full timeline
+        </p>
       </div>
 
-      {/* AI DEEP ANALYSIS SECTION - NEW V4 */}
+      {/* AI DEEP ANALYSIS SECTION */}
       {aiAnalysis.length > 0 && (
         <div style={{ marginBottom: 40, background: "rgba(239, 68, 68, 0.05)", border: "1px solid rgba(239, 68, 68, 0.2)", borderRadius: 16, padding: "20px" }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 12, color: "#ef4444", display: "flex", alignItems: "center", gap: 8 }}>
